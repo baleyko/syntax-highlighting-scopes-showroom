@@ -46,5 +46,13 @@
         "path": "./grammars/shss.tmLanguage"
       }
     ]
+  },
+  "devDependencies": {
+    "coffeelint": "2.1.0",
+    "yaml-lint": "1.2.4",
+    "plistlint": "1.0.0"
+  },
+  "scripts": {
+    "ci:lint": "yarn run plistlint grammars/shss.tmLanguage && yarn run coffeelint grammars/shss.cson && yarn run yamllint grammars/shss.sublime-syntax"
   }
 }
