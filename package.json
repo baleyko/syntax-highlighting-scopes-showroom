@@ -26,8 +26,8 @@
     "scopes"
   ],
   "engines": {
-    "vscode": "*",
-    "atom": "*"
+    "vscode": "^1.36.0",
+    "atom": "^1.42.0"
   },
   "contributes": {
     "languages": [
@@ -49,10 +49,17 @@
   },
   "devDependencies": {
     "coffeelint": "2.1.0",
-    "yaml-lint": "1.2.4",
-    "plistlint": "1.0.0"
+    "jsonlint": "1.6.3",
+    "markdownlint-cli": "0.19.0",
+    "plistlint": "1.0.0",
+    "yaml-lint": "1.2.4"
   },
   "scripts": {
-    "ci:lint": "yarn run plistlint grammars/shss.tmLanguage && yarn run coffeelint grammars/shss.cson && yarn run yamllint grammars/shss.sublime-syntax"
+    "ci:lint": "yarn run lint:plist && yarn run lint:coffee && yarn run lint:yaml && yarn run lint:json && yarn run markdownlint *.md",
+    "lint:plist": "yarn run plistlint grammars/shss.tmLanguage",
+    "lint:coffee": "yarn run coffeelint grammars/shss.cson",
+    "lint:yaml": "yarn run yamllint grammars/shss.sublime-syntax",
+    "lint:json": "for file in package.json messages.json language-configuration.json .vscode/launch.json; do yarn run jsonlint -q $file; done",
+    "lint:markdown": "yarn run markdownlint *.md"
   }
 }
