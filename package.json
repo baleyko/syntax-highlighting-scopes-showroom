@@ -50,7 +50,8 @@
     "jsonlint": "1.6.3",
     "markdownlint-cli": "0.19.0",
     "plistlint": "1.0.0",
-    "yaml-lint": "1.2.4"
+    "yaml-lint": "1.2.4",
+    "vsce": "^1.67.0"
   },
   "scripts": {
     "ci:lint": "yarn run lint:plist && yarn run lint:coffee && yarn run lint:yaml && yarn run lint:json && yarn run markdownlint *.md",
