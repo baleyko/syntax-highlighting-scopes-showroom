@@ -1,0 +1,50 @@
+{
+  "name": "syntax-highlighting-scopes-showroom",
+  "displayName": "Syntax Highlighting Scopes Showroom",
+  "description": "Syntax Highlighting Scopes Showroom",
+  "version": "0.0.0",
+  "publisher": "baleiko",
+  "author": {
+    "name": "Valerii Baleiko",
+    "email": "baleyko@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/baleyko/syntax-highlighting-scopes-showroom/issues",
+  "homepage": "https://github.com/baleyko/syntax-highlighting-scopes-showroom#README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baleyko/syntax-highlighting-scopes-showroom.git"
+  },
+  "categories": [
+    "syntax",
+    "highlighting",
+    "scopes"
+  ],
+  "keywords": [
+    "syntax",
+    "highlighting",
+    "scopes"
+  ],
+  "engines": {
+    "vscode": "*",
+    "atom": "*"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "Syntax Highlighting Scopes Showroom",
+        "extensions": [
+          ".shss"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "Syntax Highlighting Scopes Showroom",
+        "scopeName": "source.shss",
+        "path": "./grammars/shss.tmLanguage"
+      }
+    ]
+  }
+}
