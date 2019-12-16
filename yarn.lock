@@ -139,23 +139,6 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-coffeelint@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/coffeelint/-/coffeelint-2.1.0.tgz#af65df3634e999d9ac01480736c36d3cd2f5dad8"
-  integrity sha1-r2XfNjTpmdmsAUgHNsNtPNL12tg=
-  dependencies:
-    coffeescript "^2.1.0"
-    glob "^7.0.6"
-    ignore "^3.0.9"
-    optimist "^0.6.1"
-    resolve "^0.6.3"
-    strip-json-comments "^1.0.2"
-
-coffeescript@^2.1.0:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/coffeescript/-/coffeescript-2.4.1.tgz#815fd337df0a34d49e74a98a6ebea9c3e7930f70"
-  integrity sha512-34GV1aHrsMpTaO3KfMJL40ZNuvKDR/g98THHnE9bQj8HjMaZvSrLik99WWqyMhRtbe8V5hpx5iLgdcSvM/S2wg==
-
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -357,11 +340,6 @@ htmlparser2@^3.9.1:
     inherits "^2.0.1"
     readable-stream "^3.1.1"
 
-ignore@^3.0.9:
-  version "3.3.10"
-  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
-  integrity sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug==
-
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -534,11 +512,6 @@ minimist@^1.2.0:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
 
-minimist@~0.0.1:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
-  integrity sha1-3j+YVD2/lggr5IrRoMfNqDYwHc8=
-
 mute-stream@~0.0.4:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
@@ -580,14 +553,6 @@ once@^1.3.0:
   integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   dependencies:
     wrappy "1"
-
-optimist@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
-  integrity sha1-2j6nRob6IaGaERwybpDrFaAZZoY=
-  dependencies:
-    minimist "~0.0.1"
-    wordwrap "~0.0.2"
 
 os-homedir@^1.0.0:
   version "1.0.2"
@@ -669,11 +634,6 @@ readable-stream@^3.1.1:
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
-resolve@^0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-0.6.3.tgz#dd957982e7e736debdf53b58a4dd91754575dd46"
-  integrity sha1-3ZV5gufnNt699TtYpN2RdUV13UY=
-
 safe-buffer@~5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
@@ -721,11 +681,6 @@ strip-ansi@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-0.1.1.tgz#39e8a98d044d150660abe4a6808acf70bb7bc991"
   integrity sha1-OeipjQRNFQZgq+SmgIrPcLt7yZE=
-
-strip-json-comments@^1.0.2:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-1.0.4.tgz#1e15fbcac97d3ee99bf2d73b4c656b082bbafb91"
-  integrity sha1-HhX7ysl9Pumb8tc7TGVrCCu6+5E=
 
 strip-json-comments@~2.0.1:
   version "2.0.1"
@@ -819,11 +774,6 @@ window-size@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.1.4.tgz#f8e1aa1ee5a53ec5bf151ffa09742a6ad7697876"
   integrity sha1-+OGqHuWlPsW/FR/6CXQqatdpeHY=
-
-wordwrap@~0.0.2:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
-  integrity sha1-o9XabNXAvAAI03I0u68b7WMFkQc=
 
 wrap-ansi@^2.0.0:
   version "2.1.0"
