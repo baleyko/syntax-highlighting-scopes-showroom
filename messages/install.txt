@@ -1,0 +1,10 @@
+Welcome to the Syntax Highlighting Scopes Showroom package for Sublime Text 2/3!
+
+It adds highlighting to the .shss files, which could contain lists of syntax highlighting scopes.
+These lists could be used like cheatsheets to understand which scopes you can use to highlight
+some parts of your syntax and compare it to highlighting of these scopes in Visual Studio Code, Sublime Text >3 and Atom.
+
+Repository: https://github.com/baleyko/syntax-highlighting-scopes-showroom
+Issues: https://github.com/baleyko/syntax-highlighting-scopes-showroom/issues
+
+Thanks!
