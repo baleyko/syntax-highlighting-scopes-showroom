@@ -2,3 +2,6 @@
 .gitignore
 .editorconfig
 yarn.lock
+grammars/shss.cson
+grammars/shss.sublime-syntax
+node_modules/
