@@ -1,11 +1,15 @@
 .github/
 .vscode/**
 .vscode-test/**
+.vscodeignore
 .gitignore
 .editorconfig
+messages/
 bin/
 tests/
 yarn.lock
+yarn-error.log
+messages.json
 grammars/shss.cson
 grammars/shss.sublime-syntax
 node_modules/
