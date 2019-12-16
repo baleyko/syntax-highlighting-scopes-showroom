@@ -41,7 +41,7 @@
       {
         "language": "Syntax Highlighting Scopes Showroom",
         "scopeName": "source.shss",
-        "path": "./grammars/shss.tmLanguage"
+        "path": "./grammars/shss.json"
       }
     ]
   },
@@ -49,16 +49,14 @@
     "coffeelint": "2.1.0",
     "jsonlint": "1.6.3",
     "markdownlint-cli": "0.19.0",
-    "plistlint": "1.0.0",
     "yaml-lint": "1.2.4",
     "vsce": "^1.67.0"
   },
   "scripts": {
-    "ci:lint": "yarn run lint:plist && yarn run lint:coffee && yarn run lint:yaml && yarn run lint:json && yarn run markdownlint *.md",
-    "lint:plist": "yarn run plistlint grammars/shss.tmLanguage",
+    "ci:lint": "yarn run lint:coffee && yarn run lint:yaml && yarn run lint:json && yarn run markdownlint *.md",
     "lint:coffee": "yarn run coffeelint grammars/shss.cson",
     "lint:yaml": "yarn run yamllint grammars/shss.sublime-syntax",
-    "lint:json": "for file in package.json messages.json language-configuration.json .vscode/launch.json; do yarn run jsonlint -q $file; done",
+    "lint:json": "for file in package.json messages.json language-configuration.json .vscode/launch.json grammars/shss.json; do yarn run jsonlint -q $file; done",
     "lint:markdown": "yarn run markdownlint *.md"
   }
 }
