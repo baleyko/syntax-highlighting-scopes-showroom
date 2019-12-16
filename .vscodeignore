@@ -1,6 +1,10 @@
 .github/
+.vscode/**
+.vscode-test/**
 .gitignore
 .editorconfig
+bin/
+tests/
 yarn.lock
 grammars/shss.cson
 grammars/shss.sublime-syntax

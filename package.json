@@ -52,6 +52,11 @@
     "vsce": "^1.67.0"
   },
   "scripts": {
+    "rebuild": "yarn run build:json && yarn run build:sublime-syntax && yarn run build:spec && yarn run build:syntax_test",
+    "build:json": "cat example.shss | bin/to-json > grammars/shss.json",
+    "build:sublime-syntax": "cat example.shss | bin/to-sublime-syntax > grammars/shss.sublime-syntax",
+    "build:spec": "cat example.shss | bin/to-spec > tests/shss-spec.js",
+    "build:syntax_test": "cat example.shss | bin/to-syntax_test > tests/syntax_test_shss.shss",
     "ci:lint": "yarn run lint:yaml && yarn run lint:json && yarn run markdownlint *.md",
     "lint:yaml": "yarn run yamllint grammars/shss.sublime-syntax",
     "lint:json": "for file in package.json messages.json language-configuration.json .vscode/launch.json grammars/shss.json; do yarn run jsonlint -q $file; done",

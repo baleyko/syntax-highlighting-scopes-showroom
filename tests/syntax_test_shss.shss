@@ -1,0 +1,352 @@
+// SYNTAX TEST "Packages/syntax-highlighting-scopes-showroom/grammars/shss.sublime-syntax"
+
+# For information on how this file is used, see
+# https://www.sublimetext.com/docs/3/syntax.html#testing
+# Run tests by pressing `ctrl+shift+b`, i.e. run the `build` command
+
+comment.line
+// <- comment.line
+comment.block
+// <- comment.block
+comment.block.documentation
+// <- comment.block.documentation
+punctuation.definition.comment
+// <- punctuation.definition.comment
+meta.toc-list
+// <- meta.toc-list
+constant.numeric
+// <- constant.numeric
+constant.numeric.integer
+// <- constant.numeric.integer
+constant.numeric.integer.binary
+// <- constant.numeric.integer.binary
+constant.numeric.integer.octal
+// <- constant.numeric.integer.octal
+constant.numeric.integer.decimal
+// <- constant.numeric.integer.decimal
+constant.numeric.integer.hexadecimal
+// <- constant.numeric.integer.hexadecimal
+constant.numeric.integer.other
+// <- constant.numeric.integer.other
+constant.numeric.float
+// <- constant.numeric.float
+constant.numeric.float.binary
+// <- constant.numeric.float.binary
+constant.numeric.float.octal
+// <- constant.numeric.float.octal
+constant.numeric.float.decimal
+// <- constant.numeric.float.decimal
+constant.numeric.float.hexadecimal
+// <- constant.numeric.float.hexadecimal
+constant.numeric.float.other
+// <- constant.numeric.float.other
+constant.numeric.complex
+// <- constant.numeric.complex
+constant.numeric.complex.real
+// <- constant.numeric.complex.real
+constant.numeric.complex.imaginary
+// <- constant.numeric.complex.imaginary
+constant.language
+// <- constant.language
+constant.character.escape
+// <- constant.character.escape
+constant.other.placeholder
+// <- constant.other.placeholder
+constant.other
+// <- constant.other
+entity.name.tag
+// <- entity.name.tag
+entity.other.attribute-name
+// <- entity.other.attribute-name
+entity.name.type.class
+// <- entity.name.type.class
+entity.name.type.struct
+// <- entity.name.type.struct
+entity.name.class
+// <- entity.name.class
+entity.name.struct
+// <- entity.name.struct
+entity.name.enum
+// <- entity.name.enum
+entity.name.union
+// <- entity.name.union
+entity.name.trait
+// <- entity.name.trait
+entity.name.interface
+// <- entity.name.interface
+entity.name.impl
+// <- entity.name.impl
+entity.name.type
+// <- entity.name.type
+entity.name.class.forward-decl
+// <- entity.name.class.forward-decl
+entity.other.inherited-class
+// <- entity.other.inherited-class
+entity.name.function
+// <- entity.name.function
+entity.name.function.constructor
+// <- entity.name.function.constructor
+entity.name.function.destructor
+// <- entity.name.function.destructor
+entity.name.namespace
+// <- entity.name.namespace
+entity.name.constant
+// <- entity.name.constant
+entity.name.label
+// <- entity.name.label
+entity.name.section
+// <- entity.name.section
+entity.name
+// <- entity.name
+invalid.illegal
+// <- invalid.illegal
+invalid.deprecated
+// <- invalid.deprecated
+keyword.control
+// <- keyword.control
+keyword.control.conditional
+// <- keyword.control.conditional
+keyword.control.import
+// <- keyword.control.import
+punctuation.definition.keyword
+// <- punctuation.definition.keyword
+keyword.other.type
+// <- keyword.other.type
+keyword.other
+// <- keyword.other
+keyword.operator
+// <- keyword.operator
+keyword.operator.assignment
+// <- keyword.operator.assignment
+keyword.operator.arithmetic
+// <- keyword.operator.arithmetic
+keyword.operator.bitwise
+// <- keyword.operator.bitwise
+keyword.operator.logical
+// <- keyword.operator.logical
+keyword.operator.word
+// <- keyword.operator.word
+markup.heading
+// <- markup.heading
+markup.list.unnumbered
+// <- markup.list.unnumbered
+markup.list.numbered
+// <- markup.list.numbered
+markup.bold
+// <- markup.bold
+markup.italic
+// <- markup.italic
+markup.underline
+// <- markup.underline
+markup.inserted
+// <- markup.inserted
+markup.deleted
+// <- markup.deleted
+markup.underline.link
+// <- markup.underline.link
+markup.quote
+// <- markup.quote
+markup.raw.inline
+// <- markup.raw.inline
+markup.raw.block
+// <- markup.raw.block
+markup.other
+// <- markup.other
+meta.class
+// <- meta.class
+meta.struct
+// <- meta.struct
+meta.enum
+// <- meta.enum
+meta.union
+// <- meta.union
+meta.trait
+// <- meta.trait
+meta.interface
+// <- meta.interface
+meta.impl
+// <- meta.impl
+meta.type
+// <- meta.type
+meta.function
+// <- meta.function
+meta.function.parameters
+// <- meta.function.parameters
+meta.function
+// <- meta.function
+meta.function.parameters
+// <- meta.function.parameters
+meta.function.return-type
+// <- meta.function.return-type
+meta.namespace
+// <- meta.namespace
+meta.preprocessor
+// <- meta.preprocessor
+meta.annotation
+// <- meta.annotation
+meta.annotation
+// <- meta.annotation
+meta.annotation.identifier
+// <- meta.annotation.identifier
+meta.annotation.parameters
+// <- meta.annotation.parameters
+punctuation.definition.annotation
+// <- punctuation.definition.annotation
+meta.path
+// <- meta.path
+support.function
+// <- support.function
+meta.function-call
+// <- meta.function-call
+meta.block
+// <- meta.block
+punctuation.section.block.begin
+// <- punctuation.section.block.begin
+punctuation.section.block.end
+// <- punctuation.section.block.end
+meta.braces
+// <- meta.braces
+punctuation.section.braces.begin
+// <- punctuation.section.braces.begin
+punctuation.section.braces.end
+// <- punctuation.section.braces.end
+meta.group
+// <- meta.group
+punctuation.section.group.begin
+// <- punctuation.section.group.begin
+punctuation.section.group.end
+// <- punctuation.section.group.end
+meta.parens
+// <- meta.parens
+punctuation.section.parens.begin
+// <- punctuation.section.parens.begin
+punctuation.section.parens.end
+// <- punctuation.section.parens.end
+meta.brackets
+// <- meta.brackets
+punctuation.section.brackets.begin
+// <- punctuation.section.brackets.begin
+punctuation.section.brackets.end
+// <- punctuation.section.brackets.end
+meta.generic
+// <- meta.generic
+punctuation.definition.generic.begin
+// <- punctuation.definition.generic.begin
+punctuation.definition.generic.end
+// <- punctuation.definition.generic.end
+meta.tag
+// <- meta.tag
+meta.paragraph
+// <- meta.paragraph
+punctuation.separator
+// <- punctuation.separator
+punctuation.terminator
+// <- punctuation.terminator
+punctuation.separator.continuation
+// <- punctuation.separator.continuation
+punctuation.accessor
+// <- punctuation.accessor
+keyword.declaration
+// <- keyword.declaration
+storage.modifier
+// <- storage.modifier
+keyword.declaration.function
+// <- keyword.declaration.function
+keyword.declaration.class
+// <- keyword.declaration.class
+keyword.declaration.struct
+// <- keyword.declaration.struct
+keyword.declaration.enum
+// <- keyword.declaration.enum
+keyword.declaration.union
+// <- keyword.declaration.union
+keyword.declaration.trait
+// <- keyword.declaration.trait
+keyword.declaration.interface
+// <- keyword.declaration.interface
+keyword.declaration.impl
+// <- keyword.declaration.impl
+keyword.declaration.type
+// <- keyword.declaration.type
+storage.type
+// <- storage.type
+storage.type.function
+// <- storage.type.function
+storage.type.class
+// <- storage.type.class
+storage.type.struct
+// <- storage.type.struct
+storage.type.enum
+// <- storage.type.enum
+storage.type.union
+// <- storage.type.union
+storage.type.trait
+// <- storage.type.trait
+storage.type.interface
+// <- storage.type.interface
+storage.type.impl
+// <- storage.type.impl
+support.constant.ext
+// <- support.constant.ext
+meta.string
+// <- meta.string
+punctuation.definition.string.begin
+// <- punctuation.definition.string.begin
+punctuation.definition.string.end
+// <- punctuation.definition.string.end
+string.quoted.single
+// <- string.quoted.single
+string.quoted.double
+// <- string.quoted.double
+string.quoted.triple
+// <- string.quoted.triple
+string.quoted.other
+// <- string.quoted.other
+string.unquoted
+// <- string.unquoted
+string.regexp
+// <- string.regexp
+string
+// <- string
+meta.interpolation
+// <- meta.interpolation
+punctuation.section.interpolation.begin
+// <- punctuation.section.interpolation.begin
+punctuation.section.interpolation.end
+// <- punctuation.section.interpolation.end
+source.language-suffix.embedded
+// <- source.language-suffix.embedded
+support.constant
+// <- support.constant
+support.module
+// <- support.module
+support.type
+// <- support.type
+support.class
+// <- support.class
+text.html.basic
+// <- text.html.basic
+text.html.markdown
+// <- text.html.markdown
+text.html
+// <- text.html
+text.xml
+// <- text.xml
+punctuation.definition.variable
+// <- punctuation.definition.variable
+variable.other.constant
+// <- variable.other.constant
+variable.annotation
+// <- variable.annotation
+variable.function
+// <- variable.function
+variable.other
+// <- variable.other
+variable.other.readwrite
+// <- variable.other.readwrite
+variable.language
+// <- variable.language
+variable.parameter
+// <- variable.parameter
+variable.other.member
+// <- variable.other.member
