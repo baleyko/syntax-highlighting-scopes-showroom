@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+const readline = require('readline');
+const tests = [];
+const readInterface = readline.createInterface({
+  input: process.stdin,
+  console: false
+});
+
+readInterface.on('line', scope => {
+  tests.push(
+`
+  it('tokenizes block comments', () => {
+    const { tokens } = grammar.tokenizeLine('${scope}');
+    expect(tokens[0]).toEqual({ value: '${scope}', scopes: ['source.shss', '${scope}'] });
+  });`);
+});
+readInterface.on('close', () =>
+  process.stdout.write(
+`describe('Syntax Highlighting Scopes Showroom grammar', () => {
+  let grammar = null;
+
+  beforeEach(() =>
+    atom.packages
+      .activatePackage('syntax-highlighting-scopes-showroom')
+      .then(() => {
+        grammar = atom.grammars.grammarForScopeName('source.shss');
+      })
+  );
+
+  it('parses the grammar', () => {
+    expect(grammar).toBeTruthy();
+    expect(grammar.scopeName).toBe('source.shss');
+  });
+${tests.join('\n')}
+});
+`
+    )
+);

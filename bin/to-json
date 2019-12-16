@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+const readline = require('readline');
+const output = {
+  'name': 'Syntax Highlighting Scopes Showroom',
+  'fileTypes': [
+    'shss'
+  ],
+  'scopeName': 'source.shss',
+  'patterns': []
+};
+const readInterface = readline.createInterface({
+  input: process.stdin,
+  console: false
+});
+
+readInterface.on('line', scope => {
+  output.patterns.push({
+    'match': scope,
+    'name': scope
+  });
+});
+readInterface.on('close', () => {
+  process.stdout.write(JSON.stringify(output, null, '  '));
+  process.stdout.write('\n');
+});

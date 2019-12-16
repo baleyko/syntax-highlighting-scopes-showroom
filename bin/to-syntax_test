@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+const readline = require('readline');
+const tests = [];
+const readInterface = readline.createInterface({
+  input: process.stdin,
+  console: false
+});
+
+readInterface.on('line', scope => {
+  tests.push(
+`${scope}
+// <- ${scope}`
+  );
+});
+readInterface.on('close', () =>
+  process.stdout.write(
+`// SYNTAX TEST "Packages/syntax-highlighting-scopes-showroom/grammars/shss.sublime-syntax"
+
+# For information on how this file is used, see
+# https://www.sublimetext.com/docs/3/syntax.html#testing
+# Run tests by pressing \`ctrl+shift+b\`, i.e. run the \`build\` command
+
+${tests.join('\n')}
+`
+    )
+);
