@@ -2,9 +2,14 @@
 
 [![Build](https://github.com/baleyko/syntax-highlighting-scopes-showroom/workflows/Lint/badge.svg)][GH-LINT-WORKFLOW]
 [![GitHub release](https://img.shields.io/github/release/baleyko/syntax-highlighting-scopes-showroom.svg)][GH-RELEASES]
+
 [![Version](https://img.shields.io/apm/v/syntax-highlighting-scopes-showroom)][APM-VERSION]
 [![Installs](https://img.shields.io/apm/dm/syntax-highlighting-scopes-showroom)][APM-INSTALLS]
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg)][MIT]
+
+[![Version][VSCODE-VERSION]](VSCODE-LINK)
+[![Installs][VSCODE-INSTALLS]](VSCODE-LINK)
+[![Rating][VSCODE-RATING]](VSCODE-LINK)
 
 This package tries to show all the syntax scopes just to help you do your
 syntax highlighting packages development.
@@ -31,3 +36,7 @@ You can find this package in corresponding package managment tool for:
 [GH-LINT-WORKFLOW]: <https://github.com/baleyko/syntax-highlighting-scopes-showroom/actions?query=workflow%3ALint>
 [APM-VERSION]: <https://atom.io/packages/syntax-highlighting-scopes-showroom>
 [APM-INSTALLS]: <https://atom.io/packages/syntax-highlighting-scopes-showroom>
+[VSCODE-LINK]: <https://marketplace.visualstudio.com/items?itemName=baleiko.syntax-highlighting-scopes-showroom>
+[VSCODE-VERSION]: <https://vsmarketplacebadge.apphb.com/version/baleiko.syntax-highlighting-scopes-showroom.svg>
+[VSCODE-INSTALLS]: <https://vsmarketplacebadge.apphb.com/installs-short/baleiko.syntax-highlighting-scopes-showroom.svg>
+[VSCODE-RATING]: <https://vsmarketplacebadge.apphb.com/rating-short/baleiko.syntax-highlighting-scopes-showroom.svg>
