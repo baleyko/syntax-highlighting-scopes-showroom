@@ -7,7 +7,7 @@ syntax highlighting packages development.
 
 ## License
 
-[MIT License](MIT)   - see the [LICENSE][LICENSE.md] for more details.
+[MIT License][MIT]   - see the [LICENSE][LICENSE.md] for more details.
 
 [MIT]: <https://opensource.org/licenses/MIT>
 [LICENSE.md]: <https://github.com/baleyko/vscode-b-syntax-highlighting/blob/master/LICENSE.md>
