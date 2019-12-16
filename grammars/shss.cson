@@ -605,8 +605,8 @@ patterns: [
     name: 'punctuation.section.interpolation.end'
   }
   {
-    match: 'source.<em>language-suffix</em>.embedded'
-    name: 'source.<em>language-suffix</em>.embedded'
+    match: 'source.language-suffix.embedded'
+    name: 'source.language-suffix.embedded'
   }
   {
     match: 'support.constant'
