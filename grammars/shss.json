@@ -6,6 +6,26 @@
   "scopeName": "source.shss",
   "patterns": [
     {
+      "match": "comment.line.double-slash",
+      "name": "comment.line.double-slash"
+    },
+    {
+      "match": "comment.line.double-dash",
+      "name": "comment.line.double-dash"
+    },
+    {
+      "match": "comment.line.number-sign",
+      "name": "comment.line.number-sign"
+    },
+    {
+      "match": "comment.line.percentage",
+      "name": "comment.line.percentage"
+    },
+    {
+      "match": "comment.line.shebang",
+      "name": "comment.line.shebang"
+    },
+    {
       "match": "comment.line",
       "name": "comment.line"
     },
@@ -46,6 +66,10 @@
       "name": "constant.numeric.integer"
     },
     {
+      "match": "constant.numeric.exponential",
+      "name": "constant.numeric.exponential"
+    },
+    {
       "match": "constant.numeric.float.binary",
       "name": "constant.numeric.float.binary"
     },
@@ -82,20 +106,96 @@
       "name": "constant.numeric.complex"
     },
     {
+      "match": "constant.numeric.index",
+      "name": "constant.numeric.index"
+    },
+    {
+      "match": "constant.numeric.decimal.with-thousand-separators",
+      "name": "constant.numeric.decimal.with-thousand-separators"
+    },
+    {
+      "match": "constant.numeric.decimal",
+      "name": "constant.numeric.decimal"
+    },
+    {
+      "match": "constant.numeric.hex",
+      "name": "constant.numeric.hex"
+    },
+    {
+      "match": "constant.numeric.binary",
+      "name": "constant.numeric.binary"
+    },
+    {
+      "match": "constant.numeric.octal",
+      "name": "constant.numeric.octal"
+    },
+    {
       "match": "constant.numeric",
       "name": "constant.numeric"
+    },
+    {
+      "match": "constant.language.pragma.module",
+      "name": "constant.language.pragma.module"
+    },
+    {
+      "match": "constant.language.pragma",
+      "name": "constant.language.pragma"
+    },
+    {
+      "match": "constant.language.boolean",
+      "name": "constant.language.boolean"
     },
     {
       "match": "constant.language",
       "name": "constant.language"
     },
     {
+      "match": "constant.character.escape.octal",
+      "name": "constant.character.escape.octal"
+    },
+    {
+      "match": "constant.character.escape.hex",
+      "name": "constant.character.escape.hex"
+    },
+    {
+      "match": "constant.character.escape.unicode",
+      "name": "constant.character.escape.unicode"
+    },
+    {
+      "match": "constant.character.escape.regex",
+      "name": "constant.character.escape.regex"
+    },
+    {
       "match": "constant.character.escape",
       "name": "constant.character.escape"
     },
     {
+      "match": "constant.character",
+      "name": "constant.character"
+    },
+    {
+      "match": "constant.other.key",
+      "name": "constant.other.key"
+    },
+    {
+      "match": "constant.other.bareword",
+      "name": "constant.other.bareword"
+    },
+    {
+      "match": "constant.other.class",
+      "name": "constant.other.class"
+    },
+    {
       "match": "constant.other.placeholder",
       "name": "constant.other.placeholder"
+    },
+    {
+      "match": "constant.other.version.literal",
+      "name": "constant.other.version.literal"
+    },
+    {
+      "match": "constant.other.version",
+      "name": "constant.other.version"
     },
     {
       "match": "constant.other",
@@ -118,12 +218,28 @@
       "name": "entity.other"
     },
     {
+      "match": "entity.name.type.namespace",
+      "name": "entity.name.type.namespace"
+    },
+    {
+      "match": "entity.name.type.trait",
+      "name": "entity.name.type.trait"
+    },
+    {
+      "match": "entity.name.type.interface",
+      "name": "entity.name.type.interface"
+    },
+    {
       "match": "entity.name.type.class",
       "name": "entity.name.type.class"
     },
     {
       "match": "entity.name.type.struct",
       "name": "entity.name.type.struct"
+    },
+    {
+      "match": "entity.name.type.instance",
+      "name": "entity.name.type.instance"
     },
     {
       "match": "entity.name.type",
@@ -178,6 +294,14 @@
       "name": "entity.name.function"
     },
     {
+      "match": "entity.name.goto-label",
+      "name": "entity.name.goto-label"
+    },
+    {
+      "match": "entity.name.function",
+      "name": "entity.name.function"
+    },
+    {
       "match": "entity.name.namespace",
       "name": "entity.name.namespace"
     },
@@ -204,6 +328,18 @@
     {
       "match": "entity",
       "name": "entity"
+    },
+    {
+      "match": "invalid.illegal.syntax.pragma",
+      "name": "invalid.illegal.syntax.pragma"
+    },
+    {
+      "match": "invalid.illegal.syntax",
+      "name": "invalid.illegal.syntax"
+    },
+    {
+      "match": "invalid.illegal.trailing-whitespace",
+      "name": "invalid.illegal.trailing-whitespace"
     },
     {
       "match": "invalid.illegal.stray-bracket-end",
@@ -258,6 +394,10 @@
       "name": "markup.deleted"
     },
     {
+      "match": "markup.underline.link.hyperlink",
+      "name": "markup.underline.link.hyperlink"
+    },
+    {
       "match": "markup.underline.link",
       "name": "markup.underline.link"
     },
@@ -288,6 +428,14 @@
     {
       "match": "markup",
       "name": "markup"
+    },
+    {
+      "match": "meta.method-call.static",
+      "name": "meta.method-call.static"
+    },
+    {
+      "match": "meta.method-call",
+      "name": "meta.method-call"
     },
     {
       "match": "meta.toc-list",
@@ -342,6 +490,10 @@
       "name": "meta.block"
     },
     {
+      "match": "meta.embedded",
+      "name": "meta.embedded"
+    },
+    {
       "match": "meta.braces",
       "name": "meta.braces"
     },
@@ -366,8 +518,24 @@
       "name": "meta.tag"
     },
     {
+      "match": "meta.leading-tabs",
+      "name": "meta.leading-tabs"
+    },
+    {
+      "match": "meta.odd-tab",
+      "name": "meta.odd-tab"
+    },
+    {
+      "match": "meta.even-tab",
+      "name": "meta.even-tab"
+    },
+    {
       "match": "meta.paragraph",
       "name": "meta.paragraph"
+    },
+    {
+      "match": "meta.diagnostics.pragma",
+      "name": "meta.diagnostics.pragma"
     },
     {
       "match": "meta.function.parameters",
@@ -382,12 +550,20 @@
       "name": "meta.function.return-type"
     },
     {
+      "match": "meta.function.signature",
+      "name": "meta.function.signature"
+    },
+    {
       "match": "meta.function",
       "name": "meta.function"
     },
     {
       "match": "meta.namespace",
       "name": "meta.namespace"
+    },
+    {
+      "match": "meta.preprocessor.pragma",
+      "name": "meta.preprocessor.pragma"
     },
     {
       "match": "meta.preprocessor.include",
@@ -418,12 +594,76 @@
       "name": "meta"
     },
     {
+      "match": "punctuation.whitespace.comment.leading",
+      "name": "punctuation.whitespace.comment.leading"
+    },
+    {
+      "match": "punctuation.whitespace.comment",
+      "name": "punctuation.whitespace.comment"
+    },
+    {
+      "match": "punctuation.whitespace",
+      "name": "punctuation.whitespace"
+    },
+    {
+      "match": "punctuation.terminator.semicolon",
+      "name": "punctuation.terminator.semicolon"
+    },
+    {
+      "match": "punctuation.terminator.statement",
+      "name": "punctuation.terminator.statement"
+    },
+    {
+      "match": "punctuation.terminator.expression",
+      "name": "punctuation.terminator.expression"
+    },
+    {
       "match": "punctuation.terminator",
       "name": "punctuation.terminator"
     },
     {
+      "match": "punctuation.delimiter.decimal.period",
+      "name": "punctuation.delimiter.decimal.period"
+    },
+    {
+      "match": "punctuation.separator.comma",
+      "name": "punctuation.separator.comma"
+    },
+    {
+      "match": "punctuation.separator.colon",
+      "name": "punctuation.separator.colon"
+    },
+    {
+      "match": "punctuation.separator.arrow",
+      "name": "punctuation.separator.arrow"
+    },
+    {
+      "match": "punctuation.separator.key-value",
+      "name": "punctuation.separator.key-value"
+    },
+    {
+      "match": "punctuation.separator.inheritance",
+      "name": "punctuation.separator.inheritance"
+    },
+    {
+      "match": "punctuation.separator.delimiter",
+      "name": "punctuation.separator.delimiter"
+    },
+    {
+      "match": "punctuation.separator.classes",
+      "name": "punctuation.separator.classes"
+    },
+    {
       "match": "punctuation.separator.continuation",
       "name": "punctuation.separator.continuation"
+    },
+    {
+      "match": "punctuation.separator.decimal.period",
+      "name": "punctuation.separator.decimal.period"
+    },
+    {
+      "match": "punctuation.separator.decimal",
+      "name": "punctuation.separator.decimal"
     },
     {
       "match": "punctuation.separator",
@@ -432,6 +672,30 @@
     {
       "match": "punctuation.accessor",
       "name": "punctuation.accessor"
+    },
+    {
+      "match": "punctuation.section.embedded.begin",
+      "name": "punctuation.section.embedded.begin"
+    },
+    {
+      "match": "punctuation.section.embedded.end",
+      "name": "punctuation.section.embedded.end"
+    },
+    {
+      "match": "punctuation.section.embedded",
+      "name": "punctuation.section.embedded"
+    },
+    {
+      "match": "punctuation.section.array.begin",
+      "name": "punctuation.section.array.begin"
+    },
+    {
+      "match": "punctuation.section.array.end",
+      "name": "punctuation.section.array.end"
+    },
+    {
+      "match": "punctuation.section.array",
+      "name": "punctuation.section.array"
     },
     {
       "match": "punctuation.section.block.begin",
@@ -506,8 +770,120 @@
       "name": "punctuation.section.interpolation"
     },
     {
+      "match": "punctuation.section.brace.curly.bracket.begin",
+      "name": "punctuation.section.brace.curly.bracket.begin"
+    },
+    {
+      "match": "punctuation.section.brace.curly.bracket.end",
+      "name": "punctuation.section.brace.curly.bracket.end"
+    },
+    {
+      "match": "punctuation.section.brace.curly.bracket",
+      "name": "punctuation.section.brace.curly.bracket"
+    },
+    {
+      "match": "punctuation.section.brace.curly",
+      "name": "punctuation.section.brace.curly"
+    },
+    {
+      "match": "punctuation.section.brace",
+      "name": "punctuation.section.brace"
+    },
+    {
+      "match": "punctuation.section.square.bracket.begin",
+      "name": "punctuation.section.square.bracket.begin"
+    },
+    {
+      "match": "punctuation.section.square.bracket.end",
+      "name": "punctuation.section.square.bracket.end"
+    },
+    {
+      "match": "punctuation.section.square.bracket",
+      "name": "punctuation.section.square.bracket"
+    },
+    {
+      "match": "punctuation.section.square",
+      "name": "punctuation.section.square"
+    },
+    {
+      "match": "punctuation.section.scope.begin",
+      "name": "punctuation.section.scope.begin"
+    },
+    {
+      "match": "punctuation.section.scope.end",
+      "name": "punctuation.section.scope.end"
+    },
+    {
+      "match": "punctuation.section.scope",
+      "name": "punctuation.section.scope"
+    },
+    {
+      "match": "punctuation.section.parenthesis.round.bracket.begin",
+      "name": "punctuation.section.parenthesis.round.bracket.begin"
+    },
+    {
+      "match": "punctuation.section.parenthesis.round.bracket.end",
+      "name": "punctuation.section.parenthesis.round.bracket.end"
+    },
+    {
+      "match": "punctuation.section.parenthesis.round.bracket",
+      "name": "punctuation.section.parenthesis.round.bracket"
+    },
+    {
+      "match": "punctuation.section.parenthesis.round",
+      "name": "punctuation.section.parenthesis.round"
+    },
+    {
+      "match": "punctuation.section.parenthesis",
+      "name": "punctuation.section.parenthesis"
+    },
+    {
+      "match": "punctuation.section.signature.begin.bracket.curly",
+      "name": "punctuation.section.signature.begin.bracket.curly"
+    },
+    {
+      "match": "punctuation.section.signature.begin.bracket",
+      "name": "punctuation.section.signature.begin.bracket"
+    },
+    {
+      "match": "punctuation.section.signature.begin",
+      "name": "punctuation.section.signature.begin"
+    },
+    {
+      "match": "punctuation.section.signature",
+      "name": "punctuation.section.signature"
+    },
+    {
       "match": "punctuation.section",
       "name": "punctuation.section"
+    },
+    {
+      "match": "punctuation.definition.heredoc.begin",
+      "name": "punctuation.definition.heredoc.begin"
+    },
+    {
+      "match": "punctuation.definition.heredoc.end",
+      "name": "punctuation.definition.heredoc.end"
+    },
+    {
+      "match": "punctuation.definition.heredoc",
+      "name": "punctuation.definition.heredoc"
+    },
+    {
+      "match": "punctuation.definition.array.begin.bracket.round",
+      "name": "punctuation.definition.array.begin.bracket.round"
+    },
+    {
+      "match": "punctuation.definition.array.end.bracket.round",
+      "name": "punctuation.definition.array.end.bracket.round"
+    },
+    {
+      "match": "punctuation.definition.constant",
+      "name": "punctuation.definition.constant"
+    },
+    {
+      "match": "punctuation.definition.arbitrary-repetition",
+      "name": "punctuation.definition.arbitrary-repetition"
     },
     {
       "match": "punctuation.definition.tag.begin",
@@ -582,6 +958,14 @@
       "name": "punctuation.definition.generic"
     },
     {
+      "match": "punctuation.definition.variable.begin",
+      "name": "punctuation.definition.variable.begin"
+    },
+    {
+      "match": "punctuation.definition.variable.end",
+      "name": "punctuation.definition.variable.end"
+    },
+    {
       "match": "punctuation.definition.variable",
       "name": "punctuation.definition.variable"
     },
@@ -590,8 +974,36 @@
       "name": "punctuation.definition"
     },
     {
+      "match": "punctuation.unmatched.brace.curly.bracket.begin",
+      "name": "punctuation.unmatched.brace.curly.bracket.begin"
+    },
+    {
+      "match": "punctuation.unmatched.brace.curly.bracket.end",
+      "name": "punctuation.unmatched.brace.curly.bracket.end"
+    },
+    {
+      "match": "punctuation.unmatched.brace.curly.bracket",
+      "name": "punctuation.unmatched.brace.curly.bracket"
+    },
+    {
+      "match": "punctuation.unmatched.brace.curly",
+      "name": "punctuation.unmatched.brace.curly"
+    },
+    {
+      "match": "punctuation.unmatched.brace",
+      "name": "punctuation.unmatched.brace"
+    },
+    {
+      "match": "punctuation.unmatched",
+      "name": "punctuation.unmatched"
+    },
+    {
       "match": "punctuation",
       "name": "punctuation"
+    },
+    {
+      "match": "storage.modifier.extends",
+      "name": "storage.modifier.extends"
     },
     {
       "match": "storage.modifier.static",
@@ -618,8 +1030,20 @@
       "name": "storage.modifier.protected"
     },
     {
+      "match": "storage.modifier.reference",
+      "name": "storage.modifier.reference"
+    },
+    {
       "match": "storage.modifier",
       "name": "storage.modifier"
+    },
+    {
+      "match": "storage.type.signature.method",
+      "name": "storage.type.signature.method"
+    },
+    {
+      "match": "storage.type.signature",
+      "name": "storage.type.signature"
     },
     {
       "match": "storage.type.function",
@@ -710,6 +1134,126 @@
       "name": "keyword.declaration"
     },
     {
+      "match": "keyword.operator.ellipsis.placeholder",
+      "name": "keyword.operator.ellipsis.placeholder"
+    },
+    {
+      "match": "keyword.operator.ellipsis",
+      "name": "keyword.operator.ellipsis"
+    },
+    {
+      "match": "keyword.operator.readline",
+      "name": "keyword.operator.readline"
+    },
+    {
+      "match": "keyword.operator.filetest",
+      "name": "keyword.operator.filetest"
+    },
+    {
+      "match": "keyword.operator.comparison.stringwise",
+      "name": "keyword.operator.comparison.stringwise"
+    },
+    {
+      "match": "keyword.operator.comparison",
+      "name": "keyword.operator.comparison"
+    },
+    {
+      "match": "keyword.operator.pragma.flag",
+      "name": "keyword.operator.pragma.flag"
+    },
+    {
+      "match": "keyword.operator.pragma",
+      "name": "keyword.operator.pragma"
+    },
+    {
+      "match": "keyword.operator.repetition",
+      "name": "keyword.operator.repetition"
+    },
+    {
+      "match": "keyword.operator.concatenation",
+      "name": "keyword.operator.concatenation"
+    },
+    {
+      "match": "keyword.operator.range",
+      "name": "keyword.operator.range"
+    },
+    {
+      "match": "keyword.operator.assignement.compound.bitwise",
+      "name": "keyword.operator.assignement.compound.bitwise"
+    },
+    {
+      "match": "keyword.operator.assignement.compound.stringwise",
+      "name": "keyword.operator.assignement.compound.stringwise"
+    },
+    {
+      "match": "keyword.operator.assignement.compound",
+      "name": "keyword.operator.assignement.compound"
+    },
+    {
+      "match": "keyword.operator.assignement.conditional",
+      "name": "keyword.operator.assignement.conditional"
+    },
+    {
+      "match": "keyword.operator.assignement",
+      "name": "keyword.operator.assignement"
+    },
+    {
+      "match": "keyword.operator.bitwise",
+      "name": "keyword.operator.bitwise"
+    },
+    {
+      "match": "keyword.operator.decrement",
+      "name": "keyword.operator.decrement"
+    },
+    {
+      "match": "keyword.operator.increment",
+      "name": "keyword.operator.increment"
+    },
+    {
+      "match": "keyword.operator.logical.c-style",
+      "name": "keyword.operator.logical.c-style"
+    },
+    {
+      "match": "keyword.operator.logical.defined-or",
+      "name": "keyword.operator.logical.defined-or"
+    },
+    {
+      "match": "keyword.operator.logical",
+      "name": "keyword.operator.logical"
+    },
+    {
+      "match": "keyword.operator.stringwise",
+      "name": "keyword.operator.stringwise"
+    },
+    {
+      "match": "keyword.operator.arithmetic",
+      "name": "keyword.operator.arithmetic"
+    },
+    {
+      "match": "keyword.operator.ternary",
+      "name": "keyword.operator.ternary"
+    },
+    {
+      "match": "keyword.operator.heredoc",
+      "name": "keyword.operator.heredoc"
+    },
+    {
+      "match": "keyword.operator.null-coalescing",
+      "name": "keyword.operator.null-coalescing"
+    },
+    {
+      "match": "keyword.operator.interface",
+      "name": "keyword.operator.interface"
+    },
+    {
+      "match": "keyword.operator.class",
+      "name": "keyword.operator.class"
+    },
+    {
+      "match": "keyword.operator.nullable-type",
+      "name": "keyword.operator.nullable-type"
+    },
+    {
       "match": "keyword.operator.assignment",
       "name": "keyword.operator.assignment"
     },
@@ -730,20 +1274,68 @@
       "name": "keyword.operator.word"
     },
     {
+      "match": "keyword.operator.regexp",
+      "name": "keyword.operator.regexp"
+    },
+    {
       "match": "keyword.operator",
       "name": "keyword.operator"
+    },
+    {
+      "match": "keyword.control.directive.pragma",
+      "name": "keyword.control.directive.pragma"
+    },
+    {
+      "match": "keyword.control.directive",
+      "name": "keyword.control.directive"
+    },
+    {
+      "match": "keyword.control.diagnostics",
+      "name": "keyword.control.diagnostics"
+    },
+    {
+      "match": "keyword.control.regexp-option",
+      "name": "keyword.control.regexp-option"
     },
     {
       "match": "keyword.control.conditional",
       "name": "keyword.control.conditional"
     },
     {
+      "match": "keyword.control.anchor",
+      "name": "keyword.control.anchor"
+    },
+    {
       "match": "keyword.control.import",
       "name": "keyword.control.import"
     },
     {
+      "match": "keyword.control.continue",
+      "name": "keyword.control.continue"
+    },
+    {
+      "match": "keyword.control.while",
+      "name": "keyword.control.while"
+    },
+    {
+      "match": "keyword.control.return",
+      "name": "keyword.control.return"
+    },
+    {
       "match": "keyword.control",
       "name": "keyword.control"
+    },
+    {
+      "match": "keyword.other.namespace",
+      "name": "keyword.other.namespace"
+    },
+    {
+      "match": "keyword.other.class",
+      "name": "keyword.other.class"
+    },
+    {
+      "match": "keyword.other.interface",
+      "name": "keyword.other.interface"
     },
     {
       "match": "keyword.other.type",
@@ -756,6 +1348,70 @@
     {
       "match": "keyword",
       "name": "keyword"
+    },
+    {
+      "match": "source.language-suffix.embedded",
+      "name": "source.language-suffix.embedded"
+    },
+    {
+      "match": "source.language-suffix",
+      "name": "source.language-suffix"
+    },
+    {
+      "match": "source",
+      "name": "source"
+    },
+    {
+      "match": "string.interpolated.qx-paren",
+      "name": "string.interpolated.qx-paren"
+    },
+    {
+      "match": "string.interpolated.qx-brace",
+      "name": "string.interpolated.qx-brace"
+    },
+    {
+      "match": "string.interpolated.qx-bracket",
+      "name": "string.interpolated.qx-bracket"
+    },
+    {
+      "match": "string.interpolated.qx-ltgt",
+      "name": "string.interpolated.qx-ltgt"
+    },
+    {
+      "match": "string.quoted.other.qq-ltgt",
+      "name": "string.quoted.other.qq-ltgt"
+    },
+    {
+      "match": "string.quoted.other.qq-paren",
+      "name": "string.quoted.other.qq-paren"
+    },
+    {
+      "match": "string.quoted.other.qq-brace",
+      "name": "string.quoted.other.qq-brace"
+    },
+    {
+      "match": "string.quoted.other.qq-bracket",
+      "name": "string.quoted.other.qq-bracket"
+    },
+    {
+      "match": "string.quoted.other.q-paren",
+      "name": "string.quoted.other.q-paren"
+    },
+    {
+      "match": "string.quoted.other.q-brace",
+      "name": "string.quoted.other.q-brace"
+    },
+    {
+      "match": "string.quoted.other.q-bracket",
+      "name": "string.quoted.other.q-bracket"
+    },
+    {
+      "match": "string.quoted.other.q-ltgt",
+      "name": "string.quoted.other.q-ltgt"
+    },
+    {
+      "match": "string.quoted.other",
+      "name": "string.quoted.other"
     },
     {
       "match": "string.quoted.single",
@@ -774,12 +1430,108 @@
       "name": "string.quoted.other"
     },
     {
+      "match": "string.quoted",
+      "name": "string.quoted"
+    },
+    {
+      "match": "string.unquoted.heredoc.backtick",
+      "name": "string.unquoted.heredoc.backtick"
+    },
+    {
+      "match": "string.unquoted.heredoc.quote",
+      "name": "string.unquoted.heredoc.quote"
+    },
+    {
+      "match": "string.unquoted.heredoc.doublequote",
+      "name": "string.unquoted.heredoc.doublequote"
+    },
+    {
       "match": "string.unquoted.heredoc",
       "name": "string.unquoted.heredoc"
     },
     {
+      "match": "string.unquoted.program-block",
+      "name": "string.unquoted.program-block"
+    },
+    {
+      "match": "string.unquoted.index",
+      "name": "string.unquoted.index"
+    },
+    {
       "match": "string.unquoted",
       "name": "string.unquoted"
+    },
+    {
+      "match": "string.regexp.replace.extended.simple_delimiter",
+      "name": "string.regexp.replace.extended.simple_delimiter"
+    },
+    {
+      "match": "string.regexp.format.nested_braces",
+      "name": "string.regexp.format.nested_braces"
+    },
+    {
+      "match": "string.regexp.format.nested_parens",
+      "name": "string.regexp.format.nested_parens"
+    },
+    {
+      "match": "string.regexp.format.single_quote",
+      "name": "string.regexp.format.single_quote"
+    },
+    {
+      "match": "string.regexp.format.simple_delimiter",
+      "name": "string.regexp.format.simple_delimiter"
+    },
+    {
+      "match": "string.regexp.format.nested_ltgt",
+      "name": "string.regexp.format.nested_ltgt"
+    },
+    {
+      "match": "string.regexp.format",
+      "name": "string.regexp.format"
+    },
+    {
+      "match": "string.regexp.nested_ltgt",
+      "name": "string.regexp.nested_ltgt"
+    },
+    {
+      "match": "string.regexp.nested_parens",
+      "name": "string.regexp.nested_parens"
+    },
+    {
+      "match": "string.regexp.nested_braces",
+      "name": "string.regexp.nested_braces"
+    },
+    {
+      "match": "string.regexp.find-m.simple-delimiter",
+      "name": "string.regexp.find-m.simple-delimiter"
+    },
+    {
+      "match": "string.regexp.find-m.single-quote",
+      "name": "string.regexp.find-m.single-quote"
+    },
+    {
+      "match": "string.regexp.find",
+      "name": "string.regexp.find"
+    },
+    {
+      "match": "string.regexp.character-class",
+      "name": "string.regexp.character-class"
+    },
+    {
+      "match": "string.regexp.arbitrary-repetition",
+      "name": "string.regexp.arbitrary-repetition"
+    },
+    {
+      "match": "string.regexp.single-quoted",
+      "name": "string.regexp.single-quoted"
+    },
+    {
+      "match": "string.regexp.double-quoted",
+      "name": "string.regexp.double-quoted"
+    },
+    {
+      "match": "string.regexp.replace",
+      "name": "string.regexp.replace"
     },
     {
       "match": "string.regexp",
@@ -806,6 +1558,10 @@
       "name": "support.constant"
     },
     {
+      "match": "support.function.magic",
+      "name": "support.function.magic"
+    },
+    {
       "match": "support.function",
       "name": "support.function"
     },
@@ -830,8 +1586,16 @@
       "name": "support.struct"
     },
     {
+      "match": "support.other.namespace",
+      "name": "support.other.namespace"
+    },
+    {
       "match": "support.other",
       "name": "support.other"
+    },
+    {
+      "match": "support",
+      "name": "support"
     },
     {
       "match": "text.html.basic",
@@ -866,6 +1630,54 @@
       "name": "variable.function"
     },
     {
+      "match": "variable.other.readwrite.list-separator",
+      "name": "variable.other.readwrite.list-separator"
+    },
+    {
+      "match": "variable.other.regexp.last-paren-match",
+      "name": "variable.other.regexp.last-paren-match"
+    },
+    {
+      "match": "variable.other.regexp.post-match",
+      "name": "variable.other.regexp.post-match"
+    },
+    {
+      "match": "variable.other.regexp.pre-match",
+      "name": "variable.other.regexp.pre-match"
+    },
+    {
+      "match": "variable.other.regexp.match",
+      "name": "variable.other.regexp.match"
+    },
+    {
+      "match": "variable.other.readwrite.global",
+      "name": "variable.other.readwrite.global"
+    },
+    {
+      "match": "variable.other.readwrite",
+      "name": "variable.other.readwrite"
+    },
+    {
+      "match": "variable.other.subpattern",
+      "name": "variable.other.subpattern"
+    },
+    {
+      "match": "variable.other.predefined",
+      "name": "variable.other.predefined"
+    },
+    {
+      "match": "variable.other.index",
+      "name": "variable.other.index"
+    },
+    {
+      "match": "variable.other.global.safer",
+      "name": "variable.other.global.safer"
+    },
+    {
+      "match": "variable.other.global",
+      "name": "variable.other.global"
+    },
+    {
       "match": "variable.other.member",
       "name": "variable.other.member"
     },
@@ -878,12 +1690,36 @@
       "name": "variable.other.constant"
     },
     {
+      "match": "variable.other.property",
+      "name": "variable.other.property"
+    },
+    {
       "match": "variable.other",
       "name": "variable.other"
     },
     {
+      "match": "variable.language.namespace",
+      "name": "variable.language.namespace"
+    },
+    {
+      "match": "variable.language.this",
+      "name": "variable.language.this"
+    },
+    {
+      "match": "variable.language.super",
+      "name": "variable.language.super"
+    },
+    {
+      "match": "variable.language.self",
+      "name": "variable.language.self"
+    },
+    {
       "match": "variable.language",
       "name": "variable.language"
+    },
+    {
+      "match": "variable.parameter.function",
+      "name": "variable.parameter.function"
     },
     {
       "match": "variable.parameter",
@@ -894,16 +1730,8 @@
       "name": "variable"
     },
     {
-      "match": "source.language-suffix.embedded",
-      "name": "source.language-suffix.embedded"
-    },
-    {
-      "match": "source.language-suffix",
-      "name": "source.language-suffix"
-    },
-    {
-      "match": "source",
-      "name": "source"
+      "match": "wildcard.comment",
+      "name": "wildcard.comment"
     }
   ]
 }
