@@ -6,7 +6,7 @@
 .editorconfig
 messages/
 bin/
-tests/
+test/
 yarn.lock
 yarn-error.log
 messages.json
