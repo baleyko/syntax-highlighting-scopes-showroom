@@ -10,6 +10,5 @@ test/
 yarn.lock
 yarn-error.log
 messages.json
-grammars/shss.cson
 grammars/shss.sublime-syntax
 node_modules/
