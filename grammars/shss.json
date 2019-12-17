@@ -10,28 +10,16 @@
       "name": "comment.line"
     },
     {
-      "match": "comment.block",
-      "name": "comment.block"
-    },
-    {
       "match": "comment.block.documentation",
       "name": "comment.block.documentation"
     },
     {
-      "match": "punctuation.definition.comment",
-      "name": "punctuation.definition.comment"
+      "match": "comment.block",
+      "name": "comment.block"
     },
     {
-      "match": "meta.toc-list",
-      "name": "meta.toc-list"
-    },
-    {
-      "match": "constant.numeric",
-      "name": "constant.numeric"
-    },
-    {
-      "match": "constant.numeric.integer",
-      "name": "constant.numeric.integer"
+      "match": "comment",
+      "name": "comment"
     },
     {
       "match": "constant.numeric.integer.binary",
@@ -54,8 +42,8 @@
       "name": "constant.numeric.integer.other"
     },
     {
-      "match": "constant.numeric.float",
-      "name": "constant.numeric.float"
+      "match": "constant.numeric.integer",
+      "name": "constant.numeric.integer"
     },
     {
       "match": "constant.numeric.float.binary",
@@ -78,8 +66,8 @@
       "name": "constant.numeric.float.other"
     },
     {
-      "match": "constant.numeric.complex",
-      "name": "constant.numeric.complex"
+      "match": "constant.numeric.float",
+      "name": "constant.numeric.float"
     },
     {
       "match": "constant.numeric.complex.real",
@@ -88,6 +76,14 @@
     {
       "match": "constant.numeric.complex.imaginary",
       "name": "constant.numeric.complex.imaginary"
+    },
+    {
+      "match": "constant.numeric.complex",
+      "name": "constant.numeric.complex"
+    },
+    {
+      "match": "constant.numeric",
+      "name": "constant.numeric"
     },
     {
       "match": "constant.language",
@@ -106,12 +102,20 @@
       "name": "constant.other"
     },
     {
-      "match": "entity.name.tag",
-      "name": "entity.name.tag"
+      "match": "constant",
+      "name": "constant"
     },
     {
       "match": "entity.other.attribute-name",
       "name": "entity.other.attribute-name"
+    },
+    {
+      "match": "entity.other.inherited-class",
+      "name": "entity.other.inherited-class"
+    },
+    {
+      "match": "entity.other",
+      "name": "entity.other"
     },
     {
       "match": "entity.name.type.class",
@@ -120,6 +124,14 @@
     {
       "match": "entity.name.type.struct",
       "name": "entity.name.type.struct"
+    },
+    {
+      "match": "entity.name.type",
+      "name": "entity.name.type"
+    },
+    {
+      "match": "entity.name.class.forward-decl",
+      "name": "entity.name.class.forward-decl"
     },
     {
       "match": "entity.name.class",
@@ -154,24 +166,16 @@
       "name": "entity.name.type"
     },
     {
-      "match": "entity.name.class.forward-decl",
-      "name": "entity.name.class.forward-decl"
-    },
-    {
-      "match": "entity.other.inherited-class",
-      "name": "entity.other.inherited-class"
-    },
-    {
-      "match": "entity.name.function",
-      "name": "entity.name.function"
-    },
-    {
       "match": "entity.name.function.constructor",
       "name": "entity.name.function.constructor"
     },
     {
       "match": "entity.name.function.destructor",
       "name": "entity.name.function.destructor"
+    },
+    {
+      "match": "entity.name.function",
+      "name": "entity.name.function"
     },
     {
       "match": "entity.name.namespace",
@@ -190,8 +194,24 @@
       "name": "entity.name.section"
     },
     {
+      "match": "entity.name.tag",
+      "name": "entity.name.tag"
+    },
+    {
       "match": "entity.name",
       "name": "entity.name"
+    },
+    {
+      "match": "entity",
+      "name": "entity"
+    },
+    {
+      "match": "invalid.illegal.stray-bracket-end",
+      "name": "invalid.illegal.stray-bracket-end"
+    },
+    {
+      "match": "invalid.illegal.stray-semi-colon",
+      "name": "invalid.illegal.stray-semi-colon"
     },
     {
       "match": "invalid.illegal",
@@ -202,52 +222,8 @@
       "name": "invalid.deprecated"
     },
     {
-      "match": "keyword.control",
-      "name": "keyword.control"
-    },
-    {
-      "match": "keyword.control.conditional",
-      "name": "keyword.control.conditional"
-    },
-    {
-      "match": "keyword.control.import",
-      "name": "keyword.control.import"
-    },
-    {
-      "match": "punctuation.definition.keyword",
-      "name": "punctuation.definition.keyword"
-    },
-    {
-      "match": "keyword.other.type",
-      "name": "keyword.other.type"
-    },
-    {
-      "match": "keyword.other",
-      "name": "keyword.other"
-    },
-    {
-      "match": "keyword.operator",
-      "name": "keyword.operator"
-    },
-    {
-      "match": "keyword.operator.assignment",
-      "name": "keyword.operator.assignment"
-    },
-    {
-      "match": "keyword.operator.arithmetic",
-      "name": "keyword.operator.arithmetic"
-    },
-    {
-      "match": "keyword.operator.bitwise",
-      "name": "keyword.operator.bitwise"
-    },
-    {
-      "match": "keyword.operator.logical",
-      "name": "keyword.operator.logical"
-    },
-    {
-      "match": "keyword.operator.word",
-      "name": "keyword.operator.word"
+      "match": "invalid",
+      "name": "invalid"
     },
     {
       "match": "markup.heading",
@@ -262,16 +238,16 @@
       "name": "markup.list.numbered"
     },
     {
+      "match": "markup.list",
+      "name": "markup.list"
+    },
+    {
       "match": "markup.bold",
       "name": "markup.bold"
     },
     {
       "match": "markup.italic",
       "name": "markup.italic"
-    },
-    {
-      "match": "markup.underline",
-      "name": "markup.underline"
     },
     {
       "match": "markup.inserted",
@@ -286,6 +262,10 @@
       "name": "markup.underline.link"
     },
     {
+      "match": "markup.underline",
+      "name": "markup.underline"
+    },
+    {
       "match": "markup.quote",
       "name": "markup.quote"
     },
@@ -298,8 +278,20 @@
       "name": "markup.raw.block"
     },
     {
+      "match": "markup.raw",
+      "name": "markup.raw"
+    },
+    {
       "match": "markup.other",
       "name": "markup.other"
+    },
+    {
+      "match": "markup",
+      "name": "markup"
+    },
+    {
+      "match": "meta.toc-list",
+      "name": "meta.toc-list"
     },
     {
       "match": "meta.class",
@@ -334,60 +326,12 @@
       "name": "meta.type"
     },
     {
-      "match": "meta.function",
-      "name": "meta.function"
-    },
-    {
-      "match": "meta.function.parameters",
-      "name": "meta.function.parameters"
-    },
-    {
-      "match": "meta.function",
-      "name": "meta.function"
-    },
-    {
-      "match": "meta.function.parameters",
-      "name": "meta.function.parameters"
-    },
-    {
-      "match": "meta.function.return-type",
-      "name": "meta.function.return-type"
-    },
-    {
-      "match": "meta.namespace",
-      "name": "meta.namespace"
-    },
-    {
-      "match": "meta.preprocessor",
-      "name": "meta.preprocessor"
-    },
-    {
-      "match": "meta.annotation",
-      "name": "meta.annotation"
-    },
-    {
-      "match": "meta.annotation",
-      "name": "meta.annotation"
-    },
-    {
-      "match": "meta.annotation.identifier",
-      "name": "meta.annotation.identifier"
-    },
-    {
-      "match": "meta.annotation.parameters",
-      "name": "meta.annotation.parameters"
-    },
-    {
-      "match": "punctuation.definition.annotation",
-      "name": "punctuation.definition.annotation"
+      "match": "meta.string",
+      "name": "meta.string"
     },
     {
       "match": "meta.path",
       "name": "meta.path"
-    },
-    {
-      "match": "support.function",
-      "name": "support.function"
     },
     {
       "match": "meta.function-call",
@@ -398,72 +342,24 @@
       "name": "meta.block"
     },
     {
-      "match": "punctuation.section.block.begin",
-      "name": "punctuation.section.block.begin"
-    },
-    {
-      "match": "punctuation.section.block.end",
-      "name": "punctuation.section.block.end"
-    },
-    {
       "match": "meta.braces",
       "name": "meta.braces"
-    },
-    {
-      "match": "punctuation.section.braces.begin",
-      "name": "punctuation.section.braces.begin"
-    },
-    {
-      "match": "punctuation.section.braces.end",
-      "name": "punctuation.section.braces.end"
     },
     {
       "match": "meta.group",
       "name": "meta.group"
     },
     {
-      "match": "punctuation.section.group.begin",
-      "name": "punctuation.section.group.begin"
-    },
-    {
-      "match": "punctuation.section.group.end",
-      "name": "punctuation.section.group.end"
-    },
-    {
       "match": "meta.parens",
       "name": "meta.parens"
-    },
-    {
-      "match": "punctuation.section.parens.begin",
-      "name": "punctuation.section.parens.begin"
-    },
-    {
-      "match": "punctuation.section.parens.end",
-      "name": "punctuation.section.parens.end"
     },
     {
       "match": "meta.brackets",
       "name": "meta.brackets"
     },
     {
-      "match": "punctuation.section.brackets.begin",
-      "name": "punctuation.section.brackets.begin"
-    },
-    {
-      "match": "punctuation.section.brackets.end",
-      "name": "punctuation.section.brackets.end"
-    },
-    {
       "match": "meta.generic",
       "name": "meta.generic"
-    },
-    {
-      "match": "punctuation.definition.generic.begin",
-      "name": "punctuation.definition.generic.begin"
-    },
-    {
-      "match": "punctuation.definition.generic.end",
-      "name": "punctuation.definition.generic.end"
     },
     {
       "match": "meta.tag",
@@ -474,8 +370,52 @@
       "name": "meta.paragraph"
     },
     {
-      "match": "punctuation.separator",
-      "name": "punctuation.separator"
+      "match": "meta.function.parameters",
+      "name": "meta.function.parameters"
+    },
+    {
+      "match": "meta.function.parameters",
+      "name": "meta.function.parameters"
+    },
+    {
+      "match": "meta.function.return-type",
+      "name": "meta.function.return-type"
+    },
+    {
+      "match": "meta.function",
+      "name": "meta.function"
+    },
+    {
+      "match": "meta.namespace",
+      "name": "meta.namespace"
+    },
+    {
+      "match": "meta.preprocessor.include",
+      "name": "meta.preprocessor.include"
+    },
+    {
+      "match": "meta.preprocessor",
+      "name": "meta.preprocessor"
+    },
+    {
+      "match": "meta.interpolation",
+      "name": "meta.interpolation"
+    },
+    {
+      "match": "meta.annotation.identifier",
+      "name": "meta.annotation.identifier"
+    },
+    {
+      "match": "meta.annotation.parameters",
+      "name": "meta.annotation.parameters"
+    },
+    {
+      "match": "meta.annotation",
+      "name": "meta.annotation"
+    },
+    {
+      "match": "meta",
+      "name": "meta"
     },
     {
       "match": "punctuation.terminator",
@@ -486,16 +426,248 @@
       "name": "punctuation.separator.continuation"
     },
     {
+      "match": "punctuation.separator",
+      "name": "punctuation.separator"
+    },
+    {
       "match": "punctuation.accessor",
       "name": "punctuation.accessor"
     },
     {
-      "match": "keyword.declaration",
-      "name": "keyword.declaration"
+      "match": "punctuation.section.block.begin",
+      "name": "punctuation.section.block.begin"
+    },
+    {
+      "match": "punctuation.section.block.end",
+      "name": "punctuation.section.block.end"
+    },
+    {
+      "match": "punctuation.section.block",
+      "name": "punctuation.section.block"
+    },
+    {
+      "match": "punctuation.section.braces.begin",
+      "name": "punctuation.section.braces.begin"
+    },
+    {
+      "match": "punctuation.section.braces.end",
+      "name": "punctuation.section.braces.end"
+    },
+    {
+      "match": "punctuation.section.braces",
+      "name": "punctuation.section.braces"
+    },
+    {
+      "match": "punctuation.section.group.begin",
+      "name": "punctuation.section.group.begin"
+    },
+    {
+      "match": "punctuation.section.group.end",
+      "name": "punctuation.section.group.end"
+    },
+    {
+      "match": "punctuation.section.group",
+      "name": "punctuation.section.group"
+    },
+    {
+      "match": "punctuation.section.parens.begin",
+      "name": "punctuation.section.parens.begin"
+    },
+    {
+      "match": "punctuation.section.parens.end",
+      "name": "punctuation.section.parens.end"
+    },
+    {
+      "match": "punctuation.section.parens",
+      "name": "punctuation.section.parens"
+    },
+    {
+      "match": "punctuation.section.brackets.begin",
+      "name": "punctuation.section.brackets.begin"
+    },
+    {
+      "match": "punctuation.section.brackets.end",
+      "name": "punctuation.section.brackets.end"
+    },
+    {
+      "match": "punctuation.section.brackets",
+      "name": "punctuation.section.brackets"
+    },
+    {
+      "match": "punctuation.section.interpolation.end",
+      "name": "punctuation.section.interpolation.end"
+    },
+    {
+      "match": "punctuation.section.interpolation.begin",
+      "name": "punctuation.section.interpolation.begin"
+    },
+    {
+      "match": "punctuation.section.interpolation",
+      "name": "punctuation.section.interpolation"
+    },
+    {
+      "match": "punctuation.section",
+      "name": "punctuation.section"
+    },
+    {
+      "match": "punctuation.definition.tag.begin",
+      "name": "punctuation.definition.tag.begin"
+    },
+    {
+      "match": "punctuation.definition.tag.end",
+      "name": "punctuation.definition.tag.end"
+    },
+    {
+      "match": "punctuation.definition.tag",
+      "name": "punctuation.definition.tag"
+    },
+    {
+      "match": "punctuation.definition.string.begin",
+      "name": "punctuation.definition.string.begin"
+    },
+    {
+      "match": "punctuation.definition.string.end",
+      "name": "punctuation.definition.string.end"
+    },
+    {
+      "match": "punctuation.definition.string",
+      "name": "punctuation.definition.string"
+    },
+    {
+      "match": "punctuation.definition.comment.begin",
+      "name": "punctuation.definition.comment.begin"
+    },
+    {
+      "match": "punctuation.definition.comment.end",
+      "name": "punctuation.definition.comment.end"
+    },
+    {
+      "match": "punctuation.definition.comment",
+      "name": "punctuation.definition.comment"
+    },
+    {
+      "match": "punctuation.definition.keyword.begin",
+      "name": "punctuation.definition.keyword.begin"
+    },
+    {
+      "match": "punctuation.definition.keyword.end",
+      "name": "punctuation.definition.keyword.end"
+    },
+    {
+      "match": "punctuation.definition.keyword",
+      "name": "punctuation.definition.keyword"
+    },
+    {
+      "match": "punctuation.definition.annotation.begin",
+      "name": "punctuation.definition.annotation.begin"
+    },
+    {
+      "match": "punctuation.definition.annotation.end",
+      "name": "punctuation.definition.annotation.end"
+    },
+    {
+      "match": "punctuation.definition.annotation",
+      "name": "punctuation.definition.annotation"
+    },
+    {
+      "match": "punctuation.definition.generic.begin",
+      "name": "punctuation.definition.generic.begin"
+    },
+    {
+      "match": "punctuation.definition.generic.end",
+      "name": "punctuation.definition.generic.end"
+    },
+    {
+      "match": "punctuation.definition.generic",
+      "name": "punctuation.definition.generic"
+    },
+    {
+      "match": "punctuation.definition.variable",
+      "name": "punctuation.definition.variable"
+    },
+    {
+      "match": "punctuation.definition",
+      "name": "punctuation.definition"
+    },
+    {
+      "match": "punctuation",
+      "name": "punctuation"
+    },
+    {
+      "match": "storage.modifier.static",
+      "name": "storage.modifier.static"
+    },
+    {
+      "match": "storage.modifier.final",
+      "name": "storage.modifier.final"
+    },
+    {
+      "match": "storage.modifier.abstract",
+      "name": "storage.modifier.abstract"
+    },
+    {
+      "match": "storage.modifier.public",
+      "name": "storage.modifier.public"
+    },
+    {
+      "match": "storage.modifier.private",
+      "name": "storage.modifier.private"
+    },
+    {
+      "match": "storage.modifier.protected",
+      "name": "storage.modifier.protected"
     },
     {
       "match": "storage.modifier",
       "name": "storage.modifier"
+    },
+    {
+      "match": "storage.type.function",
+      "name": "storage.type.function"
+    },
+    {
+      "match": "storage.type.class",
+      "name": "storage.type.class"
+    },
+    {
+      "match": "storage.type.interface",
+      "name": "storage.type.interface"
+    },
+    {
+      "match": "storage.type.int",
+      "name": "storage.type.int"
+    },
+    {
+      "match": "storage.type.var",
+      "name": "storage.type.var"
+    },
+    {
+      "match": "storage.type.struct",
+      "name": "storage.type.struct"
+    },
+    {
+      "match": "storage.type.enum",
+      "name": "storage.type.enum"
+    },
+    {
+      "match": "storage.type.union",
+      "name": "storage.type.union"
+    },
+    {
+      "match": "storage.type.trait",
+      "name": "storage.type.trait"
+    },
+    {
+      "match": "storage.type.impl",
+      "name": "storage.type.impl"
+    },
+    {
+      "match": "storage.type",
+      "name": "storage.type"
+    },
+    {
+      "match": "storage",
+      "name": "storage"
     },
     {
       "match": "keyword.declaration.function",
@@ -534,56 +706,56 @@
       "name": "keyword.declaration.type"
     },
     {
-      "match": "storage.type",
-      "name": "storage.type"
+      "match": "keyword.declaration",
+      "name": "keyword.declaration"
     },
     {
-      "match": "storage.type.function",
-      "name": "storage.type.function"
+      "match": "keyword.operator.assignment",
+      "name": "keyword.operator.assignment"
     },
     {
-      "match": "storage.type.class",
-      "name": "storage.type.class"
+      "match": "keyword.operator.arithmetic",
+      "name": "keyword.operator.arithmetic"
     },
     {
-      "match": "storage.type.struct",
-      "name": "storage.type.struct"
+      "match": "keyword.operator.bitwise",
+      "name": "keyword.operator.bitwise"
     },
     {
-      "match": "storage.type.enum",
-      "name": "storage.type.enum"
+      "match": "keyword.operator.logical",
+      "name": "keyword.operator.logical"
     },
     {
-      "match": "storage.type.union",
-      "name": "storage.type.union"
+      "match": "keyword.operator.word",
+      "name": "keyword.operator.word"
     },
     {
-      "match": "storage.type.trait",
-      "name": "storage.type.trait"
+      "match": "keyword.operator",
+      "name": "keyword.operator"
     },
     {
-      "match": "storage.type.interface",
-      "name": "storage.type.interface"
+      "match": "keyword.control.conditional",
+      "name": "keyword.control.conditional"
     },
     {
-      "match": "storage.type.impl",
-      "name": "storage.type.impl"
+      "match": "keyword.control.import",
+      "name": "keyword.control.import"
     },
     {
-      "match": "support.constant.ext",
-      "name": "support.constant.ext"
+      "match": "keyword.control",
+      "name": "keyword.control"
     },
     {
-      "match": "meta.string",
-      "name": "meta.string"
+      "match": "keyword.other.type",
+      "name": "keyword.other.type"
     },
     {
-      "match": "punctuation.definition.string.begin",
-      "name": "punctuation.definition.string.begin"
+      "match": "keyword.other",
+      "name": "keyword.other"
     },
     {
-      "match": "punctuation.definition.string.end",
-      "name": "punctuation.definition.string.end"
+      "match": "keyword",
+      "name": "keyword"
     },
     {
       "match": "string.quoted.single",
@@ -602,6 +774,10 @@
       "name": "string.quoted.other"
     },
     {
+      "match": "string.unquoted.heredoc",
+      "name": "string.unquoted.heredoc"
+    },
+    {
       "match": "string.unquoted",
       "name": "string.unquoted"
     },
@@ -610,28 +786,28 @@
       "name": "string.regexp"
     },
     {
+      "match": "string.interpolated",
+      "name": "string.interpolated"
+    },
+    {
+      "match": "string.other",
+      "name": "string.other"
+    },
+    {
       "match": "string",
       "name": "string"
     },
     {
-      "match": "meta.interpolation",
-      "name": "meta.interpolation"
-    },
-    {
-      "match": "punctuation.section.interpolation.begin",
-      "name": "punctuation.section.interpolation.begin"
-    },
-    {
-      "match": "punctuation.section.interpolation.end",
-      "name": "punctuation.section.interpolation.end"
-    },
-    {
-      "match": "source.language-suffix.embedded",
-      "name": "source.language-suffix.embedded"
+      "match": "support.constant.ext",
+      "name": "support.constant.ext"
     },
     {
       "match": "support.constant",
       "name": "support.constant"
+    },
+    {
+      "match": "support.function",
+      "name": "support.function"
     },
     {
       "match": "support.module",
@@ -644,6 +820,18 @@
     {
       "match": "support.class",
       "name": "support.class"
+    },
+    {
+      "match": "support.variable",
+      "name": "support.variable"
+    },
+    {
+      "match": "support.struct",
+      "name": "support.struct"
+    },
+    {
+      "match": "support.other",
+      "name": "support.other"
     },
     {
       "match": "text.html.basic",
@@ -662,12 +850,12 @@
       "name": "text.xml"
     },
     {
-      "match": "punctuation.definition.variable",
-      "name": "punctuation.definition.variable"
+      "match": "text.plain",
+      "name": "text.plain"
     },
     {
-      "match": "variable.other.constant",
-      "name": "variable.other.constant"
+      "match": "text",
+      "name": "text"
     },
     {
       "match": "variable.annotation",
@@ -678,12 +866,20 @@
       "name": "variable.function"
     },
     {
-      "match": "variable.other",
-      "name": "variable.other"
+      "match": "variable.other.member",
+      "name": "variable.other.member"
     },
     {
       "match": "variable.other.readwrite",
       "name": "variable.other.readwrite"
+    },
+    {
+      "match": "variable.other.constant",
+      "name": "variable.other.constant"
+    },
+    {
+      "match": "variable.other",
+      "name": "variable.other"
     },
     {
       "match": "variable.language",
@@ -694,8 +890,20 @@
       "name": "variable.parameter"
     },
     {
-      "match": "variable.other.member",
-      "name": "variable.other.member"
+      "match": "variable",
+      "name": "variable"
+    },
+    {
+      "match": "source.language-suffix.embedded",
+      "name": "source.language-suffix.embedded"
+    },
+    {
+      "match": "source.language-suffix",
+      "name": "source.language-suffix"
+    },
+    {
+      "match": "source",
+      "name": "source"
     }
   ]
 }
