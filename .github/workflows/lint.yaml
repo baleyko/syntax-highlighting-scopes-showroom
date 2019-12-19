@@ -13,14 +13,13 @@ env:
 
 jobs:
   lint:
-    name: Lint on Node.js ${{ matrix.node-version }} and ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12]
-        os: [ubuntu-latest]
+        node-version: 12
+        os: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - run: yarn install
-    - name: Lint all grammar configs
+    - name: Lint all configs
       run: yarn run ci:lint
