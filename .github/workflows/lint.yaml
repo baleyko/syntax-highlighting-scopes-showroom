@@ -15,9 +15,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     strategy:
-      matrix:
-        node-version: 12
-        os: ubuntu-latest
+      fail-fast: false
     steps:
     - uses: actions/checkout@v1
     - run: yarn install
