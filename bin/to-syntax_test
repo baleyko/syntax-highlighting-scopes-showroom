@@ -3,18 +3,18 @@ const readline = require('readline');
 const tests = [];
 const readInterface = readline.createInterface({
   input: process.stdin,
-  console: false
+  console: false,
 });
 
 readInterface.on('line', scope => {
   tests.push(
-`${scope}
+    `${scope}
 // <- ${scope}`
   );
 });
 readInterface.on('close', () =>
   process.stdout.write(
-`// SYNTAX TEST "Packages/syntax-highlighting-scopes-showroom/grammars/shss.sublime-syntax"
+    `// SYNTAX TEST "Packages/syntax-highlighting-scopes-showroom/grammars/shss.sublime-syntax"
 
 # For information on how this file is used, see
 # https://www.sublimetext.com/docs/3/syntax.html#testing
@@ -22,5 +22,5 @@ readInterface.on('close', () =>
 
 ${tests.join('\n')}
 `
-    )
+  )
 );

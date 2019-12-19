@@ -3,29 +3,33 @@ const readline = require('readline');
 const tests = [];
 const readInterface = readline.createInterface({
   input: process.stdin,
-  console: false
+  console: false,
 });
 
 readInterface.on('line', scope => {
   tests.push(
-`
+    `
   it('${scope}', () => {
     const { tokens } = grammar.tokenizeLine('${scope}');
-    expect(tokens[0]).toEqual({ value: '${scope}', scopes: ['source.shss', '${scope}'] });
-  });`);
+    expect(tokens[0]).toEqual({
+      value: '${scope}',
+      scopes: ['source.shss', '${scope}'],
+    });
+  });`
+  );
 });
 readInterface.on('close', () =>
   process.stdout.write(
-`describe('Syntax Highlighting Scopes Showroom grammar', () => {
+    `describe('Syntax Highlighting Scopes Showroom grammar', () => {
   let grammar = null;
 
   beforeEach(() =>
     grammar === null
       ? atom.packages
-        .activatePackage('syntax-highlighting-scopes-showroom')
-        .then(() => {
-          grammar = atom.grammars.grammarForScopeName('source.shss');
-        })
+          .activatePackage('syntax-highlighting-scopes-showroom')
+          .then(() => {
+            grammar = atom.grammars.grammarForScopeName('source.shss');
+          })
       : Promise.resolve()
   );
 
@@ -36,5 +40,5 @@ readInterface.on('close', () =>
 ${tests.join('\n')}
 });
 `
-    )
+  )
 );

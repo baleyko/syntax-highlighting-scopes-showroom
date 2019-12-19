@@ -3,26 +3,27 @@ const readline = require('readline');
 const contexts = [];
 const readInterface = readline.createInterface({
   input: process.stdin,
-  console: false
+  console: false,
 });
 
 readInterface.on('line', scope => {
   contexts.push(
-`  - match: '${scope}'
-    scope: '${scope}'`);
+    `    - match: '${scope}'
+      scope: '${scope}'`
+  );
 });
 readInterface.on('close', () =>
   process.stdout.write(
-`%YAML 1.2
+    `%YAML 1.2
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
 name: 'Syntax Highlighting Scopes Showroom'
 file_extensions:
-- shss
+  - shss
 scope: source.shss
 contexts:
   main:
 ${contexts.join('\n')}
 `
-    )
+  )
 );

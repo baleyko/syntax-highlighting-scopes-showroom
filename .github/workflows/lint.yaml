@@ -3,10 +3,10 @@ name: Lint
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - '**'
+      - '**'
 
 env:
   CI: true
@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-    - uses: actions/checkout@v1
-    - run: yarn install
-    - name: Lint all configs
-      run: yarn run ci:lint
+      - uses: actions/checkout@v1
+      - run: yarn install
+      - name: Lint all configs
+        run: yarn run ci:lint

@@ -1,22 +1,20 @@
 #!/usr/bin/env node
 const readline = require('readline');
 const output = {
-  'name': 'Syntax Highlighting Scopes Showroom',
-  'fileTypes': [
-    'shss'
-  ],
-  'scopeName': 'source.shss',
-  'patterns': []
+  name: 'Syntax Highlighting Scopes Showroom',
+  fileTypes: ['shss'],
+  scopeName: 'source.shss',
+  patterns: [],
 };
 const readInterface = readline.createInterface({
   input: process.stdin,
-  console: false
+  console: false,
 });
 
 readInterface.on('line', scope => {
   output.patterns.push({
-    'match': scope,
-    'name': scope
+    match: scope,
+    name: scope,
   });
 });
 readInterface.on('close', () => {
