@@ -9,7 +9,7 @@ const readInterface = readline.createInterface({
 readInterface.on('line', scope => {
   tests.push(
 `
-  it('tokenizes block comments', () => {
+  it('${scope}', () => {
     const { tokens } = grammar.tokenizeLine('${scope}');
     expect(tokens[0]).toEqual({ value: '${scope}', scopes: ['source.shss', '${scope}'] });
   });`);
@@ -20,11 +20,13 @@ readInterface.on('close', () =>
   let grammar = null;
 
   beforeEach(() =>
-    atom.packages
-      .activatePackage('syntax-highlighting-scopes-showroom')
-      .then(() => {
-        grammar = atom.grammars.grammarForScopeName('source.shss');
-      })
+    grammar === null
+      ? atom.packages
+        .activatePackage('syntax-highlighting-scopes-showroom')
+        .then(() => {
+          grammar = atom.grammars.grammarForScopeName('source.shss');
+        })
+      : Promise.resolve()
   );
 
   it('parses the grammar', () => {
