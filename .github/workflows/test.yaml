@@ -1,0 +1,47 @@
+name: 'Test'
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  sublime:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: [x32, x64]
+    container: sublimetext/unittesting:${{ matrix.arch }}
+    env:
+      SUBLIME_TEXT_ARCH: ${{ matrix.arch }}
+      UNITTESTING_TAG: master
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup
+      run: |
+        sh -e /etc/init.d/xvfb start
+        curl -OL https://raw.githubusercontent.com/SublimeText/UnitTesting/master/sbin/github.sh
+    - name: Run tests
+      run: |
+        PATH="$HOME/.local/bin:$PATH"
+        sh github.sh bootstrap
+        sh github.sh run_syntax_tests
+
+  atom:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    container: baleyko/atom:latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Prepare environment
+      run: |
+        sh -e /etc/init.d/xvfb start
+        sleep 1
+    - name: Install package
+      run: |
+        apm link
+    - name: Run tests
+      run: |
+        atom --test --timeout 60 test/*-spec.js
