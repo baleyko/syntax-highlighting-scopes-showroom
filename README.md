@@ -3,10 +3,10 @@
 [![Test](https://github.com/baleyko/syntax-highlighting-scopes-showroom/workflows/Test/badge.svg)][gh-test-workflow]
 [![Lint](https://github.com/baleyko/syntax-highlighting-scopes-showroom/workflows/Lint/badge.svg)][gh-lint-workflow]
 [![GitHub release](https://img.shields.io/github/release/baleyko/syntax-highlighting-scopes-showroom.svg)][gh-releases]
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg)][mit]
 
 [![Version](https://img.shields.io/apm/v/syntax-highlighting-scopes-showroom)][apm-version]
 [![Installs](https://img.shields.io/apm/dm/syntax-highlighting-scopes-showroom)][apm-installs]
-[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg)][mit]
 
 [![Version][vscode-version]](VSCODE-LINK)
 [![Installs][vscode-installs]](VSCODE-LINK)
