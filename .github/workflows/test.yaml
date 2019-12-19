@@ -44,4 +44,4 @@ jobs:
         apm link
     - name: Run tests
       run: |
-        atom --test --timeout 60 test/*-spec.js
+        atom --test --timeout 900 test/*-spec.js
