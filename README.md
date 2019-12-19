@@ -1,5 +1,6 @@
 # Syntax Highlighting Scopes Showroom
 
+[![Test](https://github.com/baleyko/syntax-highlighting-scopes-showroom/workflows/Test/badge.svg)][gh-test-workflow]
 [![Lint](https://github.com/baleyko/syntax-highlighting-scopes-showroom/workflows/Lint/badge.svg)][gh-lint-workflow]
 [![GitHub release](https://img.shields.io/github/release/baleyko/syntax-highlighting-scopes-showroom.svg)][gh-releases]
 
@@ -33,6 +34,7 @@ You can find this package in corresponding package managment tool for:
 [mit]: https://opensource.org/licenses/MIT
 [license.md]: https://github.com/baleyko/vscode-b-syntax-highlighting/blob/master/LICENSE.md
 [gh-releases]: https://github.com/baleyko/syntax-highlighting-scopes-showroom/releases
+[gh-test-workflow]: https://github.com/baleyko/syntax-highlighting-scopes-showroom/actions?query=workflow%3ATest
 [gh-lint-workflow]: https://github.com/baleyko/syntax-highlighting-scopes-showroom/actions?query=workflow%3ALint
 [apm-version]: https://atom.io/packages/syntax-highlighting-scopes-showroom
 [apm-installs]: https://atom.io/packages/syntax-highlighting-scopes-showroom
