@@ -96,6 +96,7 @@ markup.italic
 markup.inserted
 markup.deleted
 markup.underline.link.hyperlink
+markup.underline.link.radar
 markup.underline.link
 markup.underline
 markup.quote
@@ -259,6 +260,7 @@ storage.modifier
 storage.type.signature.method
 storage.type.signature
 storage.type.function
+storage.type.class.radar
 storage.type.class
 storage.type.interface
 storage.type.int
