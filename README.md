@@ -5,12 +5,14 @@
 [![GitHub release][gh releases badge]][gh releases]
 [![The MIT License][mit license badge]][mit license]
 
-[![Version][apm version badge]][apm version]
-[![Installs][apm installs badge]][apm installs]
+[![APM Version][apm version badge]][apm version]
+[![APM Installs][apm installs badge]][apm installs]
 
-[![Version][vscode version badge]][vscode merketplace]
-[![Installs][vscode installs badge]][vscode merketplace]
-[![Rating][vscode rating badge]][vscode merketplace]
+[![VSCode Version][vscode version badge]][vscode merketplace]
+[![VSCode Installs][vscode installs badge]][vscode merketplace]
+[![VSCode Rating][vscode rating badge]][vscode merketplace]
+
+[![Sublime Downloads][sublime downloads badge]][sublime package control]
 
 This package tries to show all the syntax scopes just to help you do your
 syntax highlighting packages development.
@@ -47,3 +49,5 @@ You can find this package in corresponding package managment tool for:
 [vscode version badge]: https://vsmarketplacebadge.apphb.com/version/baleiko.syntax-highlighting-scopes-showroom.svg
 [vscode installs badge]: https://vsmarketplacebadge.apphb.com/installs-short/baleiko.syntax-highlighting-scopes-showroom.svg
 [vscode rating badge]: https://vsmarketplacebadge.apphb.com/rating-short/baleiko.syntax-highlighting-scopes-showroom.svg
+[sublime installs badge]: https://img.shields.io/packagecontrol/dt/Syntax%20Highlighting%20Scopes%20Showroom
+[sublime downloads control]: https://packagecontrol.io/packages/Syntax%20Highlighting%20Scopes%20Showroom
