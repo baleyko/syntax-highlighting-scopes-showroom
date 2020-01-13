@@ -1,0 +1,17 @@
+{
+  "scopeName": "markdown.shss.codeblock",
+  "fileTypes": [],
+  "limitLineLength": false,
+  "injectionSelector": "L:source.gfm, L:text.md, L:text.markup, L:text.html.markdown",
+  "patterns": [
+    {
+      "begin": "^([`~]{3,})\\s*(?:(shss))\\s*$",
+      "end": "^\\s*\\1((?<=`)`+|(?<=~)~+)?\\s*$",
+      "patterns": [
+        {
+          "include": "source.shss"
+        }
+      ]
+    }
+  ]
+}
