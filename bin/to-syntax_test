@@ -14,7 +14,7 @@ readInterface.on('line', scope => {
 });
 readInterface.on('close', () =>
   process.stdout.write(
-    `// SYNTAX TEST "Packages/syntax-highlighting-scopes-showroom/grammars/shss.sublime-syntax"
+    `// SYNTAX TEST "Packages/syntax-highlighting-scopes-showroom/grammars/Shss.sublime-syntax"
 
 # For information on how this file is used, see
 # https://www.sublimetext.com/docs/3/syntax.html#testing
