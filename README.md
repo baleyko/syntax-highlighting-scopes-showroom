@@ -49,5 +49,5 @@ You can find this package in corresponding package managment tool for:
 [vscode version badge]: https://vsmarketplacebadge.apphb.com/version/baleiko.syntax-highlighting-scopes-showroom.svg
 [vscode installs badge]: https://vsmarketplacebadge.apphb.com/installs-short/baleiko.syntax-highlighting-scopes-showroom.svg
 [vscode rating badge]: https://vsmarketplacebadge.apphb.com/rating-short/baleiko.syntax-highlighting-scopes-showroom.svg
-[sublime installs badge]: https://img.shields.io/packagecontrol/dt/Syntax%20Highlighting%20Scopes%20Showroom
-[sublime downloads control]: https://packagecontrol.io/packages/Syntax%20Highlighting%20Scopes%20Showroom
+[sublime downloads badge]: https://img.shields.io/packagecontrol/dt/Syntax%20Highlighting%20Scopes%20Showroom
+[sublime package control]: https://packagecontrol.io/packages/Syntax%20Highlighting%20Scopes%20Showroom
