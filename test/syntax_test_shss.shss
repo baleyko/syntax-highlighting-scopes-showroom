@@ -4,8 +4,18 @@
 # https://www.sublimetext.com/docs/3/syntax.html#testing
 # Run tests by pressing `ctrl+shift+b`, i.e. run the `build` command
 
+array
+// <- array
+bracket
+// <- bracket
+block.liquid
+// <- block.liquid
+block
+// <- block
 comment.line.double-slash
 // <- comment.line.double-slash
+comment.line.double-dash.haddock
+// <- comment.line.double-dash.haddock
 comment.line.double-dash
 // <- comment.line.double-dash
 comment.line.number-sign
@@ -14,24 +24,144 @@ comment.line.percentage
 // <- comment.line.percentage
 comment.line.shebang
 // <- comment.line.shebang
+comment.line.type
+// <- comment.line.type
+comment.line.string
+// <- comment.line.string
+comment.line.shebang
+// <- comment.line.shebang
+comment.line.banner
+// <- comment.line.banner
+comment.line.punctuation
+// <- comment.line.punctuation
+comment.line.percentage
+// <- comment.line.percentage
+comment.line.parameter
+// <- comment.line.parameter
+comment.line.number-sign
+// <- comment.line.number-sign
+comment.line.keyword.punctuation
+// <- comment.line.keyword.punctuation
+comment.line.keyword
+// <- comment.line.keyword
 comment.line
 // <- comment.line
+comment.documentation.string
+// <- comment.documentation.string
+comment.documentation.heredoc
+// <- comment.documentation.heredoc
+comment.documentation.false
+// <- comment.documentation.false
+comment.block.doc
+// <- comment.block.doc
+comment.block.html
+// <- comment.block.html
+comment.block.haddock
+// <- comment.block.haddock
+comment.block.empty
+// <- comment.block.empty
 comment.block.documentation
 // <- comment.block.documentation
 comment.block
 // <- comment.block
+comment.block
+// <- comment.block
 comment
 // <- comment
-constant.numeric.integer.binary
-// <- constant.numeric.integer.binary
+constant.numeric.hexfloat
+// <- constant.numeric.hexfloat
+constant.numeric.hexadecimal
+// <- constant.numeric.hexadecimal
+constant.numeric.floating-point
+// <- constant.numeric.floating-point
+constant.numeric.preprocessor
+// <- constant.numeric.preprocessor
 constant.numeric.integer.octal
 // <- constant.numeric.integer.octal
-constant.numeric.integer.decimal
-// <- constant.numeric.integer.decimal
+constant.numeric.integer.long.octal
+// <- constant.numeric.integer.long.octal
+constant.numeric.integer.long.hexadecimal
+// <- constant.numeric.integer.long.hexadecimal
+constant.numeric.integer.long.decimal
+// <- constant.numeric.integer.long.decimal
+constant.numeric.integer.long.binary
+// <- constant.numeric.integer.long.binary
+constant.numeric.integer.long
+// <- constant.numeric.integer.long
 constant.numeric.integer.hexadecimal
 // <- constant.numeric.integer.hexadecimal
+constant.numeric.integer.decimal
+// <- constant.numeric.integer.decimal
+constant.numeric.integer.binary
+// <- constant.numeric.integer.binary
+constant.numeric.integer.base-9
+// <- constant.numeric.integer.base-9
+constant.numeric.integer.base-7
+// <- constant.numeric.integer.base-7
+constant.numeric.integer.base-6
+// <- constant.numeric.integer.base-6
+constant.numeric.integer.base-5
+// <- constant.numeric.integer.base-5
+constant.numeric.integer.base-4
+// <- constant.numeric.integer.base-4
+constant.numeric.integer.base-36
+// <- constant.numeric.integer.base-36
+constant.numeric.integer.base-35
+// <- constant.numeric.integer.base-35
+constant.numeric.integer.base-34
+// <- constant.numeric.integer.base-34
+constant.numeric.integer.base-33
+// <- constant.numeric.integer.base-33
+constant.numeric.integer.base-32
+// <- constant.numeric.integer.base-32
+constant.numeric.integer.base-31
+// <- constant.numeric.integer.base-31
+constant.numeric.integer.base-30
+// <- constant.numeric.integer.base-30
+constant.numeric.integer.base-3
+// <- constant.numeric.integer.base-3
+constant.numeric.integer.base-29
+// <- constant.numeric.integer.base-29
+constant.numeric.integer.base-28
+// <- constant.numeric.integer.base-28
+constant.numeric.integer.base-27
+// <- constant.numeric.integer.base-27
+constant.numeric.integer.base-26
+// <- constant.numeric.integer.base-26
+constant.numeric.integer.base-25
+// <- constant.numeric.integer.base-25
+constant.numeric.integer.base-24
+// <- constant.numeric.integer.base-24
+constant.numeric.integer.base-23
+// <- constant.numeric.integer.base-23
+constant.numeric.integer.base-22
+// <- constant.numeric.integer.base-22
+constant.numeric.integer.base-21
+// <- constant.numeric.integer.base-21
+constant.numeric.integer.base-20
+// <- constant.numeric.integer.base-20
+constant.numeric.integer.base-19
+// <- constant.numeric.integer.base-19
+constant.numeric.integer.base-18
+// <- constant.numeric.integer.base-18
+constant.numeric.integer.base-17
+// <- constant.numeric.integer.base-17
+constant.numeric.integer.base-15
+// <- constant.numeric.integer.base-15
+constant.numeric.integer.base-14
+// <- constant.numeric.integer.base-14
+constant.numeric.integer.base-13
+// <- constant.numeric.integer.base-13
+constant.numeric.integer.base-12
+// <- constant.numeric.integer.base-12
+constant.numeric.integer.base-11
+// <- constant.numeric.integer.base-11
 constant.numeric.integer.other
 // <- constant.numeric.integer.other
+constant.numeric.other.density
+// <- constant.numeric.other.density
+constant.numeric.other
+// <- constant.numeric.other
 constant.numeric.integer
 // <- constant.numeric.integer
 constant.numeric.exponential
@@ -74,8 +204,64 @@ constant.language.pragma
 // <- constant.language.pragma
 constant.language.boolean
 // <- constant.language.boolean
+constant.language.unit.promoted
+// <- constant.language.unit.promoted
+constant.language.unit
+// <- constant.language.unit
+constant.language.nil
+// <- constant.language.nil
+constant.language.empty-list.promoted
+// <- constant.language.empty-list.promoted
+constant.language.empty-list
+// <- constant.language.empty-list
+constant.language.boolean
+// <- constant.language.boolean
 constant.language
 // <- constant.language
+constant.character.entity.html
+// <- constant.character.entity.html
+constant.character.escape.vertical-tab
+// <- constant.character.escape.vertical-tab
+constant.character.escape.unicode.name
+// <- constant.character.escape.unicode.name
+constant.character.escape.unicode.32-bit-hex
+// <- constant.character.escape.unicode.32-bit-hex
+constant.character.escape.unicode.16-bit-hex
+// <- constant.character.escape.unicode.16-bit-hex
+constant.character.escape.unicode
+// <- constant.character.escape.unicode
+constant.character.escape.tab
+// <- constant.character.escape.tab
+constant.character.escape.single-quote
+// <- constant.character.escape.single-quote
+constant.character.escape.return
+// <- constant.character.escape.return
+constant.character.escape.octal
+// <- constant.character.escape.octal
+constant.character.escape.newline
+// <- constant.character.escape.newline
+constant.character.escape.linefeed
+// <- constant.character.escape.linefeed
+constant.character.escape.line-continuation
+// <- constant.character.escape.line-continuation
+constant.character.escape.hexadecimal
+// <- constant.character.escape.hexadecimal
+constant.character.escape.formfeed
+// <- constant.character.escape.formfeed
+constant.character.escape.double-quote
+// <- constant.character.escape.double-quote
+constant.character.escape.curly-bracket
+// <- constant.character.escape.curly-bracket
+constant.character.escape.control
+// <- constant.character.escape.control
+constant.character.escape.codepoint
+// <- constant.character.escape.codepoint
+constant.character.escape.bell
+// <- constant.character.escape.bell
+constant.character.escape.backspace
+// <- constant.character.escape.backspace
+constant.character.escape.backlash
+// <- constant.character.escape.backlash
 constant.character.escape.octal
 // <- constant.character.escape.octal
 constant.character.escape.hex
@@ -88,6 +274,54 @@ constant.character.escape
 // <- constant.character.escape
 constant.character
 // <- constant.character
+constant.other.variable.mac-classic
+// <- constant.other.variable.mac-classic
+constant.other.unicode-range
+// <- constant.other.unicode-range
+constant.other.symbol.unquoted
+// <- constant.other.symbol.unquoted
+constant.other.symbol.single-quoted
+// <- constant.other.symbol.single-quoted
+constant.other.symbol.quoted.single
+// <- constant.other.symbol.quoted.single
+constant.other.symbol.quoted
+// <- constant.other.symbol.quoted
+constant.other.symbol.interpolated
+// <- constant.other.symbol.interpolated
+constant.other.symbol.hashkey.parameter.function
+// <- constant.other.symbol.hashkey.parameter.function
+constant.other.symbol.hashkey.parameter
+// <- constant.other.symbol.hashkey.parameter
+constant.other.symbol.hashkey
+// <- constant.other.symbol.hashkey
+constant.other.symbol.hashkey
+// <- constant.other.symbol.hashkey
+constant.other.symbol.escape
+// <- constant.other.symbol.escape
+constant.other.symbol.double-quoted
+// <- constant.other.symbol.double-quoted
+constant.other.symbol
+// <- constant.other.symbol
+constant.other.rune
+// <- constant.other.rune
+constant.other.property
+// <- constant.other.property
+constant.other.object.property
+// <- constant.other.object.property
+constant.other.object
+// <- constant.other.object
+constant.other.inline-data.html
+// <- constant.other.inline-data.html
+constant.other.inline-data
+// <- constant.other.inline-data
+constant.other.enum
+// <- constant.other.enum
+constant.other.color.rgb-value.hex
+// <- constant.other.color.rgb-value.hex
+constant.other.color.rgb-value
+// <- constant.other.color.rgb-value
+constant.other.color
+// <- constant.other.color
 constant.other.key
 // <- constant.other.key
 constant.other.bareword
@@ -104,14 +338,78 @@ constant.other
 // <- constant.other
 constant
 // <- constant
+entity.other.namespace-prefix
+// <- entity.other.namespace-prefix
+entity.other.keyframe-offset.percentage
+// <- entity.other.keyframe-offset.percentage
+entity.other.keyframe-offset
+// <- entity.other.keyframe-offset
+entity.other.inherited-class.prelude
+// <- entity.other.inherited-class.prelude
+entity.other.inherited-class.module.third
+// <- entity.other.inherited-class.module.third
+entity.other.inherited-class.module.second
+// <- entity.other.inherited-class.module.second
+entity.other.inherited-class.module.first
+// <- entity.other.inherited-class.module.first
+entity.other.inherited-class.module
+// <- entity.other.inherited-class.module
+entity.other.inherited-class
+// <- entity.other.inherited-class
+entity.other.attribute-name.style.html
+// <- entity.other.attribute-name.style.html
+entity.other.attribute-name.pseudo-element
+// <- entity.other.attribute-name.pseudo-element
+entity.other.attribute-name.pseudo-class
+// <- entity.other.attribute-name.pseudo-class
+entity.other.attribute-name.pragma.preprocessor
+// <- entity.other.attribute-name.pragma.preprocessor
+entity.other.attribute-name.pragma
+// <- entity.other.attribute-name.pragma
+entity.other.attribute-name.id.html
+// <- entity.other.attribute-name.id.html
+entity.other.attribute-name.id
+// <- entity.other.attribute-name.id
+entity.other.attribute-name.html
+// <- entity.other.attribute-name.html
+entity.other.attribute-name.class.html
+// <- entity.other.attribute-name.class.html
+entity.other.attribute-name.class
+// <- entity.other.attribute-name.class
 entity.other.attribute-name
 // <- entity.other.attribute-name
 entity.other.inherited-class
 // <- entity.other.inherited-class
 entity.other
 // <- entity.other
+entity.name.package
+// <- entity.name.package
+entity.name.import
+// <- entity.name.import
+entity.name.type.promoted
+// <- entity.name.type.promoted
+entity.name.type.module
+// <- entity.name.type.module
+entity.name.type.inherited
+// <- entity.name.type.inherited
+entity.name.type.enum
+// <- entity.name.type.enum
 entity.name.type.namespace
 // <- entity.name.type.namespace
+entity.name.type.class.record.definition
+// <- entity.name.type.class.record.definition
+entity.name.type.class.record
+// <- entity.name.type.class.record
+entity.name.type.class.module.definition
+// <- entity.name.type.class.module.definition
+entity.name.type.class.module
+// <- entity.name.type.class.module
+entity.name.type.class.behaviour.definition
+// <- entity.name.type.class.behaviour.definition
+entity.name.type.class.behaviour
+// <- entity.name.type.class.behaviour
+entity.name.type.class
+// <- entity.name.type.class
 entity.name.type.trait
 // <- entity.name.type.trait
 entity.name.type.interface
@@ -142,6 +440,22 @@ entity.name.impl
 // <- entity.name.impl
 entity.name.type
 // <- entity.name.type
+entity.name.function.scope
+// <- entity.name.function.scope
+entity.name.function.preprocessor
+// <- entity.name.function.preprocessor
+entity.name.function.operator
+// <- entity.name.function.operator
+entity.name.function.namespace-prefix
+// <- entity.name.function.namespace-prefix
+entity.name.function.macro
+// <- entity.name.function.macro
+entity.name.function.macro.definition
+// <- entity.name.function.macro.definition
+entity.name.function.guard
+// <- entity.name.function.guard
+entity.name.function.definition
+// <- entity.name.function.definition
 entity.name.function.constructor
 // <- entity.name.function.constructor
 entity.name.function.destructor
@@ -156,16 +470,166 @@ entity.name.namespace
 // <- entity.name.namespace
 entity.name.constant
 // <- entity.name.constant
+entity.name.entity.other.html
+// <- entity.name.entity.other.html
+entity.name.entity.other
+// <- entity.name.entity.other
+entity.name.entity
+// <- entity.name.entity
 entity.name.label
 // <- entity.name.label
 entity.name.section
 // <- entity.name.section
+entity.name.tag.wildcard
+// <- entity.name.tag.wildcard
+entity.name.tag.style.html
+// <- entity.name.tag.style.html
+entity.name.tag.style
+// <- entity.name.tag.style
+entity.name.tag.script.html
+// <- entity.name.tag.script.html
+entity.name.tag.script
+// <- entity.name.tag.script
+entity.name.tag.other.html
+// <- entity.name.tag.other.html
+entity.name.tag.other
+// <- entity.name.tag.other
+entity.name.tag.inline
+// <- entity.name.tag.inline
+entity.name.tag.block
+// <- entity.name.tag.block
+entity.name.tag.custom
+// <- entity.name.tag.custom
 entity.name.tag
 // <- entity.name.tag
 entity.name
 // <- entity.name
+entity.alias.import
+// <- entity.alias.import
+entity.alias
+// <- entity.alias
 entity
 // <- entity
+identifier
+// <- identifier
+invalid.deprecated.package_name_not_lowercase
+// <- invalid.deprecated.package_name_not_lowercase
+invalid.deprecated.operator
+// <- invalid.deprecated.operator
+invalid.deprecated.gradient.function
+// <- invalid.deprecated.gradient.function
+invalid.deprecated.gradient
+// <- invalid.deprecated.gradient
+invalid.deprecated.function
+// <- invalid.deprecated.function
+invalid.deprecated.constant.media
+// <- invalid.deprecated.constant.media
+invalid.deprecated.constant
+// <- invalid.deprecated.constant
+invalid.deprecated.combinator
+// <- invalid.deprecated.combinator
+invalid.deprecated.color.system
+// <- invalid.deprecated.color.system
+invalid.deprecated.color
+// <- invalid.deprecated.color
+invalid.deprecated
+// <- invalid.deprecated
+invalid.illegal.you-forgot-semicolon
+// <- invalid.illegal.you-forgot-semicolon
+invalid.illegal.whitespace.charset
+// <- invalid.illegal.whitespace.charset
+invalid.illegal.whitespace
+// <- invalid.illegal.whitespace
+invalid.illegal.unknown-rune
+// <- invalid.illegal.unknown-rune
+invalid.illegal.unknown-escape
+// <- invalid.illegal.unknown-escape
+invalid.illegal.unexpected-characters.charset
+// <- invalid.illegal.unexpected-characters.charset
+invalid.illegal.unexpected-characters
+// <- invalid.illegal.unexpected-characters
+invalid.illegal.unexpected-text
+// <- invalid.illegal.unexpected-text
+invalid.illegal.unclosed.string
+// <- invalid.illegal.unclosed.string
+invalid.illegal.unclosed-string.charset
+// <- invalid.illegal.unclosed-string.charset
+invalid.illegal.unclosed-string
+// <- invalid.illegal.unclosed-string
+invalid.illegal.string
+// <- invalid.illegal.string
+invalid.illegal.stray-comment-end
+// <- invalid.illegal.stray-comment-end
+invalid.illegal.stray
+// <- invalid.illegal.stray
+invalid.illegal.slice
+// <- invalid.illegal.slice
+invalid.illegal.send-channel
+// <- invalid.illegal.send-channel
+invalid.illegal.receive-channel
+// <- invalid.illegal.receive-channel
+invalid.illegal.placeholder
+// <- invalid.illegal.placeholder
+invalid.illegal.numeric
+// <- invalid.illegal.numeric
+invalid.illegal.not-lowercase.charset
+// <- invalid.illegal.not-lowercase.charset
+invalid.illegal.not-lowercase
+// <- invalid.illegal.not-lowercase
+invalid.illegal.not-double-quoted.charset
+// <- invalid.illegal.not-double-quoted.charset
+invalid.illegal.not-double-quoted
+// <- invalid.illegal.not-double-quoted
+invalid.illegal.no-whitespace.charset
+// <- invalid.illegal.no-whitespace.charset
+invalid.illegal.no-whitespace
+// <- invalid.illegal.no-whitespace
+invalid.illegal.name
+// <- invalid.illegal.name
+invalid.illegal.macro-name
+// <- invalid.illegal.macro-name
+invalid.illegal.leading-whitespace.charset
+// <- invalid.illegal.leading-whitespace.charset
+invalid.illegal.leading-whitespace
+// <- invalid.illegal.leading-whitespace
+invalid.illegal.integer
+// <- invalid.illegal.integer
+invalid.illegal.incomplete.html
+// <- invalid.illegal.incomplete.html
+invalid.illegal.incomplete
+// <- invalid.illegal.incomplete
+invalid.illegal.identifier
+// <- invalid.illegal.identifier
+invalid.illegal.delimiter-too-long
+// <- invalid.illegal.delimiter-too-long
+invalid.illegal.constant.character.escape
+// <- invalid.illegal.constant.character.escape
+invalid.illegal.constant.character
+// <- invalid.illegal.constant.character
+invalid.illegal.constant
+// <- invalid.illegal.constant
+invalid.illegal.comma
+// <- invalid.illegal.comma
+invalid.illegal.closing-curly-bracket
+// <- invalid.illegal.closing-curly-bracket
+invalid.illegal.character_not_allowed_here
+// <- invalid.illegal.character_not_allowed_here
+invalid.illegal.character
+// <- invalid.illegal.character
+invalid.illegal.character-out-of-range
+// <- invalid.illegal.character-out-of-range
+invalid.illegal.character-not-allowed-here
+// <- invalid.illegal.character-not-allowed-here
+invalid.illegal.bad-identifier
+// <- invalid.illegal.bad-identifier
+invalid.illegal.bad-ampersand.html
+// <- invalid.illegal.bad-ampersand.html
+invalid.illegal.bad-ampersand
+// <- invalid.illegal.bad-ampersand
+invalid.illegal.backslash
+// <- invalid.illegal.backslash
+invalid.illegal.atom
+// <- invalid.illegal.atom
 invalid.illegal.syntax.pragma
 // <- invalid.illegal.syntax.pragma
 invalid.illegal.syntax
@@ -178,10 +642,400 @@ invalid.illegal.stray-semi-colon
 // <- invalid.illegal.stray-semi-colon
 invalid.illegal
 // <- invalid.illegal
-invalid.deprecated
-// <- invalid.deprecated
 invalid
 // <- invalid
+keyword.module
+// <- keyword.module
+keyword.map
+// <- keyword.map
+keyword.interface
+// <- keyword.interface
+keyword.import
+// <- keyword.import
+keyword.function
+// <- keyword.function
+keyword.expressions-and-types
+// <- keyword.expressions-and-types
+keyword.var
+// <- keyword.var
+keyword.type
+// <- keyword.type
+keyword.struct
+// <- keyword.struct
+keyword.reserved
+// <- keyword.reserved
+keyword.package
+// <- keyword.package
+keyword.const
+// <- keyword.const
+keyword.channel
+// <- keyword.channel
+keyword.bracket.begin
+// <- keyword.bracket.begin
+keyword.bracket.end
+// <- keyword.bracket.end
+keyword.bracket
+// <- keyword.bracket
+keyword.operator.wildcard
+// <- keyword.operator.wildcard
+keyword.operator.update
+// <- keyword.operator.update
+keyword.operator.unpacking.arguments
+// <- keyword.operator.unpacking.arguments
+keyword.operator.unpacking
+// <- keyword.operator.unpacking
+keyword.operator.transposed-variable
+// <- keyword.operator.transposed-variable
+keyword.operator.transposed-parens
+// <- keyword.operator.transposed-parens
+keyword.operator.transposed-matrix
+// <- keyword.operator.transposed-matrix
+keyword.operator.transposed-func
+// <- keyword.operator.transposed-func
+keyword.operator.textual
+// <- keyword.operator.textual
+keyword.operator.symbolic
+// <- keyword.operator.symbolic
+keyword.operator.sizeof
+// <- keyword.operator.sizeof
+keyword.operator.shift
+// <- keyword.operator.shift
+keyword.operator.shape
+// <- keyword.operator.shape
+keyword.operator.relation
+// <- keyword.operator.relation
+keyword.operator.record.end
+// <- keyword.operator.record.end
+keyword.operator.record.begin
+// <- keyword.operator.record.begin
+keyword.operator.record
+// <- keyword.operator.record
+keyword.operator.promoted
+// <- keyword.operator.promoted
+keyword.operator.pattern
+// <- keyword.operator.pattern
+keyword.operator.other
+// <- keyword.operator.other
+keyword.operator.macro
+// <- keyword.operator.macro
+keyword.operator.isa
+// <- keyword.operator.isa
+keyword.operator.interpolation
+// <- keyword.operator.interpolation
+keyword.operator.instanceof
+// <- keyword.operator.instanceof
+keyword.operator.increment-decrement
+// <- keyword.operator.increment-decrement
+keyword.operator.gradient
+// <- keyword.operator.gradient
+keyword.operator.function.infix
+// <- keyword.operator.function.infix
+keyword.operator.function
+// <- keyword.operator.function
+keyword.operator.function-annotation
+// <- keyword.operator.function-annotation
+keyword.operator.dots
+// <- keyword.operator.dots
+keyword.operator.combinator
+// <- keyword.operator.combinator
+keyword.operator.channel
+// <- keyword.operator.channel
+keyword.operator.cast
+// <- keyword.operator.cast
+keyword.operator.boolean
+// <- keyword.operator.boolean
+keyword.operator.assert.expression-separator
+// <- keyword.operator.assert.expression-separator
+keyword.operator.assert
+// <- keyword.operator.assert
+keyword.operator.arrow
+// <- keyword.operator.arrow
+keyword.operator.address
+// <- keyword.operator.address
+keyword.declaration.function
+// <- keyword.declaration.function
+keyword.declaration.class
+// <- keyword.declaration.class
+keyword.declaration.struct
+// <- keyword.declaration.struct
+keyword.declaration.enum
+// <- keyword.declaration.enum
+keyword.declaration.union
+// <- keyword.declaration.union
+keyword.declaration.trait
+// <- keyword.declaration.trait
+keyword.declaration.interface
+// <- keyword.declaration.interface
+keyword.declaration.impl
+// <- keyword.declaration.impl
+keyword.declaration.type
+// <- keyword.declaration.type
+keyword.declaration
+// <- keyword.declaration
+keyword.operator.ellipsis.placeholder
+// <- keyword.operator.ellipsis.placeholder
+keyword.operator.ellipsis
+// <- keyword.operator.ellipsis
+keyword.operator.readline
+// <- keyword.operator.readline
+keyword.operator.filetest
+// <- keyword.operator.filetest
+keyword.operator.comparison.stringwise
+// <- keyword.operator.comparison.stringwise
+keyword.operator.comparison
+// <- keyword.operator.comparison
+keyword.operator.pragma.flag
+// <- keyword.operator.pragma.flag
+keyword.operator.pragma
+// <- keyword.operator.pragma
+keyword.operator.repetition
+// <- keyword.operator.repetition
+keyword.operator.concatenation
+// <- keyword.operator.concatenation
+keyword.operator.range
+// <- keyword.operator.range
+keyword.operator.assignement.compound.bitwise
+// <- keyword.operator.assignement.compound.bitwise
+keyword.operator.assignement.compound.stringwise
+// <- keyword.operator.assignement.compound.stringwise
+keyword.operator.assignement.compound
+// <- keyword.operator.assignement.compound
+keyword.operator.assignement.conditional
+// <- keyword.operator.assignement.conditional
+keyword.operator.assignement
+// <- keyword.operator.assignement
+keyword.operator.bitwise.shift
+// <- keyword.operator.bitwise.shift
+keyword.operator.bitwise
+// <- keyword.operator.bitwise
+keyword.operator.decrement
+// <- keyword.operator.decrement
+keyword.operator.increment
+// <- keyword.operator.increment
+keyword.operator.logical.c-style
+// <- keyword.operator.logical.c-style
+keyword.operator.logical.defined-or
+// <- keyword.operator.logical.defined-or
+keyword.operator.logical.feature
+// <- keyword.operator.logical.feature
+keyword.operator.logical.and.media
+// <- keyword.operator.logical.and.media
+keyword.operator.logical.and
+// <- keyword.operator.logical.and
+keyword.operator.logical
+// <- keyword.operator.logical
+keyword.operator.stringwise
+// <- keyword.operator.stringwise
+keyword.operator.arithmetic.bitwise
+// <- keyword.operator.arithmetic.bitwise
+keyword.operator.arithmetic
+// <- keyword.operator.arithmetic
+keyword.operator.ternary
+// <- keyword.operator.ternary
+keyword.operator.heredoc
+// <- keyword.operator.heredoc
+keyword.operator.null-coalescing
+// <- keyword.operator.null-coalescing
+keyword.operator.interface
+// <- keyword.operator.interface
+keyword.operator.class
+// <- keyword.operator.class
+keyword.operator.nullable-type
+// <- keyword.operator.nullable-type
+keyword.operator.assignment.compound.bitwise
+// <- keyword.operator.assignment.compound.bitwise
+keyword.operator.assignment.compound
+// <- keyword.operator.assignment.compound
+keyword.operator.assignment.bitwise
+// <- keyword.operator.assignment.bitwise
+keyword.operator.assignment.augmented
+// <- keyword.operator.assignment.augmented
+keyword.operator.assignment.arithmetic
+// <- keyword.operator.assignment.arithmetic
+keyword.operator.assignment
+// <- keyword.operator.assignment
+keyword.operator.arithmetic
+// <- keyword.operator.arithmetic
+keyword.operator.bitwise
+// <- keyword.operator.bitwise
+keyword.operator.logical
+// <- keyword.operator.logical
+keyword.operator.word
+// <- keyword.operator.word
+keyword.operator.regexp
+// <- keyword.operator.regexp
+keyword.operator
+// <- keyword.operator
+keyword.controls
+// <- keyword.controls
+keyword.control.at-rule.viewport
+// <- keyword.control.at-rule.viewport
+keyword.control.at-rule.supports
+// <- keyword.control.at-rule.supports
+keyword.control.at-rule.page
+// <- keyword.control.at-rule.page
+keyword.control.at-rule.namespace
+// <- keyword.control.at-rule.namespace
+keyword.control.at-rule.media
+// <- keyword.control.at-rule.media
+keyword.control.at-rule.keyframes
+// <- keyword.control.at-rule.keyframes
+keyword.control.at-rule.import
+// <- keyword.control.at-rule.import
+keyword.control.at-rule.font-feature-values
+// <- keyword.control.at-rule.font-feature-values
+keyword.control.at-rule.font-face
+// <- keyword.control.at-rule.font-face
+keyword.control.at-rule.document
+// <- keyword.control.at-rule.document
+keyword.control.at-rule
+// <- keyword.control.at-rule
+keyword.control.at-rule.counter-style
+// <- keyword.control.at-rule.counter-style
+keyword.control.at-rule.charset
+// <- keyword.control.at-rule.charset
+keyword.control.at-rule
+// <- keyword.control.at-rule
+keyword.control.directive.undef
+// <- keyword.control.directive.undef
+keyword.control.directive.pragma.pragma-mark
+// <- keyword.control.directive.pragma.pragma-mark
+keyword.control.directive.pragma
+// <- keyword.control.directive.pragma
+keyword.control.directive.module
+// <- keyword.control.directive.module
+keyword.control.directive.line
+// <- keyword.control.directive.line
+keyword.control.directive.import
+// <- keyword.control.directive.import
+keyword.control.directive.ifndef
+// <- keyword.control.directive.ifndef
+keyword.control.directive.ifdef
+// <- keyword.control.directive.ifdef
+keyword.control.directive.export
+// <- keyword.control.directive.export
+keyword.control.directive.diagnostic
+// <- keyword.control.directive.diagnostic
+keyword.control.directive.define
+// <- keyword.control.directive.define
+keyword.control.directive.conditional
+// <- keyword.control.directive.conditional
+keyword.control.directive.behaviour
+// <- keyword.control.directive.behaviour
+keyword.control.directive.pragma
+// <- keyword.control.directive.pragma
+keyword.control.directive
+// <- keyword.control.directive
+keyword.control.diagnostics
+// <- keyword.control.diagnostics
+keyword.control.regexp-option
+// <- keyword.control.regexp-option
+keyword.control.conditional
+// <- keyword.control.conditional
+keyword.control.anchor
+// <- keyword.control.anchor
+keyword.control.import.from
+// <- keyword.control.import.from
+keyword.control.import
+// <- keyword.control.import
+keyword.control.continue
+// <- keyword.control.continue
+keyword.control.while
+// <- keyword.control.while
+keyword.control.return
+// <- keyword.control.return
+keyword.control.try
+// <- keyword.control.try
+keyword.control.throw
+// <- keyword.control.throw
+keyword.control.ternary
+// <- keyword.control.ternary
+keyword.control.statement
+// <- keyword.control.statement
+keyword.control.start-block
+// <- keyword.control.start-block
+keyword.control.repeat
+// <- keyword.control.repeat
+keyword.control.receive
+// <- keyword.control.receive
+keyword.control.query
+// <- keyword.control.query
+keyword.control.pseudo-method
+// <- keyword.control.pseudo-method
+keyword.control.new
+// <- keyword.control.new
+keyword.control.module
+// <- keyword.control.module
+keyword.control.if
+// <- keyword.control.if
+keyword.control.fun
+// <- keyword.control.fun
+keyword.control.finally
+// <- keyword.control.finally
+keyword.control.exception
+// <- keyword.control.exception
+keyword.control.def
+// <- keyword.control.def
+keyword.control.class
+// <- keyword.control.class
+keyword.control.catch
+// <- keyword.control.catch
+keyword.control.case
+// <- keyword.control.case
+keyword.control.begin
+// <- keyword.control.begin
+keyword.control
+// <- keyword.control
+keyword.others
+// <- keyword.others
+keyword.other.unit.percentage
+// <- keyword.other.unit.percentage
+keyword.other.special-method
+// <- keyword.other.special-method
+keyword.other.preprocessor
+// <- keyword.other.preprocessor
+keyword.other.package
+// <- keyword.other.package
+keyword.other.important
+// <- keyword.other.important
+keyword.other.import
+// <- keyword.other.import
+keyword.other.forall
+// <- keyword.other.forall
+keyword.other.double-colon
+// <- keyword.other.double-colon
+keyword.other.documentation.doc
+// <- keyword.other.documentation.doc
+keyword.other.documentation
+// <- keyword.other.documentation
+keyword.other.data
+// <- keyword.other.data
+keyword.other.big-arrow
+// <- keyword.other.big-arrow
+keyword.other.arrow
+// <- keyword.other.arrow
+keyword.other.namespace
+// <- keyword.other.namespace
+keyword.other.class
+// <- keyword.other.class
+keyword.other.interface
+// <- keyword.other.interface
+keyword.other.type
+// <- keyword.other.type
+keyword.other
+// <- keyword.other
+keyword
+// <- keyword
+markup.other.escape.newline.end
+// <- markup.other.escape.newline.end
+markup.other.escape.newline.begin
+// <- markup.other.escape.newline.begin
+markup.other.escape.newline
+// <- markup.other.escape.newline
+markup.other.escape
+// <- markup.other.escape
+markup.other
+// <- markup.other
 markup.heading
 // <- markup.heading
 markup.list.unnumbered
@@ -200,6 +1054,8 @@ markup.deleted
 // <- markup.deleted
 markup.underline.link.hyperlink
 // <- markup.underline.link.hyperlink
+markup.underline.link.radar
+// <- markup.underline.link.radar
 markup.underline.link
 // <- markup.underline.link
 markup.underline
@@ -216,12 +1072,158 @@ markup.other
 // <- markup.other
 markup
 // <- markup
+meta.at-rule.viewport
+// <- meta.at-rule.viewport
+meta.at-rule.supports.header
+// <- meta.at-rule.supports.header
+meta.at-rule.supports.body
+// <- meta.at-rule.supports.body
+meta.at-rule.supports
+// <- meta.at-rule.supports
+meta.at-rule.page
+// <- meta.at-rule.page
+meta.at-rule.namespace
+// <- meta.at-rule.namespace
+meta.at-rule.media.header
+// <- meta.at-rule.media.header
+meta.at-rule.media.body
+// <- meta.at-rule.media.body
+meta.at-rule.media
+// <- meta.at-rule.media
+meta.at-rule.keyframes.header
+// <- meta.at-rule.keyframes.header
+meta.at-rule.keyframes.body
+// <- meta.at-rule.keyframes.body
+meta.at-rule.import
+// <- meta.at-rule.import
+meta.at-rule.header
+// <- meta.at-rule.header
+meta.at-rule.font-features
+// <- meta.at-rule.font-features
+meta.at-rule.font-face
+// <- meta.at-rule.font-face
+meta.at-rule.document.header
+// <- meta.at-rule.document.header
+meta.at-rule.document.body
+// <- meta.at-rule.document.body
+meta.at-rule.document
+// <- meta.at-rule.document
+meta.at-rule.counter-style.header
+// <- meta.at-rule.counter-style.header
+meta.at-rule.counter-style.body
+// <- meta.at-rule.counter-style.body
+meta.at-rule.counter-style
+// <- meta.at-rule.counter-style
+meta.at-rule.charset
+// <- meta.at-rule.charset
+meta.at-rule.body
+// <- meta.at-rule.body
+meta.at-rule
+// <- meta.at-rule
+meta.attribute-without-value.html
+// <- meta.attribute-without-value.html
+meta.attribute-with-value.style.html
+// <- meta.attribute-with-value.style.html
+meta.attribute-with-value.style
+// <- meta.attribute-with-value.style
+meta.attribute-with-value.id.html
+// <- meta.attribute-with-value.id.html
+meta.attribute-with-value.id
+// <- meta.attribute-with-value.id
+meta.attribute-with-value.html
+// <- meta.attribute-with-value.html
+meta.attribute-with-value.class.html
+// <- meta.attribute-with-value.class.html
+meta.attribute-with-value.class
+// <- meta.attribute-with-value.class
+meta.attribute-with-value
+// <- meta.attribute-with-value
+meta.attribute-selector
+// <- meta.attribute-selector
+meta.definition.variable.local
+// <- meta.definition.variable.local
+meta.definition.variable
+// <- meta.definition.variable
+meta.definition.class.inherited.classes
+// <- meta.definition.class.inherited.classes
+meta.definition.class.inherited
+// <- meta.definition.class.inherited
+meta.definition.class.implemented.interfaces
+// <- meta.definition.class.implemented.interfaces
+meta.definition.class.implemented
+// <- meta.definition.class.implemented
+meta.definition.class
+// <- meta.definition.class
+meta.definition
+// <- meta.definition
+meta.declaration.type.data.record.block
+// <- meta.declaration.type.data.record.block
+meta.declaration.type.data.record
+// <- meta.declaration.type.data.record
+meta.declaration.type.data
+// <- meta.declaration.type.data
+meta.declaration.type.type
+// <- meta.declaration.type.type
+meta.declaration.type
+// <- meta.declaration.type
+meta.declaration.module
+// <- meta.declaration.module
+meta.declaration.instance.deriving
+// <- meta.declaration.instance.deriving
+meta.declaration.instance
+// <- meta.declaration.instance
+meta.declaration.exports
+// <- meta.declaration.exports
+meta.declaration.class
+// <- meta.declaration.class
+meta.declaration.assertion
+// <- meta.declaration.assertion
+meta.declaration.annotation
+// <- meta.declaration.annotation
+meta.declaration
+// <- meta.declaration
+meta.ctor.type-declaration
+// <- meta.ctor.type-declaration
+meta.ctor
+// <- meta.ctor
+meta.angle-brackets
+// <- meta.angle-brackets
+meta.deriving.strategy
+// <- meta.deriving.strategy
+meta.deriving
+// <- meta.deriving
+meta.directive.define
+// <- meta.directive.define
+meta.directive.behaviour
+// <- meta.directive.behaviour
+meta.directive.undef
+// <- meta.directive.undef
+meta.directive.record
+// <- meta.directive.record
+meta.directive.module
+// <- meta.directive.module
+meta.directive.import
+// <- meta.directive.import
+meta.directive.ifndef
+// <- meta.directive.ifndef
+meta.directive.ifdef
+// <- meta.directive.ifdef
+meta.directive.export
+// <- meta.directive.export
+meta.directive
+// <- meta.directive
 meta.method-call.static
 // <- meta.method-call.static
 meta.method-call
 // <- meta.method-call
 meta.toc-list
 // <- meta.toc-list
+meta.class-struct-block
+// <- meta.class-struct-block
+meta.class.old-style
+// <- meta.class.old-style
+meta.class.identifier
+// <- meta.class.identifier
 meta.class
 // <- meta.class
 meta.struct
@@ -234,6 +1236,8 @@ meta.trait
 // <- meta.trait
 meta.interface
 // <- meta.interface
+meta.import
+// <- meta.import
 meta.impl
 // <- meta.impl
 meta.type
@@ -246,8 +1250,20 @@ meta.function-call
 // <- meta.function-call
 meta.block
 // <- meta.block
+meta.catch
+// <- meta.catch
+meta.embedded.block
+// <- meta.embedded.block
+meta.embedded.sql
+// <- meta.embedded.sql
+meta.embedded.line
+// <- meta.embedded.line
+meta.embedded.block
+// <- meta.embedded.block
 meta.embedded
 // <- meta.embedded
+meta.function
+// <- meta.function
 meta.braces
 // <- meta.braces
 meta.group
@@ -258,6 +1274,168 @@ meta.brackets
 // <- meta.brackets
 meta.generic
 // <- meta.generic
+meta.via
+// <- meta.via
+meta.using-namespace-declaration
+// <- meta.using-namespace-declaration
+meta.type-signature
+// <- meta.type-signature
+meta.try.resources
+// <- meta.try.resources
+meta.try
+// <- meta.try
+meta.throwables
+// <- meta.throwables
+meta.syntaxstart-block
+// <- meta.syntaxstart-block
+meta.structure.tuple
+// <- meta.structure.tuple
+meta.structure.record
+// <- meta.structure.record
+meta.structure.list
+// <- meta.structure.list
+meta.structure.list.function
+// <- meta.structure.list.function
+meta.structure.dictionary
+// <- meta.structure.dictionary
+meta.structure.binary
+// <- meta.structure.binary
+meta.selector
+// <- meta.selector
+meta.section
+// <- meta.section
+meta.require
+// <- meta.require
+meta.record-usage
+// <- meta.record-usage
+meta.record-field.type-declaration
+// <- meta.record-field.type-declaration
+meta.record-field
+// <- meta.record-field
+meta.ratio
+// <- meta.ratio
+meta.property-name
+// <- meta.property-name
+meta.property-list.font-feature
+// <- meta.property-list.font-feature
+meta.property-list
+// <- meta.property-list
+meta.preprocessor.pragma
+// <- meta.preprocessor.pragma
+meta.preprocessor.macro
+// <- meta.preprocessor.macro
+meta.preprocessor.include
+// <- meta.preprocessor.include
+meta.preprocessor.diagnostic
+// <- meta.preprocessor.diagnostic
+meta.preprocessor
+// <- meta.preprocessor
+meta.package
+// <- meta.package
+meta.other.constructor-list
+// <- meta.other.constructor-list
+meta.other
+// <- meta.other
+meta.namespace-block
+// <- meta.namespace-block
+meta.multiline.type-declaration
+// <- meta.multiline.type-declaration
+meta.multiline
+// <- meta.multiline
+meta.module
+// <- meta.module
+meta.method.return-type
+// <- meta.method.return-type
+meta.method.identifier
+// <- meta.method.identifier
+meta.method
+// <- meta.method
+meta.method-call
+// <- meta.method-call
+meta.macro-usage
+// <- meta.macro-usage
+meta.item-access
+// <- meta.item-access
+meta.interpolation
+// <- meta.interpolation
+meta.inner-class
+// <- meta.inner-class
+meta.initialization
+// <- meta.initialization
+meta.foreign
+// <- meta.foreign
+meta.finally
+// <- meta.finally
+meta.feature-query
+// <- meta.feature-query
+meta.extern-block
+// <- meta.extern-block
+meta.expression.try
+// <- meta.expression.try
+meta.expression.receive
+// <- meta.expression.receive
+meta.expression.query
+// <- meta.expression.query
+meta.expression.parenthesized
+// <- meta.expression.parenthesized
+meta.expression.if
+// <- meta.expression.if
+meta.expression.fun
+// <- meta.expression.fun
+meta.expression.case
+// <- meta.expression.case
+meta.expression.begin
+// <- meta.expression.begin
+meta.expression
+// <- meta.expression
+meta.environment-variable
+// <- meta.environment-variable
+meta.enum
+// <- meta.enum
+meta.encoding
+// <- meta.encoding
+meta.empty-tuple
+// <- meta.empty-tuple
+meta.empty-string.double
+// <- meta.empty-string.double
+meta.empty-string
+// <- meta.empty-string
+meta.empty-list
+// <- meta.empty-list
+meta.empty-dictionary
+// <- meta.empty-dictionary
+meta.tag.style.html
+// <- meta.tag.style.html
+meta.tag.style
+// <- meta.tag.style
+meta.tag.structure
+// <- meta.tag.structure
+meta.tag.sgml.html
+// <- meta.tag.sgml.html
+meta.tag.sgml.doctype.html
+// <- meta.tag.sgml.doctype.html
+meta.tag.sgml.doctype
+// <- meta.tag.sgml.doctype
+meta.tag.sgml
+// <- meta.tag.sgml
+meta.tag.script.html
+// <- meta.tag.script.html
+meta.tag.script
+// <- meta.tag.script
+meta.tag.preprocessor.xml.html
+// <- meta.tag.preprocessor.xml.html
+meta.tag.preprocessor.xml
+// <- meta.tag.preprocessor.xml
+meta.tag.preprocessor
+// <- meta.tag.preprocessor
+meta.tag.other.html
+// <- meta.tag.other.html
+meta.tag.other
+// <- meta.tag.other
+meta.tag.inline
+// <- meta.tag.inline
+meta.tag.block
+// <- meta.tag.block
 meta.tag
 // <- meta.tag
 meta.leading-tabs
@@ -270,8 +1448,50 @@ meta.paragraph
 // <- meta.paragraph
 meta.diagnostics.pragma
 // <- meta.diagnostics.pragma
-meta.function.parameters
-// <- meta.function.parameters
+meta.function.variable
+// <- meta.function.variable
+meta.function.url
+// <- meta.function.url
+meta.function.type-declaration
+// <- meta.function.type-declaration
+meta.function.timing-function
+// <- meta.function.timing-function
+meta.function.shape
+// <- meta.function.shape
+meta.function.misc
+// <- meta.function.misc
+meta.function.method.without-arguments
+// <- meta.function.method.without-arguments
+meta.function.method.with-arguments
+// <- meta.function.method.with-arguments
+meta.function.method
+// <- meta.function.method
+meta.function.inline
+// <- meta.function.inline
+meta.function.gradient.invalid.deprecated.gradient
+// <- meta.function.gradient.invalid.deprecated.gradient
+meta.function.gradient.invalid.deprecated
+// <- meta.function.gradient.invalid.deprecated
+meta.function.gradient.invalid
+// <- meta.function.gradient.invalid
+meta.function.gradient
+// <- meta.function.gradient
+meta.function.document-rule
+// <- meta.function.document-rule
+meta.function.destructor.prototype
+// <- meta.function.destructor.prototype
+meta.function.destructor
+// <- meta.function.destructor
+meta.function.decorator
+// <- meta.function.decorator
+meta.function.constructor.initializer-list
+// <- meta.function.constructor.initializer-list
+meta.function.constructor
+// <- meta.function.constructor
+meta.function.color
+// <- meta.function.color
+meta.function.calc
+// <- meta.function.calc
 meta.function.parameters
 // <- meta.function.parameters
 meta.function.return-type
@@ -298,22 +1518,52 @@ meta.annotation
 // <- meta.annotation
 meta
 // <- meta
+parameter.variable.function
+// <- parameter.variable.function
+parameter.variable
+// <- parameter.variable
+parameter
+// <- parameter
+punctuation.bracket.square
+// <- punctuation.bracket.square
+punctuation.bracket.round
+// <- punctuation.bracket.round
+punctuation.bracket.curly
+// <- punctuation.bracket.curly
+punctuation.bracket.angle
+// <- punctuation.bracket.angle
+punctuation.bracket
+// <- punctuation.bracket
 punctuation.whitespace.comment.leading
 // <- punctuation.whitespace.comment.leading
 punctuation.whitespace.comment
 // <- punctuation.whitespace.comment
+punctuation.whitespace.support.function.leading
+// <- punctuation.whitespace.support.function.leading
+punctuation.whitespace.support.function
+// <- punctuation.whitespace.support.function
+punctuation.whitespace.support
+// <- punctuation.whitespace.support
 punctuation.whitespace
 // <- punctuation.whitespace
+punctuation.vararg-ellipses
+// <- punctuation.vararg-ellipses
 punctuation.terminator.semicolon
 // <- punctuation.terminator.semicolon
 punctuation.terminator.statement
 // <- punctuation.terminator.statement
 punctuation.terminator.expression
 // <- punctuation.terminator.expression
+punctuation.terminator.rule
+// <- punctuation.terminator.rule
 punctuation.terminator
 // <- punctuation.terminator
 punctuation.delimiter.decimal.period
 // <- punctuation.delimiter.decimal.period
+punctuation.delimiter.decimal
+// <- punctuation.delimiter.decimal
+punctuation.delimiter
+// <- punctuation.delimiter
 punctuation.separator.comma
 // <- punctuation.separator.comma
 punctuation.separator.colon
@@ -334,10 +1584,208 @@ punctuation.separator.decimal.period
 // <- punctuation.separator.decimal.period
 punctuation.separator.decimal
 // <- punctuation.separator.decimal
+punctuation.separator.variable
+// <- punctuation.separator.variable
+punctuation.separator.valuepair.dictionary
+// <- punctuation.separator.valuepair.dictionary
+punctuation.separator.valuepair
+// <- punctuation.separator.valuepair
+punctuation.separator.value-type
+// <- punctuation.separator.value-type
+punctuation.separator.value-size
+// <- punctuation.separator.value-size
+punctuation.separator.types
+// <- punctuation.separator.types
+punctuation.separator.type-specifiers
+// <- punctuation.separator.type-specifiers
+punctuation.separator.tuple
+// <- punctuation.separator.tuple
+punctuation.separator.statement
+// <- punctuation.separator.statement
+punctuation.separator.record-field
+// <- punctuation.separator.record-field
+punctuation.separator.property.period
+// <- punctuation.separator.property.period
+punctuation.separator.property
+// <- punctuation.separator.property
+punctuation.separator.pointer-access
+// <- punctuation.separator.pointer-access
+punctuation.separator.placeholder-parts
+// <- punctuation.separator.placeholder-parts
+punctuation.separator.pipe
+// <- punctuation.separator.pipe
+punctuation.separator.period
+// <- punctuation.separator.period
+punctuation.separator.parameters
+// <- punctuation.separator.parameters
+punctuation.separator.other
+// <- punctuation.separator.other
+punctuation.separator.object
+// <- punctuation.separator.object
+punctuation.separator.namespace.access
+// <- punctuation.separator.namespace.access
+punctuation.separator.namespace
+// <- punctuation.separator.namespace
+punctuation.separator.module-function
+// <- punctuation.separator.module-function
+punctuation.separator.method.period
+// <- punctuation.separator.method.period
+punctuation.separator.method
+// <- punctuation.separator.method
+punctuation.separator.list.comma
+// <- punctuation.separator.list.comma
+punctuation.separator.list
+// <- punctuation.separator.list
+punctuation.separator.key-value
+// <- punctuation.separator.key-value
+punctuation.separator.integer-float
+// <- punctuation.separator.integer-float
+punctuation.separator.inheritance
+// <- punctuation.separator.inheritance
+punctuation.separator.guards
+// <- punctuation.separator.guards
+punctuation.separator.function-punctuation-head-body
+// <- punctuation.separator.function-punctuation-head-body
+punctuation.separator.function-arity
+// <- punctuation.separator.function-arity
+punctuation.separator.expressions
+// <- punctuation.separator.expressions
+punctuation.separator.dot-access
+// <- punctuation.separator.dot-access
+punctuation.separator.dictionary
+// <- punctuation.separator.dictionary
+punctuation.separator.delimiter
+// <- punctuation.separator.delimiter
+punctuation.separator.define
+// <- punctuation.separator.define
+punctuation.separator.dash.unicode-range
+// <- punctuation.separator.dash.unicode-range
+punctuation.separator.dash
+// <- punctuation.separator.dash
+punctuation.separator.continuation.line
+// <- punctuation.separator.continuation.line
+punctuation.separator.continuation
+// <- punctuation.separator.continuation
+punctuation.separator.comma
+// <- punctuation.separator.comma
+punctuation.separator.clauses
+// <- punctuation.separator.clauses
+punctuation.separator.clause-head-body
+// <- punctuation.separator.clause-head-body
+punctuation.separator.class.record
+// <- punctuation.separator.class.record
+punctuation.separator.class
+// <- punctuation.separator.class
+punctuation.separator.binary
+// <- punctuation.separator.binary
+punctuation.separator.arguments
+// <- punctuation.separator.arguments
 punctuation.separator
 // <- punctuation.separator
 punctuation.accessor
 // <- punctuation.accessor
+punctuation.section.try.resources.begin.bracket.round
+// <- punctuation.section.try.resources.begin.bracket.round
+punctuation.section.try.resources.begin.bracket
+// <- punctuation.section.try.resources.begin.bracket
+punctuation.section.try.resources.begin
+// <- punctuation.section.try.resources.begin
+punctuation.section.try.resources
+// <- punctuation.section.try.resources
+punctuation.section.try.begin.bracket.curly
+// <- punctuation.section.try.begin.bracket.curly
+punctuation.section.try.begin.bracket
+// <- punctuation.section.try.begin.bracket
+punctuation.section.try.begin.
+// <- punctuation.section.try.begin.
+punctuation.section.try
+// <- punctuation.section.try
+punctuation.section.symbol.begin
+// <- punctuation.section.symbol.begin
+punctuation.section.supports.begin.bracket.curly
+// <- punctuation.section.supports.begin.bracket.curly
+punctuation.section.supports.end.bracket.curly
+// <- punctuation.section.supports.end.bracket.curly
+punctuation.section.scope.end
+// <- punctuation.section.scope.end
+punctuation.section.scope.begin
+// <- punctuation.section.scope.begin
+punctuation.section.scope
+// <- punctuation.section.scope
+punctuation.section.regexp
+// <- punctuation.section.regexp
+punctuation.section.regexp.begin
+// <- punctuation.section.regexp.begin
+punctuation.section.property-list.begin.bracket.curly
+// <- punctuation.section.property-list.begin.bracket.curly
+punctuation.section.parens.end.bracket.round
+// <- punctuation.section.parens.end.bracket.round
+punctuation.section.parens.begin.bracket.round
+// <- punctuation.section.parens.begin.bracket.round
+punctuation.section.parameters.end.bracket.round
+// <- punctuation.section.parameters.end.bracket.round
+punctuation.section.parameters.begin.bracket.round
+// <- punctuation.section.parameters.begin.bracket.round
+punctuation.section.module.begin.bracket.curly
+// <- punctuation.section.module.begin.bracket.curly
+punctuation.section.method.begin.bracket.curly
+// <- punctuation.section.method.begin.bracket.curly
+punctuation.section.media.begin.bracket.curly
+// <- punctuation.section.media.begin.bracket.curly
+punctuation.section.list.begin
+// <- punctuation.section.list.begin
+punctuation.section.keyframes.begin.bracket.curly
+// <- punctuation.section.keyframes.begin.bracket.curly
+punctuation.section.inner-class.begin.bracket.curly
+// <- punctuation.section.inner-class.begin.bracket.curly
+punctuation.section.function
+// <- punctuation.section.function
+punctuation.section.function.end.bracket.round
+// <- punctuation.section.function.end.bracket.round
+punctuation.section.function.begin.bracket.round
+// <- punctuation.section.function.begin.bracket.round
+punctuation.section.finally.begin.bracket.curly
+// <- punctuation.section.finally.begin.bracket.curly
+punctuation.section.expression.begin
+// <- punctuation.section.expression.begin
+punctuation.section.enum.begin.bracket.curly
+// <- punctuation.section.enum.begin.bracket.curly
+punctuation.section.document.begin.bracket.curly
+// <- punctuation.section.document.begin.bracket.curly
+punctuation.section.directive.begin
+// <- punctuation.section.directive.begin
+punctuation.section.class.begin
+// <- punctuation.section.class.begin
+punctuation.section.class.begin.bracket.curly
+// <- punctuation.section.class.begin.bracket.curly
+punctuation.section.catch.begin.bracket.curly
+// <- punctuation.section.catch.begin.bracket.curly
+punctuation.section.block.end.bracket.curly
+// <- punctuation.section.block.end.bracket.curly
+punctuation.section.block.begin.bracket.curly
+// <- punctuation.section.block.begin.bracket.curly
+punctuation.section.begin.bracket.curly
+// <- punctuation.section.begin.bracket.curly
+punctuation.section.array.end
+// <- punctuation.section.array.end
+punctuation.section.array
+// <- punctuation.section.array
+punctuation.section.array.begin
+// <- punctuation.section.array.begin
+punctuation.section.arguments.end.bracket.round
+// <- punctuation.section.arguments.end.bracket.round
+punctuation.section.arguments.end.bracket
+// <- punctuation.section.arguments.end.bracket
+punctuation.section.arguments.end
+// <- punctuation.section.arguments.end
+punctuation.section.arguments.begin.bracket.round
+// <- punctuation.section.arguments.begin.bracket.round
+punctuation.section.arguments.begin.bracket
+// <- punctuation.section.arguments.begin.bracket
+punctuation.section.arguments.begin
+// <- punctuation.section.arguments.begin
+punctuation.section.arguments
+// <- punctuation.section.arguments
 punctuation.section.embedded.begin
 // <- punctuation.section.embedded.begin
 punctuation.section.embedded.end
@@ -430,6 +1878,156 @@ punctuation.section.signature
 // <- punctuation.section.signature
 punctuation.section
 // <- punctuation.section
+punctuation.other.period
+// <- punctuation.other.period
+punctuation.other.comma
+// <- punctuation.other.comma
+punctuation.other.colon
+// <- punctuation.other.colon
+punctuation.definition.variables.end.bracket.round
+// <- punctuation.definition.variables.end.bracket.round
+punctuation.definition.variables.begin.bracket.round
+// <- punctuation.definition.variables.begin.bracket.round
+punctuation.definition.tuple.begin
+// <- punctuation.definition.tuple.begin
+punctuation.definition.tag.html
+// <- punctuation.definition.tag.html
+punctuation.definition.tag.begin.html
+// <- punctuation.definition.tag.begin.html
+punctuation.definition.symbol.begin
+// <- punctuation.definition.symbol.begin
+punctuation.definition.string.end
+// <- punctuation.definition.string.end
+punctuation.definition.string.begin
+// <- punctuation.definition.string.begin
+punctuation.definition.string.begin.html
+// <- punctuation.definition.string.begin.html
+punctuation.definition.scope
+// <- punctuation.definition.scope
+punctuation.definition.quasiquotes.end
+// <- punctuation.definition.quasiquotes.end
+punctuation.definition.quasiquotes.begin
+// <- punctuation.definition.quasiquotes.begin
+punctuation.definition.placeholder
+// <- punctuation.definition.placeholder
+punctuation.definition.parameters.varargs
+// <- punctuation.definition.parameters.varargs
+punctuation.definition.parameters
+// <- punctuation.definition.parameters
+punctuation.definition.parameters.end
+// <- punctuation.definition.parameters.end
+punctuation.definition.parameters.end.bracket.round
+// <- punctuation.definition.parameters.end.bracket.round
+punctuation.definition.parameters.begin
+// <- punctuation.definition.parameters.begin
+punctuation.definition.parameters.begin.bracket.round
+// <- punctuation.definition.parameters.begin.bracket.round
+punctuation.definition.list.end
+// <- punctuation.definition.list.end
+punctuation.definition.list.begin
+// <- punctuation.definition.list.begin
+punctuation.definition.list
+// <- punctuation.definition.list
+punctuation.definition.keyword
+// <- punctuation.definition.keyword
+punctuation.definition.interpolation.begin.bracket.curly
+// <- punctuation.definition.interpolation.begin.bracket.curly
+punctuation.definition.inheritance.end
+// <- punctuation.definition.inheritance.end
+punctuation.definition.inheritance.begin
+// <- punctuation.definition.inheritance.begin
+punctuation.definition.imports.end.bracket.round
+// <- punctuation.definition.imports.end.bracket.round
+punctuation.definition.imports.begin.bracket.round
+// <- punctuation.definition.imports.begin.bracket.round
+punctuation.definition.escape
+// <- punctuation.definition.escape
+punctuation.definition.entity.end.html
+// <- punctuation.definition.entity.end.html
+punctuation.definition.entity.begin.html
+// <- punctuation.definition.entity.begin.html
+punctuation.definition.entity.end
+// <- punctuation.definition.entity.end
+punctuation.definition.entity.begin
+// <- punctuation.definition.entity.begin
+punctuation.definition.entity
+// <- punctuation.definition.entity
+punctuation.definition.entity.begin.bracket.square
+// <- punctuation.definition.entity.begin.bracket.square
+punctuation.definition.end.bracket.square
+// <- punctuation.definition.end.bracket.square
+punctuation.definition.end.bracket.round
+// <- punctuation.definition.end.bracket.round
+punctuation.definition.end.bracket.curly
+// <- punctuation.definition.end.bracket.curly
+punctuation.definition.end.bracket
+// <- punctuation.definition.end.bracket
+punctuation.definition.end
+// <- punctuation.definition.end
+punctuation.definition.dictionary.begin
+// <- punctuation.definition.dictionary.begin
+punctuation.definition.directive
+// <- punctuation.definition.directive
+punctuation.definition.decorator
+// <- punctuation.definition.decorator
+punctuation.definition.constant.hashkey
+// <- punctuation.definition.constant.hashkey
+punctuation.definition.constant
+// <- punctuation.definition.constant
+punctuation.definition.condition.begin.bracket.round
+// <- punctuation.definition.condition.begin.bracket.round
+punctuation.definition.comment.block.start
+// <- punctuation.definition.comment.block.start
+punctuation.definition.comment.block.end
+// <- punctuation.definition.comment.block.end
+punctuation.definition.comment.block
+// <- punctuation.definition.comment.block
+punctuation.definition.comment.haddock
+// <- punctuation.definition.comment.haddock
+punctuation.definition.comment.end
+// <- punctuation.definition.comment.end
+punctuation.definition.comment.begin
+// <- punctuation.definition.comment.begin
+punctuation.definition.comment
+// <- punctuation.definition.comment
+punctuation.definition.class.record.end
+// <- punctuation.definition.class.record.end
+punctuation.definition.character
+// <- punctuation.definition.character
+punctuation.definition.character-class
+// <- punctuation.definition.character-class
+punctuation.definition.bracket.square
+// <- punctuation.definition.bracket.square
+punctuation.definition.binary.begin
+// <- punctuation.definition.binary.begin
+punctuation.definition.begin.bracket.square
+// <- punctuation.definition.begin.bracket.square
+punctuation.definition.begin.bracket.round
+// <- punctuation.definition.begin.bracket.round
+punctuation.definition.begin.bracket.curly
+// <- punctuation.definition.begin.bracket.curly
+punctuation.definition.begin.bracket
+// <- punctuation.definition.begin.bracket
+punctuation.definition.begin
+// <- punctuation.definition.begin
+punctuation.definition.arguments.begin.bracket.round
+// <- punctuation.definition.arguments.begin.bracket.round
+punctuation.definition.arguments.begin.bracket
+// <- punctuation.definition.arguments.begin.bracket
+punctuation.definition.arguments.begin
+// <- punctuation.definition.arguments.begin
+punctuation.definition.arguments
+// <- punctuation.definition.arguments
+punctuation.definition.arbitrary-repitition
+// <- punctuation.definition.arbitrary-repitition
+punctuation.definition.annotation.begin
+// <- punctuation.definition.annotation.begin
+punctuation.definition.annotation.end
+// <- punctuation.definition.annotation.end
+punctuation.definition.annotation-arguments.begin.bracket.round
+// <- punctuation.definition.annotation-arguments.begin.bracket.round
+punctuation.definition.annotation
+// <- punctuation.definition.annotation
 punctuation.definition.heredoc.begin
 // <- punctuation.definition.heredoc.begin
 punctuation.definition.heredoc.end
@@ -456,24 +2054,12 @@ punctuation.definition.string.end
 // <- punctuation.definition.string.end
 punctuation.definition.string
 // <- punctuation.definition.string
-punctuation.definition.comment.begin
-// <- punctuation.definition.comment.begin
-punctuation.definition.comment.end
-// <- punctuation.definition.comment.end
-punctuation.definition.comment
-// <- punctuation.definition.comment
 punctuation.definition.keyword.begin
 // <- punctuation.definition.keyword.begin
 punctuation.definition.keyword.end
 // <- punctuation.definition.keyword.end
 punctuation.definition.keyword
 // <- punctuation.definition.keyword
-punctuation.definition.annotation.begin
-// <- punctuation.definition.annotation.begin
-punctuation.definition.annotation.end
-// <- punctuation.definition.annotation.end
-punctuation.definition.annotation
-// <- punctuation.definition.annotation
 punctuation.definition.generic.begin
 // <- punctuation.definition.generic.begin
 punctuation.definition.generic.end
@@ -488,6 +2074,8 @@ punctuation.definition.variable
 // <- punctuation.definition.variable
 punctuation.definition
 // <- punctuation.definition
+punctuation.catch.separator
+// <- punctuation.catch.separator
 punctuation.unmatched.brace.curly.bracket.begin
 // <- punctuation.unmatched.brace.curly.bracket.begin
 punctuation.unmatched.brace.curly.bracket.end
@@ -502,6 +2090,22 @@ punctuation.unmatched
 // <- punctuation.unmatched
 punctuation
 // <- punctuation
+storage.modifier.variable
+// <- storage.modifier.variable
+storage.modifier.unit
+// <- storage.modifier.unit
+storage.modifier.signedness
+// <- storage.modifier.signedness
+storage.modifier.nonlocal
+// <- storage.modifier.nonlocal
+storage.modifier.ignore-case
+// <- storage.modifier.ignore-case
+storage.modifier.global
+// <- storage.modifier.global
+storage.modifier.endianness
+// <- storage.modifier.endianness
+storage.modifier.async
+// <- storage.modifier.async
 storage.modifier.extends
 // <- storage.modifier.extends
 storage.modifier.static
@@ -520,12 +2124,52 @@ storage.modifier.reference
 // <- storage.modifier.reference
 storage.modifier
 // <- storage.modifier
+storage.type.variable
+// <- storage.type.variable
+storage.type.uintptr
+// <- storage.type.uintptr
+storage.type.template
+// <- storage.type.template
+storage.type.string
+// <- storage.type.string
+storage.type.rune
+// <- storage.type.rune
+storage.type.primitive
+// <- storage.type.primitive
+storage.type.primitive.array
+// <- storage.type.primitive.array
+storage.type.object.array
+// <- storage.type.object.array
+storage.type.numeric
+// <- storage.type.numeric
+storage.type.modifier
+// <- storage.type.modifier
+storage.type.local
+// <- storage.type.local
+storage.type.generic.wildcard
+// <- storage.type.generic.wildcard
+storage.type.generic
+// <- storage.type.generic
+storage.type.error
+// <- storage.type.error
+storage.type.byte
+// <- storage.type.byte
+storage.type.boolean
+// <- storage.type.boolean
+storage.type.annotation
+// <- storage.type.annotation
 storage.type.signature.method
 // <- storage.type.signature.method
 storage.type.signature
 // <- storage.type.signature
+storage.type.function.inline
+// <- storage.type.function.inline
+storage.type.function.arrow
+// <- storage.type.function.arrow
 storage.type.function
 // <- storage.type.function
+storage.type.class.radar
+// <- storage.type.class.radar
 storage.type.class
 // <- storage.type.class
 storage.type.interface
@@ -548,148 +2192,136 @@ storage.type
 // <- storage.type
 storage
 // <- storage
-keyword.declaration.function
-// <- keyword.declaration.function
-keyword.declaration.class
-// <- keyword.declaration.class
-keyword.declaration.struct
-// <- keyword.declaration.struct
-keyword.declaration.enum
-// <- keyword.declaration.enum
-keyword.declaration.union
-// <- keyword.declaration.union
-keyword.declaration.trait
-// <- keyword.declaration.trait
-keyword.declaration.interface
-// <- keyword.declaration.interface
-keyword.declaration.impl
-// <- keyword.declaration.impl
-keyword.declaration.type
-// <- keyword.declaration.type
-keyword.declaration
-// <- keyword.declaration
-keyword.operator.ellipsis.placeholder
-// <- keyword.operator.ellipsis.placeholder
-keyword.operator.ellipsis
-// <- keyword.operator.ellipsis
-keyword.operator.readline
-// <- keyword.operator.readline
-keyword.operator.filetest
-// <- keyword.operator.filetest
-keyword.operator.comparison.stringwise
-// <- keyword.operator.comparison.stringwise
-keyword.operator.comparison
-// <- keyword.operator.comparison
-keyword.operator.pragma.flag
-// <- keyword.operator.pragma.flag
-keyword.operator.pragma
-// <- keyword.operator.pragma
-keyword.operator.repetition
-// <- keyword.operator.repetition
-keyword.operator.concatenation
-// <- keyword.operator.concatenation
-keyword.operator.range
-// <- keyword.operator.range
-keyword.operator.assignement.compound.bitwise
-// <- keyword.operator.assignement.compound.bitwise
-keyword.operator.assignement.compound.stringwise
-// <- keyword.operator.assignement.compound.stringwise
-keyword.operator.assignement.compound
-// <- keyword.operator.assignement.compound
-keyword.operator.assignement.conditional
-// <- keyword.operator.assignement.conditional
-keyword.operator.assignement
-// <- keyword.operator.assignement
-keyword.operator.bitwise
-// <- keyword.operator.bitwise
-keyword.operator.decrement
-// <- keyword.operator.decrement
-keyword.operator.increment
-// <- keyword.operator.increment
-keyword.operator.logical.c-style
-// <- keyword.operator.logical.c-style
-keyword.operator.logical.defined-or
-// <- keyword.operator.logical.defined-or
-keyword.operator.logical
-// <- keyword.operator.logical
-keyword.operator.stringwise
-// <- keyword.operator.stringwise
-keyword.operator.arithmetic
-// <- keyword.operator.arithmetic
-keyword.operator.ternary
-// <- keyword.operator.ternary
-keyword.operator.heredoc
-// <- keyword.operator.heredoc
-keyword.operator.null-coalescing
-// <- keyword.operator.null-coalescing
-keyword.operator.interface
-// <- keyword.operator.interface
-keyword.operator.class
-// <- keyword.operator.class
-keyword.operator.nullable-type
-// <- keyword.operator.nullable-type
-keyword.operator.assignment
-// <- keyword.operator.assignment
-keyword.operator.arithmetic
-// <- keyword.operator.arithmetic
-keyword.operator.bitwise
-// <- keyword.operator.bitwise
-keyword.operator.logical
-// <- keyword.operator.logical
-keyword.operator.word
-// <- keyword.operator.word
-keyword.operator.regexp
-// <- keyword.operator.regexp
-keyword.operator
-// <- keyword.operator
-keyword.control.directive.pragma
-// <- keyword.control.directive.pragma
-keyword.control.directive
-// <- keyword.control.directive
-keyword.control.diagnostics
-// <- keyword.control.diagnostics
-keyword.control.regexp-option
-// <- keyword.control.regexp-option
-keyword.control.conditional
-// <- keyword.control.conditional
-keyword.control.anchor
-// <- keyword.control.anchor
-keyword.control.import
-// <- keyword.control.import
-keyword.control.continue
-// <- keyword.control.continue
-keyword.control.while
-// <- keyword.control.while
-keyword.control.return
-// <- keyword.control.return
-keyword.control
-// <- keyword.control
-keyword.other.namespace
-// <- keyword.other.namespace
-keyword.other.class
-// <- keyword.other.class
-keyword.other.interface
-// <- keyword.other.interface
-keyword.other.type
-// <- keyword.other.type
-keyword.other
-// <- keyword.other
-keyword
-// <- keyword
 source.language-suffix.embedded
 // <- source.language-suffix.embedded
 source.language-suffix
 // <- source.language-suffix
 source
 // <- source
-string.interpolated.qx-paren
-// <- string.interpolated.qx-paren
-string.interpolated.qx-brace
-// <- string.interpolated.qx-brace
-string.interpolated.qx-bracket
-// <- string.interpolated.qx-bracket
-string.interpolated.qx-ltgt
-// <- string.interpolated.qx-ltgt
+string.quoted.backtick
+// <- string.quoted.backtick
+string.quoted.symbol
+// <- string.quoted.symbol
+string.quoted.single.single-line.unicode
+// <- string.quoted.single.single-line.unicode
+string.quoted.single.single-line.unicode-raw
+// <- string.quoted.single.single-line.unicode-raw
+string.quoted.single.single-line.unicode-raw-regex
+// <- string.quoted.single.single-line.unicode-raw-regex
+string.quoted.single.single-line.sql
+// <- string.quoted.single.single-line.sql
+string.quoted.single.single-line.raw
+// <- string.quoted.single.single-line.raw
+string.quoted.single.single-line.raw-regex
+// <- string.quoted.single.single-line.raw-regex
+string.quoted.single.single-line.raw-format
+// <- string.quoted.single.single-line.raw-format
+string.quoted.single.single-line.raw-binary
+// <- string.quoted.single.single-line.raw-binary
+string.quoted.single.single-line
+// <- string.quoted.single.single-line
+string.quoted.single.single-line.format
+// <- string.quoted.single.single-line.format
+string.quoted.single.single-line.binary
+// <- string.quoted.single.single-line.binary
+string.quoted.single
+// <- string.quoted.single
+string.quoted.single.html
+// <- string.quoted.single.html
+string.quoted.single.block.unicode
+// <- string.quoted.single.block.unicode
+string.quoted.single.block.unicode-raw
+// <- string.quoted.single.block.unicode-raw
+string.quoted.single.block.unicode-raw-regex
+// <- string.quoted.single.block.unicode-raw-regex
+string.quoted.single.block.raw
+// <- string.quoted.single.block.raw
+string.quoted.single.block.raw-regex
+// <- string.quoted.single.block.raw-regex
+string.quoted.single.block.raw-format
+// <- string.quoted.single.block.raw-format
+string.quoted.single.block.raw-binary
+// <- string.quoted.single.block.raw-binary
+string.quoted.single.block
+// <- string.quoted.single.block
+string.quoted.single.block.format
+// <- string.quoted.single.block.format
+string.quoted.single.block.binary
+// <- string.quoted.single.block.binary
+string.quoted.rune
+// <- string.quoted.rune
+string.quoted.raw
+// <- string.quoted.raw
+string.quoted.other.multiline
+// <- string.quoted.other.multiline
+string.quoted.other.lt-gt.include
+// <- string.quoted.other.lt-gt.include
+string.quoted.other.lt-gt
+// <- string.quoted.other.lt-gt
+string.quoted.other.literal
+// <- string.quoted.other.literal
+string.quoted.other.interpolated
+// <- string.quoted.other.interpolated
+string.quoted.double.single-line.unicode
+// <- string.quoted.double.single-line.unicode
+string.quoted.double.single-line.unicode-raw
+// <- string.quoted.double.single-line.unicode-raw
+string.quoted.double.single-line.unicode-raw-regex
+// <- string.quoted.double.single-line.unicode-raw-regex
+string.quoted.double.single-line.sql
+// <- string.quoted.double.single-line.sql
+string.quoted.double.single-line.raw
+// <- string.quoted.double.single-line.raw
+string.quoted.double.single-line.raw-regex
+// <- string.quoted.double.single-line.raw-regex
+string.quoted.double.single-line.raw-format
+// <- string.quoted.double.single-line.raw-format
+string.quoted.double.single-line.raw-binary
+// <- string.quoted.double.single-line.raw-binary
+string.quoted.double.single-line
+// <- string.quoted.double.single-line
+string.quoted.double.single-line.format
+// <- string.quoted.double.single-line.format
+string.quoted.double.single-line.binary
+// <- string.quoted.double.single-line.binary
+string.quoted.double.raw
+// <- string.quoted.double.raw
+string.quoted.double.literal
+// <- string.quoted.double.literal
+string.quoted.double.interpolated
+// <- string.quoted.double.interpolated
+string.quoted.double.include
+// <- string.quoted.double.include
+string.quoted.double.html
+// <- string.quoted.double.html
+string.quoted.double.heredoc
+// <- string.quoted.double.heredoc
+string.quoted.double.doctype.identifiers-and-DTDs.html
+// <- string.quoted.double.doctype.identifiers-and-DTDs.html
+string.quoted.double.block.unicode
+// <- string.quoted.double.block.unicode
+string.quoted.double.block.unicode-raw
+// <- string.quoted.double.block.unicode-raw
+string.quoted.double.block.unicode-raw-regex
+// <- string.quoted.double.block.unicode-raw-regex
+string.quoted.double.block.raw
+// <- string.quoted.double.block.raw
+string.quoted.double.block.raw-regex
+// <- string.quoted.double.block.raw-regex
+string.quoted.double.block.raw-format
+// <- string.quoted.double.block.raw-format
+string.quoted.double.block.raw-binary
+// <- string.quoted.double.block.raw-binary
+string.quoted.double.block
+// <- string.quoted.double.block
+string.quoted.double.block.format
+// <- string.quoted.double.block.format
+string.quoted.double.block.binary
+// <- string.quoted.double.block.binary
+string.quoted.double
+// <- string.quoted.double
+string.quoted.custom-double
+// <- string.quoted.custom-double
 string.quoted.other.qq-ltgt
 // <- string.quoted.other.qq-ltgt
 string.quoted.other.qq-paren
@@ -710,14 +2342,16 @@ string.quoted.other
 // <- string.quoted.other
 string.quoted.single
 // <- string.quoted.single
-string.quoted.double
-// <- string.quoted.double
 string.quoted.triple
 // <- string.quoted.triple
 string.quoted.other
 // <- string.quoted.other
 string.quoted
 // <- string.quoted
+string.unquoted.html
+// <- string.unquoted.html
+string.unquoted.attribute-value
+// <- string.unquoted.attribute-value
 string.unquoted.heredoc.backtick
 // <- string.unquoted.heredoc.backtick
 string.unquoted.heredoc.quote
@@ -732,6 +2366,12 @@ string.unquoted.index
 // <- string.unquoted.index
 string.unquoted
 // <- string.unquoted
+string.regexp.literal
+// <- string.regexp.literal
+string.regexp.interpolated
+// <- string.regexp.interpolated
+string.regexp.group
+// <- string.regexp.group
 string.regexp.replace.extended.simple_delimiter
 // <- string.regexp.replace.extended.simple_delimiter
 string.regexp.format.nested_braces
@@ -760,6 +2400,8 @@ string.regexp.find
 // <- string.regexp.find
 string.regexp.character-class
 // <- string.regexp.character-class
+string.regexp.arbitrary-repitition
+// <- string.regexp.arbitrary-repitition
 string.regexp.arbitrary-repetition
 // <- string.regexp.arbitrary-repetition
 string.regexp.single-quoted
@@ -770,36 +2412,160 @@ string.regexp.replace
 // <- string.regexp.replace
 string.regexp
 // <- string.regexp
+string.interpolated.qx-paren
+// <- string.interpolated.qx-paren
+string.interpolated.qx-brace
+// <- string.interpolated.qx-brace
+string.interpolated.qx-bracket
+// <- string.interpolated.qx-bracket
+string.interpolated.qx-ltgt
+// <- string.interpolated.qx-ltgt
+string.interpolated.regexp
+// <- string.interpolated.regexp
 string.interpolated
 // <- string.interpolated
 string.other
 // <- string.other
 string
 // <- string
+sourceembedded
+// <- sourceembedded
+sourceembedded.source
+// <- sourceembedded.source
+sourcestyle
+// <- sourcestyle
+support.constant.vendored.property-value
+// <- support.constant.vendored.property-value
+support.constant.vendored
+// <- support.constant.vendored
+support.constant.text-direction
+// <- support.constant.text-direction
+support.constant.step-direction
+// <- support.constant.step-direction
+support.constant.property-value.list-style-type
+// <- support.constant.property-value.list-style-type
+support.constant.property-value
+// <- support.constant.property-value
+support.constant.parity
+// <- support.constant.parity
+support.constant.media
+// <- support.constant.media
+support.constant.mac-classic
+// <- support.constant.mac-classic
+support.constant.language-range
+// <- support.constant.language-range
+support.constant.font-name
+// <- support.constant.font-name
+support.constant.color.w3c-standard-color-name
+// <- support.constant.color.w3c-standard-color-name
+support.constant.color.w3c-extended-color-name
+// <- support.constant.color.w3c-extended-color-name
+support.constant.color.current
+// <- support.constant.color.current
+support.constant.color
+// <- support.constant.color
 support.constant.ext
 // <- support.constant.ext
 support.constant
 // <- support.constant
+support.function.variable.quoted.single.heredoc
+// <- support.function.variable.quoted.single.heredoc
+support.function.variable.quoted.single
+// <- support.function.variable.quoted.single
+support.function.variable.quoted
+// <- support.function.variable.quoted
+support.function.variable
+// <- support.function.variable
+support.function.url
+// <- support.function.url
+support.function.transform
+// <- support.function.transform
+support.function.timing-function
+// <- support.function.timing-function
+support.function.shape
+// <- support.function.shape
+support.function.prelude
+// <- support.function.prelude
+support.function.misc
+// <- support.function.misc
+support.function.macro
+// <- support.function.macro
+support.function.library
+// <- support.function.library
+support.function.kernel
+// <- support.function.kernel
+support.function.gradient
+// <- support.function.gradient
+support.function.document-rule
+// <- support.function.document-rule
+support.function.calc
+// <- support.function.calc
+support.function.builtin
+// <- support.function.builtin
+support.function.built-in.smarty
+// <- support.function.built-in.smarty
+support.function.any-method
+// <- support.function.any-method
+support.function.C99
+// <- support.function.C99
 support.function.magic
 // <- support.function.magic
 support.function
 // <- support.function
+support.operator.prelude
+// <- support.operator.prelude
+support.operator
+// <- support.operator
 support.module
 // <- support.module
+support.tag.prelude
+// <- support.tag.prelude
+support.tag
+// <- support.tag
+support.type.vendored.property-name.media
+// <- support.type.vendored.property-name.media
+support.type.vendored.property-name
+// <- support.type.vendored.property-name
+support.type.vendored
+// <- support.type.vendored
+support.type.sys-types
+// <- support.type.sys-types
+support.type.stdint
+// <- support.type.stdint
+support.type.pthread
+// <- support.type.pthread
+support.type.property-name.media
+// <- support.type.property-name.media
+support.type.property-name
+// <- support.type.property-name
+support.type.posix-reserved
+// <- support.type.posix-reserved
+support.type.mac-classic
+// <- support.type.mac-classic
+support.type.exception
+// <- support.type.exception
 support.type
 // <- support.type
+support.class.prelude
+// <- support.class.prelude
 support.class
 // <- support.class
+support.variable.magic
+// <- support.variable.magic
 support.variable
 // <- support.variable
 support.struct
 // <- support.struct
+support.other.module
+// <- support.other.module
 support.other.namespace
 // <- support.other.namespace
 support.other
 // <- support.other
 support
 // <- support
+text.html.embedded
+// <- text.html.embedded
 text.html.basic
 // <- text.html.basic
 text.html.markdown
@@ -810,14 +2576,20 @@ text.xml
 // <- text.xml
 text.plain
 // <- text.plain
+text.embedded.html
+// <- text.embedded.html
+text.embedded
+// <- text.embedded
 text
 // <- text
+unused.comment
+// <- unused.comment
+unused
+// <- unused
 variable.annotation
 // <- variable.annotation
 variable.function
 // <- variable.function
-variable.other.readwrite.list-separator
-// <- variable.other.readwrite.list-separator
 variable.other.regexp.last-paren-match
 // <- variable.other.regexp.last-paren-match
 variable.other.regexp.post-match
@@ -826,8 +2598,26 @@ variable.other.regexp.pre-match
 // <- variable.other.regexp.pre-match
 variable.other.regexp.match
 // <- variable.other.regexp.match
+variable.other.readwrite.static.mac-classic
+// <- variable.other.readwrite.static.mac-classic
+variable.other.readwrite.static
+// <- variable.other.readwrite.static
+variable.other.readwrite.module
+// <- variable.other.readwrite.module
+variable.other.readwrite.member
+// <- variable.other.readwrite.member
+variable.other.readwrite.instance
+// <- variable.other.readwrite.instance
+variable.other.readwrite.global.pre-defined
+// <- variable.other.readwrite.global.pre-defined
+variable.other.readwrite.global.mac-classic
+// <- variable.other.readwrite.global.mac-classic
 variable.other.readwrite.global
 // <- variable.other.readwrite.global
+variable.other.readwrite.class
+// <- variable.other.readwrite.class
+variable.other.readwrite.list-separator
+// <- variable.other.readwrite.list-separator
 variable.other.readwrite
 // <- variable.other.readwrite
 variable.other.subpattern
@@ -842,14 +2632,42 @@ variable.other.global
 // <- variable.other.global
 variable.other.member
 // <- variable.other.member
-variable.other.readwrite
-// <- variable.other.readwrite
-variable.other.constant
-// <- variable.other.constant
 variable.other.property
 // <- variable.other.property
+variable.other.positional
+// <- variable.other.positional
+variable.other.object.property
+// <- variable.other.object.property
+variable.other.object
+// <- variable.other.object
+variable.other.member
+// <- variable.other.member
+variable.other.generic-type
+// <- variable.other.generic-type
+variable.other.field
+// <- variable.other.field
+variable.other.definition
+// <- variable.other.definition
+variable.other.declaration
+// <- variable.other.declaration
+variable.other.constant
+// <- variable.other.constant
+variable.other.block
+// <- variable.other.block
+variable.other.assignment
+// <- variable.other.assignment
+variable.other.anonymous
+// <- variable.other.anonymous
 variable.other
 // <- variable.other
+variable.font-feature
+// <- variable.font-feature
+variable.language.wildcard
+// <- variable.language.wildcard
+variable.language.omitted.field
+// <- variable.language.omitted.field
+variable.language.omitted
+// <- variable.language.omitted
 variable.language.namespace
 // <- variable.language.namespace
 variable.language.this
@@ -862,9 +2680,25 @@ variable.language
 // <- variable.language
 variable.parameter.function
 // <- variable.parameter.function
+variable.parameter.url
+// <- variable.parameter.url
+variable.parameter.style-name
+// <- variable.parameter.style-name
+variable.parameter.preprocessor
+// <- variable.parameter.preprocessor
+variable.parameter.misc
+// <- variable.parameter.misc
+variable.parameter.keyframe-list
+// <- variable.parameter.keyframe-list
+variable.parameter.document-rule
+// <- variable.parameter.document-rule
 variable.parameter
 // <- variable.parameter
+variable.argument
+// <- variable.argument
 variable
 // <- variable
 wildcard.comment
 // <- wildcard.comment
+wildcard
+// <- wildcard
