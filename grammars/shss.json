@@ -6,1732 +6,5400 @@
   "scopeName": "source.shss",
   "patterns": [
     {
-      "match": "comment.line.double-slash",
+      "match": "^array$",
+      "name": "array"
+    },
+    {
+      "match": "^bracket$",
+      "name": "bracket"
+    },
+    {
+      "match": "^block\\.liquid$",
+      "name": "block.liquid"
+    },
+    {
+      "match": "^block$",
+      "name": "block"
+    },
+    {
+      "match": "^comment\\.line\\.double-slash$",
       "name": "comment.line.double-slash"
     },
     {
-      "match": "comment.line.double-dash",
+      "match": "^comment\\.line\\.double-dash\\.haddock$",
+      "name": "comment.line.double-dash.haddock"
+    },
+    {
+      "match": "^comment\\.line\\.double-dash$",
       "name": "comment.line.double-dash"
     },
     {
-      "match": "comment.line.number-sign",
+      "match": "^comment\\.line\\.number-sign$",
       "name": "comment.line.number-sign"
     },
     {
-      "match": "comment.line.percentage",
+      "match": "^comment\\.line\\.percentage$",
       "name": "comment.line.percentage"
     },
     {
-      "match": "comment.line.shebang",
+      "match": "^comment\\.line\\.shebang$",
       "name": "comment.line.shebang"
     },
     {
-      "match": "comment.line",
+      "match": "^comment\\.line\\.type$",
+      "name": "comment.line.type"
+    },
+    {
+      "match": "^comment\\.line\\.string$",
+      "name": "comment.line.string"
+    },
+    {
+      "match": "^comment\\.line\\.shebang$",
+      "name": "comment.line.shebang"
+    },
+    {
+      "match": "^comment\\.line\\.banner$",
+      "name": "comment.line.banner"
+    },
+    {
+      "match": "^comment\\.line\\.punctuation$",
+      "name": "comment.line.punctuation"
+    },
+    {
+      "match": "^comment\\.line\\.percentage$",
+      "name": "comment.line.percentage"
+    },
+    {
+      "match": "^comment\\.line\\.parameter$",
+      "name": "comment.line.parameter"
+    },
+    {
+      "match": "^comment\\.line\\.number-sign$",
+      "name": "comment.line.number-sign"
+    },
+    {
+      "match": "^comment\\.line\\.keyword\\.punctuation$",
+      "name": "comment.line.keyword.punctuation"
+    },
+    {
+      "match": "^comment\\.line\\.keyword$",
+      "name": "comment.line.keyword"
+    },
+    {
+      "match": "^comment\\.line$",
       "name": "comment.line"
     },
     {
-      "match": "comment.block.documentation",
+      "match": "^comment\\.documentation\\.string$",
+      "name": "comment.documentation.string"
+    },
+    {
+      "match": "^comment\\.documentation\\.heredoc$",
+      "name": "comment.documentation.heredoc"
+    },
+    {
+      "match": "^comment\\.documentation\\.false$",
+      "name": "comment.documentation.false"
+    },
+    {
+      "match": "^comment\\.block\\.doc$",
+      "name": "comment.block.doc"
+    },
+    {
+      "match": "^comment\\.block\\.html$",
+      "name": "comment.block.html"
+    },
+    {
+      "match": "^comment\\.block\\.haddock$",
+      "name": "comment.block.haddock"
+    },
+    {
+      "match": "^comment\\.block\\.empty$",
+      "name": "comment.block.empty"
+    },
+    {
+      "match": "^comment\\.block\\.documentation$",
       "name": "comment.block.documentation"
     },
     {
-      "match": "comment.block",
+      "match": "^comment\\.block$",
       "name": "comment.block"
     },
     {
-      "match": "comment",
+      "match": "^comment\\.block$",
+      "name": "comment.block"
+    },
+    {
+      "match": "^comment$",
       "name": "comment"
     },
     {
-      "match": "constant.numeric.integer.binary",
-      "name": "constant.numeric.integer.binary"
+      "match": "^constant\\.numeric\\.hexfloat$",
+      "name": "constant.numeric.hexfloat"
     },
     {
-      "match": "constant.numeric.integer.octal",
+      "match": "^constant\\.numeric\\.hexadecimal$",
+      "name": "constant.numeric.hexadecimal"
+    },
+    {
+      "match": "^constant\\.numeric\\.floating-point$",
+      "name": "constant.numeric.floating-point"
+    },
+    {
+      "match": "^constant\\.numeric\\.preprocessor$",
+      "name": "constant.numeric.preprocessor"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.octal$",
       "name": "constant.numeric.integer.octal"
     },
     {
-      "match": "constant.numeric.integer.decimal",
-      "name": "constant.numeric.integer.decimal"
+      "match": "^constant\\.numeric\\.integer\\.long\\.octal$",
+      "name": "constant.numeric.integer.long.octal"
     },
     {
-      "match": "constant.numeric.integer.hexadecimal",
+      "match": "^constant\\.numeric\\.integer\\.long\\.hexadecimal$",
+      "name": "constant.numeric.integer.long.hexadecimal"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.long\\.decimal$",
+      "name": "constant.numeric.integer.long.decimal"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.long\\.binary$",
+      "name": "constant.numeric.integer.long.binary"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.long$",
+      "name": "constant.numeric.integer.long"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.hexadecimal$",
       "name": "constant.numeric.integer.hexadecimal"
     },
     {
-      "match": "constant.numeric.integer.other",
+      "match": "^constant\\.numeric\\.integer\\.decimal$",
+      "name": "constant.numeric.integer.decimal"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.binary$",
+      "name": "constant.numeric.integer.binary"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-9$",
+      "name": "constant.numeric.integer.base-9"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-7$",
+      "name": "constant.numeric.integer.base-7"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-6$",
+      "name": "constant.numeric.integer.base-6"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-5$",
+      "name": "constant.numeric.integer.base-5"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-4$",
+      "name": "constant.numeric.integer.base-4"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-36$",
+      "name": "constant.numeric.integer.base-36"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-35$",
+      "name": "constant.numeric.integer.base-35"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-34$",
+      "name": "constant.numeric.integer.base-34"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-33$",
+      "name": "constant.numeric.integer.base-33"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-32$",
+      "name": "constant.numeric.integer.base-32"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-31$",
+      "name": "constant.numeric.integer.base-31"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-30$",
+      "name": "constant.numeric.integer.base-30"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-3$",
+      "name": "constant.numeric.integer.base-3"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-29$",
+      "name": "constant.numeric.integer.base-29"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-28$",
+      "name": "constant.numeric.integer.base-28"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-27$",
+      "name": "constant.numeric.integer.base-27"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-26$",
+      "name": "constant.numeric.integer.base-26"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-25$",
+      "name": "constant.numeric.integer.base-25"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-24$",
+      "name": "constant.numeric.integer.base-24"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-23$",
+      "name": "constant.numeric.integer.base-23"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-22$",
+      "name": "constant.numeric.integer.base-22"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-21$",
+      "name": "constant.numeric.integer.base-21"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-20$",
+      "name": "constant.numeric.integer.base-20"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-19$",
+      "name": "constant.numeric.integer.base-19"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-18$",
+      "name": "constant.numeric.integer.base-18"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-17$",
+      "name": "constant.numeric.integer.base-17"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-15$",
+      "name": "constant.numeric.integer.base-15"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-14$",
+      "name": "constant.numeric.integer.base-14"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-13$",
+      "name": "constant.numeric.integer.base-13"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-12$",
+      "name": "constant.numeric.integer.base-12"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.base-11$",
+      "name": "constant.numeric.integer.base-11"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer\\.other$",
       "name": "constant.numeric.integer.other"
     },
     {
-      "match": "constant.numeric.integer",
+      "match": "^constant\\.numeric\\.other\\.density$",
+      "name": "constant.numeric.other.density"
+    },
+    {
+      "match": "^constant\\.numeric\\.other$",
+      "name": "constant.numeric.other"
+    },
+    {
+      "match": "^constant\\.numeric\\.integer$",
       "name": "constant.numeric.integer"
     },
     {
-      "match": "constant.numeric.exponential",
+      "match": "^constant\\.numeric\\.exponential$",
       "name": "constant.numeric.exponential"
     },
     {
-      "match": "constant.numeric.float.binary",
+      "match": "^constant\\.numeric\\.float\\.binary$",
       "name": "constant.numeric.float.binary"
     },
     {
-      "match": "constant.numeric.float.octal",
+      "match": "^constant\\.numeric\\.float\\.octal$",
       "name": "constant.numeric.float.octal"
     },
     {
-      "match": "constant.numeric.float.decimal",
+      "match": "^constant\\.numeric\\.float\\.decimal$",
       "name": "constant.numeric.float.decimal"
     },
     {
-      "match": "constant.numeric.float.hexadecimal",
+      "match": "^constant\\.numeric\\.float\\.hexadecimal$",
       "name": "constant.numeric.float.hexadecimal"
     },
     {
-      "match": "constant.numeric.float.other",
+      "match": "^constant\\.numeric\\.float\\.other$",
       "name": "constant.numeric.float.other"
     },
     {
-      "match": "constant.numeric.float",
+      "match": "^constant\\.numeric\\.float$",
       "name": "constant.numeric.float"
     },
     {
-      "match": "constant.numeric.complex.real",
+      "match": "^constant\\.numeric\\.complex\\.real$",
       "name": "constant.numeric.complex.real"
     },
     {
-      "match": "constant.numeric.complex.imaginary",
+      "match": "^constant\\.numeric\\.complex\\.imaginary$",
       "name": "constant.numeric.complex.imaginary"
     },
     {
-      "match": "constant.numeric.complex",
+      "match": "^constant\\.numeric\\.complex$",
       "name": "constant.numeric.complex"
     },
     {
-      "match": "constant.numeric.index",
+      "match": "^constant\\.numeric\\.index$",
       "name": "constant.numeric.index"
     },
     {
-      "match": "constant.numeric.decimal.with-thousand-separators",
+      "match": "^constant\\.numeric\\.decimal\\.with-thousand-separators$",
       "name": "constant.numeric.decimal.with-thousand-separators"
     },
     {
-      "match": "constant.numeric.decimal",
+      "match": "^constant\\.numeric\\.decimal$",
       "name": "constant.numeric.decimal"
     },
     {
-      "match": "constant.numeric.hex",
+      "match": "^constant\\.numeric\\.hex$",
       "name": "constant.numeric.hex"
     },
     {
-      "match": "constant.numeric.binary",
+      "match": "^constant\\.numeric\\.binary$",
       "name": "constant.numeric.binary"
     },
     {
-      "match": "constant.numeric.octal",
+      "match": "^constant\\.numeric\\.octal$",
       "name": "constant.numeric.octal"
     },
     {
-      "match": "constant.numeric",
+      "match": "^constant\\.numeric$",
       "name": "constant.numeric"
     },
     {
-      "match": "constant.language.pragma.module",
+      "match": "^constant\\.language\\.pragma\\.module$",
       "name": "constant.language.pragma.module"
     },
     {
-      "match": "constant.language.pragma",
+      "match": "^constant\\.language\\.pragma$",
       "name": "constant.language.pragma"
     },
     {
-      "match": "constant.language.boolean",
+      "match": "^constant\\.language\\.boolean$",
       "name": "constant.language.boolean"
     },
     {
-      "match": "constant.language",
+      "match": "^constant\\.language\\.unit\\.promoted$",
+      "name": "constant.language.unit.promoted"
+    },
+    {
+      "match": "^constant\\.language\\.unit$",
+      "name": "constant.language.unit"
+    },
+    {
+      "match": "^constant\\.language\\.nil$",
+      "name": "constant.language.nil"
+    },
+    {
+      "match": "^constant\\.language\\.empty-list\\.promoted$",
+      "name": "constant.language.empty-list.promoted"
+    },
+    {
+      "match": "^constant\\.language\\.empty-list$",
+      "name": "constant.language.empty-list"
+    },
+    {
+      "match": "^constant\\.language\\.boolean$",
+      "name": "constant.language.boolean"
+    },
+    {
+      "match": "^constant\\.language$",
       "name": "constant.language"
     },
     {
-      "match": "constant.character.escape.octal",
-      "name": "constant.character.escape.octal"
+      "match": "^constant\\.character\\.entity\\.html$",
+      "name": "constant.character.entity.html"
     },
     {
-      "match": "constant.character.escape.hex",
-      "name": "constant.character.escape.hex"
+      "match": "^constant\\.character\\.escape\\.vertical-tab$",
+      "name": "constant.character.escape.vertical-tab"
     },
     {
-      "match": "constant.character.escape.unicode",
+      "match": "^constant\\.character\\.escape\\.unicode\\.name$",
+      "name": "constant.character.escape.unicode.name"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.unicode\\.32-bit-hex$",
+      "name": "constant.character.escape.unicode.32-bit-hex"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.unicode\\.16-bit-hex$",
+      "name": "constant.character.escape.unicode.16-bit-hex"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.unicode$",
       "name": "constant.character.escape.unicode"
     },
     {
-      "match": "constant.character.escape.regex",
+      "match": "^constant\\.character\\.escape\\.tab$",
+      "name": "constant.character.escape.tab"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.single-quote$",
+      "name": "constant.character.escape.single-quote"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.return$",
+      "name": "constant.character.escape.return"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.octal$",
+      "name": "constant.character.escape.octal"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.newline$",
+      "name": "constant.character.escape.newline"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.linefeed$",
+      "name": "constant.character.escape.linefeed"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.line-continuation$",
+      "name": "constant.character.escape.line-continuation"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.hexadecimal$",
+      "name": "constant.character.escape.hexadecimal"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.formfeed$",
+      "name": "constant.character.escape.formfeed"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.double-quote$",
+      "name": "constant.character.escape.double-quote"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.curly-bracket$",
+      "name": "constant.character.escape.curly-bracket"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.control$",
+      "name": "constant.character.escape.control"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.codepoint$",
+      "name": "constant.character.escape.codepoint"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.bell$",
+      "name": "constant.character.escape.bell"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.backspace$",
+      "name": "constant.character.escape.backspace"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.backlash$",
+      "name": "constant.character.escape.backlash"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.octal$",
+      "name": "constant.character.escape.octal"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.hex$",
+      "name": "constant.character.escape.hex"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.unicode$",
+      "name": "constant.character.escape.unicode"
+    },
+    {
+      "match": "^constant\\.character\\.escape\\.regex$",
       "name": "constant.character.escape.regex"
     },
     {
-      "match": "constant.character.escape",
+      "match": "^constant\\.character\\.escape$",
       "name": "constant.character.escape"
     },
     {
-      "match": "constant.character",
+      "match": "^constant\\.character$",
       "name": "constant.character"
     },
     {
-      "match": "constant.other.key",
+      "match": "^constant\\.other\\.variable\\.mac-classic$",
+      "name": "constant.other.variable.mac-classic"
+    },
+    {
+      "match": "^constant\\.other\\.unicode-range$",
+      "name": "constant.other.unicode-range"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.unquoted$",
+      "name": "constant.other.symbol.unquoted"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.single-quoted$",
+      "name": "constant.other.symbol.single-quoted"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.quoted\\.single$",
+      "name": "constant.other.symbol.quoted.single"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.quoted$",
+      "name": "constant.other.symbol.quoted"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.interpolated$",
+      "name": "constant.other.symbol.interpolated"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.hashkey\\.parameter\\.function$",
+      "name": "constant.other.symbol.hashkey.parameter.function"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.hashkey\\.parameter$",
+      "name": "constant.other.symbol.hashkey.parameter"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.hashkey$",
+      "name": "constant.other.symbol.hashkey"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.hashkey$",
+      "name": "constant.other.symbol.hashkey"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.escape$",
+      "name": "constant.other.symbol.escape"
+    },
+    {
+      "match": "^constant\\.other\\.symbol\\.double-quoted$",
+      "name": "constant.other.symbol.double-quoted"
+    },
+    {
+      "match": "^constant\\.other\\.symbol$",
+      "name": "constant.other.symbol"
+    },
+    {
+      "match": "^constant\\.other\\.rune$",
+      "name": "constant.other.rune"
+    },
+    {
+      "match": "^constant\\.other\\.property$",
+      "name": "constant.other.property"
+    },
+    {
+      "match": "^constant\\.other\\.object\\.property$",
+      "name": "constant.other.object.property"
+    },
+    {
+      "match": "^constant\\.other\\.object$",
+      "name": "constant.other.object"
+    },
+    {
+      "match": "^constant\\.other\\.inline-data\\.html$",
+      "name": "constant.other.inline-data.html"
+    },
+    {
+      "match": "^constant\\.other\\.inline-data$",
+      "name": "constant.other.inline-data"
+    },
+    {
+      "match": "^constant\\.other\\.enum$",
+      "name": "constant.other.enum"
+    },
+    {
+      "match": "^constant\\.other\\.color\\.rgb-value\\.hex$",
+      "name": "constant.other.color.rgb-value.hex"
+    },
+    {
+      "match": "^constant\\.other\\.color\\.rgb-value$",
+      "name": "constant.other.color.rgb-value"
+    },
+    {
+      "match": "^constant\\.other\\.color$",
+      "name": "constant.other.color"
+    },
+    {
+      "match": "^constant\\.other\\.key$",
       "name": "constant.other.key"
     },
     {
-      "match": "constant.other.bareword",
+      "match": "^constant\\.other\\.bareword$",
       "name": "constant.other.bareword"
     },
     {
-      "match": "constant.other.class",
+      "match": "^constant\\.other\\.class$",
       "name": "constant.other.class"
     },
     {
-      "match": "constant.other.placeholder",
+      "match": "^constant\\.other\\.placeholder$",
       "name": "constant.other.placeholder"
     },
     {
-      "match": "constant.other.version.literal",
+      "match": "^constant\\.other\\.version\\.literal$",
       "name": "constant.other.version.literal"
     },
     {
-      "match": "constant.other.version",
+      "match": "^constant\\.other\\.version$",
       "name": "constant.other.version"
     },
     {
-      "match": "constant.other",
+      "match": "^constant\\.other$",
       "name": "constant.other"
     },
     {
-      "match": "constant",
+      "match": "^constant$",
       "name": "constant"
     },
     {
-      "match": "entity.other.attribute-name",
-      "name": "entity.other.attribute-name"
+      "match": "^entity\\.other\\.namespace-prefix$",
+      "name": "entity.other.namespace-prefix"
     },
     {
-      "match": "entity.other.inherited-class",
+      "match": "^entity\\.other\\.keyframe-offset\\.percentage$",
+      "name": "entity.other.keyframe-offset.percentage"
+    },
+    {
+      "match": "^entity\\.other\\.keyframe-offset$",
+      "name": "entity.other.keyframe-offset"
+    },
+    {
+      "match": "^entity\\.other\\.inherited-class\\.prelude$",
+      "name": "entity.other.inherited-class.prelude"
+    },
+    {
+      "match": "^entity\\.other\\.inherited-class\\.module\\.third$",
+      "name": "entity.other.inherited-class.module.third"
+    },
+    {
+      "match": "^entity\\.other\\.inherited-class\\.module\\.second$",
+      "name": "entity.other.inherited-class.module.second"
+    },
+    {
+      "match": "^entity\\.other\\.inherited-class\\.module\\.first$",
+      "name": "entity.other.inherited-class.module.first"
+    },
+    {
+      "match": "^entity\\.other\\.inherited-class\\.module$",
+      "name": "entity.other.inherited-class.module"
+    },
+    {
+      "match": "^entity\\.other\\.inherited-class$",
       "name": "entity.other.inherited-class"
     },
     {
-      "match": "entity.other",
+      "match": "^entity\\.other\\.attribute-name\\.style\\.html$",
+      "name": "entity.other.attribute-name.style.html"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.pseudo-element$",
+      "name": "entity.other.attribute-name.pseudo-element"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.pseudo-class$",
+      "name": "entity.other.attribute-name.pseudo-class"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.pragma\\.preprocessor$",
+      "name": "entity.other.attribute-name.pragma.preprocessor"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.pragma$",
+      "name": "entity.other.attribute-name.pragma"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.id\\.html$",
+      "name": "entity.other.attribute-name.id.html"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.id$",
+      "name": "entity.other.attribute-name.id"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.html$",
+      "name": "entity.other.attribute-name.html"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.class\\.html$",
+      "name": "entity.other.attribute-name.class.html"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name\\.class$",
+      "name": "entity.other.attribute-name.class"
+    },
+    {
+      "match": "^entity\\.other\\.attribute-name$",
+      "name": "entity.other.attribute-name"
+    },
+    {
+      "match": "^entity\\.other\\.inherited-class$",
+      "name": "entity.other.inherited-class"
+    },
+    {
+      "match": "^entity\\.other$",
       "name": "entity.other"
     },
     {
-      "match": "entity.name.type.namespace",
+      "match": "^entity\\.name\\.package$",
+      "name": "entity.name.package"
+    },
+    {
+      "match": "^entity\\.name\\.import$",
+      "name": "entity.name.import"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.promoted$",
+      "name": "entity.name.type.promoted"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.module$",
+      "name": "entity.name.type.module"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.inherited$",
+      "name": "entity.name.type.inherited"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.enum$",
+      "name": "entity.name.type.enum"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.namespace$",
       "name": "entity.name.type.namespace"
     },
     {
-      "match": "entity.name.type.trait",
-      "name": "entity.name.type.trait"
+      "match": "^entity\\.name\\.type\\.class\\.record\\.definition$",
+      "name": "entity.name.type.class.record.definition"
     },
     {
-      "match": "entity.name.type.interface",
-      "name": "entity.name.type.interface"
+      "match": "^entity\\.name\\.type\\.class\\.record$",
+      "name": "entity.name.type.class.record"
     },
     {
-      "match": "entity.name.type.class",
+      "match": "^entity\\.name\\.type\\.class\\.module\\.definition$",
+      "name": "entity.name.type.class.module.definition"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.class\\.module$",
+      "name": "entity.name.type.class.module"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.class\\.behaviour\\.definition$",
+      "name": "entity.name.type.class.behaviour.definition"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.class\\.behaviour$",
+      "name": "entity.name.type.class.behaviour"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.class$",
       "name": "entity.name.type.class"
     },
     {
-      "match": "entity.name.type.struct",
+      "match": "^entity\\.name\\.type\\.trait$",
+      "name": "entity.name.type.trait"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.interface$",
+      "name": "entity.name.type.interface"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.class$",
+      "name": "entity.name.type.class"
+    },
+    {
+      "match": "^entity\\.name\\.type\\.struct$",
       "name": "entity.name.type.struct"
     },
     {
-      "match": "entity.name.type.instance",
+      "match": "^entity\\.name\\.type\\.instance$",
       "name": "entity.name.type.instance"
     },
     {
-      "match": "entity.name.type",
+      "match": "^entity\\.name\\.type$",
       "name": "entity.name.type"
     },
     {
-      "match": "entity.name.class.forward-decl",
+      "match": "^entity\\.name\\.class\\.forward-decl$",
       "name": "entity.name.class.forward-decl"
     },
     {
-      "match": "entity.name.class",
+      "match": "^entity\\.name\\.class$",
       "name": "entity.name.class"
     },
     {
-      "match": "entity.name.struct",
+      "match": "^entity\\.name\\.struct$",
       "name": "entity.name.struct"
     },
     {
-      "match": "entity.name.enum",
+      "match": "^entity\\.name\\.enum$",
       "name": "entity.name.enum"
     },
     {
-      "match": "entity.name.union",
+      "match": "^entity\\.name\\.union$",
       "name": "entity.name.union"
     },
     {
-      "match": "entity.name.trait",
+      "match": "^entity\\.name\\.trait$",
       "name": "entity.name.trait"
     },
     {
-      "match": "entity.name.interface",
+      "match": "^entity\\.name\\.interface$",
       "name": "entity.name.interface"
     },
     {
-      "match": "entity.name.impl",
+      "match": "^entity\\.name\\.impl$",
       "name": "entity.name.impl"
     },
     {
-      "match": "entity.name.type",
+      "match": "^entity\\.name\\.type$",
       "name": "entity.name.type"
     },
     {
-      "match": "entity.name.function.constructor",
+      "match": "^entity\\.name\\.function\\.scope$",
+      "name": "entity.name.function.scope"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.preprocessor$",
+      "name": "entity.name.function.preprocessor"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.operator$",
+      "name": "entity.name.function.operator"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.namespace-prefix$",
+      "name": "entity.name.function.namespace-prefix"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.macro$",
+      "name": "entity.name.function.macro"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.macro\\.definition$",
+      "name": "entity.name.function.macro.definition"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.guard$",
+      "name": "entity.name.function.guard"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.definition$",
+      "name": "entity.name.function.definition"
+    },
+    {
+      "match": "^entity\\.name\\.function\\.constructor$",
       "name": "entity.name.function.constructor"
     },
     {
-      "match": "entity.name.function.destructor",
+      "match": "^entity\\.name\\.function\\.destructor$",
       "name": "entity.name.function.destructor"
     },
     {
-      "match": "entity.name.function",
+      "match": "^entity\\.name\\.function$",
       "name": "entity.name.function"
     },
     {
-      "match": "entity.name.goto-label",
+      "match": "^entity\\.name\\.goto-label$",
       "name": "entity.name.goto-label"
     },
     {
-      "match": "entity.name.function",
+      "match": "^entity\\.name\\.function$",
       "name": "entity.name.function"
     },
     {
-      "match": "entity.name.namespace",
+      "match": "^entity\\.name\\.namespace$",
       "name": "entity.name.namespace"
     },
     {
-      "match": "entity.name.constant",
+      "match": "^entity\\.name\\.constant$",
       "name": "entity.name.constant"
     },
     {
-      "match": "entity.name.label",
+      "match": "^entity\\.name\\.entity\\.other\\.html$",
+      "name": "entity.name.entity.other.html"
+    },
+    {
+      "match": "^entity\\.name\\.entity\\.other$",
+      "name": "entity.name.entity.other"
+    },
+    {
+      "match": "^entity\\.name\\.entity$",
+      "name": "entity.name.entity"
+    },
+    {
+      "match": "^entity\\.name\\.label$",
       "name": "entity.name.label"
     },
     {
-      "match": "entity.name.section",
+      "match": "^entity\\.name\\.section$",
       "name": "entity.name.section"
     },
     {
-      "match": "entity.name.tag",
+      "match": "^entity\\.name\\.tag\\.wildcard$",
+      "name": "entity.name.tag.wildcard"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.style\\.html$",
+      "name": "entity.name.tag.style.html"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.style$",
+      "name": "entity.name.tag.style"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.script\\.html$",
+      "name": "entity.name.tag.script.html"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.script$",
+      "name": "entity.name.tag.script"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.other\\.html$",
+      "name": "entity.name.tag.other.html"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.other$",
+      "name": "entity.name.tag.other"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.inline$",
+      "name": "entity.name.tag.inline"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.block$",
+      "name": "entity.name.tag.block"
+    },
+    {
+      "match": "^entity\\.name\\.tag\\.custom$",
+      "name": "entity.name.tag.custom"
+    },
+    {
+      "match": "^entity\\.name\\.tag$",
       "name": "entity.name.tag"
     },
     {
-      "match": "entity.name",
+      "match": "^entity\\.name$",
       "name": "entity.name"
     },
     {
-      "match": "entity",
+      "match": "^entity\\.alias\\.import$",
+      "name": "entity.alias.import"
+    },
+    {
+      "match": "^entity\\.alias$",
+      "name": "entity.alias"
+    },
+    {
+      "match": "^entity$",
       "name": "entity"
     },
     {
-      "match": "invalid.illegal.syntax.pragma",
-      "name": "invalid.illegal.syntax.pragma"
+      "match": "^identifier$",
+      "name": "identifier"
     },
     {
-      "match": "invalid.illegal.syntax",
-      "name": "invalid.illegal.syntax"
+      "match": "^invalid\\.deprecated\\.package_name_not_lowercase$",
+      "name": "invalid.deprecated.package_name_not_lowercase"
     },
     {
-      "match": "invalid.illegal.trailing-whitespace",
-      "name": "invalid.illegal.trailing-whitespace"
+      "match": "^invalid\\.deprecated\\.operator$",
+      "name": "invalid.deprecated.operator"
     },
     {
-      "match": "invalid.illegal.stray-bracket-end",
-      "name": "invalid.illegal.stray-bracket-end"
+      "match": "^invalid\\.deprecated\\.gradient\\.function$",
+      "name": "invalid.deprecated.gradient.function"
     },
     {
-      "match": "invalid.illegal.stray-semi-colon",
-      "name": "invalid.illegal.stray-semi-colon"
+      "match": "^invalid\\.deprecated\\.gradient$",
+      "name": "invalid.deprecated.gradient"
     },
     {
-      "match": "invalid.illegal",
-      "name": "invalid.illegal"
+      "match": "^invalid\\.deprecated\\.function$",
+      "name": "invalid.deprecated.function"
     },
     {
-      "match": "invalid.deprecated",
+      "match": "^invalid\\.deprecated\\.constant\\.media$",
+      "name": "invalid.deprecated.constant.media"
+    },
+    {
+      "match": "^invalid\\.deprecated\\.constant$",
+      "name": "invalid.deprecated.constant"
+    },
+    {
+      "match": "^invalid\\.deprecated\\.combinator$",
+      "name": "invalid.deprecated.combinator"
+    },
+    {
+      "match": "^invalid\\.deprecated\\.color\\.system$",
+      "name": "invalid.deprecated.color.system"
+    },
+    {
+      "match": "^invalid\\.deprecated\\.color$",
+      "name": "invalid.deprecated.color"
+    },
+    {
+      "match": "^invalid\\.deprecated$",
       "name": "invalid.deprecated"
     },
     {
-      "match": "invalid",
+      "match": "^invalid\\.illegal\\.you-forgot-semicolon$",
+      "name": "invalid.illegal.you-forgot-semicolon"
+    },
+    {
+      "match": "^invalid\\.illegal\\.whitespace\\.charset$",
+      "name": "invalid.illegal.whitespace.charset"
+    },
+    {
+      "match": "^invalid\\.illegal\\.whitespace$",
+      "name": "invalid.illegal.whitespace"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unknown-rune$",
+      "name": "invalid.illegal.unknown-rune"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unknown-escape$",
+      "name": "invalid.illegal.unknown-escape"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unexpected-characters\\.charset$",
+      "name": "invalid.illegal.unexpected-characters.charset"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unexpected-characters$",
+      "name": "invalid.illegal.unexpected-characters"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unexpected-text$",
+      "name": "invalid.illegal.unexpected-text"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unclosed\\.string$",
+      "name": "invalid.illegal.unclosed.string"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unclosed-string\\.charset$",
+      "name": "invalid.illegal.unclosed-string.charset"
+    },
+    {
+      "match": "^invalid\\.illegal\\.unclosed-string$",
+      "name": "invalid.illegal.unclosed-string"
+    },
+    {
+      "match": "^invalid\\.illegal\\.string$",
+      "name": "invalid.illegal.string"
+    },
+    {
+      "match": "^invalid\\.illegal\\.stray-comment-end$",
+      "name": "invalid.illegal.stray-comment-end"
+    },
+    {
+      "match": "^invalid\\.illegal\\.stray$",
+      "name": "invalid.illegal.stray"
+    },
+    {
+      "match": "^invalid\\.illegal\\.slice$",
+      "name": "invalid.illegal.slice"
+    },
+    {
+      "match": "^invalid\\.illegal\\.send-channel$",
+      "name": "invalid.illegal.send-channel"
+    },
+    {
+      "match": "^invalid\\.illegal\\.receive-channel$",
+      "name": "invalid.illegal.receive-channel"
+    },
+    {
+      "match": "^invalid\\.illegal\\.placeholder$",
+      "name": "invalid.illegal.placeholder"
+    },
+    {
+      "match": "^invalid\\.illegal\\.numeric$",
+      "name": "invalid.illegal.numeric"
+    },
+    {
+      "match": "^invalid\\.illegal\\.not-lowercase\\.charset$",
+      "name": "invalid.illegal.not-lowercase.charset"
+    },
+    {
+      "match": "^invalid\\.illegal\\.not-lowercase$",
+      "name": "invalid.illegal.not-lowercase"
+    },
+    {
+      "match": "^invalid\\.illegal\\.not-double-quoted\\.charset$",
+      "name": "invalid.illegal.not-double-quoted.charset"
+    },
+    {
+      "match": "^invalid\\.illegal\\.not-double-quoted$",
+      "name": "invalid.illegal.not-double-quoted"
+    },
+    {
+      "match": "^invalid\\.illegal\\.no-whitespace\\.charset$",
+      "name": "invalid.illegal.no-whitespace.charset"
+    },
+    {
+      "match": "^invalid\\.illegal\\.no-whitespace$",
+      "name": "invalid.illegal.no-whitespace"
+    },
+    {
+      "match": "^invalid\\.illegal\\.name$",
+      "name": "invalid.illegal.name"
+    },
+    {
+      "match": "^invalid\\.illegal\\.macro-name$",
+      "name": "invalid.illegal.macro-name"
+    },
+    {
+      "match": "^invalid\\.illegal\\.leading-whitespace\\.charset$",
+      "name": "invalid.illegal.leading-whitespace.charset"
+    },
+    {
+      "match": "^invalid\\.illegal\\.leading-whitespace$",
+      "name": "invalid.illegal.leading-whitespace"
+    },
+    {
+      "match": "^invalid\\.illegal\\.integer$",
+      "name": "invalid.illegal.integer"
+    },
+    {
+      "match": "^invalid\\.illegal\\.incomplete\\.html$",
+      "name": "invalid.illegal.incomplete.html"
+    },
+    {
+      "match": "^invalid\\.illegal\\.incomplete$",
+      "name": "invalid.illegal.incomplete"
+    },
+    {
+      "match": "^invalid\\.illegal\\.identifier$",
+      "name": "invalid.illegal.identifier"
+    },
+    {
+      "match": "^invalid\\.illegal\\.delimiter-too-long$",
+      "name": "invalid.illegal.delimiter-too-long"
+    },
+    {
+      "match": "^invalid\\.illegal\\.constant\\.character\\.escape$",
+      "name": "invalid.illegal.constant.character.escape"
+    },
+    {
+      "match": "^invalid\\.illegal\\.constant\\.character$",
+      "name": "invalid.illegal.constant.character"
+    },
+    {
+      "match": "^invalid\\.illegal\\.constant$",
+      "name": "invalid.illegal.constant"
+    },
+    {
+      "match": "^invalid\\.illegal\\.comma$",
+      "name": "invalid.illegal.comma"
+    },
+    {
+      "match": "^invalid\\.illegal\\.closing-curly-bracket$",
+      "name": "invalid.illegal.closing-curly-bracket"
+    },
+    {
+      "match": "^invalid\\.illegal\\.character_not_allowed_here$",
+      "name": "invalid.illegal.character_not_allowed_here"
+    },
+    {
+      "match": "^invalid\\.illegal\\.character$",
+      "name": "invalid.illegal.character"
+    },
+    {
+      "match": "^invalid\\.illegal\\.character-out-of-range$",
+      "name": "invalid.illegal.character-out-of-range"
+    },
+    {
+      "match": "^invalid\\.illegal\\.character-not-allowed-here$",
+      "name": "invalid.illegal.character-not-allowed-here"
+    },
+    {
+      "match": "^invalid\\.illegal\\.bad-identifier$",
+      "name": "invalid.illegal.bad-identifier"
+    },
+    {
+      "match": "^invalid\\.illegal\\.bad-ampersand\\.html$",
+      "name": "invalid.illegal.bad-ampersand.html"
+    },
+    {
+      "match": "^invalid\\.illegal\\.bad-ampersand$",
+      "name": "invalid.illegal.bad-ampersand"
+    },
+    {
+      "match": "^invalid\\.illegal\\.backslash$",
+      "name": "invalid.illegal.backslash"
+    },
+    {
+      "match": "^invalid\\.illegal\\.atom$",
+      "name": "invalid.illegal.atom"
+    },
+    {
+      "match": "^invalid\\.illegal\\.syntax\\.pragma$",
+      "name": "invalid.illegal.syntax.pragma"
+    },
+    {
+      "match": "^invalid\\.illegal\\.syntax$",
+      "name": "invalid.illegal.syntax"
+    },
+    {
+      "match": "^invalid\\.illegal\\.trailing-whitespace$",
+      "name": "invalid.illegal.trailing-whitespace"
+    },
+    {
+      "match": "^invalid\\.illegal\\.stray-bracket-end$",
+      "name": "invalid.illegal.stray-bracket-end"
+    },
+    {
+      "match": "^invalid\\.illegal\\.stray-semi-colon$",
+      "name": "invalid.illegal.stray-semi-colon"
+    },
+    {
+      "match": "^invalid\\.illegal$",
+      "name": "invalid.illegal"
+    },
+    {
+      "match": "^invalid$",
       "name": "invalid"
     },
     {
-      "match": "markup.heading",
-      "name": "markup.heading"
+      "match": "^keyword\\.module$",
+      "name": "keyword.module"
     },
     {
-      "match": "markup.list.unnumbered",
-      "name": "markup.list.unnumbered"
+      "match": "^keyword\\.map$",
+      "name": "keyword.map"
     },
     {
-      "match": "markup.list.numbered",
-      "name": "markup.list.numbered"
+      "match": "^keyword\\.interface$",
+      "name": "keyword.interface"
     },
     {
-      "match": "markup.list",
-      "name": "markup.list"
+      "match": "^keyword\\.import$",
+      "name": "keyword.import"
     },
     {
-      "match": "markup.bold",
-      "name": "markup.bold"
+      "match": "^keyword\\.function$",
+      "name": "keyword.function"
     },
     {
-      "match": "markup.italic",
-      "name": "markup.italic"
+      "match": "^keyword\\.expressions-and-types$",
+      "name": "keyword.expressions-and-types"
     },
     {
-      "match": "markup.inserted",
-      "name": "markup.inserted"
+      "match": "^keyword\\.var$",
+      "name": "keyword.var"
     },
     {
-      "match": "markup.deleted",
-      "name": "markup.deleted"
+      "match": "^keyword\\.type$",
+      "name": "keyword.type"
     },
     {
-      "match": "markup.underline.link.hyperlink",
-      "name": "markup.underline.link.hyperlink"
+      "match": "^keyword\\.struct$",
+      "name": "keyword.struct"
     },
     {
-      "match": "markup.underline.link",
-      "name": "markup.underline.link"
+      "match": "^keyword\\.reserved$",
+      "name": "keyword.reserved"
     },
     {
-      "match": "markup.underline",
-      "name": "markup.underline"
+      "match": "^keyword\\.package$",
+      "name": "keyword.package"
     },
     {
-      "match": "markup.quote",
-      "name": "markup.quote"
+      "match": "^keyword\\.const$",
+      "name": "keyword.const"
     },
     {
-      "match": "markup.raw.inline",
-      "name": "markup.raw.inline"
+      "match": "^keyword\\.channel$",
+      "name": "keyword.channel"
     },
     {
-      "match": "markup.raw.block",
-      "name": "markup.raw.block"
+      "match": "^keyword\\.bracket\\.begin$",
+      "name": "keyword.bracket.begin"
     },
     {
-      "match": "markup.raw",
-      "name": "markup.raw"
+      "match": "^keyword\\.bracket\\.end$",
+      "name": "keyword.bracket.end"
     },
     {
-      "match": "markup.other",
-      "name": "markup.other"
+      "match": "^keyword\\.bracket$",
+      "name": "keyword.bracket"
     },
     {
-      "match": "markup",
-      "name": "markup"
+      "match": "^keyword\\.operator\\.wildcard$",
+      "name": "keyword.operator.wildcard"
     },
     {
-      "match": "meta.method-call.static",
-      "name": "meta.method-call.static"
+      "match": "^keyword\\.operator\\.update$",
+      "name": "keyword.operator.update"
     },
     {
-      "match": "meta.method-call",
-      "name": "meta.method-call"
+      "match": "^keyword\\.operator\\.unpacking\\.arguments$",
+      "name": "keyword.operator.unpacking.arguments"
     },
     {
-      "match": "meta.toc-list",
-      "name": "meta.toc-list"
+      "match": "^keyword\\.operator\\.unpacking$",
+      "name": "keyword.operator.unpacking"
     },
     {
-      "match": "meta.class",
-      "name": "meta.class"
+      "match": "^keyword\\.operator\\.transposed-variable$",
+      "name": "keyword.operator.transposed-variable"
     },
     {
-      "match": "meta.struct",
-      "name": "meta.struct"
+      "match": "^keyword\\.operator\\.transposed-parens$",
+      "name": "keyword.operator.transposed-parens"
     },
     {
-      "match": "meta.enum",
-      "name": "meta.enum"
+      "match": "^keyword\\.operator\\.transposed-matrix$",
+      "name": "keyword.operator.transposed-matrix"
     },
     {
-      "match": "meta.union",
-      "name": "meta.union"
+      "match": "^keyword\\.operator\\.transposed-func$",
+      "name": "keyword.operator.transposed-func"
     },
     {
-      "match": "meta.trait",
-      "name": "meta.trait"
+      "match": "^keyword\\.operator\\.textual$",
+      "name": "keyword.operator.textual"
     },
     {
-      "match": "meta.interface",
-      "name": "meta.interface"
+      "match": "^keyword\\.operator\\.symbolic$",
+      "name": "keyword.operator.symbolic"
     },
     {
-      "match": "meta.impl",
-      "name": "meta.impl"
+      "match": "^keyword\\.operator\\.sizeof$",
+      "name": "keyword.operator.sizeof"
     },
     {
-      "match": "meta.type",
-      "name": "meta.type"
+      "match": "^keyword\\.operator\\.shift$",
+      "name": "keyword.operator.shift"
     },
     {
-      "match": "meta.string",
-      "name": "meta.string"
+      "match": "^keyword\\.operator\\.shape$",
+      "name": "keyword.operator.shape"
     },
     {
-      "match": "meta.path",
-      "name": "meta.path"
+      "match": "^keyword\\.operator\\.relation$",
+      "name": "keyword.operator.relation"
     },
     {
-      "match": "meta.function-call",
-      "name": "meta.function-call"
+      "match": "^keyword\\.operator\\.record\\.end$",
+      "name": "keyword.operator.record.end"
     },
     {
-      "match": "meta.block",
-      "name": "meta.block"
+      "match": "^keyword\\.operator\\.record\\.begin$",
+      "name": "keyword.operator.record.begin"
     },
     {
-      "match": "meta.embedded",
-      "name": "meta.embedded"
+      "match": "^keyword\\.operator\\.record$",
+      "name": "keyword.operator.record"
     },
     {
-      "match": "meta.braces",
-      "name": "meta.braces"
+      "match": "^keyword\\.operator\\.promoted$",
+      "name": "keyword.operator.promoted"
     },
     {
-      "match": "meta.group",
-      "name": "meta.group"
+      "match": "^keyword\\.operator\\.pattern$",
+      "name": "keyword.operator.pattern"
     },
     {
-      "match": "meta.parens",
-      "name": "meta.parens"
+      "match": "^keyword\\.operator\\.other$",
+      "name": "keyword.operator.other"
     },
     {
-      "match": "meta.brackets",
-      "name": "meta.brackets"
+      "match": "^keyword\\.operator\\.macro$",
+      "name": "keyword.operator.macro"
     },
     {
-      "match": "meta.generic",
-      "name": "meta.generic"
+      "match": "^keyword\\.operator\\.isa$",
+      "name": "keyword.operator.isa"
     },
     {
-      "match": "meta.tag",
-      "name": "meta.tag"
+      "match": "^keyword\\.operator\\.interpolation$",
+      "name": "keyword.operator.interpolation"
     },
     {
-      "match": "meta.leading-tabs",
-      "name": "meta.leading-tabs"
+      "match": "^keyword\\.operator\\.instanceof$",
+      "name": "keyword.operator.instanceof"
     },
     {
-      "match": "meta.odd-tab",
-      "name": "meta.odd-tab"
+      "match": "^keyword\\.operator\\.increment-decrement$",
+      "name": "keyword.operator.increment-decrement"
     },
     {
-      "match": "meta.even-tab",
-      "name": "meta.even-tab"
+      "match": "^keyword\\.operator\\.gradient$",
+      "name": "keyword.operator.gradient"
     },
     {
-      "match": "meta.paragraph",
-      "name": "meta.paragraph"
+      "match": "^keyword\\.operator\\.function\\.infix$",
+      "name": "keyword.operator.function.infix"
     },
     {
-      "match": "meta.diagnostics.pragma",
-      "name": "meta.diagnostics.pragma"
+      "match": "^keyword\\.operator\\.function$",
+      "name": "keyword.operator.function"
     },
     {
-      "match": "meta.function.parameters",
-      "name": "meta.function.parameters"
+      "match": "^keyword\\.operator\\.function-annotation$",
+      "name": "keyword.operator.function-annotation"
     },
     {
-      "match": "meta.function.parameters",
-      "name": "meta.function.parameters"
+      "match": "^keyword\\.operator\\.dots$",
+      "name": "keyword.operator.dots"
     },
     {
-      "match": "meta.function.return-type",
-      "name": "meta.function.return-type"
+      "match": "^keyword\\.operator\\.combinator$",
+      "name": "keyword.operator.combinator"
     },
     {
-      "match": "meta.function.signature",
-      "name": "meta.function.signature"
+      "match": "^keyword\\.operator\\.channel$",
+      "name": "keyword.operator.channel"
     },
     {
-      "match": "meta.function",
-      "name": "meta.function"
+      "match": "^keyword\\.operator\\.cast$",
+      "name": "keyword.operator.cast"
     },
     {
-      "match": "meta.namespace",
-      "name": "meta.namespace"
+      "match": "^keyword\\.operator\\.boolean$",
+      "name": "keyword.operator.boolean"
     },
     {
-      "match": "meta.preprocessor.pragma",
-      "name": "meta.preprocessor.pragma"
+      "match": "^keyword\\.operator\\.assert\\.expression-separator$",
+      "name": "keyword.operator.assert.expression-separator"
     },
     {
-      "match": "meta.preprocessor.include",
-      "name": "meta.preprocessor.include"
+      "match": "^keyword\\.operator\\.assert$",
+      "name": "keyword.operator.assert"
     },
     {
-      "match": "meta.preprocessor",
-      "name": "meta.preprocessor"
+      "match": "^keyword\\.operator\\.arrow$",
+      "name": "keyword.operator.arrow"
     },
     {
-      "match": "meta.interpolation",
-      "name": "meta.interpolation"
+      "match": "^keyword\\.operator\\.address$",
+      "name": "keyword.operator.address"
     },
     {
-      "match": "meta.annotation.identifier",
-      "name": "meta.annotation.identifier"
-    },
-    {
-      "match": "meta.annotation.parameters",
-      "name": "meta.annotation.parameters"
-    },
-    {
-      "match": "meta.annotation",
-      "name": "meta.annotation"
-    },
-    {
-      "match": "meta",
-      "name": "meta"
-    },
-    {
-      "match": "punctuation.whitespace.comment.leading",
-      "name": "punctuation.whitespace.comment.leading"
-    },
-    {
-      "match": "punctuation.whitespace.comment",
-      "name": "punctuation.whitespace.comment"
-    },
-    {
-      "match": "punctuation.whitespace",
-      "name": "punctuation.whitespace"
-    },
-    {
-      "match": "punctuation.terminator.semicolon",
-      "name": "punctuation.terminator.semicolon"
-    },
-    {
-      "match": "punctuation.terminator.statement",
-      "name": "punctuation.terminator.statement"
-    },
-    {
-      "match": "punctuation.terminator.expression",
-      "name": "punctuation.terminator.expression"
-    },
-    {
-      "match": "punctuation.terminator",
-      "name": "punctuation.terminator"
-    },
-    {
-      "match": "punctuation.delimiter.decimal.period",
-      "name": "punctuation.delimiter.decimal.period"
-    },
-    {
-      "match": "punctuation.separator.comma",
-      "name": "punctuation.separator.comma"
-    },
-    {
-      "match": "punctuation.separator.colon",
-      "name": "punctuation.separator.colon"
-    },
-    {
-      "match": "punctuation.separator.arrow",
-      "name": "punctuation.separator.arrow"
-    },
-    {
-      "match": "punctuation.separator.key-value",
-      "name": "punctuation.separator.key-value"
-    },
-    {
-      "match": "punctuation.separator.inheritance",
-      "name": "punctuation.separator.inheritance"
-    },
-    {
-      "match": "punctuation.separator.delimiter",
-      "name": "punctuation.separator.delimiter"
-    },
-    {
-      "match": "punctuation.separator.classes",
-      "name": "punctuation.separator.classes"
-    },
-    {
-      "match": "punctuation.separator.continuation",
-      "name": "punctuation.separator.continuation"
-    },
-    {
-      "match": "punctuation.separator.decimal.period",
-      "name": "punctuation.separator.decimal.period"
-    },
-    {
-      "match": "punctuation.separator.decimal",
-      "name": "punctuation.separator.decimal"
-    },
-    {
-      "match": "punctuation.separator",
-      "name": "punctuation.separator"
-    },
-    {
-      "match": "punctuation.accessor",
-      "name": "punctuation.accessor"
-    },
-    {
-      "match": "punctuation.section.embedded.begin",
-      "name": "punctuation.section.embedded.begin"
-    },
-    {
-      "match": "punctuation.section.embedded.end",
-      "name": "punctuation.section.embedded.end"
-    },
-    {
-      "match": "punctuation.section.embedded",
-      "name": "punctuation.section.embedded"
-    },
-    {
-      "match": "punctuation.section.array.begin",
-      "name": "punctuation.section.array.begin"
-    },
-    {
-      "match": "punctuation.section.array.end",
-      "name": "punctuation.section.array.end"
-    },
-    {
-      "match": "punctuation.section.array",
-      "name": "punctuation.section.array"
-    },
-    {
-      "match": "punctuation.section.block.begin",
-      "name": "punctuation.section.block.begin"
-    },
-    {
-      "match": "punctuation.section.block.end",
-      "name": "punctuation.section.block.end"
-    },
-    {
-      "match": "punctuation.section.block",
-      "name": "punctuation.section.block"
-    },
-    {
-      "match": "punctuation.section.braces.begin",
-      "name": "punctuation.section.braces.begin"
-    },
-    {
-      "match": "punctuation.section.braces.end",
-      "name": "punctuation.section.braces.end"
-    },
-    {
-      "match": "punctuation.section.braces",
-      "name": "punctuation.section.braces"
-    },
-    {
-      "match": "punctuation.section.group.begin",
-      "name": "punctuation.section.group.begin"
-    },
-    {
-      "match": "punctuation.section.group.end",
-      "name": "punctuation.section.group.end"
-    },
-    {
-      "match": "punctuation.section.group",
-      "name": "punctuation.section.group"
-    },
-    {
-      "match": "punctuation.section.parens.begin",
-      "name": "punctuation.section.parens.begin"
-    },
-    {
-      "match": "punctuation.section.parens.end",
-      "name": "punctuation.section.parens.end"
-    },
-    {
-      "match": "punctuation.section.parens",
-      "name": "punctuation.section.parens"
-    },
-    {
-      "match": "punctuation.section.brackets.begin",
-      "name": "punctuation.section.brackets.begin"
-    },
-    {
-      "match": "punctuation.section.brackets.end",
-      "name": "punctuation.section.brackets.end"
-    },
-    {
-      "match": "punctuation.section.brackets",
-      "name": "punctuation.section.brackets"
-    },
-    {
-      "match": "punctuation.section.interpolation.end",
-      "name": "punctuation.section.interpolation.end"
-    },
-    {
-      "match": "punctuation.section.interpolation.begin",
-      "name": "punctuation.section.interpolation.begin"
-    },
-    {
-      "match": "punctuation.section.interpolation",
-      "name": "punctuation.section.interpolation"
-    },
-    {
-      "match": "punctuation.section.brace.curly.bracket.begin",
-      "name": "punctuation.section.brace.curly.bracket.begin"
-    },
-    {
-      "match": "punctuation.section.brace.curly.bracket.end",
-      "name": "punctuation.section.brace.curly.bracket.end"
-    },
-    {
-      "match": "punctuation.section.brace.curly.bracket",
-      "name": "punctuation.section.brace.curly.bracket"
-    },
-    {
-      "match": "punctuation.section.brace.curly",
-      "name": "punctuation.section.brace.curly"
-    },
-    {
-      "match": "punctuation.section.brace",
-      "name": "punctuation.section.brace"
-    },
-    {
-      "match": "punctuation.section.square.bracket.begin",
-      "name": "punctuation.section.square.bracket.begin"
-    },
-    {
-      "match": "punctuation.section.square.bracket.end",
-      "name": "punctuation.section.square.bracket.end"
-    },
-    {
-      "match": "punctuation.section.square.bracket",
-      "name": "punctuation.section.square.bracket"
-    },
-    {
-      "match": "punctuation.section.square",
-      "name": "punctuation.section.square"
-    },
-    {
-      "match": "punctuation.section.scope.begin",
-      "name": "punctuation.section.scope.begin"
-    },
-    {
-      "match": "punctuation.section.scope.end",
-      "name": "punctuation.section.scope.end"
-    },
-    {
-      "match": "punctuation.section.scope",
-      "name": "punctuation.section.scope"
-    },
-    {
-      "match": "punctuation.section.parenthesis.round.bracket.begin",
-      "name": "punctuation.section.parenthesis.round.bracket.begin"
-    },
-    {
-      "match": "punctuation.section.parenthesis.round.bracket.end",
-      "name": "punctuation.section.parenthesis.round.bracket.end"
-    },
-    {
-      "match": "punctuation.section.parenthesis.round.bracket",
-      "name": "punctuation.section.parenthesis.round.bracket"
-    },
-    {
-      "match": "punctuation.section.parenthesis.round",
-      "name": "punctuation.section.parenthesis.round"
-    },
-    {
-      "match": "punctuation.section.parenthesis",
-      "name": "punctuation.section.parenthesis"
-    },
-    {
-      "match": "punctuation.section.signature.begin.bracket.curly",
-      "name": "punctuation.section.signature.begin.bracket.curly"
-    },
-    {
-      "match": "punctuation.section.signature.begin.bracket",
-      "name": "punctuation.section.signature.begin.bracket"
-    },
-    {
-      "match": "punctuation.section.signature.begin",
-      "name": "punctuation.section.signature.begin"
-    },
-    {
-      "match": "punctuation.section.signature",
-      "name": "punctuation.section.signature"
-    },
-    {
-      "match": "punctuation.section",
-      "name": "punctuation.section"
-    },
-    {
-      "match": "punctuation.definition.heredoc.begin",
-      "name": "punctuation.definition.heredoc.begin"
-    },
-    {
-      "match": "punctuation.definition.heredoc.end",
-      "name": "punctuation.definition.heredoc.end"
-    },
-    {
-      "match": "punctuation.definition.heredoc",
-      "name": "punctuation.definition.heredoc"
-    },
-    {
-      "match": "punctuation.definition.array.begin.bracket.round",
-      "name": "punctuation.definition.array.begin.bracket.round"
-    },
-    {
-      "match": "punctuation.definition.array.end.bracket.round",
-      "name": "punctuation.definition.array.end.bracket.round"
-    },
-    {
-      "match": "punctuation.definition.constant",
-      "name": "punctuation.definition.constant"
-    },
-    {
-      "match": "punctuation.definition.arbitrary-repetition",
-      "name": "punctuation.definition.arbitrary-repetition"
-    },
-    {
-      "match": "punctuation.definition.tag.begin",
-      "name": "punctuation.definition.tag.begin"
-    },
-    {
-      "match": "punctuation.definition.tag.end",
-      "name": "punctuation.definition.tag.end"
-    },
-    {
-      "match": "punctuation.definition.tag",
-      "name": "punctuation.definition.tag"
-    },
-    {
-      "match": "punctuation.definition.string.begin",
-      "name": "punctuation.definition.string.begin"
-    },
-    {
-      "match": "punctuation.definition.string.end",
-      "name": "punctuation.definition.string.end"
-    },
-    {
-      "match": "punctuation.definition.string",
-      "name": "punctuation.definition.string"
-    },
-    {
-      "match": "punctuation.definition.comment.begin",
-      "name": "punctuation.definition.comment.begin"
-    },
-    {
-      "match": "punctuation.definition.comment.end",
-      "name": "punctuation.definition.comment.end"
-    },
-    {
-      "match": "punctuation.definition.comment",
-      "name": "punctuation.definition.comment"
-    },
-    {
-      "match": "punctuation.definition.keyword.begin",
-      "name": "punctuation.definition.keyword.begin"
-    },
-    {
-      "match": "punctuation.definition.keyword.end",
-      "name": "punctuation.definition.keyword.end"
-    },
-    {
-      "match": "punctuation.definition.keyword",
-      "name": "punctuation.definition.keyword"
-    },
-    {
-      "match": "punctuation.definition.annotation.begin",
-      "name": "punctuation.definition.annotation.begin"
-    },
-    {
-      "match": "punctuation.definition.annotation.end",
-      "name": "punctuation.definition.annotation.end"
-    },
-    {
-      "match": "punctuation.definition.annotation",
-      "name": "punctuation.definition.annotation"
-    },
-    {
-      "match": "punctuation.definition.generic.begin",
-      "name": "punctuation.definition.generic.begin"
-    },
-    {
-      "match": "punctuation.definition.generic.end",
-      "name": "punctuation.definition.generic.end"
-    },
-    {
-      "match": "punctuation.definition.generic",
-      "name": "punctuation.definition.generic"
-    },
-    {
-      "match": "punctuation.definition.variable.begin",
-      "name": "punctuation.definition.variable.begin"
-    },
-    {
-      "match": "punctuation.definition.variable.end",
-      "name": "punctuation.definition.variable.end"
-    },
-    {
-      "match": "punctuation.definition.variable",
-      "name": "punctuation.definition.variable"
-    },
-    {
-      "match": "punctuation.definition",
-      "name": "punctuation.definition"
-    },
-    {
-      "match": "punctuation.unmatched.brace.curly.bracket.begin",
-      "name": "punctuation.unmatched.brace.curly.bracket.begin"
-    },
-    {
-      "match": "punctuation.unmatched.brace.curly.bracket.end",
-      "name": "punctuation.unmatched.brace.curly.bracket.end"
-    },
-    {
-      "match": "punctuation.unmatched.brace.curly.bracket",
-      "name": "punctuation.unmatched.brace.curly.bracket"
-    },
-    {
-      "match": "punctuation.unmatched.brace.curly",
-      "name": "punctuation.unmatched.brace.curly"
-    },
-    {
-      "match": "punctuation.unmatched.brace",
-      "name": "punctuation.unmatched.brace"
-    },
-    {
-      "match": "punctuation.unmatched",
-      "name": "punctuation.unmatched"
-    },
-    {
-      "match": "punctuation",
-      "name": "punctuation"
-    },
-    {
-      "match": "storage.modifier.extends",
-      "name": "storage.modifier.extends"
-    },
-    {
-      "match": "storage.modifier.static",
-      "name": "storage.modifier.static"
-    },
-    {
-      "match": "storage.modifier.final",
-      "name": "storage.modifier.final"
-    },
-    {
-      "match": "storage.modifier.abstract",
-      "name": "storage.modifier.abstract"
-    },
-    {
-      "match": "storage.modifier.public",
-      "name": "storage.modifier.public"
-    },
-    {
-      "match": "storage.modifier.private",
-      "name": "storage.modifier.private"
-    },
-    {
-      "match": "storage.modifier.protected",
-      "name": "storage.modifier.protected"
-    },
-    {
-      "match": "storage.modifier.reference",
-      "name": "storage.modifier.reference"
-    },
-    {
-      "match": "storage.modifier",
-      "name": "storage.modifier"
-    },
-    {
-      "match": "storage.type.signature.method",
-      "name": "storage.type.signature.method"
-    },
-    {
-      "match": "storage.type.signature",
-      "name": "storage.type.signature"
-    },
-    {
-      "match": "storage.type.function",
-      "name": "storage.type.function"
-    },
-    {
-      "match": "storage.type.class",
-      "name": "storage.type.class"
-    },
-    {
-      "match": "storage.type.interface",
-      "name": "storage.type.interface"
-    },
-    {
-      "match": "storage.type.int",
-      "name": "storage.type.int"
-    },
-    {
-      "match": "storage.type.var",
-      "name": "storage.type.var"
-    },
-    {
-      "match": "storage.type.struct",
-      "name": "storage.type.struct"
-    },
-    {
-      "match": "storage.type.enum",
-      "name": "storage.type.enum"
-    },
-    {
-      "match": "storage.type.union",
-      "name": "storage.type.union"
-    },
-    {
-      "match": "storage.type.trait",
-      "name": "storage.type.trait"
-    },
-    {
-      "match": "storage.type.impl",
-      "name": "storage.type.impl"
-    },
-    {
-      "match": "storage.type",
-      "name": "storage.type"
-    },
-    {
-      "match": "storage",
-      "name": "storage"
-    },
-    {
-      "match": "keyword.declaration.function",
+      "match": "^keyword\\.declaration\\.function$",
       "name": "keyword.declaration.function"
     },
     {
-      "match": "keyword.declaration.class",
+      "match": "^keyword\\.declaration\\.class$",
       "name": "keyword.declaration.class"
     },
     {
-      "match": "keyword.declaration.struct",
+      "match": "^keyword\\.declaration\\.struct$",
       "name": "keyword.declaration.struct"
     },
     {
-      "match": "keyword.declaration.enum",
+      "match": "^keyword\\.declaration\\.enum$",
       "name": "keyword.declaration.enum"
     },
     {
-      "match": "keyword.declaration.union",
+      "match": "^keyword\\.declaration\\.union$",
       "name": "keyword.declaration.union"
     },
     {
-      "match": "keyword.declaration.trait",
+      "match": "^keyword\\.declaration\\.trait$",
       "name": "keyword.declaration.trait"
     },
     {
-      "match": "keyword.declaration.interface",
+      "match": "^keyword\\.declaration\\.interface$",
       "name": "keyword.declaration.interface"
     },
     {
-      "match": "keyword.declaration.impl",
+      "match": "^keyword\\.declaration\\.impl$",
       "name": "keyword.declaration.impl"
     },
     {
-      "match": "keyword.declaration.type",
+      "match": "^keyword\\.declaration\\.type$",
       "name": "keyword.declaration.type"
     },
     {
-      "match": "keyword.declaration",
+      "match": "^keyword\\.declaration$",
       "name": "keyword.declaration"
     },
     {
-      "match": "keyword.operator.ellipsis.placeholder",
+      "match": "^keyword\\.operator\\.ellipsis\\.placeholder$",
       "name": "keyword.operator.ellipsis.placeholder"
     },
     {
-      "match": "keyword.operator.ellipsis",
+      "match": "^keyword\\.operator\\.ellipsis$",
       "name": "keyword.operator.ellipsis"
     },
     {
-      "match": "keyword.operator.readline",
+      "match": "^keyword\\.operator\\.readline$",
       "name": "keyword.operator.readline"
     },
     {
-      "match": "keyword.operator.filetest",
+      "match": "^keyword\\.operator\\.filetest$",
       "name": "keyword.operator.filetest"
     },
     {
-      "match": "keyword.operator.comparison.stringwise",
+      "match": "^keyword\\.operator\\.comparison\\.stringwise$",
       "name": "keyword.operator.comparison.stringwise"
     },
     {
-      "match": "keyword.operator.comparison",
+      "match": "^keyword\\.operator\\.comparison$",
       "name": "keyword.operator.comparison"
     },
     {
-      "match": "keyword.operator.pragma.flag",
+      "match": "^keyword\\.operator\\.pragma\\.flag$",
       "name": "keyword.operator.pragma.flag"
     },
     {
-      "match": "keyword.operator.pragma",
+      "match": "^keyword\\.operator\\.pragma$",
       "name": "keyword.operator.pragma"
     },
     {
-      "match": "keyword.operator.repetition",
+      "match": "^keyword\\.operator\\.repetition$",
       "name": "keyword.operator.repetition"
     },
     {
-      "match": "keyword.operator.concatenation",
+      "match": "^keyword\\.operator\\.concatenation$",
       "name": "keyword.operator.concatenation"
     },
     {
-      "match": "keyword.operator.range",
+      "match": "^keyword\\.operator\\.range$",
       "name": "keyword.operator.range"
     },
     {
-      "match": "keyword.operator.assignement.compound.bitwise",
+      "match": "^keyword\\.operator\\.assignement\\.compound\\.bitwise$",
       "name": "keyword.operator.assignement.compound.bitwise"
     },
     {
-      "match": "keyword.operator.assignement.compound.stringwise",
+      "match": "^keyword\\.operator\\.assignement\\.compound\\.stringwise$",
       "name": "keyword.operator.assignement.compound.stringwise"
     },
     {
-      "match": "keyword.operator.assignement.compound",
+      "match": "^keyword\\.operator\\.assignement\\.compound$",
       "name": "keyword.operator.assignement.compound"
     },
     {
-      "match": "keyword.operator.assignement.conditional",
+      "match": "^keyword\\.operator\\.assignement\\.conditional$",
       "name": "keyword.operator.assignement.conditional"
     },
     {
-      "match": "keyword.operator.assignement",
+      "match": "^keyword\\.operator\\.assignement$",
       "name": "keyword.operator.assignement"
     },
     {
-      "match": "keyword.operator.bitwise",
+      "match": "^keyword\\.operator\\.bitwise\\.shift$",
+      "name": "keyword.operator.bitwise.shift"
+    },
+    {
+      "match": "^keyword\\.operator\\.bitwise$",
       "name": "keyword.operator.bitwise"
     },
     {
-      "match": "keyword.operator.decrement",
+      "match": "^keyword\\.operator\\.decrement$",
       "name": "keyword.operator.decrement"
     },
     {
-      "match": "keyword.operator.increment",
+      "match": "^keyword\\.operator\\.increment$",
       "name": "keyword.operator.increment"
     },
     {
-      "match": "keyword.operator.logical.c-style",
+      "match": "^keyword\\.operator\\.logical\\.c-style$",
       "name": "keyword.operator.logical.c-style"
     },
     {
-      "match": "keyword.operator.logical.defined-or",
+      "match": "^keyword\\.operator\\.logical\\.defined-or$",
       "name": "keyword.operator.logical.defined-or"
     },
     {
-      "match": "keyword.operator.logical",
+      "match": "^keyword\\.operator\\.logical\\.feature$",
+      "name": "keyword.operator.logical.feature"
+    },
+    {
+      "match": "^keyword\\.operator\\.logical\\.and\\.media$",
+      "name": "keyword.operator.logical.and.media"
+    },
+    {
+      "match": "^keyword\\.operator\\.logical\\.and$",
+      "name": "keyword.operator.logical.and"
+    },
+    {
+      "match": "^keyword\\.operator\\.logical$",
       "name": "keyword.operator.logical"
     },
     {
-      "match": "keyword.operator.stringwise",
+      "match": "^keyword\\.operator\\.stringwise$",
       "name": "keyword.operator.stringwise"
     },
     {
-      "match": "keyword.operator.arithmetic",
+      "match": "^keyword\\.operator\\.arithmetic\\.bitwise$",
+      "name": "keyword.operator.arithmetic.bitwise"
+    },
+    {
+      "match": "^keyword\\.operator\\.arithmetic$",
       "name": "keyword.operator.arithmetic"
     },
     {
-      "match": "keyword.operator.ternary",
+      "match": "^keyword\\.operator\\.ternary$",
       "name": "keyword.operator.ternary"
     },
     {
-      "match": "keyword.operator.heredoc",
+      "match": "^keyword\\.operator\\.heredoc$",
       "name": "keyword.operator.heredoc"
     },
     {
-      "match": "keyword.operator.null-coalescing",
+      "match": "^keyword\\.operator\\.null-coalescing$",
       "name": "keyword.operator.null-coalescing"
     },
     {
-      "match": "keyword.operator.interface",
+      "match": "^keyword\\.operator\\.interface$",
       "name": "keyword.operator.interface"
     },
     {
-      "match": "keyword.operator.class",
+      "match": "^keyword\\.operator\\.class$",
       "name": "keyword.operator.class"
     },
     {
-      "match": "keyword.operator.nullable-type",
+      "match": "^keyword\\.operator\\.nullable-type$",
       "name": "keyword.operator.nullable-type"
     },
     {
-      "match": "keyword.operator.assignment",
+      "match": "^keyword\\.operator\\.assignment\\.compound\\.bitwise$",
+      "name": "keyword.operator.assignment.compound.bitwise"
+    },
+    {
+      "match": "^keyword\\.operator\\.assignment\\.compound$",
+      "name": "keyword.operator.assignment.compound"
+    },
+    {
+      "match": "^keyword\\.operator\\.assignment\\.bitwise$",
+      "name": "keyword.operator.assignment.bitwise"
+    },
+    {
+      "match": "^keyword\\.operator\\.assignment\\.augmented$",
+      "name": "keyword.operator.assignment.augmented"
+    },
+    {
+      "match": "^keyword\\.operator\\.assignment\\.arithmetic$",
+      "name": "keyword.operator.assignment.arithmetic"
+    },
+    {
+      "match": "^keyword\\.operator\\.assignment$",
       "name": "keyword.operator.assignment"
     },
     {
-      "match": "keyword.operator.arithmetic",
+      "match": "^keyword\\.operator\\.arithmetic$",
       "name": "keyword.operator.arithmetic"
     },
     {
-      "match": "keyword.operator.bitwise",
+      "match": "^keyword\\.operator\\.bitwise$",
       "name": "keyword.operator.bitwise"
     },
     {
-      "match": "keyword.operator.logical",
+      "match": "^keyword\\.operator\\.logical$",
       "name": "keyword.operator.logical"
     },
     {
-      "match": "keyword.operator.word",
+      "match": "^keyword\\.operator\\.word$",
       "name": "keyword.operator.word"
     },
     {
-      "match": "keyword.operator.regexp",
+      "match": "^keyword\\.operator\\.regexp$",
       "name": "keyword.operator.regexp"
     },
     {
-      "match": "keyword.operator",
+      "match": "^keyword\\.operator$",
       "name": "keyword.operator"
     },
     {
-      "match": "keyword.control.directive.pragma",
+      "match": "^keyword\\.controls$",
+      "name": "keyword.controls"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.viewport$",
+      "name": "keyword.control.at-rule.viewport"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.supports$",
+      "name": "keyword.control.at-rule.supports"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.page$",
+      "name": "keyword.control.at-rule.page"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.namespace$",
+      "name": "keyword.control.at-rule.namespace"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.media$",
+      "name": "keyword.control.at-rule.media"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.keyframes$",
+      "name": "keyword.control.at-rule.keyframes"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.import$",
+      "name": "keyword.control.at-rule.import"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.font-feature-values$",
+      "name": "keyword.control.at-rule.font-feature-values"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.font-face$",
+      "name": "keyword.control.at-rule.font-face"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.document$",
+      "name": "keyword.control.at-rule.document"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule$",
+      "name": "keyword.control.at-rule"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.counter-style$",
+      "name": "keyword.control.at-rule.counter-style"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule\\.charset$",
+      "name": "keyword.control.at-rule.charset"
+    },
+    {
+      "match": "^keyword\\.control\\.at-rule$",
+      "name": "keyword.control.at-rule"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.undef$",
+      "name": "keyword.control.directive.undef"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.pragma\\.pragma-mark$",
+      "name": "keyword.control.directive.pragma.pragma-mark"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.pragma$",
       "name": "keyword.control.directive.pragma"
     },
     {
-      "match": "keyword.control.directive",
+      "match": "^keyword\\.control\\.directive\\.module$",
+      "name": "keyword.control.directive.module"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.line$",
+      "name": "keyword.control.directive.line"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.import$",
+      "name": "keyword.control.directive.import"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.ifndef$",
+      "name": "keyword.control.directive.ifndef"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.ifdef$",
+      "name": "keyword.control.directive.ifdef"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.export$",
+      "name": "keyword.control.directive.export"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.diagnostic$",
+      "name": "keyword.control.directive.diagnostic"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.define$",
+      "name": "keyword.control.directive.define"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.conditional$",
+      "name": "keyword.control.directive.conditional"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.behaviour$",
+      "name": "keyword.control.directive.behaviour"
+    },
+    {
+      "match": "^keyword\\.control\\.directive\\.pragma$",
+      "name": "keyword.control.directive.pragma"
+    },
+    {
+      "match": "^keyword\\.control\\.directive$",
       "name": "keyword.control.directive"
     },
     {
-      "match": "keyword.control.diagnostics",
+      "match": "^keyword\\.control\\.diagnostics$",
       "name": "keyword.control.diagnostics"
     },
     {
-      "match": "keyword.control.regexp-option",
+      "match": "^keyword\\.control\\.regexp-option$",
       "name": "keyword.control.regexp-option"
     },
     {
-      "match": "keyword.control.conditional",
+      "match": "^keyword\\.control\\.conditional$",
       "name": "keyword.control.conditional"
     },
     {
-      "match": "keyword.control.anchor",
+      "match": "^keyword\\.control\\.anchor$",
       "name": "keyword.control.anchor"
     },
     {
-      "match": "keyword.control.import",
+      "match": "^keyword\\.control\\.import\\.from$",
+      "name": "keyword.control.import.from"
+    },
+    {
+      "match": "^keyword\\.control\\.import$",
       "name": "keyword.control.import"
     },
     {
-      "match": "keyword.control.continue",
+      "match": "^keyword\\.control\\.continue$",
       "name": "keyword.control.continue"
     },
     {
-      "match": "keyword.control.while",
+      "match": "^keyword\\.control\\.while$",
       "name": "keyword.control.while"
     },
     {
-      "match": "keyword.control.return",
+      "match": "^keyword\\.control\\.return$",
       "name": "keyword.control.return"
     },
     {
-      "match": "keyword.control",
+      "match": "^keyword\\.control\\.try$",
+      "name": "keyword.control.try"
+    },
+    {
+      "match": "^keyword\\.control\\.throw$",
+      "name": "keyword.control.throw"
+    },
+    {
+      "match": "^keyword\\.control\\.ternary$",
+      "name": "keyword.control.ternary"
+    },
+    {
+      "match": "^keyword\\.control\\.statement$",
+      "name": "keyword.control.statement"
+    },
+    {
+      "match": "^keyword\\.control\\.start-block$",
+      "name": "keyword.control.start-block"
+    },
+    {
+      "match": "^keyword\\.control\\.repeat$",
+      "name": "keyword.control.repeat"
+    },
+    {
+      "match": "^keyword\\.control\\.receive$",
+      "name": "keyword.control.receive"
+    },
+    {
+      "match": "^keyword\\.control\\.query$",
+      "name": "keyword.control.query"
+    },
+    {
+      "match": "^keyword\\.control\\.pseudo-method$",
+      "name": "keyword.control.pseudo-method"
+    },
+    {
+      "match": "^keyword\\.control\\.new$",
+      "name": "keyword.control.new"
+    },
+    {
+      "match": "^keyword\\.control\\.module$",
+      "name": "keyword.control.module"
+    },
+    {
+      "match": "^keyword\\.control\\.if$",
+      "name": "keyword.control.if"
+    },
+    {
+      "match": "^keyword\\.control\\.fun$",
+      "name": "keyword.control.fun"
+    },
+    {
+      "match": "^keyword\\.control\\.finally$",
+      "name": "keyword.control.finally"
+    },
+    {
+      "match": "^keyword\\.control\\.exception$",
+      "name": "keyword.control.exception"
+    },
+    {
+      "match": "^keyword\\.control\\.def$",
+      "name": "keyword.control.def"
+    },
+    {
+      "match": "^keyword\\.control\\.class$",
+      "name": "keyword.control.class"
+    },
+    {
+      "match": "^keyword\\.control\\.catch$",
+      "name": "keyword.control.catch"
+    },
+    {
+      "match": "^keyword\\.control\\.case$",
+      "name": "keyword.control.case"
+    },
+    {
+      "match": "^keyword\\.control\\.begin$",
+      "name": "keyword.control.begin"
+    },
+    {
+      "match": "^keyword\\.control$",
       "name": "keyword.control"
     },
     {
-      "match": "keyword.other.namespace",
+      "match": "^keyword\\.others$",
+      "name": "keyword.others"
+    },
+    {
+      "match": "^keyword\\.other\\.unit\\.percentage$",
+      "name": "keyword.other.unit.percentage"
+    },
+    {
+      "match": "^keyword\\.other\\.special-method$",
+      "name": "keyword.other.special-method"
+    },
+    {
+      "match": "^keyword\\.other\\.preprocessor$",
+      "name": "keyword.other.preprocessor"
+    },
+    {
+      "match": "^keyword\\.other\\.package$",
+      "name": "keyword.other.package"
+    },
+    {
+      "match": "^keyword\\.other\\.important$",
+      "name": "keyword.other.important"
+    },
+    {
+      "match": "^keyword\\.other\\.import$",
+      "name": "keyword.other.import"
+    },
+    {
+      "match": "^keyword\\.other\\.forall$",
+      "name": "keyword.other.forall"
+    },
+    {
+      "match": "^keyword\\.other\\.double-colon$",
+      "name": "keyword.other.double-colon"
+    },
+    {
+      "match": "^keyword\\.other\\.documentation\\.doc$",
+      "name": "keyword.other.documentation.doc"
+    },
+    {
+      "match": "^keyword\\.other\\.documentation$",
+      "name": "keyword.other.documentation"
+    },
+    {
+      "match": "^keyword\\.other\\.data$",
+      "name": "keyword.other.data"
+    },
+    {
+      "match": "^keyword\\.other\\.big-arrow$",
+      "name": "keyword.other.big-arrow"
+    },
+    {
+      "match": "^keyword\\.other\\.arrow$",
+      "name": "keyword.other.arrow"
+    },
+    {
+      "match": "^keyword\\.other\\.namespace$",
       "name": "keyword.other.namespace"
     },
     {
-      "match": "keyword.other.class",
+      "match": "^keyword\\.other\\.class$",
       "name": "keyword.other.class"
     },
     {
-      "match": "keyword.other.interface",
+      "match": "^keyword\\.other\\.interface$",
       "name": "keyword.other.interface"
     },
     {
-      "match": "keyword.other.type",
+      "match": "^keyword\\.other\\.type$",
       "name": "keyword.other.type"
     },
     {
-      "match": "keyword.other",
+      "match": "^keyword\\.other$",
       "name": "keyword.other"
     },
     {
-      "match": "keyword",
+      "match": "^keyword$",
       "name": "keyword"
     },
     {
-      "match": "source.language-suffix.embedded",
+      "match": "^markup\\.other\\.escape\\.newline\\.end$",
+      "name": "markup.other.escape.newline.end"
+    },
+    {
+      "match": "^markup\\.other\\.escape\\.newline\\.begin$",
+      "name": "markup.other.escape.newline.begin"
+    },
+    {
+      "match": "^markup\\.other\\.escape\\.newline$",
+      "name": "markup.other.escape.newline"
+    },
+    {
+      "match": "^markup\\.other\\.escape$",
+      "name": "markup.other.escape"
+    },
+    {
+      "match": "^markup\\.other$",
+      "name": "markup.other"
+    },
+    {
+      "match": "^markup\\.heading$",
+      "name": "markup.heading"
+    },
+    {
+      "match": "^markup\\.list\\.unnumbered$",
+      "name": "markup.list.unnumbered"
+    },
+    {
+      "match": "^markup\\.list\\.numbered$",
+      "name": "markup.list.numbered"
+    },
+    {
+      "match": "^markup\\.list$",
+      "name": "markup.list"
+    },
+    {
+      "match": "^markup\\.bold$",
+      "name": "markup.bold"
+    },
+    {
+      "match": "^markup\\.italic$",
+      "name": "markup.italic"
+    },
+    {
+      "match": "^markup\\.inserted$",
+      "name": "markup.inserted"
+    },
+    {
+      "match": "^markup\\.deleted$",
+      "name": "markup.deleted"
+    },
+    {
+      "match": "^markup\\.underline\\.link\\.hyperlink$",
+      "name": "markup.underline.link.hyperlink"
+    },
+    {
+      "match": "^markup\\.underline\\.link\\.radar$",
+      "name": "markup.underline.link.radar"
+    },
+    {
+      "match": "^markup\\.underline\\.link$",
+      "name": "markup.underline.link"
+    },
+    {
+      "match": "^markup\\.underline$",
+      "name": "markup.underline"
+    },
+    {
+      "match": "^markup\\.quote$",
+      "name": "markup.quote"
+    },
+    {
+      "match": "^markup\\.raw\\.inline$",
+      "name": "markup.raw.inline"
+    },
+    {
+      "match": "^markup\\.raw\\.block$",
+      "name": "markup.raw.block"
+    },
+    {
+      "match": "^markup\\.raw$",
+      "name": "markup.raw"
+    },
+    {
+      "match": "^markup\\.other$",
+      "name": "markup.other"
+    },
+    {
+      "match": "^markup$",
+      "name": "markup"
+    },
+    {
+      "match": "^meta\\.at-rule\\.viewport$",
+      "name": "meta.at-rule.viewport"
+    },
+    {
+      "match": "^meta\\.at-rule\\.supports\\.header$",
+      "name": "meta.at-rule.supports.header"
+    },
+    {
+      "match": "^meta\\.at-rule\\.supports\\.body$",
+      "name": "meta.at-rule.supports.body"
+    },
+    {
+      "match": "^meta\\.at-rule\\.supports$",
+      "name": "meta.at-rule.supports"
+    },
+    {
+      "match": "^meta\\.at-rule\\.page$",
+      "name": "meta.at-rule.page"
+    },
+    {
+      "match": "^meta\\.at-rule\\.namespace$",
+      "name": "meta.at-rule.namespace"
+    },
+    {
+      "match": "^meta\\.at-rule\\.media\\.header$",
+      "name": "meta.at-rule.media.header"
+    },
+    {
+      "match": "^meta\\.at-rule\\.media\\.body$",
+      "name": "meta.at-rule.media.body"
+    },
+    {
+      "match": "^meta\\.at-rule\\.media$",
+      "name": "meta.at-rule.media"
+    },
+    {
+      "match": "^meta\\.at-rule\\.keyframes\\.header$",
+      "name": "meta.at-rule.keyframes.header"
+    },
+    {
+      "match": "^meta\\.at-rule\\.keyframes\\.body$",
+      "name": "meta.at-rule.keyframes.body"
+    },
+    {
+      "match": "^meta\\.at-rule\\.import$",
+      "name": "meta.at-rule.import"
+    },
+    {
+      "match": "^meta\\.at-rule\\.header$",
+      "name": "meta.at-rule.header"
+    },
+    {
+      "match": "^meta\\.at-rule\\.font-features$",
+      "name": "meta.at-rule.font-features"
+    },
+    {
+      "match": "^meta\\.at-rule\\.font-face$",
+      "name": "meta.at-rule.font-face"
+    },
+    {
+      "match": "^meta\\.at-rule\\.document\\.header$",
+      "name": "meta.at-rule.document.header"
+    },
+    {
+      "match": "^meta\\.at-rule\\.document\\.body$",
+      "name": "meta.at-rule.document.body"
+    },
+    {
+      "match": "^meta\\.at-rule\\.document$",
+      "name": "meta.at-rule.document"
+    },
+    {
+      "match": "^meta\\.at-rule\\.counter-style\\.header$",
+      "name": "meta.at-rule.counter-style.header"
+    },
+    {
+      "match": "^meta\\.at-rule\\.counter-style\\.body$",
+      "name": "meta.at-rule.counter-style.body"
+    },
+    {
+      "match": "^meta\\.at-rule\\.counter-style$",
+      "name": "meta.at-rule.counter-style"
+    },
+    {
+      "match": "^meta\\.at-rule\\.charset$",
+      "name": "meta.at-rule.charset"
+    },
+    {
+      "match": "^meta\\.at-rule\\.body$",
+      "name": "meta.at-rule.body"
+    },
+    {
+      "match": "^meta\\.at-rule$",
+      "name": "meta.at-rule"
+    },
+    {
+      "match": "^meta\\.attribute-without-value\\.html$",
+      "name": "meta.attribute-without-value.html"
+    },
+    {
+      "match": "^meta\\.attribute-with-value\\.style\\.html$",
+      "name": "meta.attribute-with-value.style.html"
+    },
+    {
+      "match": "^meta\\.attribute-with-value\\.style$",
+      "name": "meta.attribute-with-value.style"
+    },
+    {
+      "match": "^meta\\.attribute-with-value\\.id\\.html$",
+      "name": "meta.attribute-with-value.id.html"
+    },
+    {
+      "match": "^meta\\.attribute-with-value\\.id$",
+      "name": "meta.attribute-with-value.id"
+    },
+    {
+      "match": "^meta\\.attribute-with-value\\.html$",
+      "name": "meta.attribute-with-value.html"
+    },
+    {
+      "match": "^meta\\.attribute-with-value\\.class\\.html$",
+      "name": "meta.attribute-with-value.class.html"
+    },
+    {
+      "match": "^meta\\.attribute-with-value\\.class$",
+      "name": "meta.attribute-with-value.class"
+    },
+    {
+      "match": "^meta\\.attribute-with-value$",
+      "name": "meta.attribute-with-value"
+    },
+    {
+      "match": "^meta\\.attribute-selector$",
+      "name": "meta.attribute-selector"
+    },
+    {
+      "match": "^meta\\.definition\\.variable\\.local$",
+      "name": "meta.definition.variable.local"
+    },
+    {
+      "match": "^meta\\.definition\\.variable$",
+      "name": "meta.definition.variable"
+    },
+    {
+      "match": "^meta\\.definition\\.class\\.inherited\\.classes$",
+      "name": "meta.definition.class.inherited.classes"
+    },
+    {
+      "match": "^meta\\.definition\\.class\\.inherited$",
+      "name": "meta.definition.class.inherited"
+    },
+    {
+      "match": "^meta\\.definition\\.class\\.implemented\\.interfaces$",
+      "name": "meta.definition.class.implemented.interfaces"
+    },
+    {
+      "match": "^meta\\.definition\\.class\\.implemented$",
+      "name": "meta.definition.class.implemented"
+    },
+    {
+      "match": "^meta\\.definition\\.class$",
+      "name": "meta.definition.class"
+    },
+    {
+      "match": "^meta\\.definition$",
+      "name": "meta.definition"
+    },
+    {
+      "match": "^meta\\.declaration\\.type\\.data\\.record\\.block$",
+      "name": "meta.declaration.type.data.record.block"
+    },
+    {
+      "match": "^meta\\.declaration\\.type\\.data\\.record$",
+      "name": "meta.declaration.type.data.record"
+    },
+    {
+      "match": "^meta\\.declaration\\.type\\.data$",
+      "name": "meta.declaration.type.data"
+    },
+    {
+      "match": "^meta\\.declaration\\.type\\.type$",
+      "name": "meta.declaration.type.type"
+    },
+    {
+      "match": "^meta\\.declaration\\.type$",
+      "name": "meta.declaration.type"
+    },
+    {
+      "match": "^meta\\.declaration\\.module$",
+      "name": "meta.declaration.module"
+    },
+    {
+      "match": "^meta\\.declaration\\.instance\\.deriving$",
+      "name": "meta.declaration.instance.deriving"
+    },
+    {
+      "match": "^meta\\.declaration\\.instance$",
+      "name": "meta.declaration.instance"
+    },
+    {
+      "match": "^meta\\.declaration\\.exports$",
+      "name": "meta.declaration.exports"
+    },
+    {
+      "match": "^meta\\.declaration\\.class$",
+      "name": "meta.declaration.class"
+    },
+    {
+      "match": "^meta\\.declaration\\.assertion$",
+      "name": "meta.declaration.assertion"
+    },
+    {
+      "match": "^meta\\.declaration\\.annotation$",
+      "name": "meta.declaration.annotation"
+    },
+    {
+      "match": "^meta\\.declaration$",
+      "name": "meta.declaration"
+    },
+    {
+      "match": "^meta\\.ctor\\.type-declaration$",
+      "name": "meta.ctor.type-declaration"
+    },
+    {
+      "match": "^meta\\.ctor$",
+      "name": "meta.ctor"
+    },
+    {
+      "match": "^meta\\.angle-brackets$",
+      "name": "meta.angle-brackets"
+    },
+    {
+      "match": "^meta\\.deriving\\.strategy$",
+      "name": "meta.deriving.strategy"
+    },
+    {
+      "match": "^meta\\.deriving$",
+      "name": "meta.deriving"
+    },
+    {
+      "match": "^meta\\.directive\\.define$",
+      "name": "meta.directive.define"
+    },
+    {
+      "match": "^meta\\.directive\\.behaviour$",
+      "name": "meta.directive.behaviour"
+    },
+    {
+      "match": "^meta\\.directive\\.undef$",
+      "name": "meta.directive.undef"
+    },
+    {
+      "match": "^meta\\.directive\\.record$",
+      "name": "meta.directive.record"
+    },
+    {
+      "match": "^meta\\.directive\\.module$",
+      "name": "meta.directive.module"
+    },
+    {
+      "match": "^meta\\.directive\\.import$",
+      "name": "meta.directive.import"
+    },
+    {
+      "match": "^meta\\.directive\\.ifndef$",
+      "name": "meta.directive.ifndef"
+    },
+    {
+      "match": "^meta\\.directive\\.ifdef$",
+      "name": "meta.directive.ifdef"
+    },
+    {
+      "match": "^meta\\.directive\\.export$",
+      "name": "meta.directive.export"
+    },
+    {
+      "match": "^meta\\.directive$",
+      "name": "meta.directive"
+    },
+    {
+      "match": "^meta\\.method-call\\.static$",
+      "name": "meta.method-call.static"
+    },
+    {
+      "match": "^meta\\.method-call$",
+      "name": "meta.method-call"
+    },
+    {
+      "match": "^meta\\.toc-list$",
+      "name": "meta.toc-list"
+    },
+    {
+      "match": "^meta\\.class-struct-block$",
+      "name": "meta.class-struct-block"
+    },
+    {
+      "match": "^meta\\.class\\.old-style$",
+      "name": "meta.class.old-style"
+    },
+    {
+      "match": "^meta\\.class\\.identifier$",
+      "name": "meta.class.identifier"
+    },
+    {
+      "match": "^meta\\.class$",
+      "name": "meta.class"
+    },
+    {
+      "match": "^meta\\.struct$",
+      "name": "meta.struct"
+    },
+    {
+      "match": "^meta\\.enum$",
+      "name": "meta.enum"
+    },
+    {
+      "match": "^meta\\.union$",
+      "name": "meta.union"
+    },
+    {
+      "match": "^meta\\.trait$",
+      "name": "meta.trait"
+    },
+    {
+      "match": "^meta\\.interface$",
+      "name": "meta.interface"
+    },
+    {
+      "match": "^meta\\.import$",
+      "name": "meta.import"
+    },
+    {
+      "match": "^meta\\.impl$",
+      "name": "meta.impl"
+    },
+    {
+      "match": "^meta\\.type$",
+      "name": "meta.type"
+    },
+    {
+      "match": "^meta\\.string$",
+      "name": "meta.string"
+    },
+    {
+      "match": "^meta\\.path$",
+      "name": "meta.path"
+    },
+    {
+      "match": "^meta\\.function-call$",
+      "name": "meta.function-call"
+    },
+    {
+      "match": "^meta\\.block$",
+      "name": "meta.block"
+    },
+    {
+      "match": "^meta\\.catch$",
+      "name": "meta.catch"
+    },
+    {
+      "match": "^meta\\.embedded\\.block$",
+      "name": "meta.embedded.block"
+    },
+    {
+      "match": "^meta\\.embedded\\.sql$",
+      "name": "meta.embedded.sql"
+    },
+    {
+      "match": "^meta\\.embedded\\.line$",
+      "name": "meta.embedded.line"
+    },
+    {
+      "match": "^meta\\.embedded\\.block$",
+      "name": "meta.embedded.block"
+    },
+    {
+      "match": "^meta\\.embedded$",
+      "name": "meta.embedded"
+    },
+    {
+      "match": "^meta\\.function$",
+      "name": "meta.function"
+    },
+    {
+      "match": "^meta\\.braces$",
+      "name": "meta.braces"
+    },
+    {
+      "match": "^meta\\.group$",
+      "name": "meta.group"
+    },
+    {
+      "match": "^meta\\.parens$",
+      "name": "meta.parens"
+    },
+    {
+      "match": "^meta\\.brackets$",
+      "name": "meta.brackets"
+    },
+    {
+      "match": "^meta\\.generic$",
+      "name": "meta.generic"
+    },
+    {
+      "match": "^meta\\.via$",
+      "name": "meta.via"
+    },
+    {
+      "match": "^meta\\.using-namespace-declaration$",
+      "name": "meta.using-namespace-declaration"
+    },
+    {
+      "match": "^meta\\.type-signature$",
+      "name": "meta.type-signature"
+    },
+    {
+      "match": "^meta\\.try\\.resources$",
+      "name": "meta.try.resources"
+    },
+    {
+      "match": "^meta\\.try$",
+      "name": "meta.try"
+    },
+    {
+      "match": "^meta\\.throwables$",
+      "name": "meta.throwables"
+    },
+    {
+      "match": "^meta\\.syntaxstart-block$",
+      "name": "meta.syntaxstart-block"
+    },
+    {
+      "match": "^meta\\.structure\\.tuple$",
+      "name": "meta.structure.tuple"
+    },
+    {
+      "match": "^meta\\.structure\\.record$",
+      "name": "meta.structure.record"
+    },
+    {
+      "match": "^meta\\.structure\\.list$",
+      "name": "meta.structure.list"
+    },
+    {
+      "match": "^meta\\.structure\\.list\\.function$",
+      "name": "meta.structure.list.function"
+    },
+    {
+      "match": "^meta\\.structure\\.dictionary$",
+      "name": "meta.structure.dictionary"
+    },
+    {
+      "match": "^meta\\.structure\\.binary$",
+      "name": "meta.structure.binary"
+    },
+    {
+      "match": "^meta\\.selector$",
+      "name": "meta.selector"
+    },
+    {
+      "match": "^meta\\.section$",
+      "name": "meta.section"
+    },
+    {
+      "match": "^meta\\.require$",
+      "name": "meta.require"
+    },
+    {
+      "match": "^meta\\.record-usage$",
+      "name": "meta.record-usage"
+    },
+    {
+      "match": "^meta\\.record-field\\.type-declaration$",
+      "name": "meta.record-field.type-declaration"
+    },
+    {
+      "match": "^meta\\.record-field$",
+      "name": "meta.record-field"
+    },
+    {
+      "match": "^meta\\.ratio$",
+      "name": "meta.ratio"
+    },
+    {
+      "match": "^meta\\.property-name$",
+      "name": "meta.property-name"
+    },
+    {
+      "match": "^meta\\.property-list\\.font-feature$",
+      "name": "meta.property-list.font-feature"
+    },
+    {
+      "match": "^meta\\.property-list$",
+      "name": "meta.property-list"
+    },
+    {
+      "match": "^meta\\.preprocessor\\.pragma$",
+      "name": "meta.preprocessor.pragma"
+    },
+    {
+      "match": "^meta\\.preprocessor\\.macro$",
+      "name": "meta.preprocessor.macro"
+    },
+    {
+      "match": "^meta\\.preprocessor\\.include$",
+      "name": "meta.preprocessor.include"
+    },
+    {
+      "match": "^meta\\.preprocessor\\.diagnostic$",
+      "name": "meta.preprocessor.diagnostic"
+    },
+    {
+      "match": "^meta\\.preprocessor$",
+      "name": "meta.preprocessor"
+    },
+    {
+      "match": "^meta\\.package$",
+      "name": "meta.package"
+    },
+    {
+      "match": "^meta\\.other\\.constructor-list$",
+      "name": "meta.other.constructor-list"
+    },
+    {
+      "match": "^meta\\.other$",
+      "name": "meta.other"
+    },
+    {
+      "match": "^meta\\.namespace-block$",
+      "name": "meta.namespace-block"
+    },
+    {
+      "match": "^meta\\.multiline\\.type-declaration$",
+      "name": "meta.multiline.type-declaration"
+    },
+    {
+      "match": "^meta\\.multiline$",
+      "name": "meta.multiline"
+    },
+    {
+      "match": "^meta\\.module$",
+      "name": "meta.module"
+    },
+    {
+      "match": "^meta\\.method\\.return-type$",
+      "name": "meta.method.return-type"
+    },
+    {
+      "match": "^meta\\.method\\.identifier$",
+      "name": "meta.method.identifier"
+    },
+    {
+      "match": "^meta\\.method$",
+      "name": "meta.method"
+    },
+    {
+      "match": "^meta\\.method-call$",
+      "name": "meta.method-call"
+    },
+    {
+      "match": "^meta\\.macro-usage$",
+      "name": "meta.macro-usage"
+    },
+    {
+      "match": "^meta\\.item-access$",
+      "name": "meta.item-access"
+    },
+    {
+      "match": "^meta\\.interpolation$",
+      "name": "meta.interpolation"
+    },
+    {
+      "match": "^meta\\.inner-class$",
+      "name": "meta.inner-class"
+    },
+    {
+      "match": "^meta\\.initialization$",
+      "name": "meta.initialization"
+    },
+    {
+      "match": "^meta\\.foreign$",
+      "name": "meta.foreign"
+    },
+    {
+      "match": "^meta\\.finally$",
+      "name": "meta.finally"
+    },
+    {
+      "match": "^meta\\.feature-query$",
+      "name": "meta.feature-query"
+    },
+    {
+      "match": "^meta\\.extern-block$",
+      "name": "meta.extern-block"
+    },
+    {
+      "match": "^meta\\.expression\\.try$",
+      "name": "meta.expression.try"
+    },
+    {
+      "match": "^meta\\.expression\\.receive$",
+      "name": "meta.expression.receive"
+    },
+    {
+      "match": "^meta\\.expression\\.query$",
+      "name": "meta.expression.query"
+    },
+    {
+      "match": "^meta\\.expression\\.parenthesized$",
+      "name": "meta.expression.parenthesized"
+    },
+    {
+      "match": "^meta\\.expression\\.if$",
+      "name": "meta.expression.if"
+    },
+    {
+      "match": "^meta\\.expression\\.fun$",
+      "name": "meta.expression.fun"
+    },
+    {
+      "match": "^meta\\.expression\\.case$",
+      "name": "meta.expression.case"
+    },
+    {
+      "match": "^meta\\.expression\\.begin$",
+      "name": "meta.expression.begin"
+    },
+    {
+      "match": "^meta\\.expression$",
+      "name": "meta.expression"
+    },
+    {
+      "match": "^meta\\.environment-variable$",
+      "name": "meta.environment-variable"
+    },
+    {
+      "match": "^meta\\.enum$",
+      "name": "meta.enum"
+    },
+    {
+      "match": "^meta\\.encoding$",
+      "name": "meta.encoding"
+    },
+    {
+      "match": "^meta\\.empty-tuple$",
+      "name": "meta.empty-tuple"
+    },
+    {
+      "match": "^meta\\.empty-string\\.double$",
+      "name": "meta.empty-string.double"
+    },
+    {
+      "match": "^meta\\.empty-string$",
+      "name": "meta.empty-string"
+    },
+    {
+      "match": "^meta\\.empty-list$",
+      "name": "meta.empty-list"
+    },
+    {
+      "match": "^meta\\.empty-dictionary$",
+      "name": "meta.empty-dictionary"
+    },
+    {
+      "match": "^meta\\.tag\\.style\\.html$",
+      "name": "meta.tag.style.html"
+    },
+    {
+      "match": "^meta\\.tag\\.style$",
+      "name": "meta.tag.style"
+    },
+    {
+      "match": "^meta\\.tag\\.structure$",
+      "name": "meta.tag.structure"
+    },
+    {
+      "match": "^meta\\.tag\\.sgml\\.html$",
+      "name": "meta.tag.sgml.html"
+    },
+    {
+      "match": "^meta\\.tag\\.sgml\\.doctype\\.html$",
+      "name": "meta.tag.sgml.doctype.html"
+    },
+    {
+      "match": "^meta\\.tag\\.sgml\\.doctype$",
+      "name": "meta.tag.sgml.doctype"
+    },
+    {
+      "match": "^meta\\.tag\\.sgml$",
+      "name": "meta.tag.sgml"
+    },
+    {
+      "match": "^meta\\.tag\\.script\\.html$",
+      "name": "meta.tag.script.html"
+    },
+    {
+      "match": "^meta\\.tag\\.script$",
+      "name": "meta.tag.script"
+    },
+    {
+      "match": "^meta\\.tag\\.preprocessor\\.xml\\.html$",
+      "name": "meta.tag.preprocessor.xml.html"
+    },
+    {
+      "match": "^meta\\.tag\\.preprocessor\\.xml$",
+      "name": "meta.tag.preprocessor.xml"
+    },
+    {
+      "match": "^meta\\.tag\\.preprocessor$",
+      "name": "meta.tag.preprocessor"
+    },
+    {
+      "match": "^meta\\.tag\\.other\\.html$",
+      "name": "meta.tag.other.html"
+    },
+    {
+      "match": "^meta\\.tag\\.other$",
+      "name": "meta.tag.other"
+    },
+    {
+      "match": "^meta\\.tag\\.inline$",
+      "name": "meta.tag.inline"
+    },
+    {
+      "match": "^meta\\.tag\\.block$",
+      "name": "meta.tag.block"
+    },
+    {
+      "match": "^meta\\.tag$",
+      "name": "meta.tag"
+    },
+    {
+      "match": "^meta\\.leading-tabs$",
+      "name": "meta.leading-tabs"
+    },
+    {
+      "match": "^meta\\.odd-tab$",
+      "name": "meta.odd-tab"
+    },
+    {
+      "match": "^meta\\.even-tab$",
+      "name": "meta.even-tab"
+    },
+    {
+      "match": "^meta\\.paragraph$",
+      "name": "meta.paragraph"
+    },
+    {
+      "match": "^meta\\.diagnostics\\.pragma$",
+      "name": "meta.diagnostics.pragma"
+    },
+    {
+      "match": "^meta\\.function\\.variable$",
+      "name": "meta.function.variable"
+    },
+    {
+      "match": "^meta\\.function\\.url$",
+      "name": "meta.function.url"
+    },
+    {
+      "match": "^meta\\.function\\.type-declaration$",
+      "name": "meta.function.type-declaration"
+    },
+    {
+      "match": "^meta\\.function\\.timing-function$",
+      "name": "meta.function.timing-function"
+    },
+    {
+      "match": "^meta\\.function\\.shape$",
+      "name": "meta.function.shape"
+    },
+    {
+      "match": "^meta\\.function\\.misc$",
+      "name": "meta.function.misc"
+    },
+    {
+      "match": "^meta\\.function\\.method\\.without-arguments$",
+      "name": "meta.function.method.without-arguments"
+    },
+    {
+      "match": "^meta\\.function\\.method\\.with-arguments$",
+      "name": "meta.function.method.with-arguments"
+    },
+    {
+      "match": "^meta\\.function\\.method$",
+      "name": "meta.function.method"
+    },
+    {
+      "match": "^meta\\.function\\.inline$",
+      "name": "meta.function.inline"
+    },
+    {
+      "match": "^meta\\.function\\.gradient\\.invalid\\.deprecated\\.gradient$",
+      "name": "meta.function.gradient.invalid.deprecated.gradient"
+    },
+    {
+      "match": "^meta\\.function\\.gradient\\.invalid\\.deprecated$",
+      "name": "meta.function.gradient.invalid.deprecated"
+    },
+    {
+      "match": "^meta\\.function\\.gradient\\.invalid$",
+      "name": "meta.function.gradient.invalid"
+    },
+    {
+      "match": "^meta\\.function\\.gradient$",
+      "name": "meta.function.gradient"
+    },
+    {
+      "match": "^meta\\.function\\.document-rule$",
+      "name": "meta.function.document-rule"
+    },
+    {
+      "match": "^meta\\.function\\.destructor\\.prototype$",
+      "name": "meta.function.destructor.prototype"
+    },
+    {
+      "match": "^meta\\.function\\.destructor$",
+      "name": "meta.function.destructor"
+    },
+    {
+      "match": "^meta\\.function\\.decorator$",
+      "name": "meta.function.decorator"
+    },
+    {
+      "match": "^meta\\.function\\.constructor\\.initializer-list$",
+      "name": "meta.function.constructor.initializer-list"
+    },
+    {
+      "match": "^meta\\.function\\.constructor$",
+      "name": "meta.function.constructor"
+    },
+    {
+      "match": "^meta\\.function\\.color$",
+      "name": "meta.function.color"
+    },
+    {
+      "match": "^meta\\.function\\.calc$",
+      "name": "meta.function.calc"
+    },
+    {
+      "match": "^meta\\.function\\.parameters$",
+      "name": "meta.function.parameters"
+    },
+    {
+      "match": "^meta\\.function\\.return-type$",
+      "name": "meta.function.return-type"
+    },
+    {
+      "match": "^meta\\.function\\.signature$",
+      "name": "meta.function.signature"
+    },
+    {
+      "match": "^meta\\.function$",
+      "name": "meta.function"
+    },
+    {
+      "match": "^meta\\.namespace$",
+      "name": "meta.namespace"
+    },
+    {
+      "match": "^meta\\.preprocessor\\.pragma$",
+      "name": "meta.preprocessor.pragma"
+    },
+    {
+      "match": "^meta\\.preprocessor\\.include$",
+      "name": "meta.preprocessor.include"
+    },
+    {
+      "match": "^meta\\.preprocessor$",
+      "name": "meta.preprocessor"
+    },
+    {
+      "match": "^meta\\.interpolation$",
+      "name": "meta.interpolation"
+    },
+    {
+      "match": "^meta\\.annotation\\.identifier$",
+      "name": "meta.annotation.identifier"
+    },
+    {
+      "match": "^meta\\.annotation\\.parameters$",
+      "name": "meta.annotation.parameters"
+    },
+    {
+      "match": "^meta\\.annotation$",
+      "name": "meta.annotation"
+    },
+    {
+      "match": "^meta$",
+      "name": "meta"
+    },
+    {
+      "match": "^parameter\\.variable\\.function$",
+      "name": "parameter.variable.function"
+    },
+    {
+      "match": "^parameter\\.variable$",
+      "name": "parameter.variable"
+    },
+    {
+      "match": "^parameter$",
+      "name": "parameter"
+    },
+    {
+      "match": "^punctuation\\.bracket\\.square$",
+      "name": "punctuation.bracket.square"
+    },
+    {
+      "match": "^punctuation\\.bracket\\.round$",
+      "name": "punctuation.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.bracket\\.curly$",
+      "name": "punctuation.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.bracket\\.angle$",
+      "name": "punctuation.bracket.angle"
+    },
+    {
+      "match": "^punctuation\\.bracket$",
+      "name": "punctuation.bracket"
+    },
+    {
+      "match": "^punctuation\\.whitespace\\.comment\\.leading$",
+      "name": "punctuation.whitespace.comment.leading"
+    },
+    {
+      "match": "^punctuation\\.whitespace\\.comment$",
+      "name": "punctuation.whitespace.comment"
+    },
+    {
+      "match": "^punctuation\\.whitespace\\.support\\.function\\.leading$",
+      "name": "punctuation.whitespace.support.function.leading"
+    },
+    {
+      "match": "^punctuation\\.whitespace\\.support\\.function$",
+      "name": "punctuation.whitespace.support.function"
+    },
+    {
+      "match": "^punctuation\\.whitespace\\.support$",
+      "name": "punctuation.whitespace.support"
+    },
+    {
+      "match": "^punctuation\\.whitespace$",
+      "name": "punctuation.whitespace"
+    },
+    {
+      "match": "^punctuation\\.vararg-ellipses$",
+      "name": "punctuation.vararg-ellipses"
+    },
+    {
+      "match": "^punctuation\\.terminator\\.semicolon$",
+      "name": "punctuation.terminator.semicolon"
+    },
+    {
+      "match": "^punctuation\\.terminator\\.statement$",
+      "name": "punctuation.terminator.statement"
+    },
+    {
+      "match": "^punctuation\\.terminator\\.expression$",
+      "name": "punctuation.terminator.expression"
+    },
+    {
+      "match": "^punctuation\\.terminator\\.rule$",
+      "name": "punctuation.terminator.rule"
+    },
+    {
+      "match": "^punctuation\\.terminator$",
+      "name": "punctuation.terminator"
+    },
+    {
+      "match": "^punctuation\\.delimiter\\.decimal\\.period$",
+      "name": "punctuation.delimiter.decimal.period"
+    },
+    {
+      "match": "^punctuation\\.delimiter\\.decimal$",
+      "name": "punctuation.delimiter.decimal"
+    },
+    {
+      "match": "^punctuation\\.delimiter$",
+      "name": "punctuation.delimiter"
+    },
+    {
+      "match": "^punctuation\\.separator\\.comma$",
+      "name": "punctuation.separator.comma"
+    },
+    {
+      "match": "^punctuation\\.separator\\.colon$",
+      "name": "punctuation.separator.colon"
+    },
+    {
+      "match": "^punctuation\\.separator\\.arrow$",
+      "name": "punctuation.separator.arrow"
+    },
+    {
+      "match": "^punctuation\\.separator\\.key-value$",
+      "name": "punctuation.separator.key-value"
+    },
+    {
+      "match": "^punctuation\\.separator\\.inheritance$",
+      "name": "punctuation.separator.inheritance"
+    },
+    {
+      "match": "^punctuation\\.separator\\.delimiter$",
+      "name": "punctuation.separator.delimiter"
+    },
+    {
+      "match": "^punctuation\\.separator\\.classes$",
+      "name": "punctuation.separator.classes"
+    },
+    {
+      "match": "^punctuation\\.separator\\.continuation$",
+      "name": "punctuation.separator.continuation"
+    },
+    {
+      "match": "^punctuation\\.separator\\.decimal\\.period$",
+      "name": "punctuation.separator.decimal.period"
+    },
+    {
+      "match": "^punctuation\\.separator\\.decimal$",
+      "name": "punctuation.separator.decimal"
+    },
+    {
+      "match": "^punctuation\\.separator\\.variable$",
+      "name": "punctuation.separator.variable"
+    },
+    {
+      "match": "^punctuation\\.separator\\.valuepair\\.dictionary$",
+      "name": "punctuation.separator.valuepair.dictionary"
+    },
+    {
+      "match": "^punctuation\\.separator\\.valuepair$",
+      "name": "punctuation.separator.valuepair"
+    },
+    {
+      "match": "^punctuation\\.separator\\.value-type$",
+      "name": "punctuation.separator.value-type"
+    },
+    {
+      "match": "^punctuation\\.separator\\.value-size$",
+      "name": "punctuation.separator.value-size"
+    },
+    {
+      "match": "^punctuation\\.separator\\.types$",
+      "name": "punctuation.separator.types"
+    },
+    {
+      "match": "^punctuation\\.separator\\.type-specifiers$",
+      "name": "punctuation.separator.type-specifiers"
+    },
+    {
+      "match": "^punctuation\\.separator\\.tuple$",
+      "name": "punctuation.separator.tuple"
+    },
+    {
+      "match": "^punctuation\\.separator\\.statement$",
+      "name": "punctuation.separator.statement"
+    },
+    {
+      "match": "^punctuation\\.separator\\.record-field$",
+      "name": "punctuation.separator.record-field"
+    },
+    {
+      "match": "^punctuation\\.separator\\.property\\.period$",
+      "name": "punctuation.separator.property.period"
+    },
+    {
+      "match": "^punctuation\\.separator\\.property$",
+      "name": "punctuation.separator.property"
+    },
+    {
+      "match": "^punctuation\\.separator\\.pointer-access$",
+      "name": "punctuation.separator.pointer-access"
+    },
+    {
+      "match": "^punctuation\\.separator\\.placeholder-parts$",
+      "name": "punctuation.separator.placeholder-parts"
+    },
+    {
+      "match": "^punctuation\\.separator\\.pipe$",
+      "name": "punctuation.separator.pipe"
+    },
+    {
+      "match": "^punctuation\\.separator\\.period$",
+      "name": "punctuation.separator.period"
+    },
+    {
+      "match": "^punctuation\\.separator\\.parameters$",
+      "name": "punctuation.separator.parameters"
+    },
+    {
+      "match": "^punctuation\\.separator\\.other$",
+      "name": "punctuation.separator.other"
+    },
+    {
+      "match": "^punctuation\\.separator\\.object$",
+      "name": "punctuation.separator.object"
+    },
+    {
+      "match": "^punctuation\\.separator\\.namespace\\.access$",
+      "name": "punctuation.separator.namespace.access"
+    },
+    {
+      "match": "^punctuation\\.separator\\.namespace$",
+      "name": "punctuation.separator.namespace"
+    },
+    {
+      "match": "^punctuation\\.separator\\.module-function$",
+      "name": "punctuation.separator.module-function"
+    },
+    {
+      "match": "^punctuation\\.separator\\.method\\.period$",
+      "name": "punctuation.separator.method.period"
+    },
+    {
+      "match": "^punctuation\\.separator\\.method$",
+      "name": "punctuation.separator.method"
+    },
+    {
+      "match": "^punctuation\\.separator\\.list\\.comma$",
+      "name": "punctuation.separator.list.comma"
+    },
+    {
+      "match": "^punctuation\\.separator\\.list$",
+      "name": "punctuation.separator.list"
+    },
+    {
+      "match": "^punctuation\\.separator\\.key-value$",
+      "name": "punctuation.separator.key-value"
+    },
+    {
+      "match": "^punctuation\\.separator\\.integer-float$",
+      "name": "punctuation.separator.integer-float"
+    },
+    {
+      "match": "^punctuation\\.separator\\.inheritance$",
+      "name": "punctuation.separator.inheritance"
+    },
+    {
+      "match": "^punctuation\\.separator\\.guards$",
+      "name": "punctuation.separator.guards"
+    },
+    {
+      "match": "^punctuation\\.separator\\.function-punctuation-head-body$",
+      "name": "punctuation.separator.function-punctuation-head-body"
+    },
+    {
+      "match": "^punctuation\\.separator\\.function-arity$",
+      "name": "punctuation.separator.function-arity"
+    },
+    {
+      "match": "^punctuation\\.separator\\.expressions$",
+      "name": "punctuation.separator.expressions"
+    },
+    {
+      "match": "^punctuation\\.separator\\.dot-access$",
+      "name": "punctuation.separator.dot-access"
+    },
+    {
+      "match": "^punctuation\\.separator\\.dictionary$",
+      "name": "punctuation.separator.dictionary"
+    },
+    {
+      "match": "^punctuation\\.separator\\.delimiter$",
+      "name": "punctuation.separator.delimiter"
+    },
+    {
+      "match": "^punctuation\\.separator\\.define$",
+      "name": "punctuation.separator.define"
+    },
+    {
+      "match": "^punctuation\\.separator\\.dash\\.unicode-range$",
+      "name": "punctuation.separator.dash.unicode-range"
+    },
+    {
+      "match": "^punctuation\\.separator\\.dash$",
+      "name": "punctuation.separator.dash"
+    },
+    {
+      "match": "^punctuation\\.separator\\.continuation\\.line$",
+      "name": "punctuation.separator.continuation.line"
+    },
+    {
+      "match": "^punctuation\\.separator\\.continuation$",
+      "name": "punctuation.separator.continuation"
+    },
+    {
+      "match": "^punctuation\\.separator\\.comma$",
+      "name": "punctuation.separator.comma"
+    },
+    {
+      "match": "^punctuation\\.separator\\.clauses$",
+      "name": "punctuation.separator.clauses"
+    },
+    {
+      "match": "^punctuation\\.separator\\.clause-head-body$",
+      "name": "punctuation.separator.clause-head-body"
+    },
+    {
+      "match": "^punctuation\\.separator\\.class\\.record$",
+      "name": "punctuation.separator.class.record"
+    },
+    {
+      "match": "^punctuation\\.separator\\.class$",
+      "name": "punctuation.separator.class"
+    },
+    {
+      "match": "^punctuation\\.separator\\.binary$",
+      "name": "punctuation.separator.binary"
+    },
+    {
+      "match": "^punctuation\\.separator\\.arguments$",
+      "name": "punctuation.separator.arguments"
+    },
+    {
+      "match": "^punctuation\\.separator$",
+      "name": "punctuation.separator"
+    },
+    {
+      "match": "^punctuation\\.accessor$",
+      "name": "punctuation.accessor"
+    },
+    {
+      "match": "^punctuation\\.section\\.try\\.resources\\.begin\\.bracket\\.round$",
+      "name": "punctuation.section.try.resources.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.try\\.resources\\.begin\\.bracket$",
+      "name": "punctuation.section.try.resources.begin.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.try\\.resources\\.begin$",
+      "name": "punctuation.section.try.resources.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.try\\.resources$",
+      "name": "punctuation.section.try.resources"
+    },
+    {
+      "match": "^punctuation\\.section\\.try\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.try.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.try\\.begin\\.bracket$",
+      "name": "punctuation.section.try.begin.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.try\\.begin\\.$",
+      "name": "punctuation.section.try.begin."
+    },
+    {
+      "match": "^punctuation\\.section\\.try$",
+      "name": "punctuation.section.try"
+    },
+    {
+      "match": "^punctuation\\.section\\.symbol\\.begin$",
+      "name": "punctuation.section.symbol.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.supports\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.supports.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.supports\\.end\\.bracket\\.curly$",
+      "name": "punctuation.section.supports.end.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.scope\\.end$",
+      "name": "punctuation.section.scope.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.scope\\.begin$",
+      "name": "punctuation.section.scope.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.scope$",
+      "name": "punctuation.section.scope"
+    },
+    {
+      "match": "^punctuation\\.section\\.regexp$",
+      "name": "punctuation.section.regexp"
+    },
+    {
+      "match": "^punctuation\\.section\\.regexp\\.begin$",
+      "name": "punctuation.section.regexp.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.property-list\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.property-list.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.parens\\.end\\.bracket\\.round$",
+      "name": "punctuation.section.parens.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.parens\\.begin\\.bracket\\.round$",
+      "name": "punctuation.section.parens.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.parameters\\.end\\.bracket\\.round$",
+      "name": "punctuation.section.parameters.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.parameters\\.begin\\.bracket\\.round$",
+      "name": "punctuation.section.parameters.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.module\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.module.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.method\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.method.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.media\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.media.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.list\\.begin$",
+      "name": "punctuation.section.list.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.keyframes\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.keyframes.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.inner-class\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.inner-class.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.function$",
+      "name": "punctuation.section.function"
+    },
+    {
+      "match": "^punctuation\\.section\\.function\\.end\\.bracket\\.round$",
+      "name": "punctuation.section.function.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.function\\.begin\\.bracket\\.round$",
+      "name": "punctuation.section.function.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.finally\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.finally.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.expression\\.begin$",
+      "name": "punctuation.section.expression.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.enum\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.enum.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.document\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.document.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.directive\\.begin$",
+      "name": "punctuation.section.directive.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.class\\.begin$",
+      "name": "punctuation.section.class.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.class\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.class.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.catch\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.catch.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.block\\.end\\.bracket\\.curly$",
+      "name": "punctuation.section.block.end.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.block\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.block.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.array\\.end$",
+      "name": "punctuation.section.array.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.array$",
+      "name": "punctuation.section.array"
+    },
+    {
+      "match": "^punctuation\\.section\\.array\\.begin$",
+      "name": "punctuation.section.array.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.arguments\\.end\\.bracket\\.round$",
+      "name": "punctuation.section.arguments.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.arguments\\.end\\.bracket$",
+      "name": "punctuation.section.arguments.end.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.arguments\\.end$",
+      "name": "punctuation.section.arguments.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.arguments\\.begin\\.bracket\\.round$",
+      "name": "punctuation.section.arguments.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.arguments\\.begin\\.bracket$",
+      "name": "punctuation.section.arguments.begin.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.arguments\\.begin$",
+      "name": "punctuation.section.arguments.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.arguments$",
+      "name": "punctuation.section.arguments"
+    },
+    {
+      "match": "^punctuation\\.section\\.embedded\\.begin$",
+      "name": "punctuation.section.embedded.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.embedded\\.end$",
+      "name": "punctuation.section.embedded.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.embedded$",
+      "name": "punctuation.section.embedded"
+    },
+    {
+      "match": "^punctuation\\.section\\.array\\.begin$",
+      "name": "punctuation.section.array.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.array\\.end$",
+      "name": "punctuation.section.array.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.array$",
+      "name": "punctuation.section.array"
+    },
+    {
+      "match": "^punctuation\\.section\\.block\\.begin$",
+      "name": "punctuation.section.block.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.block\\.end$",
+      "name": "punctuation.section.block.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.block$",
+      "name": "punctuation.section.block"
+    },
+    {
+      "match": "^punctuation\\.section\\.braces\\.begin$",
+      "name": "punctuation.section.braces.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.braces\\.end$",
+      "name": "punctuation.section.braces.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.braces$",
+      "name": "punctuation.section.braces"
+    },
+    {
+      "match": "^punctuation\\.section\\.group\\.begin$",
+      "name": "punctuation.section.group.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.group\\.end$",
+      "name": "punctuation.section.group.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.group$",
+      "name": "punctuation.section.group"
+    },
+    {
+      "match": "^punctuation\\.section\\.parens\\.begin$",
+      "name": "punctuation.section.parens.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.parens\\.end$",
+      "name": "punctuation.section.parens.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.parens$",
+      "name": "punctuation.section.parens"
+    },
+    {
+      "match": "^punctuation\\.section\\.brackets\\.begin$",
+      "name": "punctuation.section.brackets.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.brackets\\.end$",
+      "name": "punctuation.section.brackets.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.brackets$",
+      "name": "punctuation.section.brackets"
+    },
+    {
+      "match": "^punctuation\\.section\\.interpolation\\.end$",
+      "name": "punctuation.section.interpolation.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.interpolation\\.begin$",
+      "name": "punctuation.section.interpolation.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.interpolation$",
+      "name": "punctuation.section.interpolation"
+    },
+    {
+      "match": "^punctuation\\.section\\.brace\\.curly\\.bracket\\.begin$",
+      "name": "punctuation.section.brace.curly.bracket.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.brace\\.curly\\.bracket\\.end$",
+      "name": "punctuation.section.brace.curly.bracket.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.brace\\.curly\\.bracket$",
+      "name": "punctuation.section.brace.curly.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.brace\\.curly$",
+      "name": "punctuation.section.brace.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.brace$",
+      "name": "punctuation.section.brace"
+    },
+    {
+      "match": "^punctuation\\.section\\.square\\.bracket\\.begin$",
+      "name": "punctuation.section.square.bracket.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.square\\.bracket\\.end$",
+      "name": "punctuation.section.square.bracket.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.square\\.bracket$",
+      "name": "punctuation.section.square.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.square$",
+      "name": "punctuation.section.square"
+    },
+    {
+      "match": "^punctuation\\.section\\.scope\\.begin$",
+      "name": "punctuation.section.scope.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.scope\\.end$",
+      "name": "punctuation.section.scope.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.scope$",
+      "name": "punctuation.section.scope"
+    },
+    {
+      "match": "^punctuation\\.section\\.parenthesis\\.round\\.bracket\\.begin$",
+      "name": "punctuation.section.parenthesis.round.bracket.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.parenthesis\\.round\\.bracket\\.end$",
+      "name": "punctuation.section.parenthesis.round.bracket.end"
+    },
+    {
+      "match": "^punctuation\\.section\\.parenthesis\\.round\\.bracket$",
+      "name": "punctuation.section.parenthesis.round.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.parenthesis\\.round$",
+      "name": "punctuation.section.parenthesis.round"
+    },
+    {
+      "match": "^punctuation\\.section\\.parenthesis$",
+      "name": "punctuation.section.parenthesis"
+    },
+    {
+      "match": "^punctuation\\.section\\.signature\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.section.signature.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.section\\.signature\\.begin\\.bracket$",
+      "name": "punctuation.section.signature.begin.bracket"
+    },
+    {
+      "match": "^punctuation\\.section\\.signature\\.begin$",
+      "name": "punctuation.section.signature.begin"
+    },
+    {
+      "match": "^punctuation\\.section\\.signature$",
+      "name": "punctuation.section.signature"
+    },
+    {
+      "match": "^punctuation\\.section$",
+      "name": "punctuation.section"
+    },
+    {
+      "match": "^punctuation\\.other\\.period$",
+      "name": "punctuation.other.period"
+    },
+    {
+      "match": "^punctuation\\.other\\.comma$",
+      "name": "punctuation.other.comma"
+    },
+    {
+      "match": "^punctuation\\.other\\.colon$",
+      "name": "punctuation.other.colon"
+    },
+    {
+      "match": "^punctuation\\.definition\\.variables\\.end\\.bracket\\.round$",
+      "name": "punctuation.definition.variables.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.variables\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.variables.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.tuple\\.begin$",
+      "name": "punctuation.definition.tuple.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.tag\\.html$",
+      "name": "punctuation.definition.tag.html"
+    },
+    {
+      "match": "^punctuation\\.definition\\.tag\\.begin\\.html$",
+      "name": "punctuation.definition.tag.begin.html"
+    },
+    {
+      "match": "^punctuation\\.definition\\.symbol\\.begin$",
+      "name": "punctuation.definition.symbol.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.string\\.end$",
+      "name": "punctuation.definition.string.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.string\\.begin$",
+      "name": "punctuation.definition.string.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.string\\.begin\\.html$",
+      "name": "punctuation.definition.string.begin.html"
+    },
+    {
+      "match": "^punctuation\\.definition\\.scope$",
+      "name": "punctuation.definition.scope"
+    },
+    {
+      "match": "^punctuation\\.definition\\.quasiquotes\\.end$",
+      "name": "punctuation.definition.quasiquotes.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.quasiquotes\\.begin$",
+      "name": "punctuation.definition.quasiquotes.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.placeholder$",
+      "name": "punctuation.definition.placeholder"
+    },
+    {
+      "match": "^punctuation\\.definition\\.parameters\\.varargs$",
+      "name": "punctuation.definition.parameters.varargs"
+    },
+    {
+      "match": "^punctuation\\.definition\\.parameters$",
+      "name": "punctuation.definition.parameters"
+    },
+    {
+      "match": "^punctuation\\.definition\\.parameters\\.end$",
+      "name": "punctuation.definition.parameters.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.parameters\\.end\\.bracket\\.round$",
+      "name": "punctuation.definition.parameters.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.parameters\\.begin$",
+      "name": "punctuation.definition.parameters.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.parameters\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.parameters.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.list\\.end$",
+      "name": "punctuation.definition.list.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.list\\.begin$",
+      "name": "punctuation.definition.list.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.list$",
+      "name": "punctuation.definition.list"
+    },
+    {
+      "match": "^punctuation\\.definition\\.keyword$",
+      "name": "punctuation.definition.keyword"
+    },
+    {
+      "match": "^punctuation\\.definition\\.interpolation\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.definition.interpolation.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.definition\\.inheritance\\.end$",
+      "name": "punctuation.definition.inheritance.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.inheritance\\.begin$",
+      "name": "punctuation.definition.inheritance.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.imports\\.end\\.bracket\\.round$",
+      "name": "punctuation.definition.imports.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.imports\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.imports.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.escape$",
+      "name": "punctuation.definition.escape"
+    },
+    {
+      "match": "^punctuation\\.definition\\.entity\\.end\\.html$",
+      "name": "punctuation.definition.entity.end.html"
+    },
+    {
+      "match": "^punctuation\\.definition\\.entity\\.begin\\.html$",
+      "name": "punctuation.definition.entity.begin.html"
+    },
+    {
+      "match": "^punctuation\\.definition\\.entity\\.end$",
+      "name": "punctuation.definition.entity.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.entity\\.begin$",
+      "name": "punctuation.definition.entity.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.entity$",
+      "name": "punctuation.definition.entity"
+    },
+    {
+      "match": "^punctuation\\.definition\\.entity\\.begin\\.bracket\\.square$",
+      "name": "punctuation.definition.entity.begin.bracket.square"
+    },
+    {
+      "match": "^punctuation\\.definition\\.end\\.bracket\\.square$",
+      "name": "punctuation.definition.end.bracket.square"
+    },
+    {
+      "match": "^punctuation\\.definition\\.end\\.bracket\\.round$",
+      "name": "punctuation.definition.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.end\\.bracket\\.curly$",
+      "name": "punctuation.definition.end.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.definition\\.end\\.bracket$",
+      "name": "punctuation.definition.end.bracket"
+    },
+    {
+      "match": "^punctuation\\.definition\\.end$",
+      "name": "punctuation.definition.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.dictionary\\.begin$",
+      "name": "punctuation.definition.dictionary.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.directive$",
+      "name": "punctuation.definition.directive"
+    },
+    {
+      "match": "^punctuation\\.definition\\.decorator$",
+      "name": "punctuation.definition.decorator"
+    },
+    {
+      "match": "^punctuation\\.definition\\.constant\\.hashkey$",
+      "name": "punctuation.definition.constant.hashkey"
+    },
+    {
+      "match": "^punctuation\\.definition\\.constant$",
+      "name": "punctuation.definition.constant"
+    },
+    {
+      "match": "^punctuation\\.definition\\.condition\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.condition.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.comment\\.block\\.start$",
+      "name": "punctuation.definition.comment.block.start"
+    },
+    {
+      "match": "^punctuation\\.definition\\.comment\\.block\\.end$",
+      "name": "punctuation.definition.comment.block.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.comment\\.block$",
+      "name": "punctuation.definition.comment.block"
+    },
+    {
+      "match": "^punctuation\\.definition\\.comment\\.haddock$",
+      "name": "punctuation.definition.comment.haddock"
+    },
+    {
+      "match": "^punctuation\\.definition\\.comment\\.end$",
+      "name": "punctuation.definition.comment.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.comment\\.begin$",
+      "name": "punctuation.definition.comment.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.comment$",
+      "name": "punctuation.definition.comment"
+    },
+    {
+      "match": "^punctuation\\.definition\\.class\\.record\\.end$",
+      "name": "punctuation.definition.class.record.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.character$",
+      "name": "punctuation.definition.character"
+    },
+    {
+      "match": "^punctuation\\.definition\\.character-class$",
+      "name": "punctuation.definition.character-class"
+    },
+    {
+      "match": "^punctuation\\.definition\\.bracket\\.square$",
+      "name": "punctuation.definition.bracket.square"
+    },
+    {
+      "match": "^punctuation\\.definition\\.binary\\.begin$",
+      "name": "punctuation.definition.binary.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.begin\\.bracket\\.square$",
+      "name": "punctuation.definition.begin.bracket.square"
+    },
+    {
+      "match": "^punctuation\\.definition\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.begin\\.bracket\\.curly$",
+      "name": "punctuation.definition.begin.bracket.curly"
+    },
+    {
+      "match": "^punctuation\\.definition\\.begin\\.bracket$",
+      "name": "punctuation.definition.begin.bracket"
+    },
+    {
+      "match": "^punctuation\\.definition\\.begin$",
+      "name": "punctuation.definition.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.arguments\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.arguments.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.arguments\\.begin\\.bracket$",
+      "name": "punctuation.definition.arguments.begin.bracket"
+    },
+    {
+      "match": "^punctuation\\.definition\\.arguments\\.begin$",
+      "name": "punctuation.definition.arguments.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.arguments$",
+      "name": "punctuation.definition.arguments"
+    },
+    {
+      "match": "^punctuation\\.definition\\.arbitrary-repitition$",
+      "name": "punctuation.definition.arbitrary-repitition"
+    },
+    {
+      "match": "^punctuation\\.definition\\.annotation\\.begin$",
+      "name": "punctuation.definition.annotation.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.annotation\\.end$",
+      "name": "punctuation.definition.annotation.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.annotation-arguments\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.annotation-arguments.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.annotation$",
+      "name": "punctuation.definition.annotation"
+    },
+    {
+      "match": "^punctuation\\.definition\\.heredoc\\.begin$",
+      "name": "punctuation.definition.heredoc.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.heredoc\\.end$",
+      "name": "punctuation.definition.heredoc.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.heredoc$",
+      "name": "punctuation.definition.heredoc"
+    },
+    {
+      "match": "^punctuation\\.definition\\.array\\.begin\\.bracket\\.round$",
+      "name": "punctuation.definition.array.begin.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.array\\.end\\.bracket\\.round$",
+      "name": "punctuation.definition.array.end.bracket.round"
+    },
+    {
+      "match": "^punctuation\\.definition\\.constant$",
+      "name": "punctuation.definition.constant"
+    },
+    {
+      "match": "^punctuation\\.definition\\.arbitrary-repetition$",
+      "name": "punctuation.definition.arbitrary-repetition"
+    },
+    {
+      "match": "^punctuation\\.definition\\.tag\\.begin$",
+      "name": "punctuation.definition.tag.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.tag\\.end$",
+      "name": "punctuation.definition.tag.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.tag$",
+      "name": "punctuation.definition.tag"
+    },
+    {
+      "match": "^punctuation\\.definition\\.string\\.begin$",
+      "name": "punctuation.definition.string.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.string\\.end$",
+      "name": "punctuation.definition.string.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.string$",
+      "name": "punctuation.definition.string"
+    },
+    {
+      "match": "^punctuation\\.definition\\.keyword\\.begin$",
+      "name": "punctuation.definition.keyword.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.keyword\\.end$",
+      "name": "punctuation.definition.keyword.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.keyword$",
+      "name": "punctuation.definition.keyword"
+    },
+    {
+      "match": "^punctuation\\.definition\\.generic\\.begin$",
+      "name": "punctuation.definition.generic.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.generic\\.end$",
+      "name": "punctuation.definition.generic.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.generic$",
+      "name": "punctuation.definition.generic"
+    },
+    {
+      "match": "^punctuation\\.definition\\.variable\\.begin$",
+      "name": "punctuation.definition.variable.begin"
+    },
+    {
+      "match": "^punctuation\\.definition\\.variable\\.end$",
+      "name": "punctuation.definition.variable.end"
+    },
+    {
+      "match": "^punctuation\\.definition\\.variable$",
+      "name": "punctuation.definition.variable"
+    },
+    {
+      "match": "^punctuation\\.definition$",
+      "name": "punctuation.definition"
+    },
+    {
+      "match": "^punctuation\\.catch\\.separator$",
+      "name": "punctuation.catch.separator"
+    },
+    {
+      "match": "^punctuation\\.unmatched\\.brace\\.curly\\.bracket\\.begin$",
+      "name": "punctuation.unmatched.brace.curly.bracket.begin"
+    },
+    {
+      "match": "^punctuation\\.unmatched\\.brace\\.curly\\.bracket\\.end$",
+      "name": "punctuation.unmatched.brace.curly.bracket.end"
+    },
+    {
+      "match": "^punctuation\\.unmatched\\.brace\\.curly\\.bracket$",
+      "name": "punctuation.unmatched.brace.curly.bracket"
+    },
+    {
+      "match": "^punctuation\\.unmatched\\.brace\\.curly$",
+      "name": "punctuation.unmatched.brace.curly"
+    },
+    {
+      "match": "^punctuation\\.unmatched\\.brace$",
+      "name": "punctuation.unmatched.brace"
+    },
+    {
+      "match": "^punctuation\\.unmatched$",
+      "name": "punctuation.unmatched"
+    },
+    {
+      "match": "^punctuation$",
+      "name": "punctuation"
+    },
+    {
+      "match": "^storage\\.modifier\\.variable$",
+      "name": "storage.modifier.variable"
+    },
+    {
+      "match": "^storage\\.modifier\\.unit$",
+      "name": "storage.modifier.unit"
+    },
+    {
+      "match": "^storage\\.modifier\\.signedness$",
+      "name": "storage.modifier.signedness"
+    },
+    {
+      "match": "^storage\\.modifier\\.nonlocal$",
+      "name": "storage.modifier.nonlocal"
+    },
+    {
+      "match": "^storage\\.modifier\\.ignore-case$",
+      "name": "storage.modifier.ignore-case"
+    },
+    {
+      "match": "^storage\\.modifier\\.global$",
+      "name": "storage.modifier.global"
+    },
+    {
+      "match": "^storage\\.modifier\\.endianness$",
+      "name": "storage.modifier.endianness"
+    },
+    {
+      "match": "^storage\\.modifier\\.async$",
+      "name": "storage.modifier.async"
+    },
+    {
+      "match": "^storage\\.modifier\\.extends$",
+      "name": "storage.modifier.extends"
+    },
+    {
+      "match": "^storage\\.modifier\\.static$",
+      "name": "storage.modifier.static"
+    },
+    {
+      "match": "^storage\\.modifier\\.final$",
+      "name": "storage.modifier.final"
+    },
+    {
+      "match": "^storage\\.modifier\\.abstract$",
+      "name": "storage.modifier.abstract"
+    },
+    {
+      "match": "^storage\\.modifier\\.public$",
+      "name": "storage.modifier.public"
+    },
+    {
+      "match": "^storage\\.modifier\\.private$",
+      "name": "storage.modifier.private"
+    },
+    {
+      "match": "^storage\\.modifier\\.protected$",
+      "name": "storage.modifier.protected"
+    },
+    {
+      "match": "^storage\\.modifier\\.reference$",
+      "name": "storage.modifier.reference"
+    },
+    {
+      "match": "^storage\\.modifier$",
+      "name": "storage.modifier"
+    },
+    {
+      "match": "^storage\\.type\\.variable$",
+      "name": "storage.type.variable"
+    },
+    {
+      "match": "^storage\\.type\\.uintptr$",
+      "name": "storage.type.uintptr"
+    },
+    {
+      "match": "^storage\\.type\\.template$",
+      "name": "storage.type.template"
+    },
+    {
+      "match": "^storage\\.type\\.string$",
+      "name": "storage.type.string"
+    },
+    {
+      "match": "^storage\\.type\\.rune$",
+      "name": "storage.type.rune"
+    },
+    {
+      "match": "^storage\\.type\\.primitive$",
+      "name": "storage.type.primitive"
+    },
+    {
+      "match": "^storage\\.type\\.primitive\\.array$",
+      "name": "storage.type.primitive.array"
+    },
+    {
+      "match": "^storage\\.type\\.object\\.array$",
+      "name": "storage.type.object.array"
+    },
+    {
+      "match": "^storage\\.type\\.numeric$",
+      "name": "storage.type.numeric"
+    },
+    {
+      "match": "^storage\\.type\\.modifier$",
+      "name": "storage.type.modifier"
+    },
+    {
+      "match": "^storage\\.type\\.local$",
+      "name": "storage.type.local"
+    },
+    {
+      "match": "^storage\\.type\\.generic\\.wildcard$",
+      "name": "storage.type.generic.wildcard"
+    },
+    {
+      "match": "^storage\\.type\\.generic$",
+      "name": "storage.type.generic"
+    },
+    {
+      "match": "^storage\\.type\\.error$",
+      "name": "storage.type.error"
+    },
+    {
+      "match": "^storage\\.type\\.byte$",
+      "name": "storage.type.byte"
+    },
+    {
+      "match": "^storage\\.type\\.boolean$",
+      "name": "storage.type.boolean"
+    },
+    {
+      "match": "^storage\\.type\\.annotation$",
+      "name": "storage.type.annotation"
+    },
+    {
+      "match": "^storage\\.type\\.signature\\.method$",
+      "name": "storage.type.signature.method"
+    },
+    {
+      "match": "^storage\\.type\\.signature$",
+      "name": "storage.type.signature"
+    },
+    {
+      "match": "^storage\\.type\\.function\\.inline$",
+      "name": "storage.type.function.inline"
+    },
+    {
+      "match": "^storage\\.type\\.function\\.arrow$",
+      "name": "storage.type.function.arrow"
+    },
+    {
+      "match": "^storage\\.type\\.function$",
+      "name": "storage.type.function"
+    },
+    {
+      "match": "^storage\\.type\\.class\\.radar$",
+      "name": "storage.type.class.radar"
+    },
+    {
+      "match": "^storage\\.type\\.class$",
+      "name": "storage.type.class"
+    },
+    {
+      "match": "^storage\\.type\\.interface$",
+      "name": "storage.type.interface"
+    },
+    {
+      "match": "^storage\\.type\\.int$",
+      "name": "storage.type.int"
+    },
+    {
+      "match": "^storage\\.type\\.var$",
+      "name": "storage.type.var"
+    },
+    {
+      "match": "^storage\\.type\\.struct$",
+      "name": "storage.type.struct"
+    },
+    {
+      "match": "^storage\\.type\\.enum$",
+      "name": "storage.type.enum"
+    },
+    {
+      "match": "^storage\\.type\\.union$",
+      "name": "storage.type.union"
+    },
+    {
+      "match": "^storage\\.type\\.trait$",
+      "name": "storage.type.trait"
+    },
+    {
+      "match": "^storage\\.type\\.impl$",
+      "name": "storage.type.impl"
+    },
+    {
+      "match": "^storage\\.type$",
+      "name": "storage.type"
+    },
+    {
+      "match": "^storage$",
+      "name": "storage"
+    },
+    {
+      "match": "^source\\.language-suffix\\.embedded$",
       "name": "source.language-suffix.embedded"
     },
     {
-      "match": "source.language-suffix",
+      "match": "^source\\.language-suffix$",
       "name": "source.language-suffix"
     },
     {
-      "match": "source",
+      "match": "^source$",
       "name": "source"
     },
     {
-      "match": "string.interpolated.qx-paren",
-      "name": "string.interpolated.qx-paren"
+      "match": "^string\\.quoted\\.backtick$",
+      "name": "string.quoted.backtick"
     },
     {
-      "match": "string.interpolated.qx-brace",
-      "name": "string.interpolated.qx-brace"
+      "match": "^string\\.quoted\\.symbol$",
+      "name": "string.quoted.symbol"
     },
     {
-      "match": "string.interpolated.qx-bracket",
-      "name": "string.interpolated.qx-bracket"
+      "match": "^string\\.quoted\\.single\\.single-line\\.unicode$",
+      "name": "string.quoted.single.single-line.unicode"
     },
     {
-      "match": "string.interpolated.qx-ltgt",
-      "name": "string.interpolated.qx-ltgt"
+      "match": "^string\\.quoted\\.single\\.single-line\\.unicode-raw$",
+      "name": "string.quoted.single.single-line.unicode-raw"
     },
     {
-      "match": "string.quoted.other.qq-ltgt",
-      "name": "string.quoted.other.qq-ltgt"
+      "match": "^string\\.quoted\\.single\\.single-line\\.unicode-raw-regex$",
+      "name": "string.quoted.single.single-line.unicode-raw-regex"
     },
     {
-      "match": "string.quoted.other.qq-paren",
-      "name": "string.quoted.other.qq-paren"
+      "match": "^string\\.quoted\\.single\\.single-line\\.sql$",
+      "name": "string.quoted.single.single-line.sql"
     },
     {
-      "match": "string.quoted.other.qq-brace",
-      "name": "string.quoted.other.qq-brace"
+      "match": "^string\\.quoted\\.single\\.single-line\\.raw$",
+      "name": "string.quoted.single.single-line.raw"
     },
     {
-      "match": "string.quoted.other.qq-bracket",
-      "name": "string.quoted.other.qq-bracket"
+      "match": "^string\\.quoted\\.single\\.single-line\\.raw-regex$",
+      "name": "string.quoted.single.single-line.raw-regex"
     },
     {
-      "match": "string.quoted.other.q-paren",
-      "name": "string.quoted.other.q-paren"
+      "match": "^string\\.quoted\\.single\\.single-line\\.raw-format$",
+      "name": "string.quoted.single.single-line.raw-format"
     },
     {
-      "match": "string.quoted.other.q-brace",
-      "name": "string.quoted.other.q-brace"
+      "match": "^string\\.quoted\\.single\\.single-line\\.raw-binary$",
+      "name": "string.quoted.single.single-line.raw-binary"
     },
     {
-      "match": "string.quoted.other.q-bracket",
-      "name": "string.quoted.other.q-bracket"
+      "match": "^string\\.quoted\\.single\\.single-line$",
+      "name": "string.quoted.single.single-line"
     },
     {
-      "match": "string.quoted.other.q-ltgt",
-      "name": "string.quoted.other.q-ltgt"
+      "match": "^string\\.quoted\\.single\\.single-line\\.format$",
+      "name": "string.quoted.single.single-line.format"
     },
     {
-      "match": "string.quoted.other",
-      "name": "string.quoted.other"
+      "match": "^string\\.quoted\\.single\\.single-line\\.binary$",
+      "name": "string.quoted.single.single-line.binary"
     },
     {
-      "match": "string.quoted.single",
+      "match": "^string\\.quoted\\.single$",
       "name": "string.quoted.single"
     },
     {
-      "match": "string.quoted.double",
+      "match": "^string\\.quoted\\.single\\.html$",
+      "name": "string.quoted.single.html"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.unicode$",
+      "name": "string.quoted.single.block.unicode"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.unicode-raw$",
+      "name": "string.quoted.single.block.unicode-raw"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.unicode-raw-regex$",
+      "name": "string.quoted.single.block.unicode-raw-regex"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.raw$",
+      "name": "string.quoted.single.block.raw"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.raw-regex$",
+      "name": "string.quoted.single.block.raw-regex"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.raw-format$",
+      "name": "string.quoted.single.block.raw-format"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.raw-binary$",
+      "name": "string.quoted.single.block.raw-binary"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block$",
+      "name": "string.quoted.single.block"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.format$",
+      "name": "string.quoted.single.block.format"
+    },
+    {
+      "match": "^string\\.quoted\\.single\\.block\\.binary$",
+      "name": "string.quoted.single.block.binary"
+    },
+    {
+      "match": "^string\\.quoted\\.rune$",
+      "name": "string.quoted.rune"
+    },
+    {
+      "match": "^string\\.quoted\\.raw$",
+      "name": "string.quoted.raw"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.multiline$",
+      "name": "string.quoted.other.multiline"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.lt-gt\\.include$",
+      "name": "string.quoted.other.lt-gt.include"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.lt-gt$",
+      "name": "string.quoted.other.lt-gt"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.literal$",
+      "name": "string.quoted.other.literal"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.interpolated$",
+      "name": "string.quoted.other.interpolated"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.unicode$",
+      "name": "string.quoted.double.single-line.unicode"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.unicode-raw$",
+      "name": "string.quoted.double.single-line.unicode-raw"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.unicode-raw-regex$",
+      "name": "string.quoted.double.single-line.unicode-raw-regex"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.sql$",
+      "name": "string.quoted.double.single-line.sql"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.raw$",
+      "name": "string.quoted.double.single-line.raw"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.raw-regex$",
+      "name": "string.quoted.double.single-line.raw-regex"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.raw-format$",
+      "name": "string.quoted.double.single-line.raw-format"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.raw-binary$",
+      "name": "string.quoted.double.single-line.raw-binary"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line$",
+      "name": "string.quoted.double.single-line"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.format$",
+      "name": "string.quoted.double.single-line.format"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.single-line\\.binary$",
+      "name": "string.quoted.double.single-line.binary"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.raw$",
+      "name": "string.quoted.double.raw"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.literal$",
+      "name": "string.quoted.double.literal"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.interpolated$",
+      "name": "string.quoted.double.interpolated"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.include$",
+      "name": "string.quoted.double.include"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.html$",
+      "name": "string.quoted.double.html"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.heredoc$",
+      "name": "string.quoted.double.heredoc"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.doctype\\.identifiers-and-DTDs\\.html$",
+      "name": "string.quoted.double.doctype.identifiers-and-DTDs.html"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.unicode$",
+      "name": "string.quoted.double.block.unicode"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.unicode-raw$",
+      "name": "string.quoted.double.block.unicode-raw"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.unicode-raw-regex$",
+      "name": "string.quoted.double.block.unicode-raw-regex"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.raw$",
+      "name": "string.quoted.double.block.raw"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.raw-regex$",
+      "name": "string.quoted.double.block.raw-regex"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.raw-format$",
+      "name": "string.quoted.double.block.raw-format"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.raw-binary$",
+      "name": "string.quoted.double.block.raw-binary"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block$",
+      "name": "string.quoted.double.block"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.format$",
+      "name": "string.quoted.double.block.format"
+    },
+    {
+      "match": "^string\\.quoted\\.double\\.block\\.binary$",
+      "name": "string.quoted.double.block.binary"
+    },
+    {
+      "match": "^string\\.quoted\\.double$",
       "name": "string.quoted.double"
     },
     {
-      "match": "string.quoted.triple",
-      "name": "string.quoted.triple"
+      "match": "^string\\.quoted\\.custom-double$",
+      "name": "string.quoted.custom-double"
     },
     {
-      "match": "string.quoted.other",
+      "match": "^string\\.quoted\\.other\\.qq-ltgt$",
+      "name": "string.quoted.other.qq-ltgt"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.qq-paren$",
+      "name": "string.quoted.other.qq-paren"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.qq-brace$",
+      "name": "string.quoted.other.qq-brace"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.qq-bracket$",
+      "name": "string.quoted.other.qq-bracket"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.q-paren$",
+      "name": "string.quoted.other.q-paren"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.q-brace$",
+      "name": "string.quoted.other.q-brace"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.q-bracket$",
+      "name": "string.quoted.other.q-bracket"
+    },
+    {
+      "match": "^string\\.quoted\\.other\\.q-ltgt$",
+      "name": "string.quoted.other.q-ltgt"
+    },
+    {
+      "match": "^string\\.quoted\\.other$",
       "name": "string.quoted.other"
     },
     {
-      "match": "string.quoted",
+      "match": "^string\\.quoted\\.single$",
+      "name": "string.quoted.single"
+    },
+    {
+      "match": "^string\\.quoted\\.triple$",
+      "name": "string.quoted.triple"
+    },
+    {
+      "match": "^string\\.quoted\\.other$",
+      "name": "string.quoted.other"
+    },
+    {
+      "match": "^string\\.quoted$",
       "name": "string.quoted"
     },
     {
-      "match": "string.unquoted.heredoc.backtick",
+      "match": "^string\\.unquoted\\.html$",
+      "name": "string.unquoted.html"
+    },
+    {
+      "match": "^string\\.unquoted\\.attribute-value$",
+      "name": "string.unquoted.attribute-value"
+    },
+    {
+      "match": "^string\\.unquoted\\.heredoc\\.backtick$",
       "name": "string.unquoted.heredoc.backtick"
     },
     {
-      "match": "string.unquoted.heredoc.quote",
+      "match": "^string\\.unquoted\\.heredoc\\.quote$",
       "name": "string.unquoted.heredoc.quote"
     },
     {
-      "match": "string.unquoted.heredoc.doublequote",
+      "match": "^string\\.unquoted\\.heredoc\\.doublequote$",
       "name": "string.unquoted.heredoc.doublequote"
     },
     {
-      "match": "string.unquoted.heredoc",
+      "match": "^string\\.unquoted\\.heredoc$",
       "name": "string.unquoted.heredoc"
     },
     {
-      "match": "string.unquoted.program-block",
+      "match": "^string\\.unquoted\\.program-block$",
       "name": "string.unquoted.program-block"
     },
     {
-      "match": "string.unquoted.index",
+      "match": "^string\\.unquoted\\.index$",
       "name": "string.unquoted.index"
     },
     {
-      "match": "string.unquoted",
+      "match": "^string\\.unquoted$",
       "name": "string.unquoted"
     },
     {
-      "match": "string.regexp.replace.extended.simple_delimiter",
+      "match": "^string\\.regexp\\.literal$",
+      "name": "string.regexp.literal"
+    },
+    {
+      "match": "^string\\.regexp\\.interpolated$",
+      "name": "string.regexp.interpolated"
+    },
+    {
+      "match": "^string\\.regexp\\.group$",
+      "name": "string.regexp.group"
+    },
+    {
+      "match": "^string\\.regexp\\.replace\\.extended\\.simple_delimiter$",
       "name": "string.regexp.replace.extended.simple_delimiter"
     },
     {
-      "match": "string.regexp.format.nested_braces",
+      "match": "^string\\.regexp\\.format\\.nested_braces$",
       "name": "string.regexp.format.nested_braces"
     },
     {
-      "match": "string.regexp.format.nested_parens",
+      "match": "^string\\.regexp\\.format\\.nested_parens$",
       "name": "string.regexp.format.nested_parens"
     },
     {
-      "match": "string.regexp.format.single_quote",
+      "match": "^string\\.regexp\\.format\\.single_quote$",
       "name": "string.regexp.format.single_quote"
     },
     {
-      "match": "string.regexp.format.simple_delimiter",
+      "match": "^string\\.regexp\\.format\\.simple_delimiter$",
       "name": "string.regexp.format.simple_delimiter"
     },
     {
-      "match": "string.regexp.format.nested_ltgt",
+      "match": "^string\\.regexp\\.format\\.nested_ltgt$",
       "name": "string.regexp.format.nested_ltgt"
     },
     {
-      "match": "string.regexp.format",
+      "match": "^string\\.regexp\\.format$",
       "name": "string.regexp.format"
     },
     {
-      "match": "string.regexp.nested_ltgt",
+      "match": "^string\\.regexp\\.nested_ltgt$",
       "name": "string.regexp.nested_ltgt"
     },
     {
-      "match": "string.regexp.nested_parens",
+      "match": "^string\\.regexp\\.nested_parens$",
       "name": "string.regexp.nested_parens"
     },
     {
-      "match": "string.regexp.nested_braces",
+      "match": "^string\\.regexp\\.nested_braces$",
       "name": "string.regexp.nested_braces"
     },
     {
-      "match": "string.regexp.find-m.simple-delimiter",
+      "match": "^string\\.regexp\\.find-m\\.simple-delimiter$",
       "name": "string.regexp.find-m.simple-delimiter"
     },
     {
-      "match": "string.regexp.find-m.single-quote",
+      "match": "^string\\.regexp\\.find-m\\.single-quote$",
       "name": "string.regexp.find-m.single-quote"
     },
     {
-      "match": "string.regexp.find",
+      "match": "^string\\.regexp\\.find$",
       "name": "string.regexp.find"
     },
     {
-      "match": "string.regexp.character-class",
+      "match": "^string\\.regexp\\.character-class$",
       "name": "string.regexp.character-class"
     },
     {
-      "match": "string.regexp.arbitrary-repetition",
+      "match": "^string\\.regexp\\.arbitrary-repitition$",
+      "name": "string.regexp.arbitrary-repitition"
+    },
+    {
+      "match": "^string\\.regexp\\.arbitrary-repetition$",
       "name": "string.regexp.arbitrary-repetition"
     },
     {
-      "match": "string.regexp.single-quoted",
+      "match": "^string\\.regexp\\.single-quoted$",
       "name": "string.regexp.single-quoted"
     },
     {
-      "match": "string.regexp.double-quoted",
+      "match": "^string\\.regexp\\.double-quoted$",
       "name": "string.regexp.double-quoted"
     },
     {
-      "match": "string.regexp.replace",
+      "match": "^string\\.regexp\\.replace$",
       "name": "string.regexp.replace"
     },
     {
-      "match": "string.regexp",
+      "match": "^string\\.regexp$",
       "name": "string.regexp"
     },
     {
-      "match": "string.interpolated",
+      "match": "^string\\.interpolated\\.qx-paren$",
+      "name": "string.interpolated.qx-paren"
+    },
+    {
+      "match": "^string\\.interpolated\\.qx-brace$",
+      "name": "string.interpolated.qx-brace"
+    },
+    {
+      "match": "^string\\.interpolated\\.qx-bracket$",
+      "name": "string.interpolated.qx-bracket"
+    },
+    {
+      "match": "^string\\.interpolated\\.qx-ltgt$",
+      "name": "string.interpolated.qx-ltgt"
+    },
+    {
+      "match": "^string\\.interpolated\\.regexp$",
+      "name": "string.interpolated.regexp"
+    },
+    {
+      "match": "^string\\.interpolated$",
       "name": "string.interpolated"
     },
     {
-      "match": "string.other",
+      "match": "^string\\.other$",
       "name": "string.other"
     },
     {
-      "match": "string",
+      "match": "^string$",
       "name": "string"
     },
     {
-      "match": "support.constant.ext",
+      "match": "^sourceembedded$",
+      "name": "sourceembedded"
+    },
+    {
+      "match": "^sourceembedded\\.source$",
+      "name": "sourceembedded.source"
+    },
+    {
+      "match": "^sourcestyle$",
+      "name": "sourcestyle"
+    },
+    {
+      "match": "^support\\.constant\\.vendored\\.property-value$",
+      "name": "support.constant.vendored.property-value"
+    },
+    {
+      "match": "^support\\.constant\\.vendored$",
+      "name": "support.constant.vendored"
+    },
+    {
+      "match": "^support\\.constant\\.text-direction$",
+      "name": "support.constant.text-direction"
+    },
+    {
+      "match": "^support\\.constant\\.step-direction$",
+      "name": "support.constant.step-direction"
+    },
+    {
+      "match": "^support\\.constant\\.property-value\\.list-style-type$",
+      "name": "support.constant.property-value.list-style-type"
+    },
+    {
+      "match": "^support\\.constant\\.property-value$",
+      "name": "support.constant.property-value"
+    },
+    {
+      "match": "^support\\.constant\\.parity$",
+      "name": "support.constant.parity"
+    },
+    {
+      "match": "^support\\.constant\\.media$",
+      "name": "support.constant.media"
+    },
+    {
+      "match": "^support\\.constant\\.mac-classic$",
+      "name": "support.constant.mac-classic"
+    },
+    {
+      "match": "^support\\.constant\\.language-range$",
+      "name": "support.constant.language-range"
+    },
+    {
+      "match": "^support\\.constant\\.font-name$",
+      "name": "support.constant.font-name"
+    },
+    {
+      "match": "^support\\.constant\\.color\\.w3c-standard-color-name$",
+      "name": "support.constant.color.w3c-standard-color-name"
+    },
+    {
+      "match": "^support\\.constant\\.color\\.w3c-extended-color-name$",
+      "name": "support.constant.color.w3c-extended-color-name"
+    },
+    {
+      "match": "^support\\.constant\\.color\\.current$",
+      "name": "support.constant.color.current"
+    },
+    {
+      "match": "^support\\.constant\\.color$",
+      "name": "support.constant.color"
+    },
+    {
+      "match": "^support\\.constant\\.ext$",
       "name": "support.constant.ext"
     },
     {
-      "match": "support.constant",
+      "match": "^support\\.constant$",
       "name": "support.constant"
     },
     {
-      "match": "support.function.magic",
+      "match": "^support\\.function\\.variable\\.quoted\\.single\\.heredoc$",
+      "name": "support.function.variable.quoted.single.heredoc"
+    },
+    {
+      "match": "^support\\.function\\.variable\\.quoted\\.single$",
+      "name": "support.function.variable.quoted.single"
+    },
+    {
+      "match": "^support\\.function\\.variable\\.quoted$",
+      "name": "support.function.variable.quoted"
+    },
+    {
+      "match": "^support\\.function\\.variable$",
+      "name": "support.function.variable"
+    },
+    {
+      "match": "^support\\.function\\.url$",
+      "name": "support.function.url"
+    },
+    {
+      "match": "^support\\.function\\.transform$",
+      "name": "support.function.transform"
+    },
+    {
+      "match": "^support\\.function\\.timing-function$",
+      "name": "support.function.timing-function"
+    },
+    {
+      "match": "^support\\.function\\.shape$",
+      "name": "support.function.shape"
+    },
+    {
+      "match": "^support\\.function\\.prelude$",
+      "name": "support.function.prelude"
+    },
+    {
+      "match": "^support\\.function\\.misc$",
+      "name": "support.function.misc"
+    },
+    {
+      "match": "^support\\.function\\.macro$",
+      "name": "support.function.macro"
+    },
+    {
+      "match": "^support\\.function\\.library$",
+      "name": "support.function.library"
+    },
+    {
+      "match": "^support\\.function\\.kernel$",
+      "name": "support.function.kernel"
+    },
+    {
+      "match": "^support\\.function\\.gradient$",
+      "name": "support.function.gradient"
+    },
+    {
+      "match": "^support\\.function\\.document-rule$",
+      "name": "support.function.document-rule"
+    },
+    {
+      "match": "^support\\.function\\.calc$",
+      "name": "support.function.calc"
+    },
+    {
+      "match": "^support\\.function\\.builtin$",
+      "name": "support.function.builtin"
+    },
+    {
+      "match": "^support\\.function\\.built-in\\.smarty$",
+      "name": "support.function.built-in.smarty"
+    },
+    {
+      "match": "^support\\.function\\.any-method$",
+      "name": "support.function.any-method"
+    },
+    {
+      "match": "^support\\.function\\.C99$",
+      "name": "support.function.C99"
+    },
+    {
+      "match": "^support\\.function\\.magic$",
       "name": "support.function.magic"
     },
     {
-      "match": "support.function",
+      "match": "^support\\.function$",
       "name": "support.function"
     },
     {
-      "match": "support.module",
+      "match": "^support\\.operator\\.prelude$",
+      "name": "support.operator.prelude"
+    },
+    {
+      "match": "^support\\.operator$",
+      "name": "support.operator"
+    },
+    {
+      "match": "^support\\.module$",
       "name": "support.module"
     },
     {
-      "match": "support.type",
+      "match": "^support\\.tag\\.prelude$",
+      "name": "support.tag.prelude"
+    },
+    {
+      "match": "^support\\.tag$",
+      "name": "support.tag"
+    },
+    {
+      "match": "^support\\.type\\.vendored\\.property-name\\.media$",
+      "name": "support.type.vendored.property-name.media"
+    },
+    {
+      "match": "^support\\.type\\.vendored\\.property-name$",
+      "name": "support.type.vendored.property-name"
+    },
+    {
+      "match": "^support\\.type\\.vendored$",
+      "name": "support.type.vendored"
+    },
+    {
+      "match": "^support\\.type\\.sys-types$",
+      "name": "support.type.sys-types"
+    },
+    {
+      "match": "^support\\.type\\.stdint$",
+      "name": "support.type.stdint"
+    },
+    {
+      "match": "^support\\.type\\.pthread$",
+      "name": "support.type.pthread"
+    },
+    {
+      "match": "^support\\.type\\.property-name\\.media$",
+      "name": "support.type.property-name.media"
+    },
+    {
+      "match": "^support\\.type\\.property-name$",
+      "name": "support.type.property-name"
+    },
+    {
+      "match": "^support\\.type\\.posix-reserved$",
+      "name": "support.type.posix-reserved"
+    },
+    {
+      "match": "^support\\.type\\.mac-classic$",
+      "name": "support.type.mac-classic"
+    },
+    {
+      "match": "^support\\.type\\.exception$",
+      "name": "support.type.exception"
+    },
+    {
+      "match": "^support\\.type$",
       "name": "support.type"
     },
     {
-      "match": "support.class",
+      "match": "^support\\.class\\.prelude$",
+      "name": "support.class.prelude"
+    },
+    {
+      "match": "^support\\.class$",
       "name": "support.class"
     },
     {
-      "match": "support.variable",
+      "match": "^support\\.variable\\.magic$",
+      "name": "support.variable.magic"
+    },
+    {
+      "match": "^support\\.variable$",
       "name": "support.variable"
     },
     {
-      "match": "support.struct",
+      "match": "^support\\.struct$",
       "name": "support.struct"
     },
     {
-      "match": "support.other.namespace",
+      "match": "^support\\.other\\.module$",
+      "name": "support.other.module"
+    },
+    {
+      "match": "^support\\.other\\.namespace$",
       "name": "support.other.namespace"
     },
     {
-      "match": "support.other",
+      "match": "^support\\.other$",
       "name": "support.other"
     },
     {
-      "match": "support",
+      "match": "^support$",
       "name": "support"
     },
     {
-      "match": "text.html.basic",
+      "match": "^text\\.html\\.embedded$",
+      "name": "text.html.embedded"
+    },
+    {
+      "match": "^text\\.html\\.basic$",
       "name": "text.html.basic"
     },
     {
-      "match": "text.html.markdown",
+      "match": "^text\\.html\\.markdown$",
       "name": "text.html.markdown"
     },
     {
-      "match": "text.html",
+      "match": "^text\\.html$",
       "name": "text.html"
     },
     {
-      "match": "text.xml",
+      "match": "^text\\.xml$",
       "name": "text.xml"
     },
     {
-      "match": "text.plain",
+      "match": "^text\\.plain$",
       "name": "text.plain"
     },
     {
-      "match": "text",
+      "match": "^text\\.embedded\\.html$",
+      "name": "text.embedded.html"
+    },
+    {
+      "match": "^text\\.embedded$",
+      "name": "text.embedded"
+    },
+    {
+      "match": "^text$",
       "name": "text"
     },
     {
-      "match": "variable.annotation",
+      "match": "^unused\\.comment$",
+      "name": "unused.comment"
+    },
+    {
+      "match": "^unused$",
+      "name": "unused"
+    },
+    {
+      "match": "^variable\\.annotation$",
       "name": "variable.annotation"
     },
     {
-      "match": "variable.function",
+      "match": "^variable\\.function$",
       "name": "variable.function"
     },
     {
-      "match": "variable.other.readwrite.list-separator",
-      "name": "variable.other.readwrite.list-separator"
-    },
-    {
-      "match": "variable.other.regexp.last-paren-match",
+      "match": "^variable\\.other\\.regexp\\.last-paren-match$",
       "name": "variable.other.regexp.last-paren-match"
     },
     {
-      "match": "variable.other.regexp.post-match",
+      "match": "^variable\\.other\\.regexp\\.post-match$",
       "name": "variable.other.regexp.post-match"
     },
     {
-      "match": "variable.other.regexp.pre-match",
+      "match": "^variable\\.other\\.regexp\\.pre-match$",
       "name": "variable.other.regexp.pre-match"
     },
     {
-      "match": "variable.other.regexp.match",
+      "match": "^variable\\.other\\.regexp\\.match$",
       "name": "variable.other.regexp.match"
     },
     {
-      "match": "variable.other.readwrite.global",
+      "match": "^variable\\.other\\.readwrite\\.static\\.mac-classic$",
+      "name": "variable.other.readwrite.static.mac-classic"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.static$",
+      "name": "variable.other.readwrite.static"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.module$",
+      "name": "variable.other.readwrite.module"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.member$",
+      "name": "variable.other.readwrite.member"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.instance$",
+      "name": "variable.other.readwrite.instance"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.global\\.pre-defined$",
+      "name": "variable.other.readwrite.global.pre-defined"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.global\\.mac-classic$",
+      "name": "variable.other.readwrite.global.mac-classic"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.global$",
       "name": "variable.other.readwrite.global"
     },
     {
-      "match": "variable.other.readwrite",
+      "match": "^variable\\.other\\.readwrite\\.class$",
+      "name": "variable.other.readwrite.class"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite\\.list-separator$",
+      "name": "variable.other.readwrite.list-separator"
+    },
+    {
+      "match": "^variable\\.other\\.readwrite$",
       "name": "variable.other.readwrite"
     },
     {
-      "match": "variable.other.subpattern",
+      "match": "^variable\\.other\\.subpattern$",
       "name": "variable.other.subpattern"
     },
     {
-      "match": "variable.other.predefined",
+      "match": "^variable\\.other\\.predefined$",
       "name": "variable.other.predefined"
     },
     {
-      "match": "variable.other.index",
+      "match": "^variable\\.other\\.index$",
       "name": "variable.other.index"
     },
     {
-      "match": "variable.other.global.safer",
+      "match": "^variable\\.other\\.global\\.safer$",
       "name": "variable.other.global.safer"
     },
     {
-      "match": "variable.other.global",
+      "match": "^variable\\.other\\.global$",
       "name": "variable.other.global"
     },
     {
-      "match": "variable.other.member",
+      "match": "^variable\\.other\\.member$",
       "name": "variable.other.member"
     },
     {
-      "match": "variable.other.readwrite",
-      "name": "variable.other.readwrite"
-    },
-    {
-      "match": "variable.other.constant",
-      "name": "variable.other.constant"
-    },
-    {
-      "match": "variable.other.property",
+      "match": "^variable\\.other\\.property$",
       "name": "variable.other.property"
     },
     {
-      "match": "variable.other",
+      "match": "^variable\\.other\\.positional$",
+      "name": "variable.other.positional"
+    },
+    {
+      "match": "^variable\\.other\\.object\\.property$",
+      "name": "variable.other.object.property"
+    },
+    {
+      "match": "^variable\\.other\\.object$",
+      "name": "variable.other.object"
+    },
+    {
+      "match": "^variable\\.other\\.member$",
+      "name": "variable.other.member"
+    },
+    {
+      "match": "^variable\\.other\\.generic-type$",
+      "name": "variable.other.generic-type"
+    },
+    {
+      "match": "^variable\\.other\\.field$",
+      "name": "variable.other.field"
+    },
+    {
+      "match": "^variable\\.other\\.definition$",
+      "name": "variable.other.definition"
+    },
+    {
+      "match": "^variable\\.other\\.declaration$",
+      "name": "variable.other.declaration"
+    },
+    {
+      "match": "^variable\\.other\\.constant$",
+      "name": "variable.other.constant"
+    },
+    {
+      "match": "^variable\\.other\\.block$",
+      "name": "variable.other.block"
+    },
+    {
+      "match": "^variable\\.other\\.assignment$",
+      "name": "variable.other.assignment"
+    },
+    {
+      "match": "^variable\\.other\\.anonymous$",
+      "name": "variable.other.anonymous"
+    },
+    {
+      "match": "^variable\\.other$",
       "name": "variable.other"
     },
     {
-      "match": "variable.language.namespace",
+      "match": "^variable\\.font-feature$",
+      "name": "variable.font-feature"
+    },
+    {
+      "match": "^variable\\.language\\.wildcard$",
+      "name": "variable.language.wildcard"
+    },
+    {
+      "match": "^variable\\.language\\.omitted\\.field$",
+      "name": "variable.language.omitted.field"
+    },
+    {
+      "match": "^variable\\.language\\.omitted$",
+      "name": "variable.language.omitted"
+    },
+    {
+      "match": "^variable\\.language\\.namespace$",
       "name": "variable.language.namespace"
     },
     {
-      "match": "variable.language.this",
+      "match": "^variable\\.language\\.this$",
       "name": "variable.language.this"
     },
     {
-      "match": "variable.language.super",
+      "match": "^variable\\.language\\.super$",
       "name": "variable.language.super"
     },
     {
-      "match": "variable.language.self",
+      "match": "^variable\\.language\\.self$",
       "name": "variable.language.self"
     },
     {
-      "match": "variable.language",
+      "match": "^variable\\.language$",
       "name": "variable.language"
     },
     {
-      "match": "variable.parameter.function",
+      "match": "^variable\\.parameter\\.function$",
       "name": "variable.parameter.function"
     },
     {
-      "match": "variable.parameter",
+      "match": "^variable\\.parameter\\.url$",
+      "name": "variable.parameter.url"
+    },
+    {
+      "match": "^variable\\.parameter\\.style-name$",
+      "name": "variable.parameter.style-name"
+    },
+    {
+      "match": "^variable\\.parameter\\.preprocessor$",
+      "name": "variable.parameter.preprocessor"
+    },
+    {
+      "match": "^variable\\.parameter\\.misc$",
+      "name": "variable.parameter.misc"
+    },
+    {
+      "match": "^variable\\.parameter\\.keyframe-list$",
+      "name": "variable.parameter.keyframe-list"
+    },
+    {
+      "match": "^variable\\.parameter\\.document-rule$",
+      "name": "variable.parameter.document-rule"
+    },
+    {
+      "match": "^variable\\.parameter$",
       "name": "variable.parameter"
     },
     {
-      "match": "variable",
+      "match": "^variable\\.argument$",
+      "name": "variable.argument"
+    },
+    {
+      "match": "^variable$",
       "name": "variable"
     },
     {
-      "match": "wildcard.comment",
+      "match": "^wildcard\\.comment$",
       "name": "wildcard.comment"
+    },
+    {
+      "match": "^wildcard$",
+      "name": "wildcard"
     }
   ]
 }
