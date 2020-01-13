@@ -8,7 +8,7 @@ const readInterface = readline.createInterface({
 
 readInterface.on('line', scope => {
   contexts.push(
-    `    - match: '${scope}'
+    `    - match: '^${scope.replace(/\./g, '\\.')}$'
       scope: '${scope}'`
   );
 });
