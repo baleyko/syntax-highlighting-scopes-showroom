@@ -42,6 +42,16 @@
         "language": "Syntax Highlighting Scopes Showroom",
         "scopeName": "source.shss",
         "path": "./grammars/shss.json"
+      },
+      {
+        "scopeName": "markdown.shss.codeblock",
+        "path": "./grammars/shss.codeblock.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.shss": "shss"
+        }
       }
     ]
   },
