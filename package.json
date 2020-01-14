@@ -68,11 +68,9 @@
     "markdownlint-cli": "0.19.0",
     "yaml-lint": "1.2.4",
     "eslint": "6.8.0",
-    "prettier": "1.19.1",
-    "vsce": "1.67.1"
+    "prettier": "1.19.1"
   },
   "scripts": {
-    "publish": "yarn run vsce",
     "rebuild": "yarn run build:json && yarn run build:sublime-syntax && yarn run build:spec && yarn run build:syntax_test",
     "build:json": "cat SyntaxScopes | bin/to-json > grammars/SyntaxScopes.json",
     "build:sublime-syntax": "cat SyntaxScopes | bin/to-sublime-syntax > SyntaxScopes.sublime-syntax",
