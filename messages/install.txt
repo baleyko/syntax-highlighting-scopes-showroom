@@ -1,4 +1,4 @@
-Welcome to the Syntax Highlighting Scopes Showroom package for Sublime Text 2/3!
+Welcome to the Syntax Highlighting Scopes Showroom package for Sublime Text 3!
 
 It adds highlighting to the .shss files, which could contain lists of syntax highlighting scopes.
 These lists could be used like cheatsheets to understand which scopes you can use to highlight
