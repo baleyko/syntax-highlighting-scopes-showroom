@@ -8,6 +8,9 @@ yarn-error.log
 node_modules/
 messages/
 messages.json
+.eslintrc
+.prettierrc
+menus/show-all-scopes.json
 bin/
 test/
 .no-sublime-package

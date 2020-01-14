@@ -67,6 +67,8 @@
     "jsonlint": "1.6.3",
     "markdownlint-cli": "0.19.0",
     "yaml-lint": "1.2.4",
+    "eslint": "6.8.0",
+    "prettier": "1.19.1",
     "vsce": "1.67.1"
   },
   "scripts": {
@@ -76,9 +78,11 @@
     "build:sublime-syntax": "cat SyntaxScopes | bin/to-sublime-syntax > SyntaxScopes.sublime-syntax",
     "build:spec": "cat SyntaxScopes | bin/to-spec > test/SyntaxScopes-spec.js",
     "build:syntax_test": "cat SyntaxScopes | bin/to-syntax_test > test/syntax_test.SyntaxScopes",
-    "ci:lint": "yarn run lint:yaml && yarn run lint:json && yarn run markdownlint *.md",
+    "ci:lint": "yarn run lint:yaml && yarn run lint:json && yarn run lint:markdown && yarn run lint:js",
     "lint:yaml": "yarn run yamllint SyntaxScopes.sublime-syntax",
-    "lint:json": "for file in package.json messages.json language-configuration.json .vscode/launch.json grammars/SyntaxScopes.json; do yarn run jsonlint -q $file; done",
-    "lint:markdown": "yarn run markdownlint *.md"
+    "lint:json": "for file in package.json messages.json .eslintrc .prettierrc menus/show-all-scopes.json language-configuration.json .vscode/launch.json grammars/SyntaxScopes.json; do yarn run jsonlint -q $file; done",
+    "lint:markdown": "yarn run markdownlint *.md",
+    "lint:js": "eslint bin/* extension.js",
+    "fix:js": "prettier --write bin/* extension.js"
   }
 }

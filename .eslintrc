@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {}
+  },
+  "plugins": [],
+  "rules": {
+    "require-jsdoc": 0,
+    "no-redeclare": 0
+  },
+  "globals": {
+    "module": true,
+    "atom": true,
+    "Promise": true,
+    "require": true,
+    "process": true,
+    "console": true
+  }
+}
