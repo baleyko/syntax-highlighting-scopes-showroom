@@ -21,6 +21,7 @@ jobs:
       UNITTESTING_TAG: master
     steps:
       - uses: actions/checkout@v1
+        path: 'Syntax Highlighting Scopes Showroom'
       - name: Setup
         run: |
           sh -e /etc/init.d/xvfb start
