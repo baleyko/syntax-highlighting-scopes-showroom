@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Syntax Highlighting Scopes Showroom",
+          "submenu": [
+            {
+              "label": "Show All Scopes",
+              "command": "syntax-highlighting-scopes-showroom:show-all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

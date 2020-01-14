@@ -27,7 +27,25 @@
     "vscode": "^1.36.0",
     "atom": "^1.42.0"
   },
+  "main": "./extension.js",
+  "activationEvents": [
+    "*"
+  ],
   "contributes": {
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "syntax-highlighting-scopes-showroom:show-all"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "syntax-highlighting-scopes-showroom:show-all",
+        "title": "Show All Scopes",
+        "category": "Syntax Highlighting Scopes Showroom"
+      }
+    ],
     "languages": [
       {
         "id": "Syntax Highlighting Scopes Showroom",
