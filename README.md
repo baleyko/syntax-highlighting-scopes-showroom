@@ -2,7 +2,6 @@
 
 [![Test][gh test workflow badge]][gh test workflow]
 [![Lint][gh lint workflow badge]][gh lint workflow]
-[![GitHub release][gh releases badge]][gh releases]
 [![The MIT License][mit license badge]][mit license]
 
 [![APM Version][apm version badge]][apm version]
@@ -12,6 +11,7 @@
 [![VSCode Installs][vscode installs badge]][vscode merketplace]
 [![VSCode Rating][vscode rating badge]][vscode merketplace]
 
+[![GitHub release][gh releases badge]][gh releases]
 [![Sublime Downloads][sublime downloads badge]][sublime package control]
 
 This package tries to show all the syntax scopes just to help you do your
@@ -21,9 +21,42 @@ syntax highlighting packages development.
 
 You can find this package in corresponding package managment tool for:
 
-- Visual Studio Code - [Visual Studio Marketplace][vscode merketplace]
-- Sublime Text - [Package Control][sublime package control]
-- Atom - [Atom Package Manager][atom package manager]
+### Visual Studio Code - [Visual Studio Marketplace][vscode merketplace]
+
+- `Ctrl+Shift+X` or `Cmd+Shift+X` in Linux/Windows/OS X
+- type `Syntax Highlighting Scopes Showroom`
+- press `Install` on the `Syntax Highlighting Scopes Showroom` pane
+
+### Sublime Package Control - [Package Control][sublime package control]
+
+- `Ctrl+Shift+P` or `Cmd+Shift+P` in Linux/Windows/OS X
+- type `install`, select `Package Control: Install Package`
+- type `Syntax Highlighting Scopes Showroom`, select it
+
+### Atom - [Atom Package Manager][atom package manager]
+
+- `Ctrl+Shift+P` or `Cmd+Shift+P` in Linux/Windows/OS X
+- type `Settings View: Install Packages And Themes`
+- type `syntax-highlighting-scopes-showroom`
+- press `Install` on the `Syntax Highlighting Scopes Showroom` pane
+
+## Usage
+
+### Visual Studio Code
+
+- `Ctrl+Shift+P` or `Cmd+Shift+P` in Linux/Windows/OS X
+- type `Syntax Highlighting Scopes Showroom: Show All Scopes` and press `Enter`
+
+### Sublime Text
+
+- go to `Tools -> Syntax Highlighting Scopes Showroom -> Show All Scopes`
+
+### Atom
+
+- go to  `Packages > Syntax Highlighting Scopes Showroom > Show All Scopes`
+
+As a result on all cases your editor will open the SyntaxScopes file which contains
+all known(for authors of this extension) syntax scopes.
 
 ## License
 
