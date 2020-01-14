@@ -27,7 +27,7 @@ jobs:
           curl -OL https://raw.githubusercontent.com/SublimeText/UnitTesting/master/sbin/github.sh
       - name: Run tests
         run: |
-          sed -i '' -e '1 s/Syntax Highlighting Scopes Showroom/syntax-highlighting-scopes-showroom/' test/syntax_test.SyntaxScopes
+          sed -i'' -e '1 s/Syntax Highlighting Scopes Showroom/syntax-highlighting-scopes-showroom/' test/syntax_test.SyntaxScopes
           PATH="$HOME/.local/bin:$PATH"
           sh github.sh bootstrap
           sh github.sh run_syntax_tests
