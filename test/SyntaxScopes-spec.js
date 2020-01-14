@@ -6,21 +6,21 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
       ? atom.packages
           .activatePackage('syntax-highlighting-scopes-showroom')
           .then(() => {
-            grammar = atom.grammars.grammarForScopeName('source.shss');
+            grammar = atom.grammars.grammarForScopeName('source.syntax-scopes');
           })
       : Promise.resolve()
   );
 
   it('parses the grammar', () => {
     expect(grammar).toBeTruthy();
-    expect(grammar.scopeName).toBe('source.shss');
+    expect(grammar.scopeName).toBe('source.syntax-scopes');
   });
 
   it('array', () => {
     const { tokens } = grammar.tokenizeLine('array');
     expect(tokens[0]).toEqual({
       value: 'array',
-      scopes: ['source.shss', 'array'],
+      scopes: ['source.syntax-scopes', 'array'],
     });
   });
 
@@ -28,7 +28,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('bracket');
     expect(tokens[0]).toEqual({
       value: 'bracket',
-      scopes: ['source.shss', 'bracket'],
+      scopes: ['source.syntax-scopes', 'bracket'],
     });
   });
 
@@ -36,7 +36,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('block.liquid');
     expect(tokens[0]).toEqual({
       value: 'block.liquid',
-      scopes: ['source.shss', 'block.liquid'],
+      scopes: ['source.syntax-scopes', 'block.liquid'],
     });
   });
 
@@ -44,7 +44,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('block');
     expect(tokens[0]).toEqual({
       value: 'block',
-      scopes: ['source.shss', 'block'],
+      scopes: ['source.syntax-scopes', 'block'],
     });
   });
 
@@ -52,7 +52,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.double-slash');
     expect(tokens[0]).toEqual({
       value: 'comment.line.double-slash',
-      scopes: ['source.shss', 'comment.line.double-slash'],
+      scopes: ['source.syntax-scopes', 'comment.line.double-slash'],
     });
   });
 
@@ -60,7 +60,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.double-dash.haddock');
     expect(tokens[0]).toEqual({
       value: 'comment.line.double-dash.haddock',
-      scopes: ['source.shss', 'comment.line.double-dash.haddock'],
+      scopes: ['source.syntax-scopes', 'comment.line.double-dash.haddock'],
     });
   });
 
@@ -68,7 +68,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.double-dash');
     expect(tokens[0]).toEqual({
       value: 'comment.line.double-dash',
-      scopes: ['source.shss', 'comment.line.double-dash'],
+      scopes: ['source.syntax-scopes', 'comment.line.double-dash'],
     });
   });
 
@@ -76,7 +76,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.number-sign');
     expect(tokens[0]).toEqual({
       value: 'comment.line.number-sign',
-      scopes: ['source.shss', 'comment.line.number-sign'],
+      scopes: ['source.syntax-scopes', 'comment.line.number-sign'],
     });
   });
 
@@ -84,7 +84,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.percentage');
     expect(tokens[0]).toEqual({
       value: 'comment.line.percentage',
-      scopes: ['source.shss', 'comment.line.percentage'],
+      scopes: ['source.syntax-scopes', 'comment.line.percentage'],
     });
   });
 
@@ -92,7 +92,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.shebang');
     expect(tokens[0]).toEqual({
       value: 'comment.line.shebang',
-      scopes: ['source.shss', 'comment.line.shebang'],
+      scopes: ['source.syntax-scopes', 'comment.line.shebang'],
     });
   });
 
@@ -100,7 +100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.type');
     expect(tokens[0]).toEqual({
       value: 'comment.line.type',
-      scopes: ['source.shss', 'comment.line.type'],
+      scopes: ['source.syntax-scopes', 'comment.line.type'],
     });
   });
 
@@ -108,7 +108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.string');
     expect(tokens[0]).toEqual({
       value: 'comment.line.string',
-      scopes: ['source.shss', 'comment.line.string'],
+      scopes: ['source.syntax-scopes', 'comment.line.string'],
     });
   });
 
@@ -116,7 +116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.shebang');
     expect(tokens[0]).toEqual({
       value: 'comment.line.shebang',
-      scopes: ['source.shss', 'comment.line.shebang'],
+      scopes: ['source.syntax-scopes', 'comment.line.shebang'],
     });
   });
 
@@ -124,7 +124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.banner');
     expect(tokens[0]).toEqual({
       value: 'comment.line.banner',
-      scopes: ['source.shss', 'comment.line.banner'],
+      scopes: ['source.syntax-scopes', 'comment.line.banner'],
     });
   });
 
@@ -132,7 +132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.punctuation');
     expect(tokens[0]).toEqual({
       value: 'comment.line.punctuation',
-      scopes: ['source.shss', 'comment.line.punctuation'],
+      scopes: ['source.syntax-scopes', 'comment.line.punctuation'],
     });
   });
 
@@ -140,7 +140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.percentage');
     expect(tokens[0]).toEqual({
       value: 'comment.line.percentage',
-      scopes: ['source.shss', 'comment.line.percentage'],
+      scopes: ['source.syntax-scopes', 'comment.line.percentage'],
     });
   });
 
@@ -148,7 +148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.parameter');
     expect(tokens[0]).toEqual({
       value: 'comment.line.parameter',
-      scopes: ['source.shss', 'comment.line.parameter'],
+      scopes: ['source.syntax-scopes', 'comment.line.parameter'],
     });
   });
 
@@ -156,7 +156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.number-sign');
     expect(tokens[0]).toEqual({
       value: 'comment.line.number-sign',
-      scopes: ['source.shss', 'comment.line.number-sign'],
+      scopes: ['source.syntax-scopes', 'comment.line.number-sign'],
     });
   });
 
@@ -164,7 +164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.keyword.punctuation');
     expect(tokens[0]).toEqual({
       value: 'comment.line.keyword.punctuation',
-      scopes: ['source.shss', 'comment.line.keyword.punctuation'],
+      scopes: ['source.syntax-scopes', 'comment.line.keyword.punctuation'],
     });
   });
 
@@ -172,7 +172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line.keyword');
     expect(tokens[0]).toEqual({
       value: 'comment.line.keyword',
-      scopes: ['source.shss', 'comment.line.keyword'],
+      scopes: ['source.syntax-scopes', 'comment.line.keyword'],
     });
   });
 
@@ -180,7 +180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.line');
     expect(tokens[0]).toEqual({
       value: 'comment.line',
-      scopes: ['source.shss', 'comment.line'],
+      scopes: ['source.syntax-scopes', 'comment.line'],
     });
   });
 
@@ -188,7 +188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.documentation.string');
     expect(tokens[0]).toEqual({
       value: 'comment.documentation.string',
-      scopes: ['source.shss', 'comment.documentation.string'],
+      scopes: ['source.syntax-scopes', 'comment.documentation.string'],
     });
   });
 
@@ -196,7 +196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.documentation.heredoc');
     expect(tokens[0]).toEqual({
       value: 'comment.documentation.heredoc',
-      scopes: ['source.shss', 'comment.documentation.heredoc'],
+      scopes: ['source.syntax-scopes', 'comment.documentation.heredoc'],
     });
   });
 
@@ -204,7 +204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.documentation.false');
     expect(tokens[0]).toEqual({
       value: 'comment.documentation.false',
-      scopes: ['source.shss', 'comment.documentation.false'],
+      scopes: ['source.syntax-scopes', 'comment.documentation.false'],
     });
   });
 
@@ -212,7 +212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.block.doc');
     expect(tokens[0]).toEqual({
       value: 'comment.block.doc',
-      scopes: ['source.shss', 'comment.block.doc'],
+      scopes: ['source.syntax-scopes', 'comment.block.doc'],
     });
   });
 
@@ -220,7 +220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.block.html');
     expect(tokens[0]).toEqual({
       value: 'comment.block.html',
-      scopes: ['source.shss', 'comment.block.html'],
+      scopes: ['source.syntax-scopes', 'comment.block.html'],
     });
   });
 
@@ -228,7 +228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.block.haddock');
     expect(tokens[0]).toEqual({
       value: 'comment.block.haddock',
-      scopes: ['source.shss', 'comment.block.haddock'],
+      scopes: ['source.syntax-scopes', 'comment.block.haddock'],
     });
   });
 
@@ -236,7 +236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.block.empty');
     expect(tokens[0]).toEqual({
       value: 'comment.block.empty',
-      scopes: ['source.shss', 'comment.block.empty'],
+      scopes: ['source.syntax-scopes', 'comment.block.empty'],
     });
   });
 
@@ -244,7 +244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.block.documentation');
     expect(tokens[0]).toEqual({
       value: 'comment.block.documentation',
-      scopes: ['source.shss', 'comment.block.documentation'],
+      scopes: ['source.syntax-scopes', 'comment.block.documentation'],
     });
   });
 
@@ -252,7 +252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.block');
     expect(tokens[0]).toEqual({
       value: 'comment.block',
-      scopes: ['source.shss', 'comment.block'],
+      scopes: ['source.syntax-scopes', 'comment.block'],
     });
   });
 
@@ -260,7 +260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment.block');
     expect(tokens[0]).toEqual({
       value: 'comment.block',
-      scopes: ['source.shss', 'comment.block'],
+      scopes: ['source.syntax-scopes', 'comment.block'],
     });
   });
 
@@ -268,7 +268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('comment');
     expect(tokens[0]).toEqual({
       value: 'comment',
-      scopes: ['source.shss', 'comment'],
+      scopes: ['source.syntax-scopes', 'comment'],
     });
   });
 
@@ -276,7 +276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.hexfloat');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.hexfloat',
-      scopes: ['source.shss', 'constant.numeric.hexfloat'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.hexfloat'],
     });
   });
 
@@ -284,7 +284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.hexadecimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.hexadecimal',
-      scopes: ['source.shss', 'constant.numeric.hexadecimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.hexadecimal'],
     });
   });
 
@@ -292,7 +292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.floating-point');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.floating-point',
-      scopes: ['source.shss', 'constant.numeric.floating-point'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.floating-point'],
     });
   });
 
@@ -300,7 +300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.preprocessor',
-      scopes: ['source.shss', 'constant.numeric.preprocessor'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.preprocessor'],
     });
   });
 
@@ -308,7 +308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.octal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.octal',
-      scopes: ['source.shss', 'constant.numeric.integer.octal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.octal'],
     });
   });
 
@@ -316,7 +316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.long.octal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.long.octal',
-      scopes: ['source.shss', 'constant.numeric.integer.long.octal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.long.octal'],
     });
   });
 
@@ -324,7 +324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.long.hexadecimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.long.hexadecimal',
-      scopes: ['source.shss', 'constant.numeric.integer.long.hexadecimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.long.hexadecimal'],
     });
   });
 
@@ -332,7 +332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.long.decimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.long.decimal',
-      scopes: ['source.shss', 'constant.numeric.integer.long.decimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.long.decimal'],
     });
   });
 
@@ -340,7 +340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.long.binary');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.long.binary',
-      scopes: ['source.shss', 'constant.numeric.integer.long.binary'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.long.binary'],
     });
   });
 
@@ -348,7 +348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.long');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.long',
-      scopes: ['source.shss', 'constant.numeric.integer.long'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.long'],
     });
   });
 
@@ -356,7 +356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.hexadecimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.hexadecimal',
-      scopes: ['source.shss', 'constant.numeric.integer.hexadecimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.hexadecimal'],
     });
   });
 
@@ -364,7 +364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.decimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.decimal',
-      scopes: ['source.shss', 'constant.numeric.integer.decimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.decimal'],
     });
   });
 
@@ -372,7 +372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.binary');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.binary',
-      scopes: ['source.shss', 'constant.numeric.integer.binary'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.binary'],
     });
   });
 
@@ -380,7 +380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-9');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-9',
-      scopes: ['source.shss', 'constant.numeric.integer.base-9'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-9'],
     });
   });
 
@@ -388,7 +388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-7');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-7',
-      scopes: ['source.shss', 'constant.numeric.integer.base-7'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-7'],
     });
   });
 
@@ -396,7 +396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-6');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-6',
-      scopes: ['source.shss', 'constant.numeric.integer.base-6'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-6'],
     });
   });
 
@@ -404,7 +404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-5');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-5',
-      scopes: ['source.shss', 'constant.numeric.integer.base-5'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-5'],
     });
   });
 
@@ -412,7 +412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-4');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-4',
-      scopes: ['source.shss', 'constant.numeric.integer.base-4'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-4'],
     });
   });
 
@@ -420,7 +420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-36');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-36',
-      scopes: ['source.shss', 'constant.numeric.integer.base-36'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-36'],
     });
   });
 
@@ -428,7 +428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-35');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-35',
-      scopes: ['source.shss', 'constant.numeric.integer.base-35'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-35'],
     });
   });
 
@@ -436,7 +436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-34');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-34',
-      scopes: ['source.shss', 'constant.numeric.integer.base-34'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-34'],
     });
   });
 
@@ -444,7 +444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-33');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-33',
-      scopes: ['source.shss', 'constant.numeric.integer.base-33'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-33'],
     });
   });
 
@@ -452,7 +452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-32');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-32',
-      scopes: ['source.shss', 'constant.numeric.integer.base-32'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-32'],
     });
   });
 
@@ -460,7 +460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-31');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-31',
-      scopes: ['source.shss', 'constant.numeric.integer.base-31'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-31'],
     });
   });
 
@@ -468,7 +468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-30');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-30',
-      scopes: ['source.shss', 'constant.numeric.integer.base-30'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-30'],
     });
   });
 
@@ -476,7 +476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-3');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-3',
-      scopes: ['source.shss', 'constant.numeric.integer.base-3'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-3'],
     });
   });
 
@@ -484,7 +484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-29');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-29',
-      scopes: ['source.shss', 'constant.numeric.integer.base-29'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-29'],
     });
   });
 
@@ -492,7 +492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-28');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-28',
-      scopes: ['source.shss', 'constant.numeric.integer.base-28'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-28'],
     });
   });
 
@@ -500,7 +500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-27');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-27',
-      scopes: ['source.shss', 'constant.numeric.integer.base-27'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-27'],
     });
   });
 
@@ -508,7 +508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-26');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-26',
-      scopes: ['source.shss', 'constant.numeric.integer.base-26'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-26'],
     });
   });
 
@@ -516,7 +516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-25');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-25',
-      scopes: ['source.shss', 'constant.numeric.integer.base-25'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-25'],
     });
   });
 
@@ -524,7 +524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-24');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-24',
-      scopes: ['source.shss', 'constant.numeric.integer.base-24'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-24'],
     });
   });
 
@@ -532,7 +532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-23');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-23',
-      scopes: ['source.shss', 'constant.numeric.integer.base-23'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-23'],
     });
   });
 
@@ -540,7 +540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-22');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-22',
-      scopes: ['source.shss', 'constant.numeric.integer.base-22'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-22'],
     });
   });
 
@@ -548,7 +548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-21');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-21',
-      scopes: ['source.shss', 'constant.numeric.integer.base-21'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-21'],
     });
   });
 
@@ -556,7 +556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-20');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-20',
-      scopes: ['source.shss', 'constant.numeric.integer.base-20'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-20'],
     });
   });
 
@@ -564,7 +564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-19');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-19',
-      scopes: ['source.shss', 'constant.numeric.integer.base-19'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-19'],
     });
   });
 
@@ -572,7 +572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-18');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-18',
-      scopes: ['source.shss', 'constant.numeric.integer.base-18'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-18'],
     });
   });
 
@@ -580,7 +580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-17');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-17',
-      scopes: ['source.shss', 'constant.numeric.integer.base-17'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-17'],
     });
   });
 
@@ -588,7 +588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-15');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-15',
-      scopes: ['source.shss', 'constant.numeric.integer.base-15'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-15'],
     });
   });
 
@@ -596,7 +596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-14');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-14',
-      scopes: ['source.shss', 'constant.numeric.integer.base-14'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-14'],
     });
   });
 
@@ -604,7 +604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-13');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-13',
-      scopes: ['source.shss', 'constant.numeric.integer.base-13'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-13'],
     });
   });
 
@@ -612,7 +612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-12');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-12',
-      scopes: ['source.shss', 'constant.numeric.integer.base-12'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-12'],
     });
   });
 
@@ -620,7 +620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.base-11');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.base-11',
-      scopes: ['source.shss', 'constant.numeric.integer.base-11'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.base-11'],
     });
   });
 
@@ -628,7 +628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer.other');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer.other',
-      scopes: ['source.shss', 'constant.numeric.integer.other'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer.other'],
     });
   });
 
@@ -636,7 +636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.other.density');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.other.density',
-      scopes: ['source.shss', 'constant.numeric.other.density'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.other.density'],
     });
   });
 
@@ -644,7 +644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.other');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.other',
-      scopes: ['source.shss', 'constant.numeric.other'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.other'],
     });
   });
 
@@ -652,7 +652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.integer');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.integer',
-      scopes: ['source.shss', 'constant.numeric.integer'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.integer'],
     });
   });
 
@@ -660,7 +660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.exponential');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.exponential',
-      scopes: ['source.shss', 'constant.numeric.exponential'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.exponential'],
     });
   });
 
@@ -668,7 +668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.float.binary');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.float.binary',
-      scopes: ['source.shss', 'constant.numeric.float.binary'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.float.binary'],
     });
   });
 
@@ -676,7 +676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.float.octal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.float.octal',
-      scopes: ['source.shss', 'constant.numeric.float.octal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.float.octal'],
     });
   });
 
@@ -684,7 +684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.float.decimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.float.decimal',
-      scopes: ['source.shss', 'constant.numeric.float.decimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.float.decimal'],
     });
   });
 
@@ -692,7 +692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.float.hexadecimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.float.hexadecimal',
-      scopes: ['source.shss', 'constant.numeric.float.hexadecimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.float.hexadecimal'],
     });
   });
 
@@ -700,7 +700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.float.other');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.float.other',
-      scopes: ['source.shss', 'constant.numeric.float.other'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.float.other'],
     });
   });
 
@@ -708,7 +708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.float');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.float',
-      scopes: ['source.shss', 'constant.numeric.float'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.float'],
     });
   });
 
@@ -716,7 +716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.complex.real');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.complex.real',
-      scopes: ['source.shss', 'constant.numeric.complex.real'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.complex.real'],
     });
   });
 
@@ -724,7 +724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.complex.imaginary');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.complex.imaginary',
-      scopes: ['source.shss', 'constant.numeric.complex.imaginary'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.complex.imaginary'],
     });
   });
 
@@ -732,7 +732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.complex');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.complex',
-      scopes: ['source.shss', 'constant.numeric.complex'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.complex'],
     });
   });
 
@@ -740,7 +740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.index');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.index',
-      scopes: ['source.shss', 'constant.numeric.index'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.index'],
     });
   });
 
@@ -748,7 +748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.decimal.with-thousand-separators');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.decimal.with-thousand-separators',
-      scopes: ['source.shss', 'constant.numeric.decimal.with-thousand-separators'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.decimal.with-thousand-separators'],
     });
   });
 
@@ -756,7 +756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.decimal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.decimal',
-      scopes: ['source.shss', 'constant.numeric.decimal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.decimal'],
     });
   });
 
@@ -764,7 +764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.hex');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.hex',
-      scopes: ['source.shss', 'constant.numeric.hex'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.hex'],
     });
   });
 
@@ -772,7 +772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.binary');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.binary',
-      scopes: ['source.shss', 'constant.numeric.binary'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.binary'],
     });
   });
 
@@ -780,7 +780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric.octal');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric.octal',
-      scopes: ['source.shss', 'constant.numeric.octal'],
+      scopes: ['source.syntax-scopes', 'constant.numeric.octal'],
     });
   });
 
@@ -788,7 +788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.numeric');
     expect(tokens[0]).toEqual({
       value: 'constant.numeric',
-      scopes: ['source.shss', 'constant.numeric'],
+      scopes: ['source.syntax-scopes', 'constant.numeric'],
     });
   });
 
@@ -796,7 +796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.pragma.module');
     expect(tokens[0]).toEqual({
       value: 'constant.language.pragma.module',
-      scopes: ['source.shss', 'constant.language.pragma.module'],
+      scopes: ['source.syntax-scopes', 'constant.language.pragma.module'],
     });
   });
 
@@ -804,7 +804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.pragma');
     expect(tokens[0]).toEqual({
       value: 'constant.language.pragma',
-      scopes: ['source.shss', 'constant.language.pragma'],
+      scopes: ['source.syntax-scopes', 'constant.language.pragma'],
     });
   });
 
@@ -812,7 +812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.boolean');
     expect(tokens[0]).toEqual({
       value: 'constant.language.boolean',
-      scopes: ['source.shss', 'constant.language.boolean'],
+      scopes: ['source.syntax-scopes', 'constant.language.boolean'],
     });
   });
 
@@ -820,7 +820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.unit.promoted');
     expect(tokens[0]).toEqual({
       value: 'constant.language.unit.promoted',
-      scopes: ['source.shss', 'constant.language.unit.promoted'],
+      scopes: ['source.syntax-scopes', 'constant.language.unit.promoted'],
     });
   });
 
@@ -828,7 +828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.unit');
     expect(tokens[0]).toEqual({
       value: 'constant.language.unit',
-      scopes: ['source.shss', 'constant.language.unit'],
+      scopes: ['source.syntax-scopes', 'constant.language.unit'],
     });
   });
 
@@ -836,7 +836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.nil');
     expect(tokens[0]).toEqual({
       value: 'constant.language.nil',
-      scopes: ['source.shss', 'constant.language.nil'],
+      scopes: ['source.syntax-scopes', 'constant.language.nil'],
     });
   });
 
@@ -844,7 +844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.empty-list.promoted');
     expect(tokens[0]).toEqual({
       value: 'constant.language.empty-list.promoted',
-      scopes: ['source.shss', 'constant.language.empty-list.promoted'],
+      scopes: ['source.syntax-scopes', 'constant.language.empty-list.promoted'],
     });
   });
 
@@ -852,7 +852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.empty-list');
     expect(tokens[0]).toEqual({
       value: 'constant.language.empty-list',
-      scopes: ['source.shss', 'constant.language.empty-list'],
+      scopes: ['source.syntax-scopes', 'constant.language.empty-list'],
     });
   });
 
@@ -860,7 +860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language.boolean');
     expect(tokens[0]).toEqual({
       value: 'constant.language.boolean',
-      scopes: ['source.shss', 'constant.language.boolean'],
+      scopes: ['source.syntax-scopes', 'constant.language.boolean'],
     });
   });
 
@@ -868,7 +868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.language');
     expect(tokens[0]).toEqual({
       value: 'constant.language',
-      scopes: ['source.shss', 'constant.language'],
+      scopes: ['source.syntax-scopes', 'constant.language'],
     });
   });
 
@@ -876,7 +876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.entity.html');
     expect(tokens[0]).toEqual({
       value: 'constant.character.entity.html',
-      scopes: ['source.shss', 'constant.character.entity.html'],
+      scopes: ['source.syntax-scopes', 'constant.character.entity.html'],
     });
   });
 
@@ -884,7 +884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.vertical-tab');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.vertical-tab',
-      scopes: ['source.shss', 'constant.character.escape.vertical-tab'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.vertical-tab'],
     });
   });
 
@@ -892,7 +892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.unicode.name');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.unicode.name',
-      scopes: ['source.shss', 'constant.character.escape.unicode.name'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.unicode.name'],
     });
   });
 
@@ -900,7 +900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.unicode.32-bit-hex');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.unicode.32-bit-hex',
-      scopes: ['source.shss', 'constant.character.escape.unicode.32-bit-hex'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.unicode.32-bit-hex'],
     });
   });
 
@@ -908,7 +908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.unicode.16-bit-hex');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.unicode.16-bit-hex',
-      scopes: ['source.shss', 'constant.character.escape.unicode.16-bit-hex'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.unicode.16-bit-hex'],
     });
   });
 
@@ -916,7 +916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.unicode');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.unicode',
-      scopes: ['source.shss', 'constant.character.escape.unicode'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.unicode'],
     });
   });
 
@@ -924,7 +924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.tab');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.tab',
-      scopes: ['source.shss', 'constant.character.escape.tab'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.tab'],
     });
   });
 
@@ -932,7 +932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.single-quote');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.single-quote',
-      scopes: ['source.shss', 'constant.character.escape.single-quote'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.single-quote'],
     });
   });
 
@@ -940,7 +940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.return');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.return',
-      scopes: ['source.shss', 'constant.character.escape.return'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.return'],
     });
   });
 
@@ -948,7 +948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.octal');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.octal',
-      scopes: ['source.shss', 'constant.character.escape.octal'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.octal'],
     });
   });
 
@@ -956,7 +956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.newline');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.newline',
-      scopes: ['source.shss', 'constant.character.escape.newline'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.newline'],
     });
   });
 
@@ -964,7 +964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.linefeed');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.linefeed',
-      scopes: ['source.shss', 'constant.character.escape.linefeed'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.linefeed'],
     });
   });
 
@@ -972,7 +972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.line-continuation');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.line-continuation',
-      scopes: ['source.shss', 'constant.character.escape.line-continuation'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.line-continuation'],
     });
   });
 
@@ -980,7 +980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.hexadecimal');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.hexadecimal',
-      scopes: ['source.shss', 'constant.character.escape.hexadecimal'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.hexadecimal'],
     });
   });
 
@@ -988,7 +988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.formfeed');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.formfeed',
-      scopes: ['source.shss', 'constant.character.escape.formfeed'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.formfeed'],
     });
   });
 
@@ -996,7 +996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.double-quote');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.double-quote',
-      scopes: ['source.shss', 'constant.character.escape.double-quote'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.double-quote'],
     });
   });
 
@@ -1004,7 +1004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.curly-bracket');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.curly-bracket',
-      scopes: ['source.shss', 'constant.character.escape.curly-bracket'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.curly-bracket'],
     });
   });
 
@@ -1012,7 +1012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.control');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.control',
-      scopes: ['source.shss', 'constant.character.escape.control'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.control'],
     });
   });
 
@@ -1020,7 +1020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.codepoint');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.codepoint',
-      scopes: ['source.shss', 'constant.character.escape.codepoint'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.codepoint'],
     });
   });
 
@@ -1028,7 +1028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.bell');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.bell',
-      scopes: ['source.shss', 'constant.character.escape.bell'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.bell'],
     });
   });
 
@@ -1036,7 +1036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.backspace');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.backspace',
-      scopes: ['source.shss', 'constant.character.escape.backspace'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.backspace'],
     });
   });
 
@@ -1044,7 +1044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.backlash');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.backlash',
-      scopes: ['source.shss', 'constant.character.escape.backlash'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.backlash'],
     });
   });
 
@@ -1052,7 +1052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.octal');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.octal',
-      scopes: ['source.shss', 'constant.character.escape.octal'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.octal'],
     });
   });
 
@@ -1060,7 +1060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.hex');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.hex',
-      scopes: ['source.shss', 'constant.character.escape.hex'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.hex'],
     });
   });
 
@@ -1068,7 +1068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.unicode');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.unicode',
-      scopes: ['source.shss', 'constant.character.escape.unicode'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.unicode'],
     });
   });
 
@@ -1076,7 +1076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape.regex');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape.regex',
-      scopes: ['source.shss', 'constant.character.escape.regex'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape.regex'],
     });
   });
 
@@ -1084,7 +1084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character.escape');
     expect(tokens[0]).toEqual({
       value: 'constant.character.escape',
-      scopes: ['source.shss', 'constant.character.escape'],
+      scopes: ['source.syntax-scopes', 'constant.character.escape'],
     });
   });
 
@@ -1092,7 +1092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.character');
     expect(tokens[0]).toEqual({
       value: 'constant.character',
-      scopes: ['source.shss', 'constant.character'],
+      scopes: ['source.syntax-scopes', 'constant.character'],
     });
   });
 
@@ -1100,7 +1100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.variable.mac-classic');
     expect(tokens[0]).toEqual({
       value: 'constant.other.variable.mac-classic',
-      scopes: ['source.shss', 'constant.other.variable.mac-classic'],
+      scopes: ['source.syntax-scopes', 'constant.other.variable.mac-classic'],
     });
   });
 
@@ -1108,7 +1108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.unicode-range');
     expect(tokens[0]).toEqual({
       value: 'constant.other.unicode-range',
-      scopes: ['source.shss', 'constant.other.unicode-range'],
+      scopes: ['source.syntax-scopes', 'constant.other.unicode-range'],
     });
   });
 
@@ -1116,7 +1116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.unquoted');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.unquoted',
-      scopes: ['source.shss', 'constant.other.symbol.unquoted'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.unquoted'],
     });
   });
 
@@ -1124,7 +1124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.single-quoted');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.single-quoted',
-      scopes: ['source.shss', 'constant.other.symbol.single-quoted'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.single-quoted'],
     });
   });
 
@@ -1132,7 +1132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.quoted.single');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.quoted.single',
-      scopes: ['source.shss', 'constant.other.symbol.quoted.single'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.quoted.single'],
     });
   });
 
@@ -1140,7 +1140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.quoted');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.quoted',
-      scopes: ['source.shss', 'constant.other.symbol.quoted'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.quoted'],
     });
   });
 
@@ -1148,7 +1148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.interpolated');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.interpolated',
-      scopes: ['source.shss', 'constant.other.symbol.interpolated'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.interpolated'],
     });
   });
 
@@ -1156,7 +1156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.hashkey.parameter.function');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.hashkey.parameter.function',
-      scopes: ['source.shss', 'constant.other.symbol.hashkey.parameter.function'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.hashkey.parameter.function'],
     });
   });
 
@@ -1164,7 +1164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.hashkey.parameter');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.hashkey.parameter',
-      scopes: ['source.shss', 'constant.other.symbol.hashkey.parameter'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.hashkey.parameter'],
     });
   });
 
@@ -1172,7 +1172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.hashkey');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.hashkey',
-      scopes: ['source.shss', 'constant.other.symbol.hashkey'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.hashkey'],
     });
   });
 
@@ -1180,7 +1180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.hashkey');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.hashkey',
-      scopes: ['source.shss', 'constant.other.symbol.hashkey'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.hashkey'],
     });
   });
 
@@ -1188,7 +1188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.escape');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.escape',
-      scopes: ['source.shss', 'constant.other.symbol.escape'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.escape'],
     });
   });
 
@@ -1196,7 +1196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol.double-quoted');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol.double-quoted',
-      scopes: ['source.shss', 'constant.other.symbol.double-quoted'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol.double-quoted'],
     });
   });
 
@@ -1204,7 +1204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.symbol');
     expect(tokens[0]).toEqual({
       value: 'constant.other.symbol',
-      scopes: ['source.shss', 'constant.other.symbol'],
+      scopes: ['source.syntax-scopes', 'constant.other.symbol'],
     });
   });
 
@@ -1212,7 +1212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.rune');
     expect(tokens[0]).toEqual({
       value: 'constant.other.rune',
-      scopes: ['source.shss', 'constant.other.rune'],
+      scopes: ['source.syntax-scopes', 'constant.other.rune'],
     });
   });
 
@@ -1220,7 +1220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.property');
     expect(tokens[0]).toEqual({
       value: 'constant.other.property',
-      scopes: ['source.shss', 'constant.other.property'],
+      scopes: ['source.syntax-scopes', 'constant.other.property'],
     });
   });
 
@@ -1228,7 +1228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.object.property');
     expect(tokens[0]).toEqual({
       value: 'constant.other.object.property',
-      scopes: ['source.shss', 'constant.other.object.property'],
+      scopes: ['source.syntax-scopes', 'constant.other.object.property'],
     });
   });
 
@@ -1236,7 +1236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.object');
     expect(tokens[0]).toEqual({
       value: 'constant.other.object',
-      scopes: ['source.shss', 'constant.other.object'],
+      scopes: ['source.syntax-scopes', 'constant.other.object'],
     });
   });
 
@@ -1244,7 +1244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.inline-data.html');
     expect(tokens[0]).toEqual({
       value: 'constant.other.inline-data.html',
-      scopes: ['source.shss', 'constant.other.inline-data.html'],
+      scopes: ['source.syntax-scopes', 'constant.other.inline-data.html'],
     });
   });
 
@@ -1252,7 +1252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.inline-data');
     expect(tokens[0]).toEqual({
       value: 'constant.other.inline-data',
-      scopes: ['source.shss', 'constant.other.inline-data'],
+      scopes: ['source.syntax-scopes', 'constant.other.inline-data'],
     });
   });
 
@@ -1260,7 +1260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.enum');
     expect(tokens[0]).toEqual({
       value: 'constant.other.enum',
-      scopes: ['source.shss', 'constant.other.enum'],
+      scopes: ['source.syntax-scopes', 'constant.other.enum'],
     });
   });
 
@@ -1268,7 +1268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.color.rgb-value.hex');
     expect(tokens[0]).toEqual({
       value: 'constant.other.color.rgb-value.hex',
-      scopes: ['source.shss', 'constant.other.color.rgb-value.hex'],
+      scopes: ['source.syntax-scopes', 'constant.other.color.rgb-value.hex'],
     });
   });
 
@@ -1276,7 +1276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.color.rgb-value');
     expect(tokens[0]).toEqual({
       value: 'constant.other.color.rgb-value',
-      scopes: ['source.shss', 'constant.other.color.rgb-value'],
+      scopes: ['source.syntax-scopes', 'constant.other.color.rgb-value'],
     });
   });
 
@@ -1284,7 +1284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.color');
     expect(tokens[0]).toEqual({
       value: 'constant.other.color',
-      scopes: ['source.shss', 'constant.other.color'],
+      scopes: ['source.syntax-scopes', 'constant.other.color'],
     });
   });
 
@@ -1292,7 +1292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.key');
     expect(tokens[0]).toEqual({
       value: 'constant.other.key',
-      scopes: ['source.shss', 'constant.other.key'],
+      scopes: ['source.syntax-scopes', 'constant.other.key'],
     });
   });
 
@@ -1300,7 +1300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.bareword');
     expect(tokens[0]).toEqual({
       value: 'constant.other.bareword',
-      scopes: ['source.shss', 'constant.other.bareword'],
+      scopes: ['source.syntax-scopes', 'constant.other.bareword'],
     });
   });
 
@@ -1308,7 +1308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.class');
     expect(tokens[0]).toEqual({
       value: 'constant.other.class',
-      scopes: ['source.shss', 'constant.other.class'],
+      scopes: ['source.syntax-scopes', 'constant.other.class'],
     });
   });
 
@@ -1316,7 +1316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.placeholder');
     expect(tokens[0]).toEqual({
       value: 'constant.other.placeholder',
-      scopes: ['source.shss', 'constant.other.placeholder'],
+      scopes: ['source.syntax-scopes', 'constant.other.placeholder'],
     });
   });
 
@@ -1324,7 +1324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.version.literal');
     expect(tokens[0]).toEqual({
       value: 'constant.other.version.literal',
-      scopes: ['source.shss', 'constant.other.version.literal'],
+      scopes: ['source.syntax-scopes', 'constant.other.version.literal'],
     });
   });
 
@@ -1332,7 +1332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other.version');
     expect(tokens[0]).toEqual({
       value: 'constant.other.version',
-      scopes: ['source.shss', 'constant.other.version'],
+      scopes: ['source.syntax-scopes', 'constant.other.version'],
     });
   });
 
@@ -1340,7 +1340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant.other');
     expect(tokens[0]).toEqual({
       value: 'constant.other',
-      scopes: ['source.shss', 'constant.other'],
+      scopes: ['source.syntax-scopes', 'constant.other'],
     });
   });
 
@@ -1348,7 +1348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('constant');
     expect(tokens[0]).toEqual({
       value: 'constant',
-      scopes: ['source.shss', 'constant'],
+      scopes: ['source.syntax-scopes', 'constant'],
     });
   });
 
@@ -1356,7 +1356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.namespace-prefix');
     expect(tokens[0]).toEqual({
       value: 'entity.other.namespace-prefix',
-      scopes: ['source.shss', 'entity.other.namespace-prefix'],
+      scopes: ['source.syntax-scopes', 'entity.other.namespace-prefix'],
     });
   });
 
@@ -1364,7 +1364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.keyframe-offset.percentage');
     expect(tokens[0]).toEqual({
       value: 'entity.other.keyframe-offset.percentage',
-      scopes: ['source.shss', 'entity.other.keyframe-offset.percentage'],
+      scopes: ['source.syntax-scopes', 'entity.other.keyframe-offset.percentage'],
     });
   });
 
@@ -1372,7 +1372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.keyframe-offset');
     expect(tokens[0]).toEqual({
       value: 'entity.other.keyframe-offset',
-      scopes: ['source.shss', 'entity.other.keyframe-offset'],
+      scopes: ['source.syntax-scopes', 'entity.other.keyframe-offset'],
     });
   });
 
@@ -1380,7 +1380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.inherited-class.prelude');
     expect(tokens[0]).toEqual({
       value: 'entity.other.inherited-class.prelude',
-      scopes: ['source.shss', 'entity.other.inherited-class.prelude'],
+      scopes: ['source.syntax-scopes', 'entity.other.inherited-class.prelude'],
     });
   });
 
@@ -1388,7 +1388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.inherited-class.module.third');
     expect(tokens[0]).toEqual({
       value: 'entity.other.inherited-class.module.third',
-      scopes: ['source.shss', 'entity.other.inherited-class.module.third'],
+      scopes: ['source.syntax-scopes', 'entity.other.inherited-class.module.third'],
     });
   });
 
@@ -1396,7 +1396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.inherited-class.module.second');
     expect(tokens[0]).toEqual({
       value: 'entity.other.inherited-class.module.second',
-      scopes: ['source.shss', 'entity.other.inherited-class.module.second'],
+      scopes: ['source.syntax-scopes', 'entity.other.inherited-class.module.second'],
     });
   });
 
@@ -1404,7 +1404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.inherited-class.module.first');
     expect(tokens[0]).toEqual({
       value: 'entity.other.inherited-class.module.first',
-      scopes: ['source.shss', 'entity.other.inherited-class.module.first'],
+      scopes: ['source.syntax-scopes', 'entity.other.inherited-class.module.first'],
     });
   });
 
@@ -1412,7 +1412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.inherited-class.module');
     expect(tokens[0]).toEqual({
       value: 'entity.other.inherited-class.module',
-      scopes: ['source.shss', 'entity.other.inherited-class.module'],
+      scopes: ['source.syntax-scopes', 'entity.other.inherited-class.module'],
     });
   });
 
@@ -1420,7 +1420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.inherited-class');
     expect(tokens[0]).toEqual({
       value: 'entity.other.inherited-class',
-      scopes: ['source.shss', 'entity.other.inherited-class'],
+      scopes: ['source.syntax-scopes', 'entity.other.inherited-class'],
     });
   });
 
@@ -1428,7 +1428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.style.html');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.style.html',
-      scopes: ['source.shss', 'entity.other.attribute-name.style.html'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.style.html'],
     });
   });
 
@@ -1436,7 +1436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.pseudo-element');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.pseudo-element',
-      scopes: ['source.shss', 'entity.other.attribute-name.pseudo-element'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.pseudo-element'],
     });
   });
 
@@ -1444,7 +1444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.pseudo-class');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.pseudo-class',
-      scopes: ['source.shss', 'entity.other.attribute-name.pseudo-class'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.pseudo-class'],
     });
   });
 
@@ -1452,7 +1452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.pragma.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.pragma.preprocessor',
-      scopes: ['source.shss', 'entity.other.attribute-name.pragma.preprocessor'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.pragma.preprocessor'],
     });
   });
 
@@ -1460,7 +1460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.pragma');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.pragma',
-      scopes: ['source.shss', 'entity.other.attribute-name.pragma'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.pragma'],
     });
   });
 
@@ -1468,7 +1468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.id.html');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.id.html',
-      scopes: ['source.shss', 'entity.other.attribute-name.id.html'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.id.html'],
     });
   });
 
@@ -1476,7 +1476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.id');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.id',
-      scopes: ['source.shss', 'entity.other.attribute-name.id'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.id'],
     });
   });
 
@@ -1484,7 +1484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.html');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.html',
-      scopes: ['source.shss', 'entity.other.attribute-name.html'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.html'],
     });
   });
 
@@ -1492,7 +1492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.class.html');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.class.html',
-      scopes: ['source.shss', 'entity.other.attribute-name.class.html'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.class.html'],
     });
   });
 
@@ -1500,7 +1500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name.class');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name.class',
-      scopes: ['source.shss', 'entity.other.attribute-name.class'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name.class'],
     });
   });
 
@@ -1508,7 +1508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.attribute-name');
     expect(tokens[0]).toEqual({
       value: 'entity.other.attribute-name',
-      scopes: ['source.shss', 'entity.other.attribute-name'],
+      scopes: ['source.syntax-scopes', 'entity.other.attribute-name'],
     });
   });
 
@@ -1516,7 +1516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other.inherited-class');
     expect(tokens[0]).toEqual({
       value: 'entity.other.inherited-class',
-      scopes: ['source.shss', 'entity.other.inherited-class'],
+      scopes: ['source.syntax-scopes', 'entity.other.inherited-class'],
     });
   });
 
@@ -1524,7 +1524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.other');
     expect(tokens[0]).toEqual({
       value: 'entity.other',
-      scopes: ['source.shss', 'entity.other'],
+      scopes: ['source.syntax-scopes', 'entity.other'],
     });
   });
 
@@ -1532,7 +1532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.package');
     expect(tokens[0]).toEqual({
       value: 'entity.name.package',
-      scopes: ['source.shss', 'entity.name.package'],
+      scopes: ['source.syntax-scopes', 'entity.name.package'],
     });
   });
 
@@ -1540,7 +1540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.import');
     expect(tokens[0]).toEqual({
       value: 'entity.name.import',
-      scopes: ['source.shss', 'entity.name.import'],
+      scopes: ['source.syntax-scopes', 'entity.name.import'],
     });
   });
 
@@ -1548,7 +1548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.promoted');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.promoted',
-      scopes: ['source.shss', 'entity.name.type.promoted'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.promoted'],
     });
   });
 
@@ -1556,7 +1556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.module');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.module',
-      scopes: ['source.shss', 'entity.name.type.module'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.module'],
     });
   });
 
@@ -1564,7 +1564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.inherited');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.inherited',
-      scopes: ['source.shss', 'entity.name.type.inherited'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.inherited'],
     });
   });
 
@@ -1572,7 +1572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.enum');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.enum',
-      scopes: ['source.shss', 'entity.name.type.enum'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.enum'],
     });
   });
 
@@ -1580,7 +1580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.namespace');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.namespace',
-      scopes: ['source.shss', 'entity.name.type.namespace'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.namespace'],
     });
   });
 
@@ -1588,7 +1588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class.record.definition');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class.record.definition',
-      scopes: ['source.shss', 'entity.name.type.class.record.definition'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class.record.definition'],
     });
   });
 
@@ -1596,7 +1596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class.record');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class.record',
-      scopes: ['source.shss', 'entity.name.type.class.record'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class.record'],
     });
   });
 
@@ -1604,7 +1604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class.module.definition');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class.module.definition',
-      scopes: ['source.shss', 'entity.name.type.class.module.definition'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class.module.definition'],
     });
   });
 
@@ -1612,7 +1612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class.module');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class.module',
-      scopes: ['source.shss', 'entity.name.type.class.module'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class.module'],
     });
   });
 
@@ -1620,7 +1620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class.behaviour.definition');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class.behaviour.definition',
-      scopes: ['source.shss', 'entity.name.type.class.behaviour.definition'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class.behaviour.definition'],
     });
   });
 
@@ -1628,7 +1628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class.behaviour');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class.behaviour',
-      scopes: ['source.shss', 'entity.name.type.class.behaviour'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class.behaviour'],
     });
   });
 
@@ -1636,7 +1636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class',
-      scopes: ['source.shss', 'entity.name.type.class'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class'],
     });
   });
 
@@ -1644,7 +1644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.trait');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.trait',
-      scopes: ['source.shss', 'entity.name.type.trait'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.trait'],
     });
   });
 
@@ -1652,7 +1652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.interface');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.interface',
-      scopes: ['source.shss', 'entity.name.type.interface'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.interface'],
     });
   });
 
@@ -1660,7 +1660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.class');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.class',
-      scopes: ['source.shss', 'entity.name.type.class'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.class'],
     });
   });
 
@@ -1668,7 +1668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.struct');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.struct',
-      scopes: ['source.shss', 'entity.name.type.struct'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.struct'],
     });
   });
 
@@ -1676,7 +1676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type.instance');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type.instance',
-      scopes: ['source.shss', 'entity.name.type.instance'],
+      scopes: ['source.syntax-scopes', 'entity.name.type.instance'],
     });
   });
 
@@ -1684,7 +1684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type',
-      scopes: ['source.shss', 'entity.name.type'],
+      scopes: ['source.syntax-scopes', 'entity.name.type'],
     });
   });
 
@@ -1692,7 +1692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.class.forward-decl');
     expect(tokens[0]).toEqual({
       value: 'entity.name.class.forward-decl',
-      scopes: ['source.shss', 'entity.name.class.forward-decl'],
+      scopes: ['source.syntax-scopes', 'entity.name.class.forward-decl'],
     });
   });
 
@@ -1700,7 +1700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.class');
     expect(tokens[0]).toEqual({
       value: 'entity.name.class',
-      scopes: ['source.shss', 'entity.name.class'],
+      scopes: ['source.syntax-scopes', 'entity.name.class'],
     });
   });
 
@@ -1708,7 +1708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.struct');
     expect(tokens[0]).toEqual({
       value: 'entity.name.struct',
-      scopes: ['source.shss', 'entity.name.struct'],
+      scopes: ['source.syntax-scopes', 'entity.name.struct'],
     });
   });
 
@@ -1716,7 +1716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.enum');
     expect(tokens[0]).toEqual({
       value: 'entity.name.enum',
-      scopes: ['source.shss', 'entity.name.enum'],
+      scopes: ['source.syntax-scopes', 'entity.name.enum'],
     });
   });
 
@@ -1724,7 +1724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.union');
     expect(tokens[0]).toEqual({
       value: 'entity.name.union',
-      scopes: ['source.shss', 'entity.name.union'],
+      scopes: ['source.syntax-scopes', 'entity.name.union'],
     });
   });
 
@@ -1732,7 +1732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.trait');
     expect(tokens[0]).toEqual({
       value: 'entity.name.trait',
-      scopes: ['source.shss', 'entity.name.trait'],
+      scopes: ['source.syntax-scopes', 'entity.name.trait'],
     });
   });
 
@@ -1740,7 +1740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.interface');
     expect(tokens[0]).toEqual({
       value: 'entity.name.interface',
-      scopes: ['source.shss', 'entity.name.interface'],
+      scopes: ['source.syntax-scopes', 'entity.name.interface'],
     });
   });
 
@@ -1748,7 +1748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.impl');
     expect(tokens[0]).toEqual({
       value: 'entity.name.impl',
-      scopes: ['source.shss', 'entity.name.impl'],
+      scopes: ['source.syntax-scopes', 'entity.name.impl'],
     });
   });
 
@@ -1756,7 +1756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.type');
     expect(tokens[0]).toEqual({
       value: 'entity.name.type',
-      scopes: ['source.shss', 'entity.name.type'],
+      scopes: ['source.syntax-scopes', 'entity.name.type'],
     });
   });
 
@@ -1764,7 +1764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.scope');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.scope',
-      scopes: ['source.shss', 'entity.name.function.scope'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.scope'],
     });
   });
 
@@ -1772,7 +1772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.preprocessor',
-      scopes: ['source.shss', 'entity.name.function.preprocessor'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.preprocessor'],
     });
   });
 
@@ -1780,7 +1780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.operator');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.operator',
-      scopes: ['source.shss', 'entity.name.function.operator'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.operator'],
     });
   });
 
@@ -1788,7 +1788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.namespace-prefix');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.namespace-prefix',
-      scopes: ['source.shss', 'entity.name.function.namespace-prefix'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.namespace-prefix'],
     });
   });
 
@@ -1796,7 +1796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.macro');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.macro',
-      scopes: ['source.shss', 'entity.name.function.macro'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.macro'],
     });
   });
 
@@ -1804,7 +1804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.macro.definition');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.macro.definition',
-      scopes: ['source.shss', 'entity.name.function.macro.definition'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.macro.definition'],
     });
   });
 
@@ -1812,7 +1812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.guard');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.guard',
-      scopes: ['source.shss', 'entity.name.function.guard'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.guard'],
     });
   });
 
@@ -1820,7 +1820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.definition');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.definition',
-      scopes: ['source.shss', 'entity.name.function.definition'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.definition'],
     });
   });
 
@@ -1828,7 +1828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.constructor');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.constructor',
-      scopes: ['source.shss', 'entity.name.function.constructor'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.constructor'],
     });
   });
 
@@ -1836,7 +1836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function.destructor');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function.destructor',
-      scopes: ['source.shss', 'entity.name.function.destructor'],
+      scopes: ['source.syntax-scopes', 'entity.name.function.destructor'],
     });
   });
 
@@ -1844,7 +1844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function',
-      scopes: ['source.shss', 'entity.name.function'],
+      scopes: ['source.syntax-scopes', 'entity.name.function'],
     });
   });
 
@@ -1852,7 +1852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.goto-label');
     expect(tokens[0]).toEqual({
       value: 'entity.name.goto-label',
-      scopes: ['source.shss', 'entity.name.goto-label'],
+      scopes: ['source.syntax-scopes', 'entity.name.goto-label'],
     });
   });
 
@@ -1860,7 +1860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.function');
     expect(tokens[0]).toEqual({
       value: 'entity.name.function',
-      scopes: ['source.shss', 'entity.name.function'],
+      scopes: ['source.syntax-scopes', 'entity.name.function'],
     });
   });
 
@@ -1868,7 +1868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.namespace');
     expect(tokens[0]).toEqual({
       value: 'entity.name.namespace',
-      scopes: ['source.shss', 'entity.name.namespace'],
+      scopes: ['source.syntax-scopes', 'entity.name.namespace'],
     });
   });
 
@@ -1876,7 +1876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.constant');
     expect(tokens[0]).toEqual({
       value: 'entity.name.constant',
-      scopes: ['source.shss', 'entity.name.constant'],
+      scopes: ['source.syntax-scopes', 'entity.name.constant'],
     });
   });
 
@@ -1884,7 +1884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.entity.other.html');
     expect(tokens[0]).toEqual({
       value: 'entity.name.entity.other.html',
-      scopes: ['source.shss', 'entity.name.entity.other.html'],
+      scopes: ['source.syntax-scopes', 'entity.name.entity.other.html'],
     });
   });
 
@@ -1892,7 +1892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.entity.other');
     expect(tokens[0]).toEqual({
       value: 'entity.name.entity.other',
-      scopes: ['source.shss', 'entity.name.entity.other'],
+      scopes: ['source.syntax-scopes', 'entity.name.entity.other'],
     });
   });
 
@@ -1900,7 +1900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.entity');
     expect(tokens[0]).toEqual({
       value: 'entity.name.entity',
-      scopes: ['source.shss', 'entity.name.entity'],
+      scopes: ['source.syntax-scopes', 'entity.name.entity'],
     });
   });
 
@@ -1908,7 +1908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.label');
     expect(tokens[0]).toEqual({
       value: 'entity.name.label',
-      scopes: ['source.shss', 'entity.name.label'],
+      scopes: ['source.syntax-scopes', 'entity.name.label'],
     });
   });
 
@@ -1916,7 +1916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.section');
     expect(tokens[0]).toEqual({
       value: 'entity.name.section',
-      scopes: ['source.shss', 'entity.name.section'],
+      scopes: ['source.syntax-scopes', 'entity.name.section'],
     });
   });
 
@@ -1924,7 +1924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.wildcard');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.wildcard',
-      scopes: ['source.shss', 'entity.name.tag.wildcard'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.wildcard'],
     });
   });
 
@@ -1932,7 +1932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.style.html');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.style.html',
-      scopes: ['source.shss', 'entity.name.tag.style.html'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.style.html'],
     });
   });
 
@@ -1940,7 +1940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.style');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.style',
-      scopes: ['source.shss', 'entity.name.tag.style'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.style'],
     });
   });
 
@@ -1948,7 +1948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.script.html');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.script.html',
-      scopes: ['source.shss', 'entity.name.tag.script.html'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.script.html'],
     });
   });
 
@@ -1956,7 +1956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.script');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.script',
-      scopes: ['source.shss', 'entity.name.tag.script'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.script'],
     });
   });
 
@@ -1964,7 +1964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.other.html');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.other.html',
-      scopes: ['source.shss', 'entity.name.tag.other.html'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.other.html'],
     });
   });
 
@@ -1972,7 +1972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.other');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.other',
-      scopes: ['source.shss', 'entity.name.tag.other'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.other'],
     });
   });
 
@@ -1980,7 +1980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.inline');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.inline',
-      scopes: ['source.shss', 'entity.name.tag.inline'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.inline'],
     });
   });
 
@@ -1988,7 +1988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.block');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.block',
-      scopes: ['source.shss', 'entity.name.tag.block'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.block'],
     });
   });
 
@@ -1996,7 +1996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag.custom');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag.custom',
-      scopes: ['source.shss', 'entity.name.tag.custom'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag.custom'],
     });
   });
 
@@ -2004,7 +2004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name.tag');
     expect(tokens[0]).toEqual({
       value: 'entity.name.tag',
-      scopes: ['source.shss', 'entity.name.tag'],
+      scopes: ['source.syntax-scopes', 'entity.name.tag'],
     });
   });
 
@@ -2012,7 +2012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.name');
     expect(tokens[0]).toEqual({
       value: 'entity.name',
-      scopes: ['source.shss', 'entity.name'],
+      scopes: ['source.syntax-scopes', 'entity.name'],
     });
   });
 
@@ -2020,7 +2020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.alias.import');
     expect(tokens[0]).toEqual({
       value: 'entity.alias.import',
-      scopes: ['source.shss', 'entity.alias.import'],
+      scopes: ['source.syntax-scopes', 'entity.alias.import'],
     });
   });
 
@@ -2028,7 +2028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity.alias');
     expect(tokens[0]).toEqual({
       value: 'entity.alias',
-      scopes: ['source.shss', 'entity.alias'],
+      scopes: ['source.syntax-scopes', 'entity.alias'],
     });
   });
 
@@ -2036,7 +2036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('entity');
     expect(tokens[0]).toEqual({
       value: 'entity',
-      scopes: ['source.shss', 'entity'],
+      scopes: ['source.syntax-scopes', 'entity'],
     });
   });
 
@@ -2044,7 +2044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('identifier');
     expect(tokens[0]).toEqual({
       value: 'identifier',
-      scopes: ['source.shss', 'identifier'],
+      scopes: ['source.syntax-scopes', 'identifier'],
     });
   });
 
@@ -2052,7 +2052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.package_name_not_lowercase');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.package_name_not_lowercase',
-      scopes: ['source.shss', 'invalid.deprecated.package_name_not_lowercase'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.package_name_not_lowercase'],
     });
   });
 
@@ -2060,7 +2060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.operator');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.operator',
-      scopes: ['source.shss', 'invalid.deprecated.operator'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.operator'],
     });
   });
 
@@ -2068,7 +2068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.gradient.function');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.gradient.function',
-      scopes: ['source.shss', 'invalid.deprecated.gradient.function'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.gradient.function'],
     });
   });
 
@@ -2076,7 +2076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.gradient');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.gradient',
-      scopes: ['source.shss', 'invalid.deprecated.gradient'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.gradient'],
     });
   });
 
@@ -2084,7 +2084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.function');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.function',
-      scopes: ['source.shss', 'invalid.deprecated.function'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.function'],
     });
   });
 
@@ -2092,7 +2092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.constant.media');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.constant.media',
-      scopes: ['source.shss', 'invalid.deprecated.constant.media'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.constant.media'],
     });
   });
 
@@ -2100,7 +2100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.constant');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.constant',
-      scopes: ['source.shss', 'invalid.deprecated.constant'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.constant'],
     });
   });
 
@@ -2108,7 +2108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.combinator');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.combinator',
-      scopes: ['source.shss', 'invalid.deprecated.combinator'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.combinator'],
     });
   });
 
@@ -2116,7 +2116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.color.system');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.color.system',
-      scopes: ['source.shss', 'invalid.deprecated.color.system'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.color.system'],
     });
   });
 
@@ -2124,7 +2124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated.color');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated.color',
-      scopes: ['source.shss', 'invalid.deprecated.color'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated.color'],
     });
   });
 
@@ -2132,7 +2132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.deprecated');
     expect(tokens[0]).toEqual({
       value: 'invalid.deprecated',
-      scopes: ['source.shss', 'invalid.deprecated'],
+      scopes: ['source.syntax-scopes', 'invalid.deprecated'],
     });
   });
 
@@ -2140,7 +2140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.you-forgot-semicolon');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.you-forgot-semicolon',
-      scopes: ['source.shss', 'invalid.illegal.you-forgot-semicolon'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.you-forgot-semicolon'],
     });
   });
 
@@ -2148,7 +2148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.whitespace.charset');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.whitespace.charset',
-      scopes: ['source.shss', 'invalid.illegal.whitespace.charset'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.whitespace.charset'],
     });
   });
 
@@ -2156,7 +2156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.whitespace');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.whitespace',
-      scopes: ['source.shss', 'invalid.illegal.whitespace'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.whitespace'],
     });
   });
 
@@ -2164,7 +2164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unknown-rune');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unknown-rune',
-      scopes: ['source.shss', 'invalid.illegal.unknown-rune'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unknown-rune'],
     });
   });
 
@@ -2172,7 +2172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unknown-escape');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unknown-escape',
-      scopes: ['source.shss', 'invalid.illegal.unknown-escape'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unknown-escape'],
     });
   });
 
@@ -2180,7 +2180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unexpected-characters.charset');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unexpected-characters.charset',
-      scopes: ['source.shss', 'invalid.illegal.unexpected-characters.charset'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unexpected-characters.charset'],
     });
   });
 
@@ -2188,7 +2188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unexpected-characters');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unexpected-characters',
-      scopes: ['source.shss', 'invalid.illegal.unexpected-characters'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unexpected-characters'],
     });
   });
 
@@ -2196,7 +2196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unexpected-text');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unexpected-text',
-      scopes: ['source.shss', 'invalid.illegal.unexpected-text'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unexpected-text'],
     });
   });
 
@@ -2204,7 +2204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unclosed.string');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unclosed.string',
-      scopes: ['source.shss', 'invalid.illegal.unclosed.string'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unclosed.string'],
     });
   });
 
@@ -2212,7 +2212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unclosed-string.charset');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unclosed-string.charset',
-      scopes: ['source.shss', 'invalid.illegal.unclosed-string.charset'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unclosed-string.charset'],
     });
   });
 
@@ -2220,7 +2220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.unclosed-string');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.unclosed-string',
-      scopes: ['source.shss', 'invalid.illegal.unclosed-string'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.unclosed-string'],
     });
   });
 
@@ -2228,7 +2228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.string');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.string',
-      scopes: ['source.shss', 'invalid.illegal.string'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.string'],
     });
   });
 
@@ -2236,7 +2236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.stray-comment-end');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.stray-comment-end',
-      scopes: ['source.shss', 'invalid.illegal.stray-comment-end'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.stray-comment-end'],
     });
   });
 
@@ -2244,7 +2244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.stray');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.stray',
-      scopes: ['source.shss', 'invalid.illegal.stray'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.stray'],
     });
   });
 
@@ -2252,7 +2252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.slice');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.slice',
-      scopes: ['source.shss', 'invalid.illegal.slice'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.slice'],
     });
   });
 
@@ -2260,7 +2260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.send-channel');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.send-channel',
-      scopes: ['source.shss', 'invalid.illegal.send-channel'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.send-channel'],
     });
   });
 
@@ -2268,7 +2268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.receive-channel');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.receive-channel',
-      scopes: ['source.shss', 'invalid.illegal.receive-channel'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.receive-channel'],
     });
   });
 
@@ -2276,7 +2276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.placeholder');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.placeholder',
-      scopes: ['source.shss', 'invalid.illegal.placeholder'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.placeholder'],
     });
   });
 
@@ -2284,7 +2284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.numeric');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.numeric',
-      scopes: ['source.shss', 'invalid.illegal.numeric'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.numeric'],
     });
   });
 
@@ -2292,7 +2292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.not-lowercase.charset');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.not-lowercase.charset',
-      scopes: ['source.shss', 'invalid.illegal.not-lowercase.charset'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.not-lowercase.charset'],
     });
   });
 
@@ -2300,7 +2300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.not-lowercase');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.not-lowercase',
-      scopes: ['source.shss', 'invalid.illegal.not-lowercase'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.not-lowercase'],
     });
   });
 
@@ -2308,7 +2308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.not-double-quoted.charset');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.not-double-quoted.charset',
-      scopes: ['source.shss', 'invalid.illegal.not-double-quoted.charset'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.not-double-quoted.charset'],
     });
   });
 
@@ -2316,7 +2316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.not-double-quoted');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.not-double-quoted',
-      scopes: ['source.shss', 'invalid.illegal.not-double-quoted'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.not-double-quoted'],
     });
   });
 
@@ -2324,7 +2324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.no-whitespace.charset');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.no-whitespace.charset',
-      scopes: ['source.shss', 'invalid.illegal.no-whitespace.charset'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.no-whitespace.charset'],
     });
   });
 
@@ -2332,7 +2332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.no-whitespace');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.no-whitespace',
-      scopes: ['source.shss', 'invalid.illegal.no-whitespace'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.no-whitespace'],
     });
   });
 
@@ -2340,7 +2340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.name');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.name',
-      scopes: ['source.shss', 'invalid.illegal.name'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.name'],
     });
   });
 
@@ -2348,7 +2348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.macro-name');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.macro-name',
-      scopes: ['source.shss', 'invalid.illegal.macro-name'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.macro-name'],
     });
   });
 
@@ -2356,7 +2356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.leading-whitespace.charset');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.leading-whitespace.charset',
-      scopes: ['source.shss', 'invalid.illegal.leading-whitespace.charset'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.leading-whitespace.charset'],
     });
   });
 
@@ -2364,7 +2364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.leading-whitespace');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.leading-whitespace',
-      scopes: ['source.shss', 'invalid.illegal.leading-whitespace'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.leading-whitespace'],
     });
   });
 
@@ -2372,7 +2372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.integer');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.integer',
-      scopes: ['source.shss', 'invalid.illegal.integer'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.integer'],
     });
   });
 
@@ -2380,7 +2380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.incomplete.html');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.incomplete.html',
-      scopes: ['source.shss', 'invalid.illegal.incomplete.html'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.incomplete.html'],
     });
   });
 
@@ -2388,7 +2388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.incomplete');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.incomplete',
-      scopes: ['source.shss', 'invalid.illegal.incomplete'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.incomplete'],
     });
   });
 
@@ -2396,7 +2396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.identifier');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.identifier',
-      scopes: ['source.shss', 'invalid.illegal.identifier'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.identifier'],
     });
   });
 
@@ -2404,7 +2404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.delimiter-too-long');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.delimiter-too-long',
-      scopes: ['source.shss', 'invalid.illegal.delimiter-too-long'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.delimiter-too-long'],
     });
   });
 
@@ -2412,7 +2412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.constant.character.escape');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.constant.character.escape',
-      scopes: ['source.shss', 'invalid.illegal.constant.character.escape'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.constant.character.escape'],
     });
   });
 
@@ -2420,7 +2420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.constant.character');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.constant.character',
-      scopes: ['source.shss', 'invalid.illegal.constant.character'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.constant.character'],
     });
   });
 
@@ -2428,7 +2428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.constant');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.constant',
-      scopes: ['source.shss', 'invalid.illegal.constant'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.constant'],
     });
   });
 
@@ -2436,7 +2436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.comma');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.comma',
-      scopes: ['source.shss', 'invalid.illegal.comma'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.comma'],
     });
   });
 
@@ -2444,7 +2444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.closing-curly-bracket');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.closing-curly-bracket',
-      scopes: ['source.shss', 'invalid.illegal.closing-curly-bracket'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.closing-curly-bracket'],
     });
   });
 
@@ -2452,7 +2452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.character_not_allowed_here');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.character_not_allowed_here',
-      scopes: ['source.shss', 'invalid.illegal.character_not_allowed_here'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.character_not_allowed_here'],
     });
   });
 
@@ -2460,7 +2460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.character');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.character',
-      scopes: ['source.shss', 'invalid.illegal.character'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.character'],
     });
   });
 
@@ -2468,7 +2468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.character-out-of-range');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.character-out-of-range',
-      scopes: ['source.shss', 'invalid.illegal.character-out-of-range'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.character-out-of-range'],
     });
   });
 
@@ -2476,7 +2476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.character-not-allowed-here');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.character-not-allowed-here',
-      scopes: ['source.shss', 'invalid.illegal.character-not-allowed-here'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.character-not-allowed-here'],
     });
   });
 
@@ -2484,7 +2484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.bad-identifier');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.bad-identifier',
-      scopes: ['source.shss', 'invalid.illegal.bad-identifier'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.bad-identifier'],
     });
   });
 
@@ -2492,7 +2492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.bad-ampersand.html');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.bad-ampersand.html',
-      scopes: ['source.shss', 'invalid.illegal.bad-ampersand.html'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.bad-ampersand.html'],
     });
   });
 
@@ -2500,7 +2500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.bad-ampersand');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.bad-ampersand',
-      scopes: ['source.shss', 'invalid.illegal.bad-ampersand'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.bad-ampersand'],
     });
   });
 
@@ -2508,7 +2508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.backslash');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.backslash',
-      scopes: ['source.shss', 'invalid.illegal.backslash'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.backslash'],
     });
   });
 
@@ -2516,7 +2516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.atom');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.atom',
-      scopes: ['source.shss', 'invalid.illegal.atom'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.atom'],
     });
   });
 
@@ -2524,7 +2524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.syntax.pragma');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.syntax.pragma',
-      scopes: ['source.shss', 'invalid.illegal.syntax.pragma'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.syntax.pragma'],
     });
   });
 
@@ -2532,7 +2532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.syntax');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.syntax',
-      scopes: ['source.shss', 'invalid.illegal.syntax'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.syntax'],
     });
   });
 
@@ -2540,7 +2540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.trailing-whitespace');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.trailing-whitespace',
-      scopes: ['source.shss', 'invalid.illegal.trailing-whitespace'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.trailing-whitespace'],
     });
   });
 
@@ -2548,7 +2548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.stray-bracket-end');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.stray-bracket-end',
-      scopes: ['source.shss', 'invalid.illegal.stray-bracket-end'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.stray-bracket-end'],
     });
   });
 
@@ -2556,7 +2556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal.stray-semi-colon');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal.stray-semi-colon',
-      scopes: ['source.shss', 'invalid.illegal.stray-semi-colon'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal.stray-semi-colon'],
     });
   });
 
@@ -2564,7 +2564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid.illegal');
     expect(tokens[0]).toEqual({
       value: 'invalid.illegal',
-      scopes: ['source.shss', 'invalid.illegal'],
+      scopes: ['source.syntax-scopes', 'invalid.illegal'],
     });
   });
 
@@ -2572,7 +2572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('invalid');
     expect(tokens[0]).toEqual({
       value: 'invalid',
-      scopes: ['source.shss', 'invalid'],
+      scopes: ['source.syntax-scopes', 'invalid'],
     });
   });
 
@@ -2580,7 +2580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.module');
     expect(tokens[0]).toEqual({
       value: 'keyword.module',
-      scopes: ['source.shss', 'keyword.module'],
+      scopes: ['source.syntax-scopes', 'keyword.module'],
     });
   });
 
@@ -2588,7 +2588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.map');
     expect(tokens[0]).toEqual({
       value: 'keyword.map',
-      scopes: ['source.shss', 'keyword.map'],
+      scopes: ['source.syntax-scopes', 'keyword.map'],
     });
   });
 
@@ -2596,7 +2596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.interface');
     expect(tokens[0]).toEqual({
       value: 'keyword.interface',
-      scopes: ['source.shss', 'keyword.interface'],
+      scopes: ['source.syntax-scopes', 'keyword.interface'],
     });
   });
 
@@ -2604,7 +2604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.import');
     expect(tokens[0]).toEqual({
       value: 'keyword.import',
-      scopes: ['source.shss', 'keyword.import'],
+      scopes: ['source.syntax-scopes', 'keyword.import'],
     });
   });
 
@@ -2612,7 +2612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.function');
     expect(tokens[0]).toEqual({
       value: 'keyword.function',
-      scopes: ['source.shss', 'keyword.function'],
+      scopes: ['source.syntax-scopes', 'keyword.function'],
     });
   });
 
@@ -2620,7 +2620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.expressions-and-types');
     expect(tokens[0]).toEqual({
       value: 'keyword.expressions-and-types',
-      scopes: ['source.shss', 'keyword.expressions-and-types'],
+      scopes: ['source.syntax-scopes', 'keyword.expressions-and-types'],
     });
   });
 
@@ -2628,7 +2628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.var');
     expect(tokens[0]).toEqual({
       value: 'keyword.var',
-      scopes: ['source.shss', 'keyword.var'],
+      scopes: ['source.syntax-scopes', 'keyword.var'],
     });
   });
 
@@ -2636,7 +2636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.type');
     expect(tokens[0]).toEqual({
       value: 'keyword.type',
-      scopes: ['source.shss', 'keyword.type'],
+      scopes: ['source.syntax-scopes', 'keyword.type'],
     });
   });
 
@@ -2644,7 +2644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.struct');
     expect(tokens[0]).toEqual({
       value: 'keyword.struct',
-      scopes: ['source.shss', 'keyword.struct'],
+      scopes: ['source.syntax-scopes', 'keyword.struct'],
     });
   });
 
@@ -2652,7 +2652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.reserved');
     expect(tokens[0]).toEqual({
       value: 'keyword.reserved',
-      scopes: ['source.shss', 'keyword.reserved'],
+      scopes: ['source.syntax-scopes', 'keyword.reserved'],
     });
   });
 
@@ -2660,7 +2660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.package');
     expect(tokens[0]).toEqual({
       value: 'keyword.package',
-      scopes: ['source.shss', 'keyword.package'],
+      scopes: ['source.syntax-scopes', 'keyword.package'],
     });
   });
 
@@ -2668,7 +2668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.const');
     expect(tokens[0]).toEqual({
       value: 'keyword.const',
-      scopes: ['source.shss', 'keyword.const'],
+      scopes: ['source.syntax-scopes', 'keyword.const'],
     });
   });
 
@@ -2676,7 +2676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.channel');
     expect(tokens[0]).toEqual({
       value: 'keyword.channel',
-      scopes: ['source.shss', 'keyword.channel'],
+      scopes: ['source.syntax-scopes', 'keyword.channel'],
     });
   });
 
@@ -2684,7 +2684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.bracket.begin');
     expect(tokens[0]).toEqual({
       value: 'keyword.bracket.begin',
-      scopes: ['source.shss', 'keyword.bracket.begin'],
+      scopes: ['source.syntax-scopes', 'keyword.bracket.begin'],
     });
   });
 
@@ -2692,7 +2692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.bracket.end');
     expect(tokens[0]).toEqual({
       value: 'keyword.bracket.end',
-      scopes: ['source.shss', 'keyword.bracket.end'],
+      scopes: ['source.syntax-scopes', 'keyword.bracket.end'],
     });
   });
 
@@ -2700,7 +2700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.bracket');
     expect(tokens[0]).toEqual({
       value: 'keyword.bracket',
-      scopes: ['source.shss', 'keyword.bracket'],
+      scopes: ['source.syntax-scopes', 'keyword.bracket'],
     });
   });
 
@@ -2708,7 +2708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.wildcard');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.wildcard',
-      scopes: ['source.shss', 'keyword.operator.wildcard'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.wildcard'],
     });
   });
 
@@ -2716,7 +2716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.update');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.update',
-      scopes: ['source.shss', 'keyword.operator.update'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.update'],
     });
   });
 
@@ -2724,7 +2724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.unpacking.arguments');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.unpacking.arguments',
-      scopes: ['source.shss', 'keyword.operator.unpacking.arguments'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.unpacking.arguments'],
     });
   });
 
@@ -2732,7 +2732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.unpacking');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.unpacking',
-      scopes: ['source.shss', 'keyword.operator.unpacking'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.unpacking'],
     });
   });
 
@@ -2740,7 +2740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.transposed-variable');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.transposed-variable',
-      scopes: ['source.shss', 'keyword.operator.transposed-variable'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.transposed-variable'],
     });
   });
 
@@ -2748,7 +2748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.transposed-parens');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.transposed-parens',
-      scopes: ['source.shss', 'keyword.operator.transposed-parens'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.transposed-parens'],
     });
   });
 
@@ -2756,7 +2756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.transposed-matrix');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.transposed-matrix',
-      scopes: ['source.shss', 'keyword.operator.transposed-matrix'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.transposed-matrix'],
     });
   });
 
@@ -2764,7 +2764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.transposed-func');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.transposed-func',
-      scopes: ['source.shss', 'keyword.operator.transposed-func'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.transposed-func'],
     });
   });
 
@@ -2772,7 +2772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.textual');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.textual',
-      scopes: ['source.shss', 'keyword.operator.textual'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.textual'],
     });
   });
 
@@ -2780,7 +2780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.symbolic');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.symbolic',
-      scopes: ['source.shss', 'keyword.operator.symbolic'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.symbolic'],
     });
   });
 
@@ -2788,7 +2788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.sizeof');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.sizeof',
-      scopes: ['source.shss', 'keyword.operator.sizeof'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.sizeof'],
     });
   });
 
@@ -2796,7 +2796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.shift');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.shift',
-      scopes: ['source.shss', 'keyword.operator.shift'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.shift'],
     });
   });
 
@@ -2804,7 +2804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.shape');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.shape',
-      scopes: ['source.shss', 'keyword.operator.shape'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.shape'],
     });
   });
 
@@ -2812,7 +2812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.relation');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.relation',
-      scopes: ['source.shss', 'keyword.operator.relation'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.relation'],
     });
   });
 
@@ -2820,7 +2820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.record.end');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.record.end',
-      scopes: ['source.shss', 'keyword.operator.record.end'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.record.end'],
     });
   });
 
@@ -2828,7 +2828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.record.begin');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.record.begin',
-      scopes: ['source.shss', 'keyword.operator.record.begin'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.record.begin'],
     });
   });
 
@@ -2836,7 +2836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.record');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.record',
-      scopes: ['source.shss', 'keyword.operator.record'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.record'],
     });
   });
 
@@ -2844,7 +2844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.promoted');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.promoted',
-      scopes: ['source.shss', 'keyword.operator.promoted'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.promoted'],
     });
   });
 
@@ -2852,7 +2852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.pattern');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.pattern',
-      scopes: ['source.shss', 'keyword.operator.pattern'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.pattern'],
     });
   });
 
@@ -2860,7 +2860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.other');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.other',
-      scopes: ['source.shss', 'keyword.operator.other'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.other'],
     });
   });
 
@@ -2868,7 +2868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.macro');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.macro',
-      scopes: ['source.shss', 'keyword.operator.macro'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.macro'],
     });
   });
 
@@ -2876,7 +2876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.isa');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.isa',
-      scopes: ['source.shss', 'keyword.operator.isa'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.isa'],
     });
   });
 
@@ -2884,7 +2884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.interpolation');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.interpolation',
-      scopes: ['source.shss', 'keyword.operator.interpolation'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.interpolation'],
     });
   });
 
@@ -2892,7 +2892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.instanceof');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.instanceof',
-      scopes: ['source.shss', 'keyword.operator.instanceof'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.instanceof'],
     });
   });
 
@@ -2900,7 +2900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.increment-decrement');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.increment-decrement',
-      scopes: ['source.shss', 'keyword.operator.increment-decrement'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.increment-decrement'],
     });
   });
 
@@ -2908,7 +2908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.gradient');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.gradient',
-      scopes: ['source.shss', 'keyword.operator.gradient'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.gradient'],
     });
   });
 
@@ -2916,7 +2916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.function.infix');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.function.infix',
-      scopes: ['source.shss', 'keyword.operator.function.infix'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.function.infix'],
     });
   });
 
@@ -2924,7 +2924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.function');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.function',
-      scopes: ['source.shss', 'keyword.operator.function'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.function'],
     });
   });
 
@@ -2932,7 +2932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.function-annotation');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.function-annotation',
-      scopes: ['source.shss', 'keyword.operator.function-annotation'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.function-annotation'],
     });
   });
 
@@ -2940,7 +2940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.dots');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.dots',
-      scopes: ['source.shss', 'keyword.operator.dots'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.dots'],
     });
   });
 
@@ -2948,7 +2948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.combinator');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.combinator',
-      scopes: ['source.shss', 'keyword.operator.combinator'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.combinator'],
     });
   });
 
@@ -2956,7 +2956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.channel');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.channel',
-      scopes: ['source.shss', 'keyword.operator.channel'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.channel'],
     });
   });
 
@@ -2964,7 +2964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.cast');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.cast',
-      scopes: ['source.shss', 'keyword.operator.cast'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.cast'],
     });
   });
 
@@ -2972,7 +2972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.boolean');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.boolean',
-      scopes: ['source.shss', 'keyword.operator.boolean'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.boolean'],
     });
   });
 
@@ -2980,7 +2980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assert.expression-separator');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assert.expression-separator',
-      scopes: ['source.shss', 'keyword.operator.assert.expression-separator'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assert.expression-separator'],
     });
   });
 
@@ -2988,7 +2988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assert');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assert',
-      scopes: ['source.shss', 'keyword.operator.assert'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assert'],
     });
   });
 
@@ -2996,7 +2996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.arrow');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.arrow',
-      scopes: ['source.shss', 'keyword.operator.arrow'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.arrow'],
     });
   });
 
@@ -3004,7 +3004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.address');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.address',
-      scopes: ['source.shss', 'keyword.operator.address'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.address'],
     });
   });
 
@@ -3012,7 +3012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.function');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.function',
-      scopes: ['source.shss', 'keyword.declaration.function'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.function'],
     });
   });
 
@@ -3020,7 +3020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.class');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.class',
-      scopes: ['source.shss', 'keyword.declaration.class'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.class'],
     });
   });
 
@@ -3028,7 +3028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.struct');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.struct',
-      scopes: ['source.shss', 'keyword.declaration.struct'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.struct'],
     });
   });
 
@@ -3036,7 +3036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.enum');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.enum',
-      scopes: ['source.shss', 'keyword.declaration.enum'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.enum'],
     });
   });
 
@@ -3044,7 +3044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.union');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.union',
-      scopes: ['source.shss', 'keyword.declaration.union'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.union'],
     });
   });
 
@@ -3052,7 +3052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.trait');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.trait',
-      scopes: ['source.shss', 'keyword.declaration.trait'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.trait'],
     });
   });
 
@@ -3060,7 +3060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.interface');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.interface',
-      scopes: ['source.shss', 'keyword.declaration.interface'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.interface'],
     });
   });
 
@@ -3068,7 +3068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.impl');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.impl',
-      scopes: ['source.shss', 'keyword.declaration.impl'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.impl'],
     });
   });
 
@@ -3076,7 +3076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration.type');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration.type',
-      scopes: ['source.shss', 'keyword.declaration.type'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration.type'],
     });
   });
 
@@ -3084,7 +3084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.declaration');
     expect(tokens[0]).toEqual({
       value: 'keyword.declaration',
-      scopes: ['source.shss', 'keyword.declaration'],
+      scopes: ['source.syntax-scopes', 'keyword.declaration'],
     });
   });
 
@@ -3092,7 +3092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.ellipsis.placeholder');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.ellipsis.placeholder',
-      scopes: ['source.shss', 'keyword.operator.ellipsis.placeholder'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.ellipsis.placeholder'],
     });
   });
 
@@ -3100,7 +3100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.ellipsis');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.ellipsis',
-      scopes: ['source.shss', 'keyword.operator.ellipsis'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.ellipsis'],
     });
   });
 
@@ -3108,7 +3108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.readline');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.readline',
-      scopes: ['source.shss', 'keyword.operator.readline'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.readline'],
     });
   });
 
@@ -3116,7 +3116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.filetest');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.filetest',
-      scopes: ['source.shss', 'keyword.operator.filetest'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.filetest'],
     });
   });
 
@@ -3124,7 +3124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.comparison.stringwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.comparison.stringwise',
-      scopes: ['source.shss', 'keyword.operator.comparison.stringwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.comparison.stringwise'],
     });
   });
 
@@ -3132,7 +3132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.comparison');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.comparison',
-      scopes: ['source.shss', 'keyword.operator.comparison'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.comparison'],
     });
   });
 
@@ -3140,7 +3140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.pragma.flag');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.pragma.flag',
-      scopes: ['source.shss', 'keyword.operator.pragma.flag'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.pragma.flag'],
     });
   });
 
@@ -3148,7 +3148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.pragma');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.pragma',
-      scopes: ['source.shss', 'keyword.operator.pragma'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.pragma'],
     });
   });
 
@@ -3156,7 +3156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.repetition');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.repetition',
-      scopes: ['source.shss', 'keyword.operator.repetition'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.repetition'],
     });
   });
 
@@ -3164,7 +3164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.concatenation');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.concatenation',
-      scopes: ['source.shss', 'keyword.operator.concatenation'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.concatenation'],
     });
   });
 
@@ -3172,7 +3172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.range');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.range',
-      scopes: ['source.shss', 'keyword.operator.range'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.range'],
     });
   });
 
@@ -3180,7 +3180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignement.compound.bitwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignement.compound.bitwise',
-      scopes: ['source.shss', 'keyword.operator.assignement.compound.bitwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignement.compound.bitwise'],
     });
   });
 
@@ -3188,7 +3188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignement.compound.stringwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignement.compound.stringwise',
-      scopes: ['source.shss', 'keyword.operator.assignement.compound.stringwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignement.compound.stringwise'],
     });
   });
 
@@ -3196,7 +3196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignement.compound');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignement.compound',
-      scopes: ['source.shss', 'keyword.operator.assignement.compound'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignement.compound'],
     });
   });
 
@@ -3204,7 +3204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignement.conditional');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignement.conditional',
-      scopes: ['source.shss', 'keyword.operator.assignement.conditional'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignement.conditional'],
     });
   });
 
@@ -3212,7 +3212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignement');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignement',
-      scopes: ['source.shss', 'keyword.operator.assignement'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignement'],
     });
   });
 
@@ -3220,7 +3220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.bitwise.shift');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.bitwise.shift',
-      scopes: ['source.shss', 'keyword.operator.bitwise.shift'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.bitwise.shift'],
     });
   });
 
@@ -3228,7 +3228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.bitwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.bitwise',
-      scopes: ['source.shss', 'keyword.operator.bitwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.bitwise'],
     });
   });
 
@@ -3236,7 +3236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.decrement');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.decrement',
-      scopes: ['source.shss', 'keyword.operator.decrement'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.decrement'],
     });
   });
 
@@ -3244,7 +3244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.increment');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.increment',
-      scopes: ['source.shss', 'keyword.operator.increment'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.increment'],
     });
   });
 
@@ -3252,7 +3252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.logical.c-style');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.logical.c-style',
-      scopes: ['source.shss', 'keyword.operator.logical.c-style'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.logical.c-style'],
     });
   });
 
@@ -3260,7 +3260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.logical.defined-or');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.logical.defined-or',
-      scopes: ['source.shss', 'keyword.operator.logical.defined-or'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.logical.defined-or'],
     });
   });
 
@@ -3268,7 +3268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.logical.feature');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.logical.feature',
-      scopes: ['source.shss', 'keyword.operator.logical.feature'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.logical.feature'],
     });
   });
 
@@ -3276,7 +3276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.logical.and.media');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.logical.and.media',
-      scopes: ['source.shss', 'keyword.operator.logical.and.media'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.logical.and.media'],
     });
   });
 
@@ -3284,7 +3284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.logical.and');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.logical.and',
-      scopes: ['source.shss', 'keyword.operator.logical.and'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.logical.and'],
     });
   });
 
@@ -3292,7 +3292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.logical');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.logical',
-      scopes: ['source.shss', 'keyword.operator.logical'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.logical'],
     });
   });
 
@@ -3300,7 +3300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.stringwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.stringwise',
-      scopes: ['source.shss', 'keyword.operator.stringwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.stringwise'],
     });
   });
 
@@ -3308,7 +3308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.arithmetic.bitwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.arithmetic.bitwise',
-      scopes: ['source.shss', 'keyword.operator.arithmetic.bitwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.arithmetic.bitwise'],
     });
   });
 
@@ -3316,7 +3316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.arithmetic');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.arithmetic',
-      scopes: ['source.shss', 'keyword.operator.arithmetic'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.arithmetic'],
     });
   });
 
@@ -3324,7 +3324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.ternary');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.ternary',
-      scopes: ['source.shss', 'keyword.operator.ternary'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.ternary'],
     });
   });
 
@@ -3332,7 +3332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.heredoc');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.heredoc',
-      scopes: ['source.shss', 'keyword.operator.heredoc'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.heredoc'],
     });
   });
 
@@ -3340,7 +3340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.null-coalescing');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.null-coalescing',
-      scopes: ['source.shss', 'keyword.operator.null-coalescing'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.null-coalescing'],
     });
   });
 
@@ -3348,7 +3348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.interface');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.interface',
-      scopes: ['source.shss', 'keyword.operator.interface'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.interface'],
     });
   });
 
@@ -3356,7 +3356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.class');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.class',
-      scopes: ['source.shss', 'keyword.operator.class'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.class'],
     });
   });
 
@@ -3364,7 +3364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.nullable-type');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.nullable-type',
-      scopes: ['source.shss', 'keyword.operator.nullable-type'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.nullable-type'],
     });
   });
 
@@ -3372,7 +3372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignment.compound.bitwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignment.compound.bitwise',
-      scopes: ['source.shss', 'keyword.operator.assignment.compound.bitwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignment.compound.bitwise'],
     });
   });
 
@@ -3380,7 +3380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignment.compound');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignment.compound',
-      scopes: ['source.shss', 'keyword.operator.assignment.compound'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignment.compound'],
     });
   });
 
@@ -3388,7 +3388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignment.bitwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignment.bitwise',
-      scopes: ['source.shss', 'keyword.operator.assignment.bitwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignment.bitwise'],
     });
   });
 
@@ -3396,7 +3396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignment.augmented');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignment.augmented',
-      scopes: ['source.shss', 'keyword.operator.assignment.augmented'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignment.augmented'],
     });
   });
 
@@ -3404,7 +3404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignment.arithmetic');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignment.arithmetic',
-      scopes: ['source.shss', 'keyword.operator.assignment.arithmetic'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignment.arithmetic'],
     });
   });
 
@@ -3412,7 +3412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.assignment');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.assignment',
-      scopes: ['source.shss', 'keyword.operator.assignment'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.assignment'],
     });
   });
 
@@ -3420,7 +3420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.arithmetic');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.arithmetic',
-      scopes: ['source.shss', 'keyword.operator.arithmetic'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.arithmetic'],
     });
   });
 
@@ -3428,7 +3428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.bitwise');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.bitwise',
-      scopes: ['source.shss', 'keyword.operator.bitwise'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.bitwise'],
     });
   });
 
@@ -3436,7 +3436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.logical');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.logical',
-      scopes: ['source.shss', 'keyword.operator.logical'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.logical'],
     });
   });
 
@@ -3444,7 +3444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.word');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.word',
-      scopes: ['source.shss', 'keyword.operator.word'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.word'],
     });
   });
 
@@ -3452,7 +3452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator.regexp');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator.regexp',
-      scopes: ['source.shss', 'keyword.operator.regexp'],
+      scopes: ['source.syntax-scopes', 'keyword.operator.regexp'],
     });
   });
 
@@ -3460,7 +3460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.operator');
     expect(tokens[0]).toEqual({
       value: 'keyword.operator',
-      scopes: ['source.shss', 'keyword.operator'],
+      scopes: ['source.syntax-scopes', 'keyword.operator'],
     });
   });
 
@@ -3468,7 +3468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.controls');
     expect(tokens[0]).toEqual({
       value: 'keyword.controls',
-      scopes: ['source.shss', 'keyword.controls'],
+      scopes: ['source.syntax-scopes', 'keyword.controls'],
     });
   });
 
@@ -3476,7 +3476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.viewport');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.viewport',
-      scopes: ['source.shss', 'keyword.control.at-rule.viewport'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.viewport'],
     });
   });
 
@@ -3484,7 +3484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.supports');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.supports',
-      scopes: ['source.shss', 'keyword.control.at-rule.supports'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.supports'],
     });
   });
 
@@ -3492,7 +3492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.page');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.page',
-      scopes: ['source.shss', 'keyword.control.at-rule.page'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.page'],
     });
   });
 
@@ -3500,7 +3500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.namespace');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.namespace',
-      scopes: ['source.shss', 'keyword.control.at-rule.namespace'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.namespace'],
     });
   });
 
@@ -3508,7 +3508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.media');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.media',
-      scopes: ['source.shss', 'keyword.control.at-rule.media'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.media'],
     });
   });
 
@@ -3516,7 +3516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.keyframes');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.keyframes',
-      scopes: ['source.shss', 'keyword.control.at-rule.keyframes'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.keyframes'],
     });
   });
 
@@ -3524,7 +3524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.import');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.import',
-      scopes: ['source.shss', 'keyword.control.at-rule.import'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.import'],
     });
   });
 
@@ -3532,7 +3532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.font-feature-values');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.font-feature-values',
-      scopes: ['source.shss', 'keyword.control.at-rule.font-feature-values'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.font-feature-values'],
     });
   });
 
@@ -3540,7 +3540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.font-face');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.font-face',
-      scopes: ['source.shss', 'keyword.control.at-rule.font-face'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.font-face'],
     });
   });
 
@@ -3548,7 +3548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.document');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.document',
-      scopes: ['source.shss', 'keyword.control.at-rule.document'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.document'],
     });
   });
 
@@ -3556,7 +3556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule',
-      scopes: ['source.shss', 'keyword.control.at-rule'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule'],
     });
   });
 
@@ -3564,7 +3564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.counter-style');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.counter-style',
-      scopes: ['source.shss', 'keyword.control.at-rule.counter-style'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.counter-style'],
     });
   });
 
@@ -3572,7 +3572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule.charset');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule.charset',
-      scopes: ['source.shss', 'keyword.control.at-rule.charset'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule.charset'],
     });
   });
 
@@ -3580,7 +3580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.at-rule');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.at-rule',
-      scopes: ['source.shss', 'keyword.control.at-rule'],
+      scopes: ['source.syntax-scopes', 'keyword.control.at-rule'],
     });
   });
 
@@ -3588,7 +3588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.undef');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.undef',
-      scopes: ['source.shss', 'keyword.control.directive.undef'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.undef'],
     });
   });
 
@@ -3596,7 +3596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.pragma.pragma-mark');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.pragma.pragma-mark',
-      scopes: ['source.shss', 'keyword.control.directive.pragma.pragma-mark'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.pragma.pragma-mark'],
     });
   });
 
@@ -3604,7 +3604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.pragma');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.pragma',
-      scopes: ['source.shss', 'keyword.control.directive.pragma'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.pragma'],
     });
   });
 
@@ -3612,7 +3612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.module');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.module',
-      scopes: ['source.shss', 'keyword.control.directive.module'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.module'],
     });
   });
 
@@ -3620,7 +3620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.line');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.line',
-      scopes: ['source.shss', 'keyword.control.directive.line'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.line'],
     });
   });
 
@@ -3628,7 +3628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.import');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.import',
-      scopes: ['source.shss', 'keyword.control.directive.import'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.import'],
     });
   });
 
@@ -3636,7 +3636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.ifndef');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.ifndef',
-      scopes: ['source.shss', 'keyword.control.directive.ifndef'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.ifndef'],
     });
   });
 
@@ -3644,7 +3644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.ifdef');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.ifdef',
-      scopes: ['source.shss', 'keyword.control.directive.ifdef'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.ifdef'],
     });
   });
 
@@ -3652,7 +3652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.export');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.export',
-      scopes: ['source.shss', 'keyword.control.directive.export'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.export'],
     });
   });
 
@@ -3660,7 +3660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.diagnostic');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.diagnostic',
-      scopes: ['source.shss', 'keyword.control.directive.diagnostic'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.diagnostic'],
     });
   });
 
@@ -3668,7 +3668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.define');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.define',
-      scopes: ['source.shss', 'keyword.control.directive.define'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.define'],
     });
   });
 
@@ -3676,7 +3676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.conditional');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.conditional',
-      scopes: ['source.shss', 'keyword.control.directive.conditional'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.conditional'],
     });
   });
 
@@ -3684,7 +3684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.behaviour');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.behaviour',
-      scopes: ['source.shss', 'keyword.control.directive.behaviour'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.behaviour'],
     });
   });
 
@@ -3692,7 +3692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive.pragma');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive.pragma',
-      scopes: ['source.shss', 'keyword.control.directive.pragma'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive.pragma'],
     });
   });
 
@@ -3700,7 +3700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.directive');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.directive',
-      scopes: ['source.shss', 'keyword.control.directive'],
+      scopes: ['source.syntax-scopes', 'keyword.control.directive'],
     });
   });
 
@@ -3708,7 +3708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.diagnostics');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.diagnostics',
-      scopes: ['source.shss', 'keyword.control.diagnostics'],
+      scopes: ['source.syntax-scopes', 'keyword.control.diagnostics'],
     });
   });
 
@@ -3716,7 +3716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.regexp-option');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.regexp-option',
-      scopes: ['source.shss', 'keyword.control.regexp-option'],
+      scopes: ['source.syntax-scopes', 'keyword.control.regexp-option'],
     });
   });
 
@@ -3724,7 +3724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.conditional');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.conditional',
-      scopes: ['source.shss', 'keyword.control.conditional'],
+      scopes: ['source.syntax-scopes', 'keyword.control.conditional'],
     });
   });
 
@@ -3732,7 +3732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.anchor');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.anchor',
-      scopes: ['source.shss', 'keyword.control.anchor'],
+      scopes: ['source.syntax-scopes', 'keyword.control.anchor'],
     });
   });
 
@@ -3740,7 +3740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.import.from');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.import.from',
-      scopes: ['source.shss', 'keyword.control.import.from'],
+      scopes: ['source.syntax-scopes', 'keyword.control.import.from'],
     });
   });
 
@@ -3748,7 +3748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.import');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.import',
-      scopes: ['source.shss', 'keyword.control.import'],
+      scopes: ['source.syntax-scopes', 'keyword.control.import'],
     });
   });
 
@@ -3756,7 +3756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.continue');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.continue',
-      scopes: ['source.shss', 'keyword.control.continue'],
+      scopes: ['source.syntax-scopes', 'keyword.control.continue'],
     });
   });
 
@@ -3764,7 +3764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.while');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.while',
-      scopes: ['source.shss', 'keyword.control.while'],
+      scopes: ['source.syntax-scopes', 'keyword.control.while'],
     });
   });
 
@@ -3772,7 +3772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.return');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.return',
-      scopes: ['source.shss', 'keyword.control.return'],
+      scopes: ['source.syntax-scopes', 'keyword.control.return'],
     });
   });
 
@@ -3780,7 +3780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.try');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.try',
-      scopes: ['source.shss', 'keyword.control.try'],
+      scopes: ['source.syntax-scopes', 'keyword.control.try'],
     });
   });
 
@@ -3788,7 +3788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.throw');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.throw',
-      scopes: ['source.shss', 'keyword.control.throw'],
+      scopes: ['source.syntax-scopes', 'keyword.control.throw'],
     });
   });
 
@@ -3796,7 +3796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.ternary');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.ternary',
-      scopes: ['source.shss', 'keyword.control.ternary'],
+      scopes: ['source.syntax-scopes', 'keyword.control.ternary'],
     });
   });
 
@@ -3804,7 +3804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.statement');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.statement',
-      scopes: ['source.shss', 'keyword.control.statement'],
+      scopes: ['source.syntax-scopes', 'keyword.control.statement'],
     });
   });
 
@@ -3812,7 +3812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.start-block');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.start-block',
-      scopes: ['source.shss', 'keyword.control.start-block'],
+      scopes: ['source.syntax-scopes', 'keyword.control.start-block'],
     });
   });
 
@@ -3820,7 +3820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.repeat');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.repeat',
-      scopes: ['source.shss', 'keyword.control.repeat'],
+      scopes: ['source.syntax-scopes', 'keyword.control.repeat'],
     });
   });
 
@@ -3828,7 +3828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.receive');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.receive',
-      scopes: ['source.shss', 'keyword.control.receive'],
+      scopes: ['source.syntax-scopes', 'keyword.control.receive'],
     });
   });
 
@@ -3836,7 +3836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.query');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.query',
-      scopes: ['source.shss', 'keyword.control.query'],
+      scopes: ['source.syntax-scopes', 'keyword.control.query'],
     });
   });
 
@@ -3844,7 +3844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.pseudo-method');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.pseudo-method',
-      scopes: ['source.shss', 'keyword.control.pseudo-method'],
+      scopes: ['source.syntax-scopes', 'keyword.control.pseudo-method'],
     });
   });
 
@@ -3852,7 +3852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.new');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.new',
-      scopes: ['source.shss', 'keyword.control.new'],
+      scopes: ['source.syntax-scopes', 'keyword.control.new'],
     });
   });
 
@@ -3860,7 +3860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.module');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.module',
-      scopes: ['source.shss', 'keyword.control.module'],
+      scopes: ['source.syntax-scopes', 'keyword.control.module'],
     });
   });
 
@@ -3868,7 +3868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.if');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.if',
-      scopes: ['source.shss', 'keyword.control.if'],
+      scopes: ['source.syntax-scopes', 'keyword.control.if'],
     });
   });
 
@@ -3876,7 +3876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.fun');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.fun',
-      scopes: ['source.shss', 'keyword.control.fun'],
+      scopes: ['source.syntax-scopes', 'keyword.control.fun'],
     });
   });
 
@@ -3884,7 +3884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.finally');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.finally',
-      scopes: ['source.shss', 'keyword.control.finally'],
+      scopes: ['source.syntax-scopes', 'keyword.control.finally'],
     });
   });
 
@@ -3892,7 +3892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.exception');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.exception',
-      scopes: ['source.shss', 'keyword.control.exception'],
+      scopes: ['source.syntax-scopes', 'keyword.control.exception'],
     });
   });
 
@@ -3900,7 +3900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.def');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.def',
-      scopes: ['source.shss', 'keyword.control.def'],
+      scopes: ['source.syntax-scopes', 'keyword.control.def'],
     });
   });
 
@@ -3908,7 +3908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.class');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.class',
-      scopes: ['source.shss', 'keyword.control.class'],
+      scopes: ['source.syntax-scopes', 'keyword.control.class'],
     });
   });
 
@@ -3916,7 +3916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.catch');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.catch',
-      scopes: ['source.shss', 'keyword.control.catch'],
+      scopes: ['source.syntax-scopes', 'keyword.control.catch'],
     });
   });
 
@@ -3924,7 +3924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.case');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.case',
-      scopes: ['source.shss', 'keyword.control.case'],
+      scopes: ['source.syntax-scopes', 'keyword.control.case'],
     });
   });
 
@@ -3932,7 +3932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control.begin');
     expect(tokens[0]).toEqual({
       value: 'keyword.control.begin',
-      scopes: ['source.shss', 'keyword.control.begin'],
+      scopes: ['source.syntax-scopes', 'keyword.control.begin'],
     });
   });
 
@@ -3940,7 +3940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.control');
     expect(tokens[0]).toEqual({
       value: 'keyword.control',
-      scopes: ['source.shss', 'keyword.control'],
+      scopes: ['source.syntax-scopes', 'keyword.control'],
     });
   });
 
@@ -3948,7 +3948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.others');
     expect(tokens[0]).toEqual({
       value: 'keyword.others',
-      scopes: ['source.shss', 'keyword.others'],
+      scopes: ['source.syntax-scopes', 'keyword.others'],
     });
   });
 
@@ -3956,7 +3956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.unit.percentage');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.unit.percentage',
-      scopes: ['source.shss', 'keyword.other.unit.percentage'],
+      scopes: ['source.syntax-scopes', 'keyword.other.unit.percentage'],
     });
   });
 
@@ -3964,7 +3964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.special-method');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.special-method',
-      scopes: ['source.shss', 'keyword.other.special-method'],
+      scopes: ['source.syntax-scopes', 'keyword.other.special-method'],
     });
   });
 
@@ -3972,7 +3972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.preprocessor',
-      scopes: ['source.shss', 'keyword.other.preprocessor'],
+      scopes: ['source.syntax-scopes', 'keyword.other.preprocessor'],
     });
   });
 
@@ -3980,7 +3980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.package');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.package',
-      scopes: ['source.shss', 'keyword.other.package'],
+      scopes: ['source.syntax-scopes', 'keyword.other.package'],
     });
   });
 
@@ -3988,7 +3988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.important');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.important',
-      scopes: ['source.shss', 'keyword.other.important'],
+      scopes: ['source.syntax-scopes', 'keyword.other.important'],
     });
   });
 
@@ -3996,7 +3996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.import');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.import',
-      scopes: ['source.shss', 'keyword.other.import'],
+      scopes: ['source.syntax-scopes', 'keyword.other.import'],
     });
   });
 
@@ -4004,7 +4004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.forall');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.forall',
-      scopes: ['source.shss', 'keyword.other.forall'],
+      scopes: ['source.syntax-scopes', 'keyword.other.forall'],
     });
   });
 
@@ -4012,7 +4012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.double-colon');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.double-colon',
-      scopes: ['source.shss', 'keyword.other.double-colon'],
+      scopes: ['source.syntax-scopes', 'keyword.other.double-colon'],
     });
   });
 
@@ -4020,7 +4020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.documentation.doc');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.documentation.doc',
-      scopes: ['source.shss', 'keyword.other.documentation.doc'],
+      scopes: ['source.syntax-scopes', 'keyword.other.documentation.doc'],
     });
   });
 
@@ -4028,7 +4028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.documentation');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.documentation',
-      scopes: ['source.shss', 'keyword.other.documentation'],
+      scopes: ['source.syntax-scopes', 'keyword.other.documentation'],
     });
   });
 
@@ -4036,7 +4036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.data');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.data',
-      scopes: ['source.shss', 'keyword.other.data'],
+      scopes: ['source.syntax-scopes', 'keyword.other.data'],
     });
   });
 
@@ -4044,7 +4044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.big-arrow');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.big-arrow',
-      scopes: ['source.shss', 'keyword.other.big-arrow'],
+      scopes: ['source.syntax-scopes', 'keyword.other.big-arrow'],
     });
   });
 
@@ -4052,7 +4052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.arrow');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.arrow',
-      scopes: ['source.shss', 'keyword.other.arrow'],
+      scopes: ['source.syntax-scopes', 'keyword.other.arrow'],
     });
   });
 
@@ -4060,7 +4060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.namespace');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.namespace',
-      scopes: ['source.shss', 'keyword.other.namespace'],
+      scopes: ['source.syntax-scopes', 'keyword.other.namespace'],
     });
   });
 
@@ -4068,7 +4068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.class');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.class',
-      scopes: ['source.shss', 'keyword.other.class'],
+      scopes: ['source.syntax-scopes', 'keyword.other.class'],
     });
   });
 
@@ -4076,7 +4076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.interface');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.interface',
-      scopes: ['source.shss', 'keyword.other.interface'],
+      scopes: ['source.syntax-scopes', 'keyword.other.interface'],
     });
   });
 
@@ -4084,7 +4084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other.type');
     expect(tokens[0]).toEqual({
       value: 'keyword.other.type',
-      scopes: ['source.shss', 'keyword.other.type'],
+      scopes: ['source.syntax-scopes', 'keyword.other.type'],
     });
   });
 
@@ -4092,7 +4092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword.other');
     expect(tokens[0]).toEqual({
       value: 'keyword.other',
-      scopes: ['source.shss', 'keyword.other'],
+      scopes: ['source.syntax-scopes', 'keyword.other'],
     });
   });
 
@@ -4100,7 +4100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('keyword');
     expect(tokens[0]).toEqual({
       value: 'keyword',
-      scopes: ['source.shss', 'keyword'],
+      scopes: ['source.syntax-scopes', 'keyword'],
     });
   });
 
@@ -4108,7 +4108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.other.escape.newline.end');
     expect(tokens[0]).toEqual({
       value: 'markup.other.escape.newline.end',
-      scopes: ['source.shss', 'markup.other.escape.newline.end'],
+      scopes: ['source.syntax-scopes', 'markup.other.escape.newline.end'],
     });
   });
 
@@ -4116,7 +4116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.other.escape.newline.begin');
     expect(tokens[0]).toEqual({
       value: 'markup.other.escape.newline.begin',
-      scopes: ['source.shss', 'markup.other.escape.newline.begin'],
+      scopes: ['source.syntax-scopes', 'markup.other.escape.newline.begin'],
     });
   });
 
@@ -4124,7 +4124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.other.escape.newline');
     expect(tokens[0]).toEqual({
       value: 'markup.other.escape.newline',
-      scopes: ['source.shss', 'markup.other.escape.newline'],
+      scopes: ['source.syntax-scopes', 'markup.other.escape.newline'],
     });
   });
 
@@ -4132,7 +4132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.other.escape');
     expect(tokens[0]).toEqual({
       value: 'markup.other.escape',
-      scopes: ['source.shss', 'markup.other.escape'],
+      scopes: ['source.syntax-scopes', 'markup.other.escape'],
     });
   });
 
@@ -4140,7 +4140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.other');
     expect(tokens[0]).toEqual({
       value: 'markup.other',
-      scopes: ['source.shss', 'markup.other'],
+      scopes: ['source.syntax-scopes', 'markup.other'],
     });
   });
 
@@ -4148,7 +4148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.heading');
     expect(tokens[0]).toEqual({
       value: 'markup.heading',
-      scopes: ['source.shss', 'markup.heading'],
+      scopes: ['source.syntax-scopes', 'markup.heading'],
     });
   });
 
@@ -4156,7 +4156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.list.unnumbered');
     expect(tokens[0]).toEqual({
       value: 'markup.list.unnumbered',
-      scopes: ['source.shss', 'markup.list.unnumbered'],
+      scopes: ['source.syntax-scopes', 'markup.list.unnumbered'],
     });
   });
 
@@ -4164,7 +4164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.list.numbered');
     expect(tokens[0]).toEqual({
       value: 'markup.list.numbered',
-      scopes: ['source.shss', 'markup.list.numbered'],
+      scopes: ['source.syntax-scopes', 'markup.list.numbered'],
     });
   });
 
@@ -4172,7 +4172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.list');
     expect(tokens[0]).toEqual({
       value: 'markup.list',
-      scopes: ['source.shss', 'markup.list'],
+      scopes: ['source.syntax-scopes', 'markup.list'],
     });
   });
 
@@ -4180,7 +4180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.bold');
     expect(tokens[0]).toEqual({
       value: 'markup.bold',
-      scopes: ['source.shss', 'markup.bold'],
+      scopes: ['source.syntax-scopes', 'markup.bold'],
     });
   });
 
@@ -4188,7 +4188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.italic');
     expect(tokens[0]).toEqual({
       value: 'markup.italic',
-      scopes: ['source.shss', 'markup.italic'],
+      scopes: ['source.syntax-scopes', 'markup.italic'],
     });
   });
 
@@ -4196,7 +4196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.inserted');
     expect(tokens[0]).toEqual({
       value: 'markup.inserted',
-      scopes: ['source.shss', 'markup.inserted'],
+      scopes: ['source.syntax-scopes', 'markup.inserted'],
     });
   });
 
@@ -4204,7 +4204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.deleted');
     expect(tokens[0]).toEqual({
       value: 'markup.deleted',
-      scopes: ['source.shss', 'markup.deleted'],
+      scopes: ['source.syntax-scopes', 'markup.deleted'],
     });
   });
 
@@ -4212,7 +4212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.underline.link.hyperlink');
     expect(tokens[0]).toEqual({
       value: 'markup.underline.link.hyperlink',
-      scopes: ['source.shss', 'markup.underline.link.hyperlink'],
+      scopes: ['source.syntax-scopes', 'markup.underline.link.hyperlink'],
     });
   });
 
@@ -4220,7 +4220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.underline.link.radar');
     expect(tokens[0]).toEqual({
       value: 'markup.underline.link.radar',
-      scopes: ['source.shss', 'markup.underline.link.radar'],
+      scopes: ['source.syntax-scopes', 'markup.underline.link.radar'],
     });
   });
 
@@ -4228,7 +4228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.underline.link');
     expect(tokens[0]).toEqual({
       value: 'markup.underline.link',
-      scopes: ['source.shss', 'markup.underline.link'],
+      scopes: ['source.syntax-scopes', 'markup.underline.link'],
     });
   });
 
@@ -4236,7 +4236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.underline');
     expect(tokens[0]).toEqual({
       value: 'markup.underline',
-      scopes: ['source.shss', 'markup.underline'],
+      scopes: ['source.syntax-scopes', 'markup.underline'],
     });
   });
 
@@ -4244,7 +4244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.quote');
     expect(tokens[0]).toEqual({
       value: 'markup.quote',
-      scopes: ['source.shss', 'markup.quote'],
+      scopes: ['source.syntax-scopes', 'markup.quote'],
     });
   });
 
@@ -4252,7 +4252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.raw.inline');
     expect(tokens[0]).toEqual({
       value: 'markup.raw.inline',
-      scopes: ['source.shss', 'markup.raw.inline'],
+      scopes: ['source.syntax-scopes', 'markup.raw.inline'],
     });
   });
 
@@ -4260,7 +4260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.raw.block');
     expect(tokens[0]).toEqual({
       value: 'markup.raw.block',
-      scopes: ['source.shss', 'markup.raw.block'],
+      scopes: ['source.syntax-scopes', 'markup.raw.block'],
     });
   });
 
@@ -4268,7 +4268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.raw');
     expect(tokens[0]).toEqual({
       value: 'markup.raw',
-      scopes: ['source.shss', 'markup.raw'],
+      scopes: ['source.syntax-scopes', 'markup.raw'],
     });
   });
 
@@ -4276,7 +4276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup.other');
     expect(tokens[0]).toEqual({
       value: 'markup.other',
-      scopes: ['source.shss', 'markup.other'],
+      scopes: ['source.syntax-scopes', 'markup.other'],
     });
   });
 
@@ -4284,7 +4284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('markup');
     expect(tokens[0]).toEqual({
       value: 'markup',
-      scopes: ['source.shss', 'markup'],
+      scopes: ['source.syntax-scopes', 'markup'],
     });
   });
 
@@ -4292,7 +4292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.viewport');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.viewport',
-      scopes: ['source.shss', 'meta.at-rule.viewport'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.viewport'],
     });
   });
 
@@ -4300,7 +4300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.supports.header');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.supports.header',
-      scopes: ['source.shss', 'meta.at-rule.supports.header'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.supports.header'],
     });
   });
 
@@ -4308,7 +4308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.supports.body');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.supports.body',
-      scopes: ['source.shss', 'meta.at-rule.supports.body'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.supports.body'],
     });
   });
 
@@ -4316,7 +4316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.supports');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.supports',
-      scopes: ['source.shss', 'meta.at-rule.supports'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.supports'],
     });
   });
 
@@ -4324,7 +4324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.page');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.page',
-      scopes: ['source.shss', 'meta.at-rule.page'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.page'],
     });
   });
 
@@ -4332,7 +4332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.namespace');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.namespace',
-      scopes: ['source.shss', 'meta.at-rule.namespace'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.namespace'],
     });
   });
 
@@ -4340,7 +4340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.media.header');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.media.header',
-      scopes: ['source.shss', 'meta.at-rule.media.header'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.media.header'],
     });
   });
 
@@ -4348,7 +4348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.media.body');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.media.body',
-      scopes: ['source.shss', 'meta.at-rule.media.body'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.media.body'],
     });
   });
 
@@ -4356,7 +4356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.media');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.media',
-      scopes: ['source.shss', 'meta.at-rule.media'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.media'],
     });
   });
 
@@ -4364,7 +4364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.keyframes.header');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.keyframes.header',
-      scopes: ['source.shss', 'meta.at-rule.keyframes.header'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.keyframes.header'],
     });
   });
 
@@ -4372,7 +4372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.keyframes.body');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.keyframes.body',
-      scopes: ['source.shss', 'meta.at-rule.keyframes.body'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.keyframes.body'],
     });
   });
 
@@ -4380,7 +4380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.import');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.import',
-      scopes: ['source.shss', 'meta.at-rule.import'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.import'],
     });
   });
 
@@ -4388,7 +4388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.header');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.header',
-      scopes: ['source.shss', 'meta.at-rule.header'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.header'],
     });
   });
 
@@ -4396,7 +4396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.font-features');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.font-features',
-      scopes: ['source.shss', 'meta.at-rule.font-features'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.font-features'],
     });
   });
 
@@ -4404,7 +4404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.font-face');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.font-face',
-      scopes: ['source.shss', 'meta.at-rule.font-face'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.font-face'],
     });
   });
 
@@ -4412,7 +4412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.document.header');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.document.header',
-      scopes: ['source.shss', 'meta.at-rule.document.header'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.document.header'],
     });
   });
 
@@ -4420,7 +4420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.document.body');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.document.body',
-      scopes: ['source.shss', 'meta.at-rule.document.body'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.document.body'],
     });
   });
 
@@ -4428,7 +4428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.document');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.document',
-      scopes: ['source.shss', 'meta.at-rule.document'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.document'],
     });
   });
 
@@ -4436,7 +4436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.counter-style.header');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.counter-style.header',
-      scopes: ['source.shss', 'meta.at-rule.counter-style.header'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.counter-style.header'],
     });
   });
 
@@ -4444,7 +4444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.counter-style.body');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.counter-style.body',
-      scopes: ['source.shss', 'meta.at-rule.counter-style.body'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.counter-style.body'],
     });
   });
 
@@ -4452,7 +4452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.counter-style');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.counter-style',
-      scopes: ['source.shss', 'meta.at-rule.counter-style'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.counter-style'],
     });
   });
 
@@ -4460,7 +4460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.charset');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.charset',
-      scopes: ['source.shss', 'meta.at-rule.charset'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.charset'],
     });
   });
 
@@ -4468,7 +4468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule.body');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule.body',
-      scopes: ['source.shss', 'meta.at-rule.body'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule.body'],
     });
   });
 
@@ -4476,7 +4476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.at-rule');
     expect(tokens[0]).toEqual({
       value: 'meta.at-rule',
-      scopes: ['source.shss', 'meta.at-rule'],
+      scopes: ['source.syntax-scopes', 'meta.at-rule'],
     });
   });
 
@@ -4484,7 +4484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-without-value.html');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-without-value.html',
-      scopes: ['source.shss', 'meta.attribute-without-value.html'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-without-value.html'],
     });
   });
 
@@ -4492,7 +4492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value.style.html');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value.style.html',
-      scopes: ['source.shss', 'meta.attribute-with-value.style.html'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value.style.html'],
     });
   });
 
@@ -4500,7 +4500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value.style');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value.style',
-      scopes: ['source.shss', 'meta.attribute-with-value.style'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value.style'],
     });
   });
 
@@ -4508,7 +4508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value.id.html');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value.id.html',
-      scopes: ['source.shss', 'meta.attribute-with-value.id.html'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value.id.html'],
     });
   });
 
@@ -4516,7 +4516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value.id');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value.id',
-      scopes: ['source.shss', 'meta.attribute-with-value.id'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value.id'],
     });
   });
 
@@ -4524,7 +4524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value.html');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value.html',
-      scopes: ['source.shss', 'meta.attribute-with-value.html'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value.html'],
     });
   });
 
@@ -4532,7 +4532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value.class.html');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value.class.html',
-      scopes: ['source.shss', 'meta.attribute-with-value.class.html'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value.class.html'],
     });
   });
 
@@ -4540,7 +4540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value.class');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value.class',
-      scopes: ['source.shss', 'meta.attribute-with-value.class'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value.class'],
     });
   });
 
@@ -4548,7 +4548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-with-value');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-with-value',
-      scopes: ['source.shss', 'meta.attribute-with-value'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-with-value'],
     });
   });
 
@@ -4556,7 +4556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.attribute-selector');
     expect(tokens[0]).toEqual({
       value: 'meta.attribute-selector',
-      scopes: ['source.shss', 'meta.attribute-selector'],
+      scopes: ['source.syntax-scopes', 'meta.attribute-selector'],
     });
   });
 
@@ -4564,7 +4564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition.variable.local');
     expect(tokens[0]).toEqual({
       value: 'meta.definition.variable.local',
-      scopes: ['source.shss', 'meta.definition.variable.local'],
+      scopes: ['source.syntax-scopes', 'meta.definition.variable.local'],
     });
   });
 
@@ -4572,7 +4572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition.variable');
     expect(tokens[0]).toEqual({
       value: 'meta.definition.variable',
-      scopes: ['source.shss', 'meta.definition.variable'],
+      scopes: ['source.syntax-scopes', 'meta.definition.variable'],
     });
   });
 
@@ -4580,7 +4580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition.class.inherited.classes');
     expect(tokens[0]).toEqual({
       value: 'meta.definition.class.inherited.classes',
-      scopes: ['source.shss', 'meta.definition.class.inherited.classes'],
+      scopes: ['source.syntax-scopes', 'meta.definition.class.inherited.classes'],
     });
   });
 
@@ -4588,7 +4588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition.class.inherited');
     expect(tokens[0]).toEqual({
       value: 'meta.definition.class.inherited',
-      scopes: ['source.shss', 'meta.definition.class.inherited'],
+      scopes: ['source.syntax-scopes', 'meta.definition.class.inherited'],
     });
   });
 
@@ -4596,7 +4596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition.class.implemented.interfaces');
     expect(tokens[0]).toEqual({
       value: 'meta.definition.class.implemented.interfaces',
-      scopes: ['source.shss', 'meta.definition.class.implemented.interfaces'],
+      scopes: ['source.syntax-scopes', 'meta.definition.class.implemented.interfaces'],
     });
   });
 
@@ -4604,7 +4604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition.class.implemented');
     expect(tokens[0]).toEqual({
       value: 'meta.definition.class.implemented',
-      scopes: ['source.shss', 'meta.definition.class.implemented'],
+      scopes: ['source.syntax-scopes', 'meta.definition.class.implemented'],
     });
   });
 
@@ -4612,7 +4612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition.class');
     expect(tokens[0]).toEqual({
       value: 'meta.definition.class',
-      scopes: ['source.shss', 'meta.definition.class'],
+      scopes: ['source.syntax-scopes', 'meta.definition.class'],
     });
   });
 
@@ -4620,7 +4620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.definition');
     expect(tokens[0]).toEqual({
       value: 'meta.definition',
-      scopes: ['source.shss', 'meta.definition'],
+      scopes: ['source.syntax-scopes', 'meta.definition'],
     });
   });
 
@@ -4628,7 +4628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.type.data.record.block');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.type.data.record.block',
-      scopes: ['source.shss', 'meta.declaration.type.data.record.block'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.type.data.record.block'],
     });
   });
 
@@ -4636,7 +4636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.type.data.record');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.type.data.record',
-      scopes: ['source.shss', 'meta.declaration.type.data.record'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.type.data.record'],
     });
   });
 
@@ -4644,7 +4644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.type.data');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.type.data',
-      scopes: ['source.shss', 'meta.declaration.type.data'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.type.data'],
     });
   });
 
@@ -4652,7 +4652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.type.type');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.type.type',
-      scopes: ['source.shss', 'meta.declaration.type.type'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.type.type'],
     });
   });
 
@@ -4660,7 +4660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.type');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.type',
-      scopes: ['source.shss', 'meta.declaration.type'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.type'],
     });
   });
 
@@ -4668,7 +4668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.module');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.module',
-      scopes: ['source.shss', 'meta.declaration.module'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.module'],
     });
   });
 
@@ -4676,7 +4676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.instance.deriving');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.instance.deriving',
-      scopes: ['source.shss', 'meta.declaration.instance.deriving'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.instance.deriving'],
     });
   });
 
@@ -4684,7 +4684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.instance');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.instance',
-      scopes: ['source.shss', 'meta.declaration.instance'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.instance'],
     });
   });
 
@@ -4692,7 +4692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.exports');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.exports',
-      scopes: ['source.shss', 'meta.declaration.exports'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.exports'],
     });
   });
 
@@ -4700,7 +4700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.class');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.class',
-      scopes: ['source.shss', 'meta.declaration.class'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.class'],
     });
   });
 
@@ -4708,7 +4708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.assertion');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.assertion',
-      scopes: ['source.shss', 'meta.declaration.assertion'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.assertion'],
     });
   });
 
@@ -4716,7 +4716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration.annotation');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration.annotation',
-      scopes: ['source.shss', 'meta.declaration.annotation'],
+      scopes: ['source.syntax-scopes', 'meta.declaration.annotation'],
     });
   });
 
@@ -4724,7 +4724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.declaration');
     expect(tokens[0]).toEqual({
       value: 'meta.declaration',
-      scopes: ['source.shss', 'meta.declaration'],
+      scopes: ['source.syntax-scopes', 'meta.declaration'],
     });
   });
 
@@ -4732,7 +4732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.ctor.type-declaration');
     expect(tokens[0]).toEqual({
       value: 'meta.ctor.type-declaration',
-      scopes: ['source.shss', 'meta.ctor.type-declaration'],
+      scopes: ['source.syntax-scopes', 'meta.ctor.type-declaration'],
     });
   });
 
@@ -4740,7 +4740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.ctor');
     expect(tokens[0]).toEqual({
       value: 'meta.ctor',
-      scopes: ['source.shss', 'meta.ctor'],
+      scopes: ['source.syntax-scopes', 'meta.ctor'],
     });
   });
 
@@ -4748,7 +4748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.angle-brackets');
     expect(tokens[0]).toEqual({
       value: 'meta.angle-brackets',
-      scopes: ['source.shss', 'meta.angle-brackets'],
+      scopes: ['source.syntax-scopes', 'meta.angle-brackets'],
     });
   });
 
@@ -4756,7 +4756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.deriving.strategy');
     expect(tokens[0]).toEqual({
       value: 'meta.deriving.strategy',
-      scopes: ['source.shss', 'meta.deriving.strategy'],
+      scopes: ['source.syntax-scopes', 'meta.deriving.strategy'],
     });
   });
 
@@ -4764,7 +4764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.deriving');
     expect(tokens[0]).toEqual({
       value: 'meta.deriving',
-      scopes: ['source.shss', 'meta.deriving'],
+      scopes: ['source.syntax-scopes', 'meta.deriving'],
     });
   });
 
@@ -4772,7 +4772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.define');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.define',
-      scopes: ['source.shss', 'meta.directive.define'],
+      scopes: ['source.syntax-scopes', 'meta.directive.define'],
     });
   });
 
@@ -4780,7 +4780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.behaviour');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.behaviour',
-      scopes: ['source.shss', 'meta.directive.behaviour'],
+      scopes: ['source.syntax-scopes', 'meta.directive.behaviour'],
     });
   });
 
@@ -4788,7 +4788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.undef');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.undef',
-      scopes: ['source.shss', 'meta.directive.undef'],
+      scopes: ['source.syntax-scopes', 'meta.directive.undef'],
     });
   });
 
@@ -4796,7 +4796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.record');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.record',
-      scopes: ['source.shss', 'meta.directive.record'],
+      scopes: ['source.syntax-scopes', 'meta.directive.record'],
     });
   });
 
@@ -4804,7 +4804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.module');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.module',
-      scopes: ['source.shss', 'meta.directive.module'],
+      scopes: ['source.syntax-scopes', 'meta.directive.module'],
     });
   });
 
@@ -4812,7 +4812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.import');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.import',
-      scopes: ['source.shss', 'meta.directive.import'],
+      scopes: ['source.syntax-scopes', 'meta.directive.import'],
     });
   });
 
@@ -4820,7 +4820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.ifndef');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.ifndef',
-      scopes: ['source.shss', 'meta.directive.ifndef'],
+      scopes: ['source.syntax-scopes', 'meta.directive.ifndef'],
     });
   });
 
@@ -4828,7 +4828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.ifdef');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.ifdef',
-      scopes: ['source.shss', 'meta.directive.ifdef'],
+      scopes: ['source.syntax-scopes', 'meta.directive.ifdef'],
     });
   });
 
@@ -4836,7 +4836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive.export');
     expect(tokens[0]).toEqual({
       value: 'meta.directive.export',
-      scopes: ['source.shss', 'meta.directive.export'],
+      scopes: ['source.syntax-scopes', 'meta.directive.export'],
     });
   });
 
@@ -4844,7 +4844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.directive');
     expect(tokens[0]).toEqual({
       value: 'meta.directive',
-      scopes: ['source.shss', 'meta.directive'],
+      scopes: ['source.syntax-scopes', 'meta.directive'],
     });
   });
 
@@ -4852,7 +4852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.method-call.static');
     expect(tokens[0]).toEqual({
       value: 'meta.method-call.static',
-      scopes: ['source.shss', 'meta.method-call.static'],
+      scopes: ['source.syntax-scopes', 'meta.method-call.static'],
     });
   });
 
@@ -4860,7 +4860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.method-call');
     expect(tokens[0]).toEqual({
       value: 'meta.method-call',
-      scopes: ['source.shss', 'meta.method-call'],
+      scopes: ['source.syntax-scopes', 'meta.method-call'],
     });
   });
 
@@ -4868,7 +4868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.toc-list');
     expect(tokens[0]).toEqual({
       value: 'meta.toc-list',
-      scopes: ['source.shss', 'meta.toc-list'],
+      scopes: ['source.syntax-scopes', 'meta.toc-list'],
     });
   });
 
@@ -4876,7 +4876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.class-struct-block');
     expect(tokens[0]).toEqual({
       value: 'meta.class-struct-block',
-      scopes: ['source.shss', 'meta.class-struct-block'],
+      scopes: ['source.syntax-scopes', 'meta.class-struct-block'],
     });
   });
 
@@ -4884,7 +4884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.class.old-style');
     expect(tokens[0]).toEqual({
       value: 'meta.class.old-style',
-      scopes: ['source.shss', 'meta.class.old-style'],
+      scopes: ['source.syntax-scopes', 'meta.class.old-style'],
     });
   });
 
@@ -4892,7 +4892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.class.identifier');
     expect(tokens[0]).toEqual({
       value: 'meta.class.identifier',
-      scopes: ['source.shss', 'meta.class.identifier'],
+      scopes: ['source.syntax-scopes', 'meta.class.identifier'],
     });
   });
 
@@ -4900,7 +4900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.class');
     expect(tokens[0]).toEqual({
       value: 'meta.class',
-      scopes: ['source.shss', 'meta.class'],
+      scopes: ['source.syntax-scopes', 'meta.class'],
     });
   });
 
@@ -4908,7 +4908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.struct');
     expect(tokens[0]).toEqual({
       value: 'meta.struct',
-      scopes: ['source.shss', 'meta.struct'],
+      scopes: ['source.syntax-scopes', 'meta.struct'],
     });
   });
 
@@ -4916,7 +4916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.enum');
     expect(tokens[0]).toEqual({
       value: 'meta.enum',
-      scopes: ['source.shss', 'meta.enum'],
+      scopes: ['source.syntax-scopes', 'meta.enum'],
     });
   });
 
@@ -4924,7 +4924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.union');
     expect(tokens[0]).toEqual({
       value: 'meta.union',
-      scopes: ['source.shss', 'meta.union'],
+      scopes: ['source.syntax-scopes', 'meta.union'],
     });
   });
 
@@ -4932,7 +4932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.trait');
     expect(tokens[0]).toEqual({
       value: 'meta.trait',
-      scopes: ['source.shss', 'meta.trait'],
+      scopes: ['source.syntax-scopes', 'meta.trait'],
     });
   });
 
@@ -4940,7 +4940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.interface');
     expect(tokens[0]).toEqual({
       value: 'meta.interface',
-      scopes: ['source.shss', 'meta.interface'],
+      scopes: ['source.syntax-scopes', 'meta.interface'],
     });
   });
 
@@ -4948,7 +4948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.import');
     expect(tokens[0]).toEqual({
       value: 'meta.import',
-      scopes: ['source.shss', 'meta.import'],
+      scopes: ['source.syntax-scopes', 'meta.import'],
     });
   });
 
@@ -4956,7 +4956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.impl');
     expect(tokens[0]).toEqual({
       value: 'meta.impl',
-      scopes: ['source.shss', 'meta.impl'],
+      scopes: ['source.syntax-scopes', 'meta.impl'],
     });
   });
 
@@ -4964,7 +4964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.type');
     expect(tokens[0]).toEqual({
       value: 'meta.type',
-      scopes: ['source.shss', 'meta.type'],
+      scopes: ['source.syntax-scopes', 'meta.type'],
     });
   });
 
@@ -4972,7 +4972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.string');
     expect(tokens[0]).toEqual({
       value: 'meta.string',
-      scopes: ['source.shss', 'meta.string'],
+      scopes: ['source.syntax-scopes', 'meta.string'],
     });
   });
 
@@ -4980,7 +4980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.path');
     expect(tokens[0]).toEqual({
       value: 'meta.path',
-      scopes: ['source.shss', 'meta.path'],
+      scopes: ['source.syntax-scopes', 'meta.path'],
     });
   });
 
@@ -4988,7 +4988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function-call');
     expect(tokens[0]).toEqual({
       value: 'meta.function-call',
-      scopes: ['source.shss', 'meta.function-call'],
+      scopes: ['source.syntax-scopes', 'meta.function-call'],
     });
   });
 
@@ -4996,7 +4996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.block');
     expect(tokens[0]).toEqual({
       value: 'meta.block',
-      scopes: ['source.shss', 'meta.block'],
+      scopes: ['source.syntax-scopes', 'meta.block'],
     });
   });
 
@@ -5004,7 +5004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.catch');
     expect(tokens[0]).toEqual({
       value: 'meta.catch',
-      scopes: ['source.shss', 'meta.catch'],
+      scopes: ['source.syntax-scopes', 'meta.catch'],
     });
   });
 
@@ -5012,7 +5012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.embedded.block');
     expect(tokens[0]).toEqual({
       value: 'meta.embedded.block',
-      scopes: ['source.shss', 'meta.embedded.block'],
+      scopes: ['source.syntax-scopes', 'meta.embedded.block'],
     });
   });
 
@@ -5020,7 +5020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.embedded.sql');
     expect(tokens[0]).toEqual({
       value: 'meta.embedded.sql',
-      scopes: ['source.shss', 'meta.embedded.sql'],
+      scopes: ['source.syntax-scopes', 'meta.embedded.sql'],
     });
   });
 
@@ -5028,7 +5028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.embedded.line');
     expect(tokens[0]).toEqual({
       value: 'meta.embedded.line',
-      scopes: ['source.shss', 'meta.embedded.line'],
+      scopes: ['source.syntax-scopes', 'meta.embedded.line'],
     });
   });
 
@@ -5036,7 +5036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.embedded.block');
     expect(tokens[0]).toEqual({
       value: 'meta.embedded.block',
-      scopes: ['source.shss', 'meta.embedded.block'],
+      scopes: ['source.syntax-scopes', 'meta.embedded.block'],
     });
   });
 
@@ -5044,7 +5044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.embedded');
     expect(tokens[0]).toEqual({
       value: 'meta.embedded',
-      scopes: ['source.shss', 'meta.embedded'],
+      scopes: ['source.syntax-scopes', 'meta.embedded'],
     });
   });
 
@@ -5052,7 +5052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function');
     expect(tokens[0]).toEqual({
       value: 'meta.function',
-      scopes: ['source.shss', 'meta.function'],
+      scopes: ['source.syntax-scopes', 'meta.function'],
     });
   });
 
@@ -5060,7 +5060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.braces');
     expect(tokens[0]).toEqual({
       value: 'meta.braces',
-      scopes: ['source.shss', 'meta.braces'],
+      scopes: ['source.syntax-scopes', 'meta.braces'],
     });
   });
 
@@ -5068,7 +5068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.group');
     expect(tokens[0]).toEqual({
       value: 'meta.group',
-      scopes: ['source.shss', 'meta.group'],
+      scopes: ['source.syntax-scopes', 'meta.group'],
     });
   });
 
@@ -5076,7 +5076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.parens');
     expect(tokens[0]).toEqual({
       value: 'meta.parens',
-      scopes: ['source.shss', 'meta.parens'],
+      scopes: ['source.syntax-scopes', 'meta.parens'],
     });
   });
 
@@ -5084,7 +5084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.brackets');
     expect(tokens[0]).toEqual({
       value: 'meta.brackets',
-      scopes: ['source.shss', 'meta.brackets'],
+      scopes: ['source.syntax-scopes', 'meta.brackets'],
     });
   });
 
@@ -5092,7 +5092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.generic');
     expect(tokens[0]).toEqual({
       value: 'meta.generic',
-      scopes: ['source.shss', 'meta.generic'],
+      scopes: ['source.syntax-scopes', 'meta.generic'],
     });
   });
 
@@ -5100,7 +5100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.via');
     expect(tokens[0]).toEqual({
       value: 'meta.via',
-      scopes: ['source.shss', 'meta.via'],
+      scopes: ['source.syntax-scopes', 'meta.via'],
     });
   });
 
@@ -5108,7 +5108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.using-namespace-declaration');
     expect(tokens[0]).toEqual({
       value: 'meta.using-namespace-declaration',
-      scopes: ['source.shss', 'meta.using-namespace-declaration'],
+      scopes: ['source.syntax-scopes', 'meta.using-namespace-declaration'],
     });
   });
 
@@ -5116,7 +5116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.type-signature');
     expect(tokens[0]).toEqual({
       value: 'meta.type-signature',
-      scopes: ['source.shss', 'meta.type-signature'],
+      scopes: ['source.syntax-scopes', 'meta.type-signature'],
     });
   });
 
@@ -5124,7 +5124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.try.resources');
     expect(tokens[0]).toEqual({
       value: 'meta.try.resources',
-      scopes: ['source.shss', 'meta.try.resources'],
+      scopes: ['source.syntax-scopes', 'meta.try.resources'],
     });
   });
 
@@ -5132,7 +5132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.try');
     expect(tokens[0]).toEqual({
       value: 'meta.try',
-      scopes: ['source.shss', 'meta.try'],
+      scopes: ['source.syntax-scopes', 'meta.try'],
     });
   });
 
@@ -5140,7 +5140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.throwables');
     expect(tokens[0]).toEqual({
       value: 'meta.throwables',
-      scopes: ['source.shss', 'meta.throwables'],
+      scopes: ['source.syntax-scopes', 'meta.throwables'],
     });
   });
 
@@ -5148,7 +5148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.syntaxstart-block');
     expect(tokens[0]).toEqual({
       value: 'meta.syntaxstart-block',
-      scopes: ['source.shss', 'meta.syntaxstart-block'],
+      scopes: ['source.syntax-scopes', 'meta.syntaxstart-block'],
     });
   });
 
@@ -5156,7 +5156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.structure.tuple');
     expect(tokens[0]).toEqual({
       value: 'meta.structure.tuple',
-      scopes: ['source.shss', 'meta.structure.tuple'],
+      scopes: ['source.syntax-scopes', 'meta.structure.tuple'],
     });
   });
 
@@ -5164,7 +5164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.structure.record');
     expect(tokens[0]).toEqual({
       value: 'meta.structure.record',
-      scopes: ['source.shss', 'meta.structure.record'],
+      scopes: ['source.syntax-scopes', 'meta.structure.record'],
     });
   });
 
@@ -5172,7 +5172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.structure.list');
     expect(tokens[0]).toEqual({
       value: 'meta.structure.list',
-      scopes: ['source.shss', 'meta.structure.list'],
+      scopes: ['source.syntax-scopes', 'meta.structure.list'],
     });
   });
 
@@ -5180,7 +5180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.structure.list.function');
     expect(tokens[0]).toEqual({
       value: 'meta.structure.list.function',
-      scopes: ['source.shss', 'meta.structure.list.function'],
+      scopes: ['source.syntax-scopes', 'meta.structure.list.function'],
     });
   });
 
@@ -5188,7 +5188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.structure.dictionary');
     expect(tokens[0]).toEqual({
       value: 'meta.structure.dictionary',
-      scopes: ['source.shss', 'meta.structure.dictionary'],
+      scopes: ['source.syntax-scopes', 'meta.structure.dictionary'],
     });
   });
 
@@ -5196,7 +5196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.structure.binary');
     expect(tokens[0]).toEqual({
       value: 'meta.structure.binary',
-      scopes: ['source.shss', 'meta.structure.binary'],
+      scopes: ['source.syntax-scopes', 'meta.structure.binary'],
     });
   });
 
@@ -5204,7 +5204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.selector');
     expect(tokens[0]).toEqual({
       value: 'meta.selector',
-      scopes: ['source.shss', 'meta.selector'],
+      scopes: ['source.syntax-scopes', 'meta.selector'],
     });
   });
 
@@ -5212,7 +5212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.section');
     expect(tokens[0]).toEqual({
       value: 'meta.section',
-      scopes: ['source.shss', 'meta.section'],
+      scopes: ['source.syntax-scopes', 'meta.section'],
     });
   });
 
@@ -5220,7 +5220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.require');
     expect(tokens[0]).toEqual({
       value: 'meta.require',
-      scopes: ['source.shss', 'meta.require'],
+      scopes: ['source.syntax-scopes', 'meta.require'],
     });
   });
 
@@ -5228,7 +5228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.record-usage');
     expect(tokens[0]).toEqual({
       value: 'meta.record-usage',
-      scopes: ['source.shss', 'meta.record-usage'],
+      scopes: ['source.syntax-scopes', 'meta.record-usage'],
     });
   });
 
@@ -5236,7 +5236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.record-field.type-declaration');
     expect(tokens[0]).toEqual({
       value: 'meta.record-field.type-declaration',
-      scopes: ['source.shss', 'meta.record-field.type-declaration'],
+      scopes: ['source.syntax-scopes', 'meta.record-field.type-declaration'],
     });
   });
 
@@ -5244,7 +5244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.record-field');
     expect(tokens[0]).toEqual({
       value: 'meta.record-field',
-      scopes: ['source.shss', 'meta.record-field'],
+      scopes: ['source.syntax-scopes', 'meta.record-field'],
     });
   });
 
@@ -5252,7 +5252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.ratio');
     expect(tokens[0]).toEqual({
       value: 'meta.ratio',
-      scopes: ['source.shss', 'meta.ratio'],
+      scopes: ['source.syntax-scopes', 'meta.ratio'],
     });
   });
 
@@ -5260,7 +5260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.property-name');
     expect(tokens[0]).toEqual({
       value: 'meta.property-name',
-      scopes: ['source.shss', 'meta.property-name'],
+      scopes: ['source.syntax-scopes', 'meta.property-name'],
     });
   });
 
@@ -5268,7 +5268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.property-list.font-feature');
     expect(tokens[0]).toEqual({
       value: 'meta.property-list.font-feature',
-      scopes: ['source.shss', 'meta.property-list.font-feature'],
+      scopes: ['source.syntax-scopes', 'meta.property-list.font-feature'],
     });
   });
 
@@ -5276,7 +5276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.property-list');
     expect(tokens[0]).toEqual({
       value: 'meta.property-list',
-      scopes: ['source.shss', 'meta.property-list'],
+      scopes: ['source.syntax-scopes', 'meta.property-list'],
     });
   });
 
@@ -5284,7 +5284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor.pragma');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor.pragma',
-      scopes: ['source.shss', 'meta.preprocessor.pragma'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor.pragma'],
     });
   });
 
@@ -5292,7 +5292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor.macro');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor.macro',
-      scopes: ['source.shss', 'meta.preprocessor.macro'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor.macro'],
     });
   });
 
@@ -5300,7 +5300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor.include');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor.include',
-      scopes: ['source.shss', 'meta.preprocessor.include'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor.include'],
     });
   });
 
@@ -5308,7 +5308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor.diagnostic');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor.diagnostic',
-      scopes: ['source.shss', 'meta.preprocessor.diagnostic'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor.diagnostic'],
     });
   });
 
@@ -5316,7 +5316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor',
-      scopes: ['source.shss', 'meta.preprocessor'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor'],
     });
   });
 
@@ -5324,7 +5324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.package');
     expect(tokens[0]).toEqual({
       value: 'meta.package',
-      scopes: ['source.shss', 'meta.package'],
+      scopes: ['source.syntax-scopes', 'meta.package'],
     });
   });
 
@@ -5332,7 +5332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.other.constructor-list');
     expect(tokens[0]).toEqual({
       value: 'meta.other.constructor-list',
-      scopes: ['source.shss', 'meta.other.constructor-list'],
+      scopes: ['source.syntax-scopes', 'meta.other.constructor-list'],
     });
   });
 
@@ -5340,7 +5340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.other');
     expect(tokens[0]).toEqual({
       value: 'meta.other',
-      scopes: ['source.shss', 'meta.other'],
+      scopes: ['source.syntax-scopes', 'meta.other'],
     });
   });
 
@@ -5348,7 +5348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.namespace-block');
     expect(tokens[0]).toEqual({
       value: 'meta.namespace-block',
-      scopes: ['source.shss', 'meta.namespace-block'],
+      scopes: ['source.syntax-scopes', 'meta.namespace-block'],
     });
   });
 
@@ -5356,7 +5356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.multiline.type-declaration');
     expect(tokens[0]).toEqual({
       value: 'meta.multiline.type-declaration',
-      scopes: ['source.shss', 'meta.multiline.type-declaration'],
+      scopes: ['source.syntax-scopes', 'meta.multiline.type-declaration'],
     });
   });
 
@@ -5364,7 +5364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.multiline');
     expect(tokens[0]).toEqual({
       value: 'meta.multiline',
-      scopes: ['source.shss', 'meta.multiline'],
+      scopes: ['source.syntax-scopes', 'meta.multiline'],
     });
   });
 
@@ -5372,7 +5372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.module');
     expect(tokens[0]).toEqual({
       value: 'meta.module',
-      scopes: ['source.shss', 'meta.module'],
+      scopes: ['source.syntax-scopes', 'meta.module'],
     });
   });
 
@@ -5380,7 +5380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.method.return-type');
     expect(tokens[0]).toEqual({
       value: 'meta.method.return-type',
-      scopes: ['source.shss', 'meta.method.return-type'],
+      scopes: ['source.syntax-scopes', 'meta.method.return-type'],
     });
   });
 
@@ -5388,7 +5388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.method.identifier');
     expect(tokens[0]).toEqual({
       value: 'meta.method.identifier',
-      scopes: ['source.shss', 'meta.method.identifier'],
+      scopes: ['source.syntax-scopes', 'meta.method.identifier'],
     });
   });
 
@@ -5396,7 +5396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.method');
     expect(tokens[0]).toEqual({
       value: 'meta.method',
-      scopes: ['source.shss', 'meta.method'],
+      scopes: ['source.syntax-scopes', 'meta.method'],
     });
   });
 
@@ -5404,7 +5404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.method-call');
     expect(tokens[0]).toEqual({
       value: 'meta.method-call',
-      scopes: ['source.shss', 'meta.method-call'],
+      scopes: ['source.syntax-scopes', 'meta.method-call'],
     });
   });
 
@@ -5412,7 +5412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.macro-usage');
     expect(tokens[0]).toEqual({
       value: 'meta.macro-usage',
-      scopes: ['source.shss', 'meta.macro-usage'],
+      scopes: ['source.syntax-scopes', 'meta.macro-usage'],
     });
   });
 
@@ -5420,7 +5420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.item-access');
     expect(tokens[0]).toEqual({
       value: 'meta.item-access',
-      scopes: ['source.shss', 'meta.item-access'],
+      scopes: ['source.syntax-scopes', 'meta.item-access'],
     });
   });
 
@@ -5428,7 +5428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.interpolation');
     expect(tokens[0]).toEqual({
       value: 'meta.interpolation',
-      scopes: ['source.shss', 'meta.interpolation'],
+      scopes: ['source.syntax-scopes', 'meta.interpolation'],
     });
   });
 
@@ -5436,7 +5436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.inner-class');
     expect(tokens[0]).toEqual({
       value: 'meta.inner-class',
-      scopes: ['source.shss', 'meta.inner-class'],
+      scopes: ['source.syntax-scopes', 'meta.inner-class'],
     });
   });
 
@@ -5444,7 +5444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.initialization');
     expect(tokens[0]).toEqual({
       value: 'meta.initialization',
-      scopes: ['source.shss', 'meta.initialization'],
+      scopes: ['source.syntax-scopes', 'meta.initialization'],
     });
   });
 
@@ -5452,7 +5452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.foreign');
     expect(tokens[0]).toEqual({
       value: 'meta.foreign',
-      scopes: ['source.shss', 'meta.foreign'],
+      scopes: ['source.syntax-scopes', 'meta.foreign'],
     });
   });
 
@@ -5460,7 +5460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.finally');
     expect(tokens[0]).toEqual({
       value: 'meta.finally',
-      scopes: ['source.shss', 'meta.finally'],
+      scopes: ['source.syntax-scopes', 'meta.finally'],
     });
   });
 
@@ -5468,7 +5468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.feature-query');
     expect(tokens[0]).toEqual({
       value: 'meta.feature-query',
-      scopes: ['source.shss', 'meta.feature-query'],
+      scopes: ['source.syntax-scopes', 'meta.feature-query'],
     });
   });
 
@@ -5476,7 +5476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.extern-block');
     expect(tokens[0]).toEqual({
       value: 'meta.extern-block',
-      scopes: ['source.shss', 'meta.extern-block'],
+      scopes: ['source.syntax-scopes', 'meta.extern-block'],
     });
   });
 
@@ -5484,7 +5484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.try');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.try',
-      scopes: ['source.shss', 'meta.expression.try'],
+      scopes: ['source.syntax-scopes', 'meta.expression.try'],
     });
   });
 
@@ -5492,7 +5492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.receive');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.receive',
-      scopes: ['source.shss', 'meta.expression.receive'],
+      scopes: ['source.syntax-scopes', 'meta.expression.receive'],
     });
   });
 
@@ -5500,7 +5500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.query');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.query',
-      scopes: ['source.shss', 'meta.expression.query'],
+      scopes: ['source.syntax-scopes', 'meta.expression.query'],
     });
   });
 
@@ -5508,7 +5508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.parenthesized');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.parenthesized',
-      scopes: ['source.shss', 'meta.expression.parenthesized'],
+      scopes: ['source.syntax-scopes', 'meta.expression.parenthesized'],
     });
   });
 
@@ -5516,7 +5516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.if');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.if',
-      scopes: ['source.shss', 'meta.expression.if'],
+      scopes: ['source.syntax-scopes', 'meta.expression.if'],
     });
   });
 
@@ -5524,7 +5524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.fun');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.fun',
-      scopes: ['source.shss', 'meta.expression.fun'],
+      scopes: ['source.syntax-scopes', 'meta.expression.fun'],
     });
   });
 
@@ -5532,7 +5532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.case');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.case',
-      scopes: ['source.shss', 'meta.expression.case'],
+      scopes: ['source.syntax-scopes', 'meta.expression.case'],
     });
   });
 
@@ -5540,7 +5540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression.begin');
     expect(tokens[0]).toEqual({
       value: 'meta.expression.begin',
-      scopes: ['source.shss', 'meta.expression.begin'],
+      scopes: ['source.syntax-scopes', 'meta.expression.begin'],
     });
   });
 
@@ -5548,7 +5548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.expression');
     expect(tokens[0]).toEqual({
       value: 'meta.expression',
-      scopes: ['source.shss', 'meta.expression'],
+      scopes: ['source.syntax-scopes', 'meta.expression'],
     });
   });
 
@@ -5556,7 +5556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.environment-variable');
     expect(tokens[0]).toEqual({
       value: 'meta.environment-variable',
-      scopes: ['source.shss', 'meta.environment-variable'],
+      scopes: ['source.syntax-scopes', 'meta.environment-variable'],
     });
   });
 
@@ -5564,7 +5564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.enum');
     expect(tokens[0]).toEqual({
       value: 'meta.enum',
-      scopes: ['source.shss', 'meta.enum'],
+      scopes: ['source.syntax-scopes', 'meta.enum'],
     });
   });
 
@@ -5572,7 +5572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.encoding');
     expect(tokens[0]).toEqual({
       value: 'meta.encoding',
-      scopes: ['source.shss', 'meta.encoding'],
+      scopes: ['source.syntax-scopes', 'meta.encoding'],
     });
   });
 
@@ -5580,7 +5580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.empty-tuple');
     expect(tokens[0]).toEqual({
       value: 'meta.empty-tuple',
-      scopes: ['source.shss', 'meta.empty-tuple'],
+      scopes: ['source.syntax-scopes', 'meta.empty-tuple'],
     });
   });
 
@@ -5588,7 +5588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.empty-string.double');
     expect(tokens[0]).toEqual({
       value: 'meta.empty-string.double',
-      scopes: ['source.shss', 'meta.empty-string.double'],
+      scopes: ['source.syntax-scopes', 'meta.empty-string.double'],
     });
   });
 
@@ -5596,7 +5596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.empty-string');
     expect(tokens[0]).toEqual({
       value: 'meta.empty-string',
-      scopes: ['source.shss', 'meta.empty-string'],
+      scopes: ['source.syntax-scopes', 'meta.empty-string'],
     });
   });
 
@@ -5604,7 +5604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.empty-list');
     expect(tokens[0]).toEqual({
       value: 'meta.empty-list',
-      scopes: ['source.shss', 'meta.empty-list'],
+      scopes: ['source.syntax-scopes', 'meta.empty-list'],
     });
   });
 
@@ -5612,7 +5612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.empty-dictionary');
     expect(tokens[0]).toEqual({
       value: 'meta.empty-dictionary',
-      scopes: ['source.shss', 'meta.empty-dictionary'],
+      scopes: ['source.syntax-scopes', 'meta.empty-dictionary'],
     });
   });
 
@@ -5620,7 +5620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.style.html');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.style.html',
-      scopes: ['source.shss', 'meta.tag.style.html'],
+      scopes: ['source.syntax-scopes', 'meta.tag.style.html'],
     });
   });
 
@@ -5628,7 +5628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.style');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.style',
-      scopes: ['source.shss', 'meta.tag.style'],
+      scopes: ['source.syntax-scopes', 'meta.tag.style'],
     });
   });
 
@@ -5636,7 +5636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.structure');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.structure',
-      scopes: ['source.shss', 'meta.tag.structure'],
+      scopes: ['source.syntax-scopes', 'meta.tag.structure'],
     });
   });
 
@@ -5644,7 +5644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.sgml.html');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.sgml.html',
-      scopes: ['source.shss', 'meta.tag.sgml.html'],
+      scopes: ['source.syntax-scopes', 'meta.tag.sgml.html'],
     });
   });
 
@@ -5652,7 +5652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.sgml.doctype.html');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.sgml.doctype.html',
-      scopes: ['source.shss', 'meta.tag.sgml.doctype.html'],
+      scopes: ['source.syntax-scopes', 'meta.tag.sgml.doctype.html'],
     });
   });
 
@@ -5660,7 +5660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.sgml.doctype');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.sgml.doctype',
-      scopes: ['source.shss', 'meta.tag.sgml.doctype'],
+      scopes: ['source.syntax-scopes', 'meta.tag.sgml.doctype'],
     });
   });
 
@@ -5668,7 +5668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.sgml');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.sgml',
-      scopes: ['source.shss', 'meta.tag.sgml'],
+      scopes: ['source.syntax-scopes', 'meta.tag.sgml'],
     });
   });
 
@@ -5676,7 +5676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.script.html');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.script.html',
-      scopes: ['source.shss', 'meta.tag.script.html'],
+      scopes: ['source.syntax-scopes', 'meta.tag.script.html'],
     });
   });
 
@@ -5684,7 +5684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.script');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.script',
-      scopes: ['source.shss', 'meta.tag.script'],
+      scopes: ['source.syntax-scopes', 'meta.tag.script'],
     });
   });
 
@@ -5692,7 +5692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.preprocessor.xml.html');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.preprocessor.xml.html',
-      scopes: ['source.shss', 'meta.tag.preprocessor.xml.html'],
+      scopes: ['source.syntax-scopes', 'meta.tag.preprocessor.xml.html'],
     });
   });
 
@@ -5700,7 +5700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.preprocessor.xml');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.preprocessor.xml',
-      scopes: ['source.shss', 'meta.tag.preprocessor.xml'],
+      scopes: ['source.syntax-scopes', 'meta.tag.preprocessor.xml'],
     });
   });
 
@@ -5708,7 +5708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.preprocessor',
-      scopes: ['source.shss', 'meta.tag.preprocessor'],
+      scopes: ['source.syntax-scopes', 'meta.tag.preprocessor'],
     });
   });
 
@@ -5716,7 +5716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.other.html');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.other.html',
-      scopes: ['source.shss', 'meta.tag.other.html'],
+      scopes: ['source.syntax-scopes', 'meta.tag.other.html'],
     });
   });
 
@@ -5724,7 +5724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.other');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.other',
-      scopes: ['source.shss', 'meta.tag.other'],
+      scopes: ['source.syntax-scopes', 'meta.tag.other'],
     });
   });
 
@@ -5732,7 +5732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.inline');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.inline',
-      scopes: ['source.shss', 'meta.tag.inline'],
+      scopes: ['source.syntax-scopes', 'meta.tag.inline'],
     });
   });
 
@@ -5740,7 +5740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag.block');
     expect(tokens[0]).toEqual({
       value: 'meta.tag.block',
-      scopes: ['source.shss', 'meta.tag.block'],
+      scopes: ['source.syntax-scopes', 'meta.tag.block'],
     });
   });
 
@@ -5748,7 +5748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.tag');
     expect(tokens[0]).toEqual({
       value: 'meta.tag',
-      scopes: ['source.shss', 'meta.tag'],
+      scopes: ['source.syntax-scopes', 'meta.tag'],
     });
   });
 
@@ -5756,7 +5756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.leading-tabs');
     expect(tokens[0]).toEqual({
       value: 'meta.leading-tabs',
-      scopes: ['source.shss', 'meta.leading-tabs'],
+      scopes: ['source.syntax-scopes', 'meta.leading-tabs'],
     });
   });
 
@@ -5764,7 +5764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.odd-tab');
     expect(tokens[0]).toEqual({
       value: 'meta.odd-tab',
-      scopes: ['source.shss', 'meta.odd-tab'],
+      scopes: ['source.syntax-scopes', 'meta.odd-tab'],
     });
   });
 
@@ -5772,7 +5772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.even-tab');
     expect(tokens[0]).toEqual({
       value: 'meta.even-tab',
-      scopes: ['source.shss', 'meta.even-tab'],
+      scopes: ['source.syntax-scopes', 'meta.even-tab'],
     });
   });
 
@@ -5780,7 +5780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.paragraph');
     expect(tokens[0]).toEqual({
       value: 'meta.paragraph',
-      scopes: ['source.shss', 'meta.paragraph'],
+      scopes: ['source.syntax-scopes', 'meta.paragraph'],
     });
   });
 
@@ -5788,7 +5788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.diagnostics.pragma');
     expect(tokens[0]).toEqual({
       value: 'meta.diagnostics.pragma',
-      scopes: ['source.shss', 'meta.diagnostics.pragma'],
+      scopes: ['source.syntax-scopes', 'meta.diagnostics.pragma'],
     });
   });
 
@@ -5796,7 +5796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.variable');
     expect(tokens[0]).toEqual({
       value: 'meta.function.variable',
-      scopes: ['source.shss', 'meta.function.variable'],
+      scopes: ['source.syntax-scopes', 'meta.function.variable'],
     });
   });
 
@@ -5804,7 +5804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.url');
     expect(tokens[0]).toEqual({
       value: 'meta.function.url',
-      scopes: ['source.shss', 'meta.function.url'],
+      scopes: ['source.syntax-scopes', 'meta.function.url'],
     });
   });
 
@@ -5812,7 +5812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.type-declaration');
     expect(tokens[0]).toEqual({
       value: 'meta.function.type-declaration',
-      scopes: ['source.shss', 'meta.function.type-declaration'],
+      scopes: ['source.syntax-scopes', 'meta.function.type-declaration'],
     });
   });
 
@@ -5820,7 +5820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.timing-function');
     expect(tokens[0]).toEqual({
       value: 'meta.function.timing-function',
-      scopes: ['source.shss', 'meta.function.timing-function'],
+      scopes: ['source.syntax-scopes', 'meta.function.timing-function'],
     });
   });
 
@@ -5828,7 +5828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.shape');
     expect(tokens[0]).toEqual({
       value: 'meta.function.shape',
-      scopes: ['source.shss', 'meta.function.shape'],
+      scopes: ['source.syntax-scopes', 'meta.function.shape'],
     });
   });
 
@@ -5836,7 +5836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.misc');
     expect(tokens[0]).toEqual({
       value: 'meta.function.misc',
-      scopes: ['source.shss', 'meta.function.misc'],
+      scopes: ['source.syntax-scopes', 'meta.function.misc'],
     });
   });
 
@@ -5844,7 +5844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.method.without-arguments');
     expect(tokens[0]).toEqual({
       value: 'meta.function.method.without-arguments',
-      scopes: ['source.shss', 'meta.function.method.without-arguments'],
+      scopes: ['source.syntax-scopes', 'meta.function.method.without-arguments'],
     });
   });
 
@@ -5852,7 +5852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.method.with-arguments');
     expect(tokens[0]).toEqual({
       value: 'meta.function.method.with-arguments',
-      scopes: ['source.shss', 'meta.function.method.with-arguments'],
+      scopes: ['source.syntax-scopes', 'meta.function.method.with-arguments'],
     });
   });
 
@@ -5860,7 +5860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.method');
     expect(tokens[0]).toEqual({
       value: 'meta.function.method',
-      scopes: ['source.shss', 'meta.function.method'],
+      scopes: ['source.syntax-scopes', 'meta.function.method'],
     });
   });
 
@@ -5868,7 +5868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.inline');
     expect(tokens[0]).toEqual({
       value: 'meta.function.inline',
-      scopes: ['source.shss', 'meta.function.inline'],
+      scopes: ['source.syntax-scopes', 'meta.function.inline'],
     });
   });
 
@@ -5876,7 +5876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.gradient.invalid.deprecated.gradient');
     expect(tokens[0]).toEqual({
       value: 'meta.function.gradient.invalid.deprecated.gradient',
-      scopes: ['source.shss', 'meta.function.gradient.invalid.deprecated.gradient'],
+      scopes: ['source.syntax-scopes', 'meta.function.gradient.invalid.deprecated.gradient'],
     });
   });
 
@@ -5884,7 +5884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.gradient.invalid.deprecated');
     expect(tokens[0]).toEqual({
       value: 'meta.function.gradient.invalid.deprecated',
-      scopes: ['source.shss', 'meta.function.gradient.invalid.deprecated'],
+      scopes: ['source.syntax-scopes', 'meta.function.gradient.invalid.deprecated'],
     });
   });
 
@@ -5892,7 +5892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.gradient.invalid');
     expect(tokens[0]).toEqual({
       value: 'meta.function.gradient.invalid',
-      scopes: ['source.shss', 'meta.function.gradient.invalid'],
+      scopes: ['source.syntax-scopes', 'meta.function.gradient.invalid'],
     });
   });
 
@@ -5900,7 +5900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.gradient');
     expect(tokens[0]).toEqual({
       value: 'meta.function.gradient',
-      scopes: ['source.shss', 'meta.function.gradient'],
+      scopes: ['source.syntax-scopes', 'meta.function.gradient'],
     });
   });
 
@@ -5908,7 +5908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.document-rule');
     expect(tokens[0]).toEqual({
       value: 'meta.function.document-rule',
-      scopes: ['source.shss', 'meta.function.document-rule'],
+      scopes: ['source.syntax-scopes', 'meta.function.document-rule'],
     });
   });
 
@@ -5916,7 +5916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.destructor.prototype');
     expect(tokens[0]).toEqual({
       value: 'meta.function.destructor.prototype',
-      scopes: ['source.shss', 'meta.function.destructor.prototype'],
+      scopes: ['source.syntax-scopes', 'meta.function.destructor.prototype'],
     });
   });
 
@@ -5924,7 +5924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.destructor');
     expect(tokens[0]).toEqual({
       value: 'meta.function.destructor',
-      scopes: ['source.shss', 'meta.function.destructor'],
+      scopes: ['source.syntax-scopes', 'meta.function.destructor'],
     });
   });
 
@@ -5932,7 +5932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.decorator');
     expect(tokens[0]).toEqual({
       value: 'meta.function.decorator',
-      scopes: ['source.shss', 'meta.function.decorator'],
+      scopes: ['source.syntax-scopes', 'meta.function.decorator'],
     });
   });
 
@@ -5940,7 +5940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.constructor.initializer-list');
     expect(tokens[0]).toEqual({
       value: 'meta.function.constructor.initializer-list',
-      scopes: ['source.shss', 'meta.function.constructor.initializer-list'],
+      scopes: ['source.syntax-scopes', 'meta.function.constructor.initializer-list'],
     });
   });
 
@@ -5948,7 +5948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.constructor');
     expect(tokens[0]).toEqual({
       value: 'meta.function.constructor',
-      scopes: ['source.shss', 'meta.function.constructor'],
+      scopes: ['source.syntax-scopes', 'meta.function.constructor'],
     });
   });
 
@@ -5956,7 +5956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.color');
     expect(tokens[0]).toEqual({
       value: 'meta.function.color',
-      scopes: ['source.shss', 'meta.function.color'],
+      scopes: ['source.syntax-scopes', 'meta.function.color'],
     });
   });
 
@@ -5964,7 +5964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.calc');
     expect(tokens[0]).toEqual({
       value: 'meta.function.calc',
-      scopes: ['source.shss', 'meta.function.calc'],
+      scopes: ['source.syntax-scopes', 'meta.function.calc'],
     });
   });
 
@@ -5972,7 +5972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.parameters');
     expect(tokens[0]).toEqual({
       value: 'meta.function.parameters',
-      scopes: ['source.shss', 'meta.function.parameters'],
+      scopes: ['source.syntax-scopes', 'meta.function.parameters'],
     });
   });
 
@@ -5980,7 +5980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.return-type');
     expect(tokens[0]).toEqual({
       value: 'meta.function.return-type',
-      scopes: ['source.shss', 'meta.function.return-type'],
+      scopes: ['source.syntax-scopes', 'meta.function.return-type'],
     });
   });
 
@@ -5988,7 +5988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function.signature');
     expect(tokens[0]).toEqual({
       value: 'meta.function.signature',
-      scopes: ['source.shss', 'meta.function.signature'],
+      scopes: ['source.syntax-scopes', 'meta.function.signature'],
     });
   });
 
@@ -5996,7 +5996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.function');
     expect(tokens[0]).toEqual({
       value: 'meta.function',
-      scopes: ['source.shss', 'meta.function'],
+      scopes: ['source.syntax-scopes', 'meta.function'],
     });
   });
 
@@ -6004,7 +6004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.namespace');
     expect(tokens[0]).toEqual({
       value: 'meta.namespace',
-      scopes: ['source.shss', 'meta.namespace'],
+      scopes: ['source.syntax-scopes', 'meta.namespace'],
     });
   });
 
@@ -6012,7 +6012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor.pragma');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor.pragma',
-      scopes: ['source.shss', 'meta.preprocessor.pragma'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor.pragma'],
     });
   });
 
@@ -6020,7 +6020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor.include');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor.include',
-      scopes: ['source.shss', 'meta.preprocessor.include'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor.include'],
     });
   });
 
@@ -6028,7 +6028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'meta.preprocessor',
-      scopes: ['source.shss', 'meta.preprocessor'],
+      scopes: ['source.syntax-scopes', 'meta.preprocessor'],
     });
   });
 
@@ -6036,7 +6036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.interpolation');
     expect(tokens[0]).toEqual({
       value: 'meta.interpolation',
-      scopes: ['source.shss', 'meta.interpolation'],
+      scopes: ['source.syntax-scopes', 'meta.interpolation'],
     });
   });
 
@@ -6044,7 +6044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.annotation.identifier');
     expect(tokens[0]).toEqual({
       value: 'meta.annotation.identifier',
-      scopes: ['source.shss', 'meta.annotation.identifier'],
+      scopes: ['source.syntax-scopes', 'meta.annotation.identifier'],
     });
   });
 
@@ -6052,7 +6052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.annotation.parameters');
     expect(tokens[0]).toEqual({
       value: 'meta.annotation.parameters',
-      scopes: ['source.shss', 'meta.annotation.parameters'],
+      scopes: ['source.syntax-scopes', 'meta.annotation.parameters'],
     });
   });
 
@@ -6060,7 +6060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta.annotation');
     expect(tokens[0]).toEqual({
       value: 'meta.annotation',
-      scopes: ['source.shss', 'meta.annotation'],
+      scopes: ['source.syntax-scopes', 'meta.annotation'],
     });
   });
 
@@ -6068,7 +6068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('meta');
     expect(tokens[0]).toEqual({
       value: 'meta',
-      scopes: ['source.shss', 'meta'],
+      scopes: ['source.syntax-scopes', 'meta'],
     });
   });
 
@@ -6076,7 +6076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('parameter.variable.function');
     expect(tokens[0]).toEqual({
       value: 'parameter.variable.function',
-      scopes: ['source.shss', 'parameter.variable.function'],
+      scopes: ['source.syntax-scopes', 'parameter.variable.function'],
     });
   });
 
@@ -6084,7 +6084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('parameter.variable');
     expect(tokens[0]).toEqual({
       value: 'parameter.variable',
-      scopes: ['source.shss', 'parameter.variable'],
+      scopes: ['source.syntax-scopes', 'parameter.variable'],
     });
   });
 
@@ -6092,7 +6092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('parameter');
     expect(tokens[0]).toEqual({
       value: 'parameter',
-      scopes: ['source.shss', 'parameter'],
+      scopes: ['source.syntax-scopes', 'parameter'],
     });
   });
 
@@ -6100,7 +6100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.bracket.square');
     expect(tokens[0]).toEqual({
       value: 'punctuation.bracket.square',
-      scopes: ['source.shss', 'punctuation.bracket.square'],
+      scopes: ['source.syntax-scopes', 'punctuation.bracket.square'],
     });
   });
 
@@ -6108,7 +6108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.bracket.round',
-      scopes: ['source.shss', 'punctuation.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.bracket.round'],
     });
   });
 
@@ -6116,7 +6116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.bracket.curly',
-      scopes: ['source.shss', 'punctuation.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.bracket.curly'],
     });
   });
 
@@ -6124,7 +6124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.bracket.angle');
     expect(tokens[0]).toEqual({
       value: 'punctuation.bracket.angle',
-      scopes: ['source.shss', 'punctuation.bracket.angle'],
+      scopes: ['source.syntax-scopes', 'punctuation.bracket.angle'],
     });
   });
 
@@ -6132,7 +6132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.bracket',
-      scopes: ['source.shss', 'punctuation.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.bracket'],
     });
   });
 
@@ -6140,7 +6140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.whitespace.comment.leading');
     expect(tokens[0]).toEqual({
       value: 'punctuation.whitespace.comment.leading',
-      scopes: ['source.shss', 'punctuation.whitespace.comment.leading'],
+      scopes: ['source.syntax-scopes', 'punctuation.whitespace.comment.leading'],
     });
   });
 
@@ -6148,7 +6148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.whitespace.comment');
     expect(tokens[0]).toEqual({
       value: 'punctuation.whitespace.comment',
-      scopes: ['source.shss', 'punctuation.whitespace.comment'],
+      scopes: ['source.syntax-scopes', 'punctuation.whitespace.comment'],
     });
   });
 
@@ -6156,7 +6156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.whitespace.support.function.leading');
     expect(tokens[0]).toEqual({
       value: 'punctuation.whitespace.support.function.leading',
-      scopes: ['source.shss', 'punctuation.whitespace.support.function.leading'],
+      scopes: ['source.syntax-scopes', 'punctuation.whitespace.support.function.leading'],
     });
   });
 
@@ -6164,7 +6164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.whitespace.support.function');
     expect(tokens[0]).toEqual({
       value: 'punctuation.whitespace.support.function',
-      scopes: ['source.shss', 'punctuation.whitespace.support.function'],
+      scopes: ['source.syntax-scopes', 'punctuation.whitespace.support.function'],
     });
   });
 
@@ -6172,7 +6172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.whitespace.support');
     expect(tokens[0]).toEqual({
       value: 'punctuation.whitespace.support',
-      scopes: ['source.shss', 'punctuation.whitespace.support'],
+      scopes: ['source.syntax-scopes', 'punctuation.whitespace.support'],
     });
   });
 
@@ -6180,7 +6180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.whitespace');
     expect(tokens[0]).toEqual({
       value: 'punctuation.whitespace',
-      scopes: ['source.shss', 'punctuation.whitespace'],
+      scopes: ['source.syntax-scopes', 'punctuation.whitespace'],
     });
   });
 
@@ -6188,7 +6188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.vararg-ellipses');
     expect(tokens[0]).toEqual({
       value: 'punctuation.vararg-ellipses',
-      scopes: ['source.shss', 'punctuation.vararg-ellipses'],
+      scopes: ['source.syntax-scopes', 'punctuation.vararg-ellipses'],
     });
   });
 
@@ -6196,7 +6196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.terminator.semicolon');
     expect(tokens[0]).toEqual({
       value: 'punctuation.terminator.semicolon',
-      scopes: ['source.shss', 'punctuation.terminator.semicolon'],
+      scopes: ['source.syntax-scopes', 'punctuation.terminator.semicolon'],
     });
   });
 
@@ -6204,7 +6204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.terminator.statement');
     expect(tokens[0]).toEqual({
       value: 'punctuation.terminator.statement',
-      scopes: ['source.shss', 'punctuation.terminator.statement'],
+      scopes: ['source.syntax-scopes', 'punctuation.terminator.statement'],
     });
   });
 
@@ -6212,7 +6212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.terminator.expression');
     expect(tokens[0]).toEqual({
       value: 'punctuation.terminator.expression',
-      scopes: ['source.shss', 'punctuation.terminator.expression'],
+      scopes: ['source.syntax-scopes', 'punctuation.terminator.expression'],
     });
   });
 
@@ -6220,7 +6220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.terminator.rule');
     expect(tokens[0]).toEqual({
       value: 'punctuation.terminator.rule',
-      scopes: ['source.shss', 'punctuation.terminator.rule'],
+      scopes: ['source.syntax-scopes', 'punctuation.terminator.rule'],
     });
   });
 
@@ -6228,7 +6228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.terminator');
     expect(tokens[0]).toEqual({
       value: 'punctuation.terminator',
-      scopes: ['source.shss', 'punctuation.terminator'],
+      scopes: ['source.syntax-scopes', 'punctuation.terminator'],
     });
   });
 
@@ -6236,7 +6236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.delimiter.decimal.period');
     expect(tokens[0]).toEqual({
       value: 'punctuation.delimiter.decimal.period',
-      scopes: ['source.shss', 'punctuation.delimiter.decimal.period'],
+      scopes: ['source.syntax-scopes', 'punctuation.delimiter.decimal.period'],
     });
   });
 
@@ -6244,7 +6244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.delimiter.decimal');
     expect(tokens[0]).toEqual({
       value: 'punctuation.delimiter.decimal',
-      scopes: ['source.shss', 'punctuation.delimiter.decimal'],
+      scopes: ['source.syntax-scopes', 'punctuation.delimiter.decimal'],
     });
   });
 
@@ -6252,7 +6252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.delimiter');
     expect(tokens[0]).toEqual({
       value: 'punctuation.delimiter',
-      scopes: ['source.shss', 'punctuation.delimiter'],
+      scopes: ['source.syntax-scopes', 'punctuation.delimiter'],
     });
   });
 
@@ -6260,7 +6260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.comma');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.comma',
-      scopes: ['source.shss', 'punctuation.separator.comma'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.comma'],
     });
   });
 
@@ -6268,7 +6268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.colon');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.colon',
-      scopes: ['source.shss', 'punctuation.separator.colon'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.colon'],
     });
   });
 
@@ -6276,7 +6276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.arrow');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.arrow',
-      scopes: ['source.shss', 'punctuation.separator.arrow'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.arrow'],
     });
   });
 
@@ -6284,7 +6284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.key-value');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.key-value',
-      scopes: ['source.shss', 'punctuation.separator.key-value'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.key-value'],
     });
   });
 
@@ -6292,7 +6292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.inheritance');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.inheritance',
-      scopes: ['source.shss', 'punctuation.separator.inheritance'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.inheritance'],
     });
   });
 
@@ -6300,7 +6300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.delimiter');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.delimiter',
-      scopes: ['source.shss', 'punctuation.separator.delimiter'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.delimiter'],
     });
   });
 
@@ -6308,7 +6308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.classes');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.classes',
-      scopes: ['source.shss', 'punctuation.separator.classes'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.classes'],
     });
   });
 
@@ -6316,7 +6316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.continuation');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.continuation',
-      scopes: ['source.shss', 'punctuation.separator.continuation'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.continuation'],
     });
   });
 
@@ -6324,7 +6324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.decimal.period');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.decimal.period',
-      scopes: ['source.shss', 'punctuation.separator.decimal.period'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.decimal.period'],
     });
   });
 
@@ -6332,7 +6332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.decimal');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.decimal',
-      scopes: ['source.shss', 'punctuation.separator.decimal'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.decimal'],
     });
   });
 
@@ -6340,7 +6340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.variable');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.variable',
-      scopes: ['source.shss', 'punctuation.separator.variable'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.variable'],
     });
   });
 
@@ -6348,7 +6348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.valuepair.dictionary');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.valuepair.dictionary',
-      scopes: ['source.shss', 'punctuation.separator.valuepair.dictionary'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.valuepair.dictionary'],
     });
   });
 
@@ -6356,7 +6356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.valuepair');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.valuepair',
-      scopes: ['source.shss', 'punctuation.separator.valuepair'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.valuepair'],
     });
   });
 
@@ -6364,7 +6364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.value-type');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.value-type',
-      scopes: ['source.shss', 'punctuation.separator.value-type'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.value-type'],
     });
   });
 
@@ -6372,7 +6372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.value-size');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.value-size',
-      scopes: ['source.shss', 'punctuation.separator.value-size'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.value-size'],
     });
   });
 
@@ -6380,7 +6380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.types');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.types',
-      scopes: ['source.shss', 'punctuation.separator.types'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.types'],
     });
   });
 
@@ -6388,7 +6388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.type-specifiers');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.type-specifiers',
-      scopes: ['source.shss', 'punctuation.separator.type-specifiers'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.type-specifiers'],
     });
   });
 
@@ -6396,7 +6396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.tuple');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.tuple',
-      scopes: ['source.shss', 'punctuation.separator.tuple'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.tuple'],
     });
   });
 
@@ -6404,7 +6404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.statement');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.statement',
-      scopes: ['source.shss', 'punctuation.separator.statement'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.statement'],
     });
   });
 
@@ -6412,7 +6412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.record-field');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.record-field',
-      scopes: ['source.shss', 'punctuation.separator.record-field'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.record-field'],
     });
   });
 
@@ -6420,7 +6420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.property.period');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.property.period',
-      scopes: ['source.shss', 'punctuation.separator.property.period'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.property.period'],
     });
   });
 
@@ -6428,7 +6428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.property');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.property',
-      scopes: ['source.shss', 'punctuation.separator.property'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.property'],
     });
   });
 
@@ -6436,7 +6436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.pointer-access');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.pointer-access',
-      scopes: ['source.shss', 'punctuation.separator.pointer-access'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.pointer-access'],
     });
   });
 
@@ -6444,7 +6444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.placeholder-parts');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.placeholder-parts',
-      scopes: ['source.shss', 'punctuation.separator.placeholder-parts'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.placeholder-parts'],
     });
   });
 
@@ -6452,7 +6452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.pipe');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.pipe',
-      scopes: ['source.shss', 'punctuation.separator.pipe'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.pipe'],
     });
   });
 
@@ -6460,7 +6460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.period');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.period',
-      scopes: ['source.shss', 'punctuation.separator.period'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.period'],
     });
   });
 
@@ -6468,7 +6468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.parameters');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.parameters',
-      scopes: ['source.shss', 'punctuation.separator.parameters'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.parameters'],
     });
   });
 
@@ -6476,7 +6476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.other');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.other',
-      scopes: ['source.shss', 'punctuation.separator.other'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.other'],
     });
   });
 
@@ -6484,7 +6484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.object');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.object',
-      scopes: ['source.shss', 'punctuation.separator.object'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.object'],
     });
   });
 
@@ -6492,7 +6492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.namespace.access');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.namespace.access',
-      scopes: ['source.shss', 'punctuation.separator.namespace.access'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.namespace.access'],
     });
   });
 
@@ -6500,7 +6500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.namespace');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.namespace',
-      scopes: ['source.shss', 'punctuation.separator.namespace'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.namespace'],
     });
   });
 
@@ -6508,7 +6508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.module-function');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.module-function',
-      scopes: ['source.shss', 'punctuation.separator.module-function'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.module-function'],
     });
   });
 
@@ -6516,7 +6516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.method.period');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.method.period',
-      scopes: ['source.shss', 'punctuation.separator.method.period'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.method.period'],
     });
   });
 
@@ -6524,7 +6524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.method');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.method',
-      scopes: ['source.shss', 'punctuation.separator.method'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.method'],
     });
   });
 
@@ -6532,7 +6532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.list.comma');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.list.comma',
-      scopes: ['source.shss', 'punctuation.separator.list.comma'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.list.comma'],
     });
   });
 
@@ -6540,7 +6540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.list');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.list',
-      scopes: ['source.shss', 'punctuation.separator.list'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.list'],
     });
   });
 
@@ -6548,7 +6548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.key-value');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.key-value',
-      scopes: ['source.shss', 'punctuation.separator.key-value'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.key-value'],
     });
   });
 
@@ -6556,7 +6556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.integer-float');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.integer-float',
-      scopes: ['source.shss', 'punctuation.separator.integer-float'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.integer-float'],
     });
   });
 
@@ -6564,7 +6564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.inheritance');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.inheritance',
-      scopes: ['source.shss', 'punctuation.separator.inheritance'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.inheritance'],
     });
   });
 
@@ -6572,7 +6572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.guards');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.guards',
-      scopes: ['source.shss', 'punctuation.separator.guards'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.guards'],
     });
   });
 
@@ -6580,7 +6580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.function-punctuation-head-body');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.function-punctuation-head-body',
-      scopes: ['source.shss', 'punctuation.separator.function-punctuation-head-body'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.function-punctuation-head-body'],
     });
   });
 
@@ -6588,7 +6588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.function-arity');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.function-arity',
-      scopes: ['source.shss', 'punctuation.separator.function-arity'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.function-arity'],
     });
   });
 
@@ -6596,7 +6596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.expressions');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.expressions',
-      scopes: ['source.shss', 'punctuation.separator.expressions'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.expressions'],
     });
   });
 
@@ -6604,7 +6604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.dot-access');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.dot-access',
-      scopes: ['source.shss', 'punctuation.separator.dot-access'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.dot-access'],
     });
   });
 
@@ -6612,7 +6612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.dictionary');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.dictionary',
-      scopes: ['source.shss', 'punctuation.separator.dictionary'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.dictionary'],
     });
   });
 
@@ -6620,7 +6620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.delimiter');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.delimiter',
-      scopes: ['source.shss', 'punctuation.separator.delimiter'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.delimiter'],
     });
   });
 
@@ -6628,7 +6628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.define');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.define',
-      scopes: ['source.shss', 'punctuation.separator.define'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.define'],
     });
   });
 
@@ -6636,7 +6636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.dash.unicode-range');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.dash.unicode-range',
-      scopes: ['source.shss', 'punctuation.separator.dash.unicode-range'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.dash.unicode-range'],
     });
   });
 
@@ -6644,7 +6644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.dash');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.dash',
-      scopes: ['source.shss', 'punctuation.separator.dash'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.dash'],
     });
   });
 
@@ -6652,7 +6652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.continuation.line');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.continuation.line',
-      scopes: ['source.shss', 'punctuation.separator.continuation.line'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.continuation.line'],
     });
   });
 
@@ -6660,7 +6660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.continuation');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.continuation',
-      scopes: ['source.shss', 'punctuation.separator.continuation'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.continuation'],
     });
   });
 
@@ -6668,7 +6668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.comma');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.comma',
-      scopes: ['source.shss', 'punctuation.separator.comma'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.comma'],
     });
   });
 
@@ -6676,7 +6676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.clauses');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.clauses',
-      scopes: ['source.shss', 'punctuation.separator.clauses'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.clauses'],
     });
   });
 
@@ -6684,7 +6684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.clause-head-body');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.clause-head-body',
-      scopes: ['source.shss', 'punctuation.separator.clause-head-body'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.clause-head-body'],
     });
   });
 
@@ -6692,7 +6692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.class.record');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.class.record',
-      scopes: ['source.shss', 'punctuation.separator.class.record'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.class.record'],
     });
   });
 
@@ -6700,7 +6700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.class');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.class',
-      scopes: ['source.shss', 'punctuation.separator.class'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.class'],
     });
   });
 
@@ -6708,7 +6708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.binary');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.binary',
-      scopes: ['source.shss', 'punctuation.separator.binary'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.binary'],
     });
   });
 
@@ -6716,7 +6716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator.arguments');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator.arguments',
-      scopes: ['source.shss', 'punctuation.separator.arguments'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator.arguments'],
     });
   });
 
@@ -6724,7 +6724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.separator');
     expect(tokens[0]).toEqual({
       value: 'punctuation.separator',
-      scopes: ['source.shss', 'punctuation.separator'],
+      scopes: ['source.syntax-scopes', 'punctuation.separator'],
     });
   });
 
@@ -6732,7 +6732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.accessor');
     expect(tokens[0]).toEqual({
       value: 'punctuation.accessor',
-      scopes: ['source.shss', 'punctuation.accessor'],
+      scopes: ['source.syntax-scopes', 'punctuation.accessor'],
     });
   });
 
@@ -6740,7 +6740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try.resources.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try.resources.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.try.resources.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try.resources.begin.bracket.round'],
     });
   });
 
@@ -6748,7 +6748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try.resources.begin.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try.resources.begin.bracket',
-      scopes: ['source.shss', 'punctuation.section.try.resources.begin.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try.resources.begin.bracket'],
     });
   });
 
@@ -6756,7 +6756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try.resources.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try.resources.begin',
-      scopes: ['source.shss', 'punctuation.section.try.resources.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try.resources.begin'],
     });
   });
 
@@ -6764,7 +6764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try.resources');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try.resources',
-      scopes: ['source.shss', 'punctuation.section.try.resources'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try.resources'],
     });
   });
 
@@ -6772,7 +6772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.try.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try.begin.bracket.curly'],
     });
   });
 
@@ -6780,7 +6780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try.begin.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try.begin.bracket',
-      scopes: ['source.shss', 'punctuation.section.try.begin.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try.begin.bracket'],
     });
   });
 
@@ -6788,7 +6788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try.begin.');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try.begin.',
-      scopes: ['source.shss', 'punctuation.section.try.begin.'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try.begin.'],
     });
   });
 
@@ -6796,7 +6796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.try');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.try',
-      scopes: ['source.shss', 'punctuation.section.try'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.try'],
     });
   });
 
@@ -6804,7 +6804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.symbol.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.symbol.begin',
-      scopes: ['source.shss', 'punctuation.section.symbol.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.symbol.begin'],
     });
   });
 
@@ -6812,7 +6812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.supports.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.supports.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.supports.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.supports.begin.bracket.curly'],
     });
   });
 
@@ -6820,7 +6820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.supports.end.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.supports.end.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.supports.end.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.supports.end.bracket.curly'],
     });
   });
 
@@ -6828,7 +6828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.scope.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.scope.end',
-      scopes: ['source.shss', 'punctuation.section.scope.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.scope.end'],
     });
   });
 
@@ -6836,7 +6836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.scope.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.scope.begin',
-      scopes: ['source.shss', 'punctuation.section.scope.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.scope.begin'],
     });
   });
 
@@ -6844,7 +6844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.scope');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.scope',
-      scopes: ['source.shss', 'punctuation.section.scope'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.scope'],
     });
   });
 
@@ -6852,7 +6852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.regexp');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.regexp',
-      scopes: ['source.shss', 'punctuation.section.regexp'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.regexp'],
     });
   });
 
@@ -6860,7 +6860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.regexp.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.regexp.begin',
-      scopes: ['source.shss', 'punctuation.section.regexp.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.regexp.begin'],
     });
   });
 
@@ -6868,7 +6868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.property-list.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.property-list.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.property-list.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.property-list.begin.bracket.curly'],
     });
   });
 
@@ -6876,7 +6876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parens.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parens.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.parens.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parens.end.bracket.round'],
     });
   });
 
@@ -6884,7 +6884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parens.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parens.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.parens.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parens.begin.bracket.round'],
     });
   });
 
@@ -6892,7 +6892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parameters.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parameters.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.parameters.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parameters.end.bracket.round'],
     });
   });
 
@@ -6900,7 +6900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parameters.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parameters.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.parameters.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parameters.begin.bracket.round'],
     });
   });
 
@@ -6908,7 +6908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.module.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.module.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.module.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.module.begin.bracket.curly'],
     });
   });
 
@@ -6916,7 +6916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.method.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.method.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.method.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.method.begin.bracket.curly'],
     });
   });
 
@@ -6924,7 +6924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.media.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.media.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.media.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.media.begin.bracket.curly'],
     });
   });
 
@@ -6932,7 +6932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.list.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.list.begin',
-      scopes: ['source.shss', 'punctuation.section.list.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.list.begin'],
     });
   });
 
@@ -6940,7 +6940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.keyframes.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.keyframes.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.keyframes.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.keyframes.begin.bracket.curly'],
     });
   });
 
@@ -6948,7 +6948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.inner-class.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.inner-class.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.inner-class.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.inner-class.begin.bracket.curly'],
     });
   });
 
@@ -6956,7 +6956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.function');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.function',
-      scopes: ['source.shss', 'punctuation.section.function'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.function'],
     });
   });
 
@@ -6964,7 +6964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.function.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.function.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.function.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.function.end.bracket.round'],
     });
   });
 
@@ -6972,7 +6972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.function.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.function.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.function.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.function.begin.bracket.round'],
     });
   });
 
@@ -6980,7 +6980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.finally.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.finally.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.finally.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.finally.begin.bracket.curly'],
     });
   });
 
@@ -6988,7 +6988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.expression.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.expression.begin',
-      scopes: ['source.shss', 'punctuation.section.expression.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.expression.begin'],
     });
   });
 
@@ -6996,7 +6996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.enum.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.enum.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.enum.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.enum.begin.bracket.curly'],
     });
   });
 
@@ -7004,7 +7004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.document.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.document.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.document.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.document.begin.bracket.curly'],
     });
   });
 
@@ -7012,7 +7012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.directive.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.directive.begin',
-      scopes: ['source.shss', 'punctuation.section.directive.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.directive.begin'],
     });
   });
 
@@ -7020,7 +7020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.class.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.class.begin',
-      scopes: ['source.shss', 'punctuation.section.class.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.class.begin'],
     });
   });
 
@@ -7028,7 +7028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.class.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.class.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.class.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.class.begin.bracket.curly'],
     });
   });
 
@@ -7036,7 +7036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.catch.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.catch.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.catch.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.catch.begin.bracket.curly'],
     });
   });
 
@@ -7044,7 +7044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.block.end.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.block.end.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.block.end.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.block.end.bracket.curly'],
     });
   });
 
@@ -7052,7 +7052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.block.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.block.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.block.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.block.begin.bracket.curly'],
     });
   });
 
@@ -7060,7 +7060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.begin.bracket.curly'],
     });
   });
 
@@ -7068,7 +7068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.array.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.array.end',
-      scopes: ['source.shss', 'punctuation.section.array.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.array.end'],
     });
   });
 
@@ -7076,7 +7076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.array');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.array',
-      scopes: ['source.shss', 'punctuation.section.array'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.array'],
     });
   });
 
@@ -7084,7 +7084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.array.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.array.begin',
-      scopes: ['source.shss', 'punctuation.section.array.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.array.begin'],
     });
   });
 
@@ -7092,7 +7092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.arguments.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.arguments.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.arguments.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.arguments.end.bracket.round'],
     });
   });
 
@@ -7100,7 +7100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.arguments.end.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.arguments.end.bracket',
-      scopes: ['source.shss', 'punctuation.section.arguments.end.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.arguments.end.bracket'],
     });
   });
 
@@ -7108,7 +7108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.arguments.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.arguments.end',
-      scopes: ['source.shss', 'punctuation.section.arguments.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.arguments.end'],
     });
   });
 
@@ -7116,7 +7116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.arguments.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.arguments.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.section.arguments.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.arguments.begin.bracket.round'],
     });
   });
 
@@ -7124,7 +7124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.arguments.begin.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.arguments.begin.bracket',
-      scopes: ['source.shss', 'punctuation.section.arguments.begin.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.arguments.begin.bracket'],
     });
   });
 
@@ -7132,7 +7132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.arguments.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.arguments.begin',
-      scopes: ['source.shss', 'punctuation.section.arguments.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.arguments.begin'],
     });
   });
 
@@ -7140,7 +7140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.arguments');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.arguments',
-      scopes: ['source.shss', 'punctuation.section.arguments'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.arguments'],
     });
   });
 
@@ -7148,7 +7148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.embedded.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.embedded.begin',
-      scopes: ['source.shss', 'punctuation.section.embedded.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.embedded.begin'],
     });
   });
 
@@ -7156,7 +7156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.embedded.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.embedded.end',
-      scopes: ['source.shss', 'punctuation.section.embedded.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.embedded.end'],
     });
   });
 
@@ -7164,7 +7164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.embedded');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.embedded',
-      scopes: ['source.shss', 'punctuation.section.embedded'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.embedded'],
     });
   });
 
@@ -7172,7 +7172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.array.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.array.begin',
-      scopes: ['source.shss', 'punctuation.section.array.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.array.begin'],
     });
   });
 
@@ -7180,7 +7180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.array.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.array.end',
-      scopes: ['source.shss', 'punctuation.section.array.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.array.end'],
     });
   });
 
@@ -7188,7 +7188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.array');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.array',
-      scopes: ['source.shss', 'punctuation.section.array'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.array'],
     });
   });
 
@@ -7196,7 +7196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.block.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.block.begin',
-      scopes: ['source.shss', 'punctuation.section.block.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.block.begin'],
     });
   });
 
@@ -7204,7 +7204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.block.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.block.end',
-      scopes: ['source.shss', 'punctuation.section.block.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.block.end'],
     });
   });
 
@@ -7212,7 +7212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.block');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.block',
-      scopes: ['source.shss', 'punctuation.section.block'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.block'],
     });
   });
 
@@ -7220,7 +7220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.braces.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.braces.begin',
-      scopes: ['source.shss', 'punctuation.section.braces.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.braces.begin'],
     });
   });
 
@@ -7228,7 +7228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.braces.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.braces.end',
-      scopes: ['source.shss', 'punctuation.section.braces.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.braces.end'],
     });
   });
 
@@ -7236,7 +7236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.braces');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.braces',
-      scopes: ['source.shss', 'punctuation.section.braces'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.braces'],
     });
   });
 
@@ -7244,7 +7244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.group.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.group.begin',
-      scopes: ['source.shss', 'punctuation.section.group.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.group.begin'],
     });
   });
 
@@ -7252,7 +7252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.group.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.group.end',
-      scopes: ['source.shss', 'punctuation.section.group.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.group.end'],
     });
   });
 
@@ -7260,7 +7260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.group');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.group',
-      scopes: ['source.shss', 'punctuation.section.group'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.group'],
     });
   });
 
@@ -7268,7 +7268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parens.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parens.begin',
-      scopes: ['source.shss', 'punctuation.section.parens.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parens.begin'],
     });
   });
 
@@ -7276,7 +7276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parens.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parens.end',
-      scopes: ['source.shss', 'punctuation.section.parens.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parens.end'],
     });
   });
 
@@ -7284,7 +7284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parens');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parens',
-      scopes: ['source.shss', 'punctuation.section.parens'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parens'],
     });
   });
 
@@ -7292,7 +7292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brackets.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brackets.begin',
-      scopes: ['source.shss', 'punctuation.section.brackets.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brackets.begin'],
     });
   });
 
@@ -7300,7 +7300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brackets.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brackets.end',
-      scopes: ['source.shss', 'punctuation.section.brackets.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brackets.end'],
     });
   });
 
@@ -7308,7 +7308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brackets');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brackets',
-      scopes: ['source.shss', 'punctuation.section.brackets'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brackets'],
     });
   });
 
@@ -7316,7 +7316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.interpolation.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.interpolation.end',
-      scopes: ['source.shss', 'punctuation.section.interpolation.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.interpolation.end'],
     });
   });
 
@@ -7324,7 +7324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.interpolation.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.interpolation.begin',
-      scopes: ['source.shss', 'punctuation.section.interpolation.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.interpolation.begin'],
     });
   });
 
@@ -7332,7 +7332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.interpolation');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.interpolation',
-      scopes: ['source.shss', 'punctuation.section.interpolation'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.interpolation'],
     });
   });
 
@@ -7340,7 +7340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brace.curly.bracket.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brace.curly.bracket.begin',
-      scopes: ['source.shss', 'punctuation.section.brace.curly.bracket.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brace.curly.bracket.begin'],
     });
   });
 
@@ -7348,7 +7348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brace.curly.bracket.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brace.curly.bracket.end',
-      scopes: ['source.shss', 'punctuation.section.brace.curly.bracket.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brace.curly.bracket.end'],
     });
   });
 
@@ -7356,7 +7356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brace.curly.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brace.curly.bracket',
-      scopes: ['source.shss', 'punctuation.section.brace.curly.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brace.curly.bracket'],
     });
   });
 
@@ -7364,7 +7364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brace.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brace.curly',
-      scopes: ['source.shss', 'punctuation.section.brace.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brace.curly'],
     });
   });
 
@@ -7372,7 +7372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.brace');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.brace',
-      scopes: ['source.shss', 'punctuation.section.brace'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.brace'],
     });
   });
 
@@ -7380,7 +7380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.square.bracket.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.square.bracket.begin',
-      scopes: ['source.shss', 'punctuation.section.square.bracket.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.square.bracket.begin'],
     });
   });
 
@@ -7388,7 +7388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.square.bracket.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.square.bracket.end',
-      scopes: ['source.shss', 'punctuation.section.square.bracket.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.square.bracket.end'],
     });
   });
 
@@ -7396,7 +7396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.square.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.square.bracket',
-      scopes: ['source.shss', 'punctuation.section.square.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.square.bracket'],
     });
   });
 
@@ -7404,7 +7404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.square');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.square',
-      scopes: ['source.shss', 'punctuation.section.square'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.square'],
     });
   });
 
@@ -7412,7 +7412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.scope.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.scope.begin',
-      scopes: ['source.shss', 'punctuation.section.scope.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.scope.begin'],
     });
   });
 
@@ -7420,7 +7420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.scope.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.scope.end',
-      scopes: ['source.shss', 'punctuation.section.scope.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.scope.end'],
     });
   });
 
@@ -7428,7 +7428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.scope');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.scope',
-      scopes: ['source.shss', 'punctuation.section.scope'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.scope'],
     });
   });
 
@@ -7436,7 +7436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parenthesis.round.bracket.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parenthesis.round.bracket.begin',
-      scopes: ['source.shss', 'punctuation.section.parenthesis.round.bracket.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parenthesis.round.bracket.begin'],
     });
   });
 
@@ -7444,7 +7444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parenthesis.round.bracket.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parenthesis.round.bracket.end',
-      scopes: ['source.shss', 'punctuation.section.parenthesis.round.bracket.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parenthesis.round.bracket.end'],
     });
   });
 
@@ -7452,7 +7452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parenthesis.round.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parenthesis.round.bracket',
-      scopes: ['source.shss', 'punctuation.section.parenthesis.round.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parenthesis.round.bracket'],
     });
   });
 
@@ -7460,7 +7460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parenthesis.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parenthesis.round',
-      scopes: ['source.shss', 'punctuation.section.parenthesis.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parenthesis.round'],
     });
   });
 
@@ -7468,7 +7468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.parenthesis');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.parenthesis',
-      scopes: ['source.shss', 'punctuation.section.parenthesis'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.parenthesis'],
     });
   });
 
@@ -7476,7 +7476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.signature.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.signature.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.section.signature.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.signature.begin.bracket.curly'],
     });
   });
 
@@ -7484,7 +7484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.signature.begin.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.signature.begin.bracket',
-      scopes: ['source.shss', 'punctuation.section.signature.begin.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.signature.begin.bracket'],
     });
   });
 
@@ -7492,7 +7492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.signature.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.signature.begin',
-      scopes: ['source.shss', 'punctuation.section.signature.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.signature.begin'],
     });
   });
 
@@ -7500,7 +7500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section.signature');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section.signature',
-      scopes: ['source.shss', 'punctuation.section.signature'],
+      scopes: ['source.syntax-scopes', 'punctuation.section.signature'],
     });
   });
 
@@ -7508,7 +7508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.section');
     expect(tokens[0]).toEqual({
       value: 'punctuation.section',
-      scopes: ['source.shss', 'punctuation.section'],
+      scopes: ['source.syntax-scopes', 'punctuation.section'],
     });
   });
 
@@ -7516,7 +7516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.other.period');
     expect(tokens[0]).toEqual({
       value: 'punctuation.other.period',
-      scopes: ['source.shss', 'punctuation.other.period'],
+      scopes: ['source.syntax-scopes', 'punctuation.other.period'],
     });
   });
 
@@ -7524,7 +7524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.other.comma');
     expect(tokens[0]).toEqual({
       value: 'punctuation.other.comma',
-      scopes: ['source.shss', 'punctuation.other.comma'],
+      scopes: ['source.syntax-scopes', 'punctuation.other.comma'],
     });
   });
 
@@ -7532,7 +7532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.other.colon');
     expect(tokens[0]).toEqual({
       value: 'punctuation.other.colon',
-      scopes: ['source.shss', 'punctuation.other.colon'],
+      scopes: ['source.syntax-scopes', 'punctuation.other.colon'],
     });
   });
 
@@ -7540,7 +7540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.variables.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.variables.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.variables.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.variables.end.bracket.round'],
     });
   });
 
@@ -7548,7 +7548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.variables.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.variables.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.variables.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.variables.begin.bracket.round'],
     });
   });
 
@@ -7556,7 +7556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.tuple.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.tuple.begin',
-      scopes: ['source.shss', 'punctuation.definition.tuple.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.tuple.begin'],
     });
   });
 
@@ -7564,7 +7564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.tag.html');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.tag.html',
-      scopes: ['source.shss', 'punctuation.definition.tag.html'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.tag.html'],
     });
   });
 
@@ -7572,7 +7572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.tag.begin.html');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.tag.begin.html',
-      scopes: ['source.shss', 'punctuation.definition.tag.begin.html'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.tag.begin.html'],
     });
   });
 
@@ -7580,7 +7580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.symbol.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.symbol.begin',
-      scopes: ['source.shss', 'punctuation.definition.symbol.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.symbol.begin'],
     });
   });
 
@@ -7588,7 +7588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.string.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.string.end',
-      scopes: ['source.shss', 'punctuation.definition.string.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.string.end'],
     });
   });
 
@@ -7596,7 +7596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.string.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.string.begin',
-      scopes: ['source.shss', 'punctuation.definition.string.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.string.begin'],
     });
   });
 
@@ -7604,7 +7604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.string.begin.html');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.string.begin.html',
-      scopes: ['source.shss', 'punctuation.definition.string.begin.html'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.string.begin.html'],
     });
   });
 
@@ -7612,7 +7612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.scope');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.scope',
-      scopes: ['source.shss', 'punctuation.definition.scope'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.scope'],
     });
   });
 
@@ -7620,7 +7620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.quasiquotes.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.quasiquotes.end',
-      scopes: ['source.shss', 'punctuation.definition.quasiquotes.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.quasiquotes.end'],
     });
   });
 
@@ -7628,7 +7628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.quasiquotes.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.quasiquotes.begin',
-      scopes: ['source.shss', 'punctuation.definition.quasiquotes.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.quasiquotes.begin'],
     });
   });
 
@@ -7636,7 +7636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.placeholder');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.placeholder',
-      scopes: ['source.shss', 'punctuation.definition.placeholder'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.placeholder'],
     });
   });
 
@@ -7644,7 +7644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.parameters.varargs');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.parameters.varargs',
-      scopes: ['source.shss', 'punctuation.definition.parameters.varargs'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.parameters.varargs'],
     });
   });
 
@@ -7652,7 +7652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.parameters');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.parameters',
-      scopes: ['source.shss', 'punctuation.definition.parameters'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.parameters'],
     });
   });
 
@@ -7660,7 +7660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.parameters.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.parameters.end',
-      scopes: ['source.shss', 'punctuation.definition.parameters.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.parameters.end'],
     });
   });
 
@@ -7668,7 +7668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.parameters.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.parameters.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.parameters.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.parameters.end.bracket.round'],
     });
   });
 
@@ -7676,7 +7676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.parameters.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.parameters.begin',
-      scopes: ['source.shss', 'punctuation.definition.parameters.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.parameters.begin'],
     });
   });
 
@@ -7684,7 +7684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.parameters.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.parameters.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.parameters.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.parameters.begin.bracket.round'],
     });
   });
 
@@ -7692,7 +7692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.list.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.list.end',
-      scopes: ['source.shss', 'punctuation.definition.list.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.list.end'],
     });
   });
 
@@ -7700,7 +7700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.list.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.list.begin',
-      scopes: ['source.shss', 'punctuation.definition.list.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.list.begin'],
     });
   });
 
@@ -7708,7 +7708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.list');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.list',
-      scopes: ['source.shss', 'punctuation.definition.list'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.list'],
     });
   });
 
@@ -7716,7 +7716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.keyword');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.keyword',
-      scopes: ['source.shss', 'punctuation.definition.keyword'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.keyword'],
     });
   });
 
@@ -7724,7 +7724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.interpolation.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.interpolation.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.definition.interpolation.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.interpolation.begin.bracket.curly'],
     });
   });
 
@@ -7732,7 +7732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.inheritance.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.inheritance.end',
-      scopes: ['source.shss', 'punctuation.definition.inheritance.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.inheritance.end'],
     });
   });
 
@@ -7740,7 +7740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.inheritance.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.inheritance.begin',
-      scopes: ['source.shss', 'punctuation.definition.inheritance.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.inheritance.begin'],
     });
   });
 
@@ -7748,7 +7748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.imports.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.imports.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.imports.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.imports.end.bracket.round'],
     });
   });
 
@@ -7756,7 +7756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.imports.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.imports.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.imports.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.imports.begin.bracket.round'],
     });
   });
 
@@ -7764,7 +7764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.escape');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.escape',
-      scopes: ['source.shss', 'punctuation.definition.escape'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.escape'],
     });
   });
 
@@ -7772,7 +7772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.entity.end.html');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.entity.end.html',
-      scopes: ['source.shss', 'punctuation.definition.entity.end.html'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.entity.end.html'],
     });
   });
 
@@ -7780,7 +7780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.entity.begin.html');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.entity.begin.html',
-      scopes: ['source.shss', 'punctuation.definition.entity.begin.html'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.entity.begin.html'],
     });
   });
 
@@ -7788,7 +7788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.entity.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.entity.end',
-      scopes: ['source.shss', 'punctuation.definition.entity.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.entity.end'],
     });
   });
 
@@ -7796,7 +7796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.entity.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.entity.begin',
-      scopes: ['source.shss', 'punctuation.definition.entity.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.entity.begin'],
     });
   });
 
@@ -7804,7 +7804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.entity');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.entity',
-      scopes: ['source.shss', 'punctuation.definition.entity'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.entity'],
     });
   });
 
@@ -7812,7 +7812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.entity.begin.bracket.square');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.entity.begin.bracket.square',
-      scopes: ['source.shss', 'punctuation.definition.entity.begin.bracket.square'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.entity.begin.bracket.square'],
     });
   });
 
@@ -7820,7 +7820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.end.bracket.square');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.end.bracket.square',
-      scopes: ['source.shss', 'punctuation.definition.end.bracket.square'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.end.bracket.square'],
     });
   });
 
@@ -7828,7 +7828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.end.bracket.round'],
     });
   });
 
@@ -7836,7 +7836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.end.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.end.bracket.curly',
-      scopes: ['source.shss', 'punctuation.definition.end.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.end.bracket.curly'],
     });
   });
 
@@ -7844,7 +7844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.end.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.end.bracket',
-      scopes: ['source.shss', 'punctuation.definition.end.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.end.bracket'],
     });
   });
 
@@ -7852,7 +7852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.end',
-      scopes: ['source.shss', 'punctuation.definition.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.end'],
     });
   });
 
@@ -7860,7 +7860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.dictionary.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.dictionary.begin',
-      scopes: ['source.shss', 'punctuation.definition.dictionary.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.dictionary.begin'],
     });
   });
 
@@ -7868,7 +7868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.directive');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.directive',
-      scopes: ['source.shss', 'punctuation.definition.directive'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.directive'],
     });
   });
 
@@ -7876,7 +7876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.decorator');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.decorator',
-      scopes: ['source.shss', 'punctuation.definition.decorator'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.decorator'],
     });
   });
 
@@ -7884,7 +7884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.constant.hashkey');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.constant.hashkey',
-      scopes: ['source.shss', 'punctuation.definition.constant.hashkey'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.constant.hashkey'],
     });
   });
 
@@ -7892,7 +7892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.constant');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.constant',
-      scopes: ['source.shss', 'punctuation.definition.constant'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.constant'],
     });
   });
 
@@ -7900,7 +7900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.condition.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.condition.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.condition.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.condition.begin.bracket.round'],
     });
   });
 
@@ -7908,7 +7908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.comment.block.start');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.comment.block.start',
-      scopes: ['source.shss', 'punctuation.definition.comment.block.start'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.comment.block.start'],
     });
   });
 
@@ -7916,7 +7916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.comment.block.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.comment.block.end',
-      scopes: ['source.shss', 'punctuation.definition.comment.block.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.comment.block.end'],
     });
   });
 
@@ -7924,7 +7924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.comment.block');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.comment.block',
-      scopes: ['source.shss', 'punctuation.definition.comment.block'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.comment.block'],
     });
   });
 
@@ -7932,7 +7932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.comment.haddock');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.comment.haddock',
-      scopes: ['source.shss', 'punctuation.definition.comment.haddock'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.comment.haddock'],
     });
   });
 
@@ -7940,7 +7940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.comment.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.comment.end',
-      scopes: ['source.shss', 'punctuation.definition.comment.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.comment.end'],
     });
   });
 
@@ -7948,7 +7948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.comment.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.comment.begin',
-      scopes: ['source.shss', 'punctuation.definition.comment.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.comment.begin'],
     });
   });
 
@@ -7956,7 +7956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.comment');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.comment',
-      scopes: ['source.shss', 'punctuation.definition.comment'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.comment'],
     });
   });
 
@@ -7964,7 +7964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.class.record.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.class.record.end',
-      scopes: ['source.shss', 'punctuation.definition.class.record.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.class.record.end'],
     });
   });
 
@@ -7972,7 +7972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.character');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.character',
-      scopes: ['source.shss', 'punctuation.definition.character'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.character'],
     });
   });
 
@@ -7980,7 +7980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.character-class');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.character-class',
-      scopes: ['source.shss', 'punctuation.definition.character-class'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.character-class'],
     });
   });
 
@@ -7988,7 +7988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.bracket.square');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.bracket.square',
-      scopes: ['source.shss', 'punctuation.definition.bracket.square'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.bracket.square'],
     });
   });
 
@@ -7996,7 +7996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.binary.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.binary.begin',
-      scopes: ['source.shss', 'punctuation.definition.binary.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.binary.begin'],
     });
   });
 
@@ -8004,7 +8004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.begin.bracket.square');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.begin.bracket.square',
-      scopes: ['source.shss', 'punctuation.definition.begin.bracket.square'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.begin.bracket.square'],
     });
   });
 
@@ -8012,7 +8012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.begin.bracket.round'],
     });
   });
 
@@ -8020,7 +8020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.begin.bracket.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.begin.bracket.curly',
-      scopes: ['source.shss', 'punctuation.definition.begin.bracket.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.begin.bracket.curly'],
     });
   });
 
@@ -8028,7 +8028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.begin.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.begin.bracket',
-      scopes: ['source.shss', 'punctuation.definition.begin.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.begin.bracket'],
     });
   });
 
@@ -8036,7 +8036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.begin',
-      scopes: ['source.shss', 'punctuation.definition.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.begin'],
     });
   });
 
@@ -8044,7 +8044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.arguments.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.arguments.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.arguments.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.arguments.begin.bracket.round'],
     });
   });
 
@@ -8052,7 +8052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.arguments.begin.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.arguments.begin.bracket',
-      scopes: ['source.shss', 'punctuation.definition.arguments.begin.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.arguments.begin.bracket'],
     });
   });
 
@@ -8060,7 +8060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.arguments.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.arguments.begin',
-      scopes: ['source.shss', 'punctuation.definition.arguments.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.arguments.begin'],
     });
   });
 
@@ -8068,7 +8068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.arguments');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.arguments',
-      scopes: ['source.shss', 'punctuation.definition.arguments'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.arguments'],
     });
   });
 
@@ -8076,7 +8076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.arbitrary-repitition');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.arbitrary-repitition',
-      scopes: ['source.shss', 'punctuation.definition.arbitrary-repitition'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.arbitrary-repitition'],
     });
   });
 
@@ -8084,7 +8084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.annotation.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.annotation.begin',
-      scopes: ['source.shss', 'punctuation.definition.annotation.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.annotation.begin'],
     });
   });
 
@@ -8092,7 +8092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.annotation.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.annotation.end',
-      scopes: ['source.shss', 'punctuation.definition.annotation.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.annotation.end'],
     });
   });
 
@@ -8100,7 +8100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.annotation-arguments.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.annotation-arguments.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.annotation-arguments.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.annotation-arguments.begin.bracket.round'],
     });
   });
 
@@ -8108,7 +8108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.annotation');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.annotation',
-      scopes: ['source.shss', 'punctuation.definition.annotation'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.annotation'],
     });
   });
 
@@ -8116,7 +8116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.heredoc.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.heredoc.begin',
-      scopes: ['source.shss', 'punctuation.definition.heredoc.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.heredoc.begin'],
     });
   });
 
@@ -8124,7 +8124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.heredoc.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.heredoc.end',
-      scopes: ['source.shss', 'punctuation.definition.heredoc.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.heredoc.end'],
     });
   });
 
@@ -8132,7 +8132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.heredoc');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.heredoc',
-      scopes: ['source.shss', 'punctuation.definition.heredoc'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.heredoc'],
     });
   });
 
@@ -8140,7 +8140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.array.begin.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.array.begin.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.array.begin.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.array.begin.bracket.round'],
     });
   });
 
@@ -8148,7 +8148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.array.end.bracket.round');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.array.end.bracket.round',
-      scopes: ['source.shss', 'punctuation.definition.array.end.bracket.round'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.array.end.bracket.round'],
     });
   });
 
@@ -8156,7 +8156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.constant');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.constant',
-      scopes: ['source.shss', 'punctuation.definition.constant'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.constant'],
     });
   });
 
@@ -8164,7 +8164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.arbitrary-repetition');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.arbitrary-repetition',
-      scopes: ['source.shss', 'punctuation.definition.arbitrary-repetition'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.arbitrary-repetition'],
     });
   });
 
@@ -8172,7 +8172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.tag.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.tag.begin',
-      scopes: ['source.shss', 'punctuation.definition.tag.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.tag.begin'],
     });
   });
 
@@ -8180,7 +8180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.tag.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.tag.end',
-      scopes: ['source.shss', 'punctuation.definition.tag.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.tag.end'],
     });
   });
 
@@ -8188,7 +8188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.tag');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.tag',
-      scopes: ['source.shss', 'punctuation.definition.tag'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.tag'],
     });
   });
 
@@ -8196,7 +8196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.string.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.string.begin',
-      scopes: ['source.shss', 'punctuation.definition.string.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.string.begin'],
     });
   });
 
@@ -8204,7 +8204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.string.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.string.end',
-      scopes: ['source.shss', 'punctuation.definition.string.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.string.end'],
     });
   });
 
@@ -8212,7 +8212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.string');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.string',
-      scopes: ['source.shss', 'punctuation.definition.string'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.string'],
     });
   });
 
@@ -8220,7 +8220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.keyword.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.keyword.begin',
-      scopes: ['source.shss', 'punctuation.definition.keyword.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.keyword.begin'],
     });
   });
 
@@ -8228,7 +8228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.keyword.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.keyword.end',
-      scopes: ['source.shss', 'punctuation.definition.keyword.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.keyword.end'],
     });
   });
 
@@ -8236,7 +8236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.keyword');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.keyword',
-      scopes: ['source.shss', 'punctuation.definition.keyword'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.keyword'],
     });
   });
 
@@ -8244,7 +8244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.generic.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.generic.begin',
-      scopes: ['source.shss', 'punctuation.definition.generic.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.generic.begin'],
     });
   });
 
@@ -8252,7 +8252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.generic.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.generic.end',
-      scopes: ['source.shss', 'punctuation.definition.generic.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.generic.end'],
     });
   });
 
@@ -8260,7 +8260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.generic');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.generic',
-      scopes: ['source.shss', 'punctuation.definition.generic'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.generic'],
     });
   });
 
@@ -8268,7 +8268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.variable.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.variable.begin',
-      scopes: ['source.shss', 'punctuation.definition.variable.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.variable.begin'],
     });
   });
 
@@ -8276,7 +8276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.variable.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.variable.end',
-      scopes: ['source.shss', 'punctuation.definition.variable.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.variable.end'],
     });
   });
 
@@ -8284,7 +8284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition.variable');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition.variable',
-      scopes: ['source.shss', 'punctuation.definition.variable'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition.variable'],
     });
   });
 
@@ -8292,7 +8292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.definition');
     expect(tokens[0]).toEqual({
       value: 'punctuation.definition',
-      scopes: ['source.shss', 'punctuation.definition'],
+      scopes: ['source.syntax-scopes', 'punctuation.definition'],
     });
   });
 
@@ -8300,7 +8300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.catch.separator');
     expect(tokens[0]).toEqual({
       value: 'punctuation.catch.separator',
-      scopes: ['source.shss', 'punctuation.catch.separator'],
+      scopes: ['source.syntax-scopes', 'punctuation.catch.separator'],
     });
   });
 
@@ -8308,7 +8308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.unmatched.brace.curly.bracket.begin');
     expect(tokens[0]).toEqual({
       value: 'punctuation.unmatched.brace.curly.bracket.begin',
-      scopes: ['source.shss', 'punctuation.unmatched.brace.curly.bracket.begin'],
+      scopes: ['source.syntax-scopes', 'punctuation.unmatched.brace.curly.bracket.begin'],
     });
   });
 
@@ -8316,7 +8316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.unmatched.brace.curly.bracket.end');
     expect(tokens[0]).toEqual({
       value: 'punctuation.unmatched.brace.curly.bracket.end',
-      scopes: ['source.shss', 'punctuation.unmatched.brace.curly.bracket.end'],
+      scopes: ['source.syntax-scopes', 'punctuation.unmatched.brace.curly.bracket.end'],
     });
   });
 
@@ -8324,7 +8324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.unmatched.brace.curly.bracket');
     expect(tokens[0]).toEqual({
       value: 'punctuation.unmatched.brace.curly.bracket',
-      scopes: ['source.shss', 'punctuation.unmatched.brace.curly.bracket'],
+      scopes: ['source.syntax-scopes', 'punctuation.unmatched.brace.curly.bracket'],
     });
   });
 
@@ -8332,7 +8332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.unmatched.brace.curly');
     expect(tokens[0]).toEqual({
       value: 'punctuation.unmatched.brace.curly',
-      scopes: ['source.shss', 'punctuation.unmatched.brace.curly'],
+      scopes: ['source.syntax-scopes', 'punctuation.unmatched.brace.curly'],
     });
   });
 
@@ -8340,7 +8340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.unmatched.brace');
     expect(tokens[0]).toEqual({
       value: 'punctuation.unmatched.brace',
-      scopes: ['source.shss', 'punctuation.unmatched.brace'],
+      scopes: ['source.syntax-scopes', 'punctuation.unmatched.brace'],
     });
   });
 
@@ -8348,7 +8348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation.unmatched');
     expect(tokens[0]).toEqual({
       value: 'punctuation.unmatched',
-      scopes: ['source.shss', 'punctuation.unmatched'],
+      scopes: ['source.syntax-scopes', 'punctuation.unmatched'],
     });
   });
 
@@ -8356,7 +8356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('punctuation');
     expect(tokens[0]).toEqual({
       value: 'punctuation',
-      scopes: ['source.shss', 'punctuation'],
+      scopes: ['source.syntax-scopes', 'punctuation'],
     });
   });
 
@@ -8364,7 +8364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.variable');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.variable',
-      scopes: ['source.shss', 'storage.modifier.variable'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.variable'],
     });
   });
 
@@ -8372,7 +8372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.unit');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.unit',
-      scopes: ['source.shss', 'storage.modifier.unit'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.unit'],
     });
   });
 
@@ -8380,7 +8380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.signedness');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.signedness',
-      scopes: ['source.shss', 'storage.modifier.signedness'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.signedness'],
     });
   });
 
@@ -8388,7 +8388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.nonlocal');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.nonlocal',
-      scopes: ['source.shss', 'storage.modifier.nonlocal'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.nonlocal'],
     });
   });
 
@@ -8396,7 +8396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.ignore-case');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.ignore-case',
-      scopes: ['source.shss', 'storage.modifier.ignore-case'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.ignore-case'],
     });
   });
 
@@ -8404,7 +8404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.global');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.global',
-      scopes: ['source.shss', 'storage.modifier.global'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.global'],
     });
   });
 
@@ -8412,7 +8412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.endianness');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.endianness',
-      scopes: ['source.shss', 'storage.modifier.endianness'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.endianness'],
     });
   });
 
@@ -8420,7 +8420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.async');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.async',
-      scopes: ['source.shss', 'storage.modifier.async'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.async'],
     });
   });
 
@@ -8428,7 +8428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.extends');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.extends',
-      scopes: ['source.shss', 'storage.modifier.extends'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.extends'],
     });
   });
 
@@ -8436,7 +8436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.static');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.static',
-      scopes: ['source.shss', 'storage.modifier.static'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.static'],
     });
   });
 
@@ -8444,7 +8444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.final');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.final',
-      scopes: ['source.shss', 'storage.modifier.final'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.final'],
     });
   });
 
@@ -8452,7 +8452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.abstract');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.abstract',
-      scopes: ['source.shss', 'storage.modifier.abstract'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.abstract'],
     });
   });
 
@@ -8460,7 +8460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.public');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.public',
-      scopes: ['source.shss', 'storage.modifier.public'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.public'],
     });
   });
 
@@ -8468,7 +8468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.private');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.private',
-      scopes: ['source.shss', 'storage.modifier.private'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.private'],
     });
   });
 
@@ -8476,7 +8476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.protected');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.protected',
-      scopes: ['source.shss', 'storage.modifier.protected'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.protected'],
     });
   });
 
@@ -8484,7 +8484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier.reference');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier.reference',
-      scopes: ['source.shss', 'storage.modifier.reference'],
+      scopes: ['source.syntax-scopes', 'storage.modifier.reference'],
     });
   });
 
@@ -8492,7 +8492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.modifier');
     expect(tokens[0]).toEqual({
       value: 'storage.modifier',
-      scopes: ['source.shss', 'storage.modifier'],
+      scopes: ['source.syntax-scopes', 'storage.modifier'],
     });
   });
 
@@ -8500,7 +8500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.variable');
     expect(tokens[0]).toEqual({
       value: 'storage.type.variable',
-      scopes: ['source.shss', 'storage.type.variable'],
+      scopes: ['source.syntax-scopes', 'storage.type.variable'],
     });
   });
 
@@ -8508,7 +8508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.uintptr');
     expect(tokens[0]).toEqual({
       value: 'storage.type.uintptr',
-      scopes: ['source.shss', 'storage.type.uintptr'],
+      scopes: ['source.syntax-scopes', 'storage.type.uintptr'],
     });
   });
 
@@ -8516,7 +8516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.template');
     expect(tokens[0]).toEqual({
       value: 'storage.type.template',
-      scopes: ['source.shss', 'storage.type.template'],
+      scopes: ['source.syntax-scopes', 'storage.type.template'],
     });
   });
 
@@ -8524,7 +8524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.string');
     expect(tokens[0]).toEqual({
       value: 'storage.type.string',
-      scopes: ['source.shss', 'storage.type.string'],
+      scopes: ['source.syntax-scopes', 'storage.type.string'],
     });
   });
 
@@ -8532,7 +8532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.rune');
     expect(tokens[0]).toEqual({
       value: 'storage.type.rune',
-      scopes: ['source.shss', 'storage.type.rune'],
+      scopes: ['source.syntax-scopes', 'storage.type.rune'],
     });
   });
 
@@ -8540,7 +8540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.primitive');
     expect(tokens[0]).toEqual({
       value: 'storage.type.primitive',
-      scopes: ['source.shss', 'storage.type.primitive'],
+      scopes: ['source.syntax-scopes', 'storage.type.primitive'],
     });
   });
 
@@ -8548,7 +8548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.primitive.array');
     expect(tokens[0]).toEqual({
       value: 'storage.type.primitive.array',
-      scopes: ['source.shss', 'storage.type.primitive.array'],
+      scopes: ['source.syntax-scopes', 'storage.type.primitive.array'],
     });
   });
 
@@ -8556,7 +8556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.object.array');
     expect(tokens[0]).toEqual({
       value: 'storage.type.object.array',
-      scopes: ['source.shss', 'storage.type.object.array'],
+      scopes: ['source.syntax-scopes', 'storage.type.object.array'],
     });
   });
 
@@ -8564,7 +8564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.numeric');
     expect(tokens[0]).toEqual({
       value: 'storage.type.numeric',
-      scopes: ['source.shss', 'storage.type.numeric'],
+      scopes: ['source.syntax-scopes', 'storage.type.numeric'],
     });
   });
 
@@ -8572,7 +8572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.modifier');
     expect(tokens[0]).toEqual({
       value: 'storage.type.modifier',
-      scopes: ['source.shss', 'storage.type.modifier'],
+      scopes: ['source.syntax-scopes', 'storage.type.modifier'],
     });
   });
 
@@ -8580,7 +8580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.local');
     expect(tokens[0]).toEqual({
       value: 'storage.type.local',
-      scopes: ['source.shss', 'storage.type.local'],
+      scopes: ['source.syntax-scopes', 'storage.type.local'],
     });
   });
 
@@ -8588,7 +8588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.generic.wildcard');
     expect(tokens[0]).toEqual({
       value: 'storage.type.generic.wildcard',
-      scopes: ['source.shss', 'storage.type.generic.wildcard'],
+      scopes: ['source.syntax-scopes', 'storage.type.generic.wildcard'],
     });
   });
 
@@ -8596,7 +8596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.generic');
     expect(tokens[0]).toEqual({
       value: 'storage.type.generic',
-      scopes: ['source.shss', 'storage.type.generic'],
+      scopes: ['source.syntax-scopes', 'storage.type.generic'],
     });
   });
 
@@ -8604,7 +8604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.error');
     expect(tokens[0]).toEqual({
       value: 'storage.type.error',
-      scopes: ['source.shss', 'storage.type.error'],
+      scopes: ['source.syntax-scopes', 'storage.type.error'],
     });
   });
 
@@ -8612,7 +8612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.byte');
     expect(tokens[0]).toEqual({
       value: 'storage.type.byte',
-      scopes: ['source.shss', 'storage.type.byte'],
+      scopes: ['source.syntax-scopes', 'storage.type.byte'],
     });
   });
 
@@ -8620,7 +8620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.boolean');
     expect(tokens[0]).toEqual({
       value: 'storage.type.boolean',
-      scopes: ['source.shss', 'storage.type.boolean'],
+      scopes: ['source.syntax-scopes', 'storage.type.boolean'],
     });
   });
 
@@ -8628,7 +8628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.annotation');
     expect(tokens[0]).toEqual({
       value: 'storage.type.annotation',
-      scopes: ['source.shss', 'storage.type.annotation'],
+      scopes: ['source.syntax-scopes', 'storage.type.annotation'],
     });
   });
 
@@ -8636,7 +8636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.signature.method');
     expect(tokens[0]).toEqual({
       value: 'storage.type.signature.method',
-      scopes: ['source.shss', 'storage.type.signature.method'],
+      scopes: ['source.syntax-scopes', 'storage.type.signature.method'],
     });
   });
 
@@ -8644,7 +8644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.signature');
     expect(tokens[0]).toEqual({
       value: 'storage.type.signature',
-      scopes: ['source.shss', 'storage.type.signature'],
+      scopes: ['source.syntax-scopes', 'storage.type.signature'],
     });
   });
 
@@ -8652,7 +8652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.function.inline');
     expect(tokens[0]).toEqual({
       value: 'storage.type.function.inline',
-      scopes: ['source.shss', 'storage.type.function.inline'],
+      scopes: ['source.syntax-scopes', 'storage.type.function.inline'],
     });
   });
 
@@ -8660,7 +8660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.function.arrow');
     expect(tokens[0]).toEqual({
       value: 'storage.type.function.arrow',
-      scopes: ['source.shss', 'storage.type.function.arrow'],
+      scopes: ['source.syntax-scopes', 'storage.type.function.arrow'],
     });
   });
 
@@ -8668,7 +8668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.function');
     expect(tokens[0]).toEqual({
       value: 'storage.type.function',
-      scopes: ['source.shss', 'storage.type.function'],
+      scopes: ['source.syntax-scopes', 'storage.type.function'],
     });
   });
 
@@ -8676,7 +8676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.class.radar');
     expect(tokens[0]).toEqual({
       value: 'storage.type.class.radar',
-      scopes: ['source.shss', 'storage.type.class.radar'],
+      scopes: ['source.syntax-scopes', 'storage.type.class.radar'],
     });
   });
 
@@ -8684,7 +8684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.class');
     expect(tokens[0]).toEqual({
       value: 'storage.type.class',
-      scopes: ['source.shss', 'storage.type.class'],
+      scopes: ['source.syntax-scopes', 'storage.type.class'],
     });
   });
 
@@ -8692,7 +8692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.interface');
     expect(tokens[0]).toEqual({
       value: 'storage.type.interface',
-      scopes: ['source.shss', 'storage.type.interface'],
+      scopes: ['source.syntax-scopes', 'storage.type.interface'],
     });
   });
 
@@ -8700,7 +8700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.int');
     expect(tokens[0]).toEqual({
       value: 'storage.type.int',
-      scopes: ['source.shss', 'storage.type.int'],
+      scopes: ['source.syntax-scopes', 'storage.type.int'],
     });
   });
 
@@ -8708,7 +8708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.var');
     expect(tokens[0]).toEqual({
       value: 'storage.type.var',
-      scopes: ['source.shss', 'storage.type.var'],
+      scopes: ['source.syntax-scopes', 'storage.type.var'],
     });
   });
 
@@ -8716,7 +8716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.struct');
     expect(tokens[0]).toEqual({
       value: 'storage.type.struct',
-      scopes: ['source.shss', 'storage.type.struct'],
+      scopes: ['source.syntax-scopes', 'storage.type.struct'],
     });
   });
 
@@ -8724,7 +8724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.enum');
     expect(tokens[0]).toEqual({
       value: 'storage.type.enum',
-      scopes: ['source.shss', 'storage.type.enum'],
+      scopes: ['source.syntax-scopes', 'storage.type.enum'],
     });
   });
 
@@ -8732,7 +8732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.union');
     expect(tokens[0]).toEqual({
       value: 'storage.type.union',
-      scopes: ['source.shss', 'storage.type.union'],
+      scopes: ['source.syntax-scopes', 'storage.type.union'],
     });
   });
 
@@ -8740,7 +8740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.trait');
     expect(tokens[0]).toEqual({
       value: 'storage.type.trait',
-      scopes: ['source.shss', 'storage.type.trait'],
+      scopes: ['source.syntax-scopes', 'storage.type.trait'],
     });
   });
 
@@ -8748,7 +8748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type.impl');
     expect(tokens[0]).toEqual({
       value: 'storage.type.impl',
-      scopes: ['source.shss', 'storage.type.impl'],
+      scopes: ['source.syntax-scopes', 'storage.type.impl'],
     });
   });
 
@@ -8756,7 +8756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage.type');
     expect(tokens[0]).toEqual({
       value: 'storage.type',
-      scopes: ['source.shss', 'storage.type'],
+      scopes: ['source.syntax-scopes', 'storage.type'],
     });
   });
 
@@ -8764,7 +8764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('storage');
     expect(tokens[0]).toEqual({
       value: 'storage',
-      scopes: ['source.shss', 'storage'],
+      scopes: ['source.syntax-scopes', 'storage'],
     });
   });
 
@@ -8772,7 +8772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('source.language-suffix.embedded');
     expect(tokens[0]).toEqual({
       value: 'source.language-suffix.embedded',
-      scopes: ['source.shss', 'source.language-suffix.embedded'],
+      scopes: ['source.syntax-scopes', 'source.language-suffix.embedded'],
     });
   });
 
@@ -8780,7 +8780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('source.language-suffix');
     expect(tokens[0]).toEqual({
       value: 'source.language-suffix',
-      scopes: ['source.shss', 'source.language-suffix'],
+      scopes: ['source.syntax-scopes', 'source.language-suffix'],
     });
   });
 
@@ -8788,7 +8788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('source');
     expect(tokens[0]).toEqual({
       value: 'source',
-      scopes: ['source.shss', 'source'],
+      scopes: ['source.syntax-scopes', 'source'],
     });
   });
 
@@ -8796,7 +8796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.backtick');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.backtick',
-      scopes: ['source.shss', 'string.quoted.backtick'],
+      scopes: ['source.syntax-scopes', 'string.quoted.backtick'],
     });
   });
 
@@ -8804,7 +8804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.symbol');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.symbol',
-      scopes: ['source.shss', 'string.quoted.symbol'],
+      scopes: ['source.syntax-scopes', 'string.quoted.symbol'],
     });
   });
 
@@ -8812,7 +8812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.unicode');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.unicode',
-      scopes: ['source.shss', 'string.quoted.single.single-line.unicode'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.unicode'],
     });
   });
 
@@ -8820,7 +8820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.unicode-raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.unicode-raw',
-      scopes: ['source.shss', 'string.quoted.single.single-line.unicode-raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.unicode-raw'],
     });
   });
 
@@ -8828,7 +8828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.unicode-raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.unicode-raw-regex',
-      scopes: ['source.shss', 'string.quoted.single.single-line.unicode-raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.unicode-raw-regex'],
     });
   });
 
@@ -8836,7 +8836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.sql');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.sql',
-      scopes: ['source.shss', 'string.quoted.single.single-line.sql'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.sql'],
     });
   });
 
@@ -8844,7 +8844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.raw',
-      scopes: ['source.shss', 'string.quoted.single.single-line.raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.raw'],
     });
   });
 
@@ -8852,7 +8852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.raw-regex',
-      scopes: ['source.shss', 'string.quoted.single.single-line.raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.raw-regex'],
     });
   });
 
@@ -8860,7 +8860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.raw-format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.raw-format',
-      scopes: ['source.shss', 'string.quoted.single.single-line.raw-format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.raw-format'],
     });
   });
 
@@ -8868,7 +8868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.raw-binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.raw-binary',
-      scopes: ['source.shss', 'string.quoted.single.single-line.raw-binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.raw-binary'],
     });
   });
 
@@ -8876,7 +8876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line',
-      scopes: ['source.shss', 'string.quoted.single.single-line'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line'],
     });
   });
 
@@ -8884,7 +8884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.format',
-      scopes: ['source.shss', 'string.quoted.single.single-line.format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.format'],
     });
   });
 
@@ -8892,7 +8892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.single-line.binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.single-line.binary',
-      scopes: ['source.shss', 'string.quoted.single.single-line.binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.single-line.binary'],
     });
   });
 
@@ -8900,7 +8900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single',
-      scopes: ['source.shss', 'string.quoted.single'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single'],
     });
   });
 
@@ -8908,7 +8908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.html');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.html',
-      scopes: ['source.shss', 'string.quoted.single.html'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.html'],
     });
   });
 
@@ -8916,7 +8916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.unicode');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.unicode',
-      scopes: ['source.shss', 'string.quoted.single.block.unicode'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.unicode'],
     });
   });
 
@@ -8924,7 +8924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.unicode-raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.unicode-raw',
-      scopes: ['source.shss', 'string.quoted.single.block.unicode-raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.unicode-raw'],
     });
   });
 
@@ -8932,7 +8932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.unicode-raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.unicode-raw-regex',
-      scopes: ['source.shss', 'string.quoted.single.block.unicode-raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.unicode-raw-regex'],
     });
   });
 
@@ -8940,7 +8940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.raw',
-      scopes: ['source.shss', 'string.quoted.single.block.raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.raw'],
     });
   });
 
@@ -8948,7 +8948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.raw-regex',
-      scopes: ['source.shss', 'string.quoted.single.block.raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.raw-regex'],
     });
   });
 
@@ -8956,7 +8956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.raw-format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.raw-format',
-      scopes: ['source.shss', 'string.quoted.single.block.raw-format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.raw-format'],
     });
   });
 
@@ -8964,7 +8964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.raw-binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.raw-binary',
-      scopes: ['source.shss', 'string.quoted.single.block.raw-binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.raw-binary'],
     });
   });
 
@@ -8972,7 +8972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block',
-      scopes: ['source.shss', 'string.quoted.single.block'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block'],
     });
   });
 
@@ -8980,7 +8980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.format',
-      scopes: ['source.shss', 'string.quoted.single.block.format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.format'],
     });
   });
 
@@ -8988,7 +8988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single.block.binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single.block.binary',
-      scopes: ['source.shss', 'string.quoted.single.block.binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single.block.binary'],
     });
   });
 
@@ -8996,7 +8996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.rune');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.rune',
-      scopes: ['source.shss', 'string.quoted.rune'],
+      scopes: ['source.syntax-scopes', 'string.quoted.rune'],
     });
   });
 
@@ -9004,7 +9004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.raw',
-      scopes: ['source.shss', 'string.quoted.raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.raw'],
     });
   });
 
@@ -9012,7 +9012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.multiline');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.multiline',
-      scopes: ['source.shss', 'string.quoted.other.multiline'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.multiline'],
     });
   });
 
@@ -9020,7 +9020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.lt-gt.include');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.lt-gt.include',
-      scopes: ['source.shss', 'string.quoted.other.lt-gt.include'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.lt-gt.include'],
     });
   });
 
@@ -9028,7 +9028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.lt-gt');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.lt-gt',
-      scopes: ['source.shss', 'string.quoted.other.lt-gt'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.lt-gt'],
     });
   });
 
@@ -9036,7 +9036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.literal');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.literal',
-      scopes: ['source.shss', 'string.quoted.other.literal'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.literal'],
     });
   });
 
@@ -9044,7 +9044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.interpolated');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.interpolated',
-      scopes: ['source.shss', 'string.quoted.other.interpolated'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.interpolated'],
     });
   });
 
@@ -9052,7 +9052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.unicode');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.unicode',
-      scopes: ['source.shss', 'string.quoted.double.single-line.unicode'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.unicode'],
     });
   });
 
@@ -9060,7 +9060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.unicode-raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.unicode-raw',
-      scopes: ['source.shss', 'string.quoted.double.single-line.unicode-raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.unicode-raw'],
     });
   });
 
@@ -9068,7 +9068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.unicode-raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.unicode-raw-regex',
-      scopes: ['source.shss', 'string.quoted.double.single-line.unicode-raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.unicode-raw-regex'],
     });
   });
 
@@ -9076,7 +9076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.sql');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.sql',
-      scopes: ['source.shss', 'string.quoted.double.single-line.sql'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.sql'],
     });
   });
 
@@ -9084,7 +9084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.raw',
-      scopes: ['source.shss', 'string.quoted.double.single-line.raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.raw'],
     });
   });
 
@@ -9092,7 +9092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.raw-regex',
-      scopes: ['source.shss', 'string.quoted.double.single-line.raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.raw-regex'],
     });
   });
 
@@ -9100,7 +9100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.raw-format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.raw-format',
-      scopes: ['source.shss', 'string.quoted.double.single-line.raw-format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.raw-format'],
     });
   });
 
@@ -9108,7 +9108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.raw-binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.raw-binary',
-      scopes: ['source.shss', 'string.quoted.double.single-line.raw-binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.raw-binary'],
     });
   });
 
@@ -9116,7 +9116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line',
-      scopes: ['source.shss', 'string.quoted.double.single-line'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line'],
     });
   });
 
@@ -9124,7 +9124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.format',
-      scopes: ['source.shss', 'string.quoted.double.single-line.format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.format'],
     });
   });
 
@@ -9132,7 +9132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.single-line.binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.single-line.binary',
-      scopes: ['source.shss', 'string.quoted.double.single-line.binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.single-line.binary'],
     });
   });
 
@@ -9140,7 +9140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.raw',
-      scopes: ['source.shss', 'string.quoted.double.raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.raw'],
     });
   });
 
@@ -9148,7 +9148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.literal');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.literal',
-      scopes: ['source.shss', 'string.quoted.double.literal'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.literal'],
     });
   });
 
@@ -9156,7 +9156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.interpolated');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.interpolated',
-      scopes: ['source.shss', 'string.quoted.double.interpolated'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.interpolated'],
     });
   });
 
@@ -9164,7 +9164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.include');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.include',
-      scopes: ['source.shss', 'string.quoted.double.include'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.include'],
     });
   });
 
@@ -9172,7 +9172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.html');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.html',
-      scopes: ['source.shss', 'string.quoted.double.html'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.html'],
     });
   });
 
@@ -9180,7 +9180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.heredoc');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.heredoc',
-      scopes: ['source.shss', 'string.quoted.double.heredoc'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.heredoc'],
     });
   });
 
@@ -9188,7 +9188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.doctype.identifiers-and-DTDs.html');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.doctype.identifiers-and-DTDs.html',
-      scopes: ['source.shss', 'string.quoted.double.doctype.identifiers-and-DTDs.html'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.doctype.identifiers-and-DTDs.html'],
     });
   });
 
@@ -9196,7 +9196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.unicode');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.unicode',
-      scopes: ['source.shss', 'string.quoted.double.block.unicode'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.unicode'],
     });
   });
 
@@ -9204,7 +9204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.unicode-raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.unicode-raw',
-      scopes: ['source.shss', 'string.quoted.double.block.unicode-raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.unicode-raw'],
     });
   });
 
@@ -9212,7 +9212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.unicode-raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.unicode-raw-regex',
-      scopes: ['source.shss', 'string.quoted.double.block.unicode-raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.unicode-raw-regex'],
     });
   });
 
@@ -9220,7 +9220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.raw');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.raw',
-      scopes: ['source.shss', 'string.quoted.double.block.raw'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.raw'],
     });
   });
 
@@ -9228,7 +9228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.raw-regex');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.raw-regex',
-      scopes: ['source.shss', 'string.quoted.double.block.raw-regex'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.raw-regex'],
     });
   });
 
@@ -9236,7 +9236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.raw-format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.raw-format',
-      scopes: ['source.shss', 'string.quoted.double.block.raw-format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.raw-format'],
     });
   });
 
@@ -9244,7 +9244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.raw-binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.raw-binary',
-      scopes: ['source.shss', 'string.quoted.double.block.raw-binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.raw-binary'],
     });
   });
 
@@ -9252,7 +9252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block',
-      scopes: ['source.shss', 'string.quoted.double.block'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block'],
     });
   });
 
@@ -9260,7 +9260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.format');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.format',
-      scopes: ['source.shss', 'string.quoted.double.block.format'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.format'],
     });
   });
 
@@ -9268,7 +9268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double.block.binary');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double.block.binary',
-      scopes: ['source.shss', 'string.quoted.double.block.binary'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double.block.binary'],
     });
   });
 
@@ -9276,7 +9276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.double');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.double',
-      scopes: ['source.shss', 'string.quoted.double'],
+      scopes: ['source.syntax-scopes', 'string.quoted.double'],
     });
   });
 
@@ -9284,7 +9284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.custom-double');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.custom-double',
-      scopes: ['source.shss', 'string.quoted.custom-double'],
+      scopes: ['source.syntax-scopes', 'string.quoted.custom-double'],
     });
   });
 
@@ -9292,7 +9292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.qq-ltgt');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.qq-ltgt',
-      scopes: ['source.shss', 'string.quoted.other.qq-ltgt'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.qq-ltgt'],
     });
   });
 
@@ -9300,7 +9300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.qq-paren');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.qq-paren',
-      scopes: ['source.shss', 'string.quoted.other.qq-paren'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.qq-paren'],
     });
   });
 
@@ -9308,7 +9308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.qq-brace');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.qq-brace',
-      scopes: ['source.shss', 'string.quoted.other.qq-brace'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.qq-brace'],
     });
   });
 
@@ -9316,7 +9316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.qq-bracket');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.qq-bracket',
-      scopes: ['source.shss', 'string.quoted.other.qq-bracket'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.qq-bracket'],
     });
   });
 
@@ -9324,7 +9324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.q-paren');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.q-paren',
-      scopes: ['source.shss', 'string.quoted.other.q-paren'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.q-paren'],
     });
   });
 
@@ -9332,7 +9332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.q-brace');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.q-brace',
-      scopes: ['source.shss', 'string.quoted.other.q-brace'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.q-brace'],
     });
   });
 
@@ -9340,7 +9340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.q-bracket');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.q-bracket',
-      scopes: ['source.shss', 'string.quoted.other.q-bracket'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.q-bracket'],
     });
   });
 
@@ -9348,7 +9348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other.q-ltgt');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other.q-ltgt',
-      scopes: ['source.shss', 'string.quoted.other.q-ltgt'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other.q-ltgt'],
     });
   });
 
@@ -9356,7 +9356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other',
-      scopes: ['source.shss', 'string.quoted.other'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other'],
     });
   });
 
@@ -9364,7 +9364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.single');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.single',
-      scopes: ['source.shss', 'string.quoted.single'],
+      scopes: ['source.syntax-scopes', 'string.quoted.single'],
     });
   });
 
@@ -9372,7 +9372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.triple');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.triple',
-      scopes: ['source.shss', 'string.quoted.triple'],
+      scopes: ['source.syntax-scopes', 'string.quoted.triple'],
     });
   });
 
@@ -9380,7 +9380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted.other');
     expect(tokens[0]).toEqual({
       value: 'string.quoted.other',
-      scopes: ['source.shss', 'string.quoted.other'],
+      scopes: ['source.syntax-scopes', 'string.quoted.other'],
     });
   });
 
@@ -9388,7 +9388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.quoted');
     expect(tokens[0]).toEqual({
       value: 'string.quoted',
-      scopes: ['source.shss', 'string.quoted'],
+      scopes: ['source.syntax-scopes', 'string.quoted'],
     });
   });
 
@@ -9396,7 +9396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.html');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.html',
-      scopes: ['source.shss', 'string.unquoted.html'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.html'],
     });
   });
 
@@ -9404,7 +9404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.attribute-value');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.attribute-value',
-      scopes: ['source.shss', 'string.unquoted.attribute-value'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.attribute-value'],
     });
   });
 
@@ -9412,7 +9412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.heredoc.backtick');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.heredoc.backtick',
-      scopes: ['source.shss', 'string.unquoted.heredoc.backtick'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.heredoc.backtick'],
     });
   });
 
@@ -9420,7 +9420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.heredoc.quote');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.heredoc.quote',
-      scopes: ['source.shss', 'string.unquoted.heredoc.quote'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.heredoc.quote'],
     });
   });
 
@@ -9428,7 +9428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.heredoc.doublequote');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.heredoc.doublequote',
-      scopes: ['source.shss', 'string.unquoted.heredoc.doublequote'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.heredoc.doublequote'],
     });
   });
 
@@ -9436,7 +9436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.heredoc');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.heredoc',
-      scopes: ['source.shss', 'string.unquoted.heredoc'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.heredoc'],
     });
   });
 
@@ -9444,7 +9444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.program-block');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.program-block',
-      scopes: ['source.shss', 'string.unquoted.program-block'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.program-block'],
     });
   });
 
@@ -9452,7 +9452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted.index');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted.index',
-      scopes: ['source.shss', 'string.unquoted.index'],
+      scopes: ['source.syntax-scopes', 'string.unquoted.index'],
     });
   });
 
@@ -9460,7 +9460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.unquoted');
     expect(tokens[0]).toEqual({
       value: 'string.unquoted',
-      scopes: ['source.shss', 'string.unquoted'],
+      scopes: ['source.syntax-scopes', 'string.unquoted'],
     });
   });
 
@@ -9468,7 +9468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.literal');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.literal',
-      scopes: ['source.shss', 'string.regexp.literal'],
+      scopes: ['source.syntax-scopes', 'string.regexp.literal'],
     });
   });
 
@@ -9476,7 +9476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.interpolated');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.interpolated',
-      scopes: ['source.shss', 'string.regexp.interpolated'],
+      scopes: ['source.syntax-scopes', 'string.regexp.interpolated'],
     });
   });
 
@@ -9484,7 +9484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.group');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.group',
-      scopes: ['source.shss', 'string.regexp.group'],
+      scopes: ['source.syntax-scopes', 'string.regexp.group'],
     });
   });
 
@@ -9492,7 +9492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.replace.extended.simple_delimiter');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.replace.extended.simple_delimiter',
-      scopes: ['source.shss', 'string.regexp.replace.extended.simple_delimiter'],
+      scopes: ['source.syntax-scopes', 'string.regexp.replace.extended.simple_delimiter'],
     });
   });
 
@@ -9500,7 +9500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.format.nested_braces');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.format.nested_braces',
-      scopes: ['source.shss', 'string.regexp.format.nested_braces'],
+      scopes: ['source.syntax-scopes', 'string.regexp.format.nested_braces'],
     });
   });
 
@@ -9508,7 +9508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.format.nested_parens');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.format.nested_parens',
-      scopes: ['source.shss', 'string.regexp.format.nested_parens'],
+      scopes: ['source.syntax-scopes', 'string.regexp.format.nested_parens'],
     });
   });
 
@@ -9516,7 +9516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.format.single_quote');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.format.single_quote',
-      scopes: ['source.shss', 'string.regexp.format.single_quote'],
+      scopes: ['source.syntax-scopes', 'string.regexp.format.single_quote'],
     });
   });
 
@@ -9524,7 +9524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.format.simple_delimiter');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.format.simple_delimiter',
-      scopes: ['source.shss', 'string.regexp.format.simple_delimiter'],
+      scopes: ['source.syntax-scopes', 'string.regexp.format.simple_delimiter'],
     });
   });
 
@@ -9532,7 +9532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.format.nested_ltgt');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.format.nested_ltgt',
-      scopes: ['source.shss', 'string.regexp.format.nested_ltgt'],
+      scopes: ['source.syntax-scopes', 'string.regexp.format.nested_ltgt'],
     });
   });
 
@@ -9540,7 +9540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.format');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.format',
-      scopes: ['source.shss', 'string.regexp.format'],
+      scopes: ['source.syntax-scopes', 'string.regexp.format'],
     });
   });
 
@@ -9548,7 +9548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.nested_ltgt');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.nested_ltgt',
-      scopes: ['source.shss', 'string.regexp.nested_ltgt'],
+      scopes: ['source.syntax-scopes', 'string.regexp.nested_ltgt'],
     });
   });
 
@@ -9556,7 +9556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.nested_parens');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.nested_parens',
-      scopes: ['source.shss', 'string.regexp.nested_parens'],
+      scopes: ['source.syntax-scopes', 'string.regexp.nested_parens'],
     });
   });
 
@@ -9564,7 +9564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.nested_braces');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.nested_braces',
-      scopes: ['source.shss', 'string.regexp.nested_braces'],
+      scopes: ['source.syntax-scopes', 'string.regexp.nested_braces'],
     });
   });
 
@@ -9572,7 +9572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.find-m.simple-delimiter');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.find-m.simple-delimiter',
-      scopes: ['source.shss', 'string.regexp.find-m.simple-delimiter'],
+      scopes: ['source.syntax-scopes', 'string.regexp.find-m.simple-delimiter'],
     });
   });
 
@@ -9580,7 +9580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.find-m.single-quote');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.find-m.single-quote',
-      scopes: ['source.shss', 'string.regexp.find-m.single-quote'],
+      scopes: ['source.syntax-scopes', 'string.regexp.find-m.single-quote'],
     });
   });
 
@@ -9588,7 +9588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.find');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.find',
-      scopes: ['source.shss', 'string.regexp.find'],
+      scopes: ['source.syntax-scopes', 'string.regexp.find'],
     });
   });
 
@@ -9596,7 +9596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.character-class');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.character-class',
-      scopes: ['source.shss', 'string.regexp.character-class'],
+      scopes: ['source.syntax-scopes', 'string.regexp.character-class'],
     });
   });
 
@@ -9604,7 +9604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.arbitrary-repitition');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.arbitrary-repitition',
-      scopes: ['source.shss', 'string.regexp.arbitrary-repitition'],
+      scopes: ['source.syntax-scopes', 'string.regexp.arbitrary-repitition'],
     });
   });
 
@@ -9612,7 +9612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.arbitrary-repetition');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.arbitrary-repetition',
-      scopes: ['source.shss', 'string.regexp.arbitrary-repetition'],
+      scopes: ['source.syntax-scopes', 'string.regexp.arbitrary-repetition'],
     });
   });
 
@@ -9620,7 +9620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.single-quoted');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.single-quoted',
-      scopes: ['source.shss', 'string.regexp.single-quoted'],
+      scopes: ['source.syntax-scopes', 'string.regexp.single-quoted'],
     });
   });
 
@@ -9628,7 +9628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.double-quoted');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.double-quoted',
-      scopes: ['source.shss', 'string.regexp.double-quoted'],
+      scopes: ['source.syntax-scopes', 'string.regexp.double-quoted'],
     });
   });
 
@@ -9636,7 +9636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp.replace');
     expect(tokens[0]).toEqual({
       value: 'string.regexp.replace',
-      scopes: ['source.shss', 'string.regexp.replace'],
+      scopes: ['source.syntax-scopes', 'string.regexp.replace'],
     });
   });
 
@@ -9644,7 +9644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.regexp');
     expect(tokens[0]).toEqual({
       value: 'string.regexp',
-      scopes: ['source.shss', 'string.regexp'],
+      scopes: ['source.syntax-scopes', 'string.regexp'],
     });
   });
 
@@ -9652,7 +9652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.interpolated.qx-paren');
     expect(tokens[0]).toEqual({
       value: 'string.interpolated.qx-paren',
-      scopes: ['source.shss', 'string.interpolated.qx-paren'],
+      scopes: ['source.syntax-scopes', 'string.interpolated.qx-paren'],
     });
   });
 
@@ -9660,7 +9660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.interpolated.qx-brace');
     expect(tokens[0]).toEqual({
       value: 'string.interpolated.qx-brace',
-      scopes: ['source.shss', 'string.interpolated.qx-brace'],
+      scopes: ['source.syntax-scopes', 'string.interpolated.qx-brace'],
     });
   });
 
@@ -9668,7 +9668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.interpolated.qx-bracket');
     expect(tokens[0]).toEqual({
       value: 'string.interpolated.qx-bracket',
-      scopes: ['source.shss', 'string.interpolated.qx-bracket'],
+      scopes: ['source.syntax-scopes', 'string.interpolated.qx-bracket'],
     });
   });
 
@@ -9676,7 +9676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.interpolated.qx-ltgt');
     expect(tokens[0]).toEqual({
       value: 'string.interpolated.qx-ltgt',
-      scopes: ['source.shss', 'string.interpolated.qx-ltgt'],
+      scopes: ['source.syntax-scopes', 'string.interpolated.qx-ltgt'],
     });
   });
 
@@ -9684,7 +9684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.interpolated.regexp');
     expect(tokens[0]).toEqual({
       value: 'string.interpolated.regexp',
-      scopes: ['source.shss', 'string.interpolated.regexp'],
+      scopes: ['source.syntax-scopes', 'string.interpolated.regexp'],
     });
   });
 
@@ -9692,7 +9692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.interpolated');
     expect(tokens[0]).toEqual({
       value: 'string.interpolated',
-      scopes: ['source.shss', 'string.interpolated'],
+      scopes: ['source.syntax-scopes', 'string.interpolated'],
     });
   });
 
@@ -9700,7 +9700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string.other');
     expect(tokens[0]).toEqual({
       value: 'string.other',
-      scopes: ['source.shss', 'string.other'],
+      scopes: ['source.syntax-scopes', 'string.other'],
     });
   });
 
@@ -9708,7 +9708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('string');
     expect(tokens[0]).toEqual({
       value: 'string',
-      scopes: ['source.shss', 'string'],
+      scopes: ['source.syntax-scopes', 'string'],
     });
   });
 
@@ -9716,7 +9716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('sourceembedded');
     expect(tokens[0]).toEqual({
       value: 'sourceembedded',
-      scopes: ['source.shss', 'sourceembedded'],
+      scopes: ['source.syntax-scopes', 'sourceembedded'],
     });
   });
 
@@ -9724,7 +9724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('sourceembedded.source');
     expect(tokens[0]).toEqual({
       value: 'sourceembedded.source',
-      scopes: ['source.shss', 'sourceembedded.source'],
+      scopes: ['source.syntax-scopes', 'sourceembedded.source'],
     });
   });
 
@@ -9732,7 +9732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('sourcestyle');
     expect(tokens[0]).toEqual({
       value: 'sourcestyle',
-      scopes: ['source.shss', 'sourcestyle'],
+      scopes: ['source.syntax-scopes', 'sourcestyle'],
     });
   });
 
@@ -9740,7 +9740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.vendored.property-value');
     expect(tokens[0]).toEqual({
       value: 'support.constant.vendored.property-value',
-      scopes: ['source.shss', 'support.constant.vendored.property-value'],
+      scopes: ['source.syntax-scopes', 'support.constant.vendored.property-value'],
     });
   });
 
@@ -9748,7 +9748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.vendored');
     expect(tokens[0]).toEqual({
       value: 'support.constant.vendored',
-      scopes: ['source.shss', 'support.constant.vendored'],
+      scopes: ['source.syntax-scopes', 'support.constant.vendored'],
     });
   });
 
@@ -9756,7 +9756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.text-direction');
     expect(tokens[0]).toEqual({
       value: 'support.constant.text-direction',
-      scopes: ['source.shss', 'support.constant.text-direction'],
+      scopes: ['source.syntax-scopes', 'support.constant.text-direction'],
     });
   });
 
@@ -9764,7 +9764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.step-direction');
     expect(tokens[0]).toEqual({
       value: 'support.constant.step-direction',
-      scopes: ['source.shss', 'support.constant.step-direction'],
+      scopes: ['source.syntax-scopes', 'support.constant.step-direction'],
     });
   });
 
@@ -9772,7 +9772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.property-value.list-style-type');
     expect(tokens[0]).toEqual({
       value: 'support.constant.property-value.list-style-type',
-      scopes: ['source.shss', 'support.constant.property-value.list-style-type'],
+      scopes: ['source.syntax-scopes', 'support.constant.property-value.list-style-type'],
     });
   });
 
@@ -9780,7 +9780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.property-value');
     expect(tokens[0]).toEqual({
       value: 'support.constant.property-value',
-      scopes: ['source.shss', 'support.constant.property-value'],
+      scopes: ['source.syntax-scopes', 'support.constant.property-value'],
     });
   });
 
@@ -9788,7 +9788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.parity');
     expect(tokens[0]).toEqual({
       value: 'support.constant.parity',
-      scopes: ['source.shss', 'support.constant.parity'],
+      scopes: ['source.syntax-scopes', 'support.constant.parity'],
     });
   });
 
@@ -9796,7 +9796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.media');
     expect(tokens[0]).toEqual({
       value: 'support.constant.media',
-      scopes: ['source.shss', 'support.constant.media'],
+      scopes: ['source.syntax-scopes', 'support.constant.media'],
     });
   });
 
@@ -9804,7 +9804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.mac-classic');
     expect(tokens[0]).toEqual({
       value: 'support.constant.mac-classic',
-      scopes: ['source.shss', 'support.constant.mac-classic'],
+      scopes: ['source.syntax-scopes', 'support.constant.mac-classic'],
     });
   });
 
@@ -9812,7 +9812,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.language-range');
     expect(tokens[0]).toEqual({
       value: 'support.constant.language-range',
-      scopes: ['source.shss', 'support.constant.language-range'],
+      scopes: ['source.syntax-scopes', 'support.constant.language-range'],
     });
   });
 
@@ -9820,7 +9820,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.font-name');
     expect(tokens[0]).toEqual({
       value: 'support.constant.font-name',
-      scopes: ['source.shss', 'support.constant.font-name'],
+      scopes: ['source.syntax-scopes', 'support.constant.font-name'],
     });
   });
 
@@ -9828,7 +9828,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.color.w3c-standard-color-name');
     expect(tokens[0]).toEqual({
       value: 'support.constant.color.w3c-standard-color-name',
-      scopes: ['source.shss', 'support.constant.color.w3c-standard-color-name'],
+      scopes: ['source.syntax-scopes', 'support.constant.color.w3c-standard-color-name'],
     });
   });
 
@@ -9836,7 +9836,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.color.w3c-extended-color-name');
     expect(tokens[0]).toEqual({
       value: 'support.constant.color.w3c-extended-color-name',
-      scopes: ['source.shss', 'support.constant.color.w3c-extended-color-name'],
+      scopes: ['source.syntax-scopes', 'support.constant.color.w3c-extended-color-name'],
     });
   });
 
@@ -9844,7 +9844,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.color.current');
     expect(tokens[0]).toEqual({
       value: 'support.constant.color.current',
-      scopes: ['source.shss', 'support.constant.color.current'],
+      scopes: ['source.syntax-scopes', 'support.constant.color.current'],
     });
   });
 
@@ -9852,7 +9852,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.color');
     expect(tokens[0]).toEqual({
       value: 'support.constant.color',
-      scopes: ['source.shss', 'support.constant.color'],
+      scopes: ['source.syntax-scopes', 'support.constant.color'],
     });
   });
 
@@ -9860,7 +9860,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant.ext');
     expect(tokens[0]).toEqual({
       value: 'support.constant.ext',
-      scopes: ['source.shss', 'support.constant.ext'],
+      scopes: ['source.syntax-scopes', 'support.constant.ext'],
     });
   });
 
@@ -9868,7 +9868,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.constant');
     expect(tokens[0]).toEqual({
       value: 'support.constant',
-      scopes: ['source.shss', 'support.constant'],
+      scopes: ['source.syntax-scopes', 'support.constant'],
     });
   });
 
@@ -9876,7 +9876,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.variable.quoted.single.heredoc');
     expect(tokens[0]).toEqual({
       value: 'support.function.variable.quoted.single.heredoc',
-      scopes: ['source.shss', 'support.function.variable.quoted.single.heredoc'],
+      scopes: ['source.syntax-scopes', 'support.function.variable.quoted.single.heredoc'],
     });
   });
 
@@ -9884,7 +9884,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.variable.quoted.single');
     expect(tokens[0]).toEqual({
       value: 'support.function.variable.quoted.single',
-      scopes: ['source.shss', 'support.function.variable.quoted.single'],
+      scopes: ['source.syntax-scopes', 'support.function.variable.quoted.single'],
     });
   });
 
@@ -9892,7 +9892,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.variable.quoted');
     expect(tokens[0]).toEqual({
       value: 'support.function.variable.quoted',
-      scopes: ['source.shss', 'support.function.variable.quoted'],
+      scopes: ['source.syntax-scopes', 'support.function.variable.quoted'],
     });
   });
 
@@ -9900,7 +9900,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.variable');
     expect(tokens[0]).toEqual({
       value: 'support.function.variable',
-      scopes: ['source.shss', 'support.function.variable'],
+      scopes: ['source.syntax-scopes', 'support.function.variable'],
     });
   });
 
@@ -9908,7 +9908,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.url');
     expect(tokens[0]).toEqual({
       value: 'support.function.url',
-      scopes: ['source.shss', 'support.function.url'],
+      scopes: ['source.syntax-scopes', 'support.function.url'],
     });
   });
 
@@ -9916,7 +9916,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.transform');
     expect(tokens[0]).toEqual({
       value: 'support.function.transform',
-      scopes: ['source.shss', 'support.function.transform'],
+      scopes: ['source.syntax-scopes', 'support.function.transform'],
     });
   });
 
@@ -9924,7 +9924,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.timing-function');
     expect(tokens[0]).toEqual({
       value: 'support.function.timing-function',
-      scopes: ['source.shss', 'support.function.timing-function'],
+      scopes: ['source.syntax-scopes', 'support.function.timing-function'],
     });
   });
 
@@ -9932,7 +9932,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.shape');
     expect(tokens[0]).toEqual({
       value: 'support.function.shape',
-      scopes: ['source.shss', 'support.function.shape'],
+      scopes: ['source.syntax-scopes', 'support.function.shape'],
     });
   });
 
@@ -9940,7 +9940,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.prelude');
     expect(tokens[0]).toEqual({
       value: 'support.function.prelude',
-      scopes: ['source.shss', 'support.function.prelude'],
+      scopes: ['source.syntax-scopes', 'support.function.prelude'],
     });
   });
 
@@ -9948,7 +9948,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.misc');
     expect(tokens[0]).toEqual({
       value: 'support.function.misc',
-      scopes: ['source.shss', 'support.function.misc'],
+      scopes: ['source.syntax-scopes', 'support.function.misc'],
     });
   });
 
@@ -9956,7 +9956,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.macro');
     expect(tokens[0]).toEqual({
       value: 'support.function.macro',
-      scopes: ['source.shss', 'support.function.macro'],
+      scopes: ['source.syntax-scopes', 'support.function.macro'],
     });
   });
 
@@ -9964,7 +9964,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.library');
     expect(tokens[0]).toEqual({
       value: 'support.function.library',
-      scopes: ['source.shss', 'support.function.library'],
+      scopes: ['source.syntax-scopes', 'support.function.library'],
     });
   });
 
@@ -9972,7 +9972,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.kernel');
     expect(tokens[0]).toEqual({
       value: 'support.function.kernel',
-      scopes: ['source.shss', 'support.function.kernel'],
+      scopes: ['source.syntax-scopes', 'support.function.kernel'],
     });
   });
 
@@ -9980,7 +9980,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.gradient');
     expect(tokens[0]).toEqual({
       value: 'support.function.gradient',
-      scopes: ['source.shss', 'support.function.gradient'],
+      scopes: ['source.syntax-scopes', 'support.function.gradient'],
     });
   });
 
@@ -9988,7 +9988,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.document-rule');
     expect(tokens[0]).toEqual({
       value: 'support.function.document-rule',
-      scopes: ['source.shss', 'support.function.document-rule'],
+      scopes: ['source.syntax-scopes', 'support.function.document-rule'],
     });
   });
 
@@ -9996,7 +9996,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.calc');
     expect(tokens[0]).toEqual({
       value: 'support.function.calc',
-      scopes: ['source.shss', 'support.function.calc'],
+      scopes: ['source.syntax-scopes', 'support.function.calc'],
     });
   });
 
@@ -10004,7 +10004,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.builtin');
     expect(tokens[0]).toEqual({
       value: 'support.function.builtin',
-      scopes: ['source.shss', 'support.function.builtin'],
+      scopes: ['source.syntax-scopes', 'support.function.builtin'],
     });
   });
 
@@ -10012,7 +10012,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.built-in.smarty');
     expect(tokens[0]).toEqual({
       value: 'support.function.built-in.smarty',
-      scopes: ['source.shss', 'support.function.built-in.smarty'],
+      scopes: ['source.syntax-scopes', 'support.function.built-in.smarty'],
     });
   });
 
@@ -10020,7 +10020,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.any-method');
     expect(tokens[0]).toEqual({
       value: 'support.function.any-method',
-      scopes: ['source.shss', 'support.function.any-method'],
+      scopes: ['source.syntax-scopes', 'support.function.any-method'],
     });
   });
 
@@ -10028,7 +10028,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.C99');
     expect(tokens[0]).toEqual({
       value: 'support.function.C99',
-      scopes: ['source.shss', 'support.function.C99'],
+      scopes: ['source.syntax-scopes', 'support.function.C99'],
     });
   });
 
@@ -10036,7 +10036,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function.magic');
     expect(tokens[0]).toEqual({
       value: 'support.function.magic',
-      scopes: ['source.shss', 'support.function.magic'],
+      scopes: ['source.syntax-scopes', 'support.function.magic'],
     });
   });
 
@@ -10044,7 +10044,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.function');
     expect(tokens[0]).toEqual({
       value: 'support.function',
-      scopes: ['source.shss', 'support.function'],
+      scopes: ['source.syntax-scopes', 'support.function'],
     });
   });
 
@@ -10052,7 +10052,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.operator.prelude');
     expect(tokens[0]).toEqual({
       value: 'support.operator.prelude',
-      scopes: ['source.shss', 'support.operator.prelude'],
+      scopes: ['source.syntax-scopes', 'support.operator.prelude'],
     });
   });
 
@@ -10060,7 +10060,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.operator');
     expect(tokens[0]).toEqual({
       value: 'support.operator',
-      scopes: ['source.shss', 'support.operator'],
+      scopes: ['source.syntax-scopes', 'support.operator'],
     });
   });
 
@@ -10068,7 +10068,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.module');
     expect(tokens[0]).toEqual({
       value: 'support.module',
-      scopes: ['source.shss', 'support.module'],
+      scopes: ['source.syntax-scopes', 'support.module'],
     });
   });
 
@@ -10076,7 +10076,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.tag.prelude');
     expect(tokens[0]).toEqual({
       value: 'support.tag.prelude',
-      scopes: ['source.shss', 'support.tag.prelude'],
+      scopes: ['source.syntax-scopes', 'support.tag.prelude'],
     });
   });
 
@@ -10084,7 +10084,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.tag');
     expect(tokens[0]).toEqual({
       value: 'support.tag',
-      scopes: ['source.shss', 'support.tag'],
+      scopes: ['source.syntax-scopes', 'support.tag'],
     });
   });
 
@@ -10092,7 +10092,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.vendored.property-name.media');
     expect(tokens[0]).toEqual({
       value: 'support.type.vendored.property-name.media',
-      scopes: ['source.shss', 'support.type.vendored.property-name.media'],
+      scopes: ['source.syntax-scopes', 'support.type.vendored.property-name.media'],
     });
   });
 
@@ -10100,7 +10100,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.vendored.property-name');
     expect(tokens[0]).toEqual({
       value: 'support.type.vendored.property-name',
-      scopes: ['source.shss', 'support.type.vendored.property-name'],
+      scopes: ['source.syntax-scopes', 'support.type.vendored.property-name'],
     });
   });
 
@@ -10108,7 +10108,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.vendored');
     expect(tokens[0]).toEqual({
       value: 'support.type.vendored',
-      scopes: ['source.shss', 'support.type.vendored'],
+      scopes: ['source.syntax-scopes', 'support.type.vendored'],
     });
   });
 
@@ -10116,7 +10116,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.sys-types');
     expect(tokens[0]).toEqual({
       value: 'support.type.sys-types',
-      scopes: ['source.shss', 'support.type.sys-types'],
+      scopes: ['source.syntax-scopes', 'support.type.sys-types'],
     });
   });
 
@@ -10124,7 +10124,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.stdint');
     expect(tokens[0]).toEqual({
       value: 'support.type.stdint',
-      scopes: ['source.shss', 'support.type.stdint'],
+      scopes: ['source.syntax-scopes', 'support.type.stdint'],
     });
   });
 
@@ -10132,7 +10132,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.pthread');
     expect(tokens[0]).toEqual({
       value: 'support.type.pthread',
-      scopes: ['source.shss', 'support.type.pthread'],
+      scopes: ['source.syntax-scopes', 'support.type.pthread'],
     });
   });
 
@@ -10140,7 +10140,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.property-name.media');
     expect(tokens[0]).toEqual({
       value: 'support.type.property-name.media',
-      scopes: ['source.shss', 'support.type.property-name.media'],
+      scopes: ['source.syntax-scopes', 'support.type.property-name.media'],
     });
   });
 
@@ -10148,7 +10148,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.property-name');
     expect(tokens[0]).toEqual({
       value: 'support.type.property-name',
-      scopes: ['source.shss', 'support.type.property-name'],
+      scopes: ['source.syntax-scopes', 'support.type.property-name'],
     });
   });
 
@@ -10156,7 +10156,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.posix-reserved');
     expect(tokens[0]).toEqual({
       value: 'support.type.posix-reserved',
-      scopes: ['source.shss', 'support.type.posix-reserved'],
+      scopes: ['source.syntax-scopes', 'support.type.posix-reserved'],
     });
   });
 
@@ -10164,7 +10164,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.mac-classic');
     expect(tokens[0]).toEqual({
       value: 'support.type.mac-classic',
-      scopes: ['source.shss', 'support.type.mac-classic'],
+      scopes: ['source.syntax-scopes', 'support.type.mac-classic'],
     });
   });
 
@@ -10172,7 +10172,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type.exception');
     expect(tokens[0]).toEqual({
       value: 'support.type.exception',
-      scopes: ['source.shss', 'support.type.exception'],
+      scopes: ['source.syntax-scopes', 'support.type.exception'],
     });
   });
 
@@ -10180,7 +10180,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.type');
     expect(tokens[0]).toEqual({
       value: 'support.type',
-      scopes: ['source.shss', 'support.type'],
+      scopes: ['source.syntax-scopes', 'support.type'],
     });
   });
 
@@ -10188,7 +10188,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.class.prelude');
     expect(tokens[0]).toEqual({
       value: 'support.class.prelude',
-      scopes: ['source.shss', 'support.class.prelude'],
+      scopes: ['source.syntax-scopes', 'support.class.prelude'],
     });
   });
 
@@ -10196,7 +10196,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.class');
     expect(tokens[0]).toEqual({
       value: 'support.class',
-      scopes: ['source.shss', 'support.class'],
+      scopes: ['source.syntax-scopes', 'support.class'],
     });
   });
 
@@ -10204,7 +10204,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.variable.magic');
     expect(tokens[0]).toEqual({
       value: 'support.variable.magic',
-      scopes: ['source.shss', 'support.variable.magic'],
+      scopes: ['source.syntax-scopes', 'support.variable.magic'],
     });
   });
 
@@ -10212,7 +10212,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.variable');
     expect(tokens[0]).toEqual({
       value: 'support.variable',
-      scopes: ['source.shss', 'support.variable'],
+      scopes: ['source.syntax-scopes', 'support.variable'],
     });
   });
 
@@ -10220,7 +10220,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.struct');
     expect(tokens[0]).toEqual({
       value: 'support.struct',
-      scopes: ['source.shss', 'support.struct'],
+      scopes: ['source.syntax-scopes', 'support.struct'],
     });
   });
 
@@ -10228,7 +10228,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.other.module');
     expect(tokens[0]).toEqual({
       value: 'support.other.module',
-      scopes: ['source.shss', 'support.other.module'],
+      scopes: ['source.syntax-scopes', 'support.other.module'],
     });
   });
 
@@ -10236,7 +10236,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.other.namespace');
     expect(tokens[0]).toEqual({
       value: 'support.other.namespace',
-      scopes: ['source.shss', 'support.other.namespace'],
+      scopes: ['source.syntax-scopes', 'support.other.namespace'],
     });
   });
 
@@ -10244,7 +10244,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support.other');
     expect(tokens[0]).toEqual({
       value: 'support.other',
-      scopes: ['source.shss', 'support.other'],
+      scopes: ['source.syntax-scopes', 'support.other'],
     });
   });
 
@@ -10252,7 +10252,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('support');
     expect(tokens[0]).toEqual({
       value: 'support',
-      scopes: ['source.shss', 'support'],
+      scopes: ['source.syntax-scopes', 'support'],
     });
   });
 
@@ -10260,7 +10260,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.html.embedded');
     expect(tokens[0]).toEqual({
       value: 'text.html.embedded',
-      scopes: ['source.shss', 'text.html.embedded'],
+      scopes: ['source.syntax-scopes', 'text.html.embedded'],
     });
   });
 
@@ -10268,7 +10268,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.html.basic');
     expect(tokens[0]).toEqual({
       value: 'text.html.basic',
-      scopes: ['source.shss', 'text.html.basic'],
+      scopes: ['source.syntax-scopes', 'text.html.basic'],
     });
   });
 
@@ -10276,7 +10276,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.html.markdown');
     expect(tokens[0]).toEqual({
       value: 'text.html.markdown',
-      scopes: ['source.shss', 'text.html.markdown'],
+      scopes: ['source.syntax-scopes', 'text.html.markdown'],
     });
   });
 
@@ -10284,7 +10284,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.html');
     expect(tokens[0]).toEqual({
       value: 'text.html',
-      scopes: ['source.shss', 'text.html'],
+      scopes: ['source.syntax-scopes', 'text.html'],
     });
   });
 
@@ -10292,7 +10292,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.xml');
     expect(tokens[0]).toEqual({
       value: 'text.xml',
-      scopes: ['source.shss', 'text.xml'],
+      scopes: ['source.syntax-scopes', 'text.xml'],
     });
   });
 
@@ -10300,7 +10300,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.plain');
     expect(tokens[0]).toEqual({
       value: 'text.plain',
-      scopes: ['source.shss', 'text.plain'],
+      scopes: ['source.syntax-scopes', 'text.plain'],
     });
   });
 
@@ -10308,7 +10308,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.embedded.html');
     expect(tokens[0]).toEqual({
       value: 'text.embedded.html',
-      scopes: ['source.shss', 'text.embedded.html'],
+      scopes: ['source.syntax-scopes', 'text.embedded.html'],
     });
   });
 
@@ -10316,7 +10316,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text.embedded');
     expect(tokens[0]).toEqual({
       value: 'text.embedded',
-      scopes: ['source.shss', 'text.embedded'],
+      scopes: ['source.syntax-scopes', 'text.embedded'],
     });
   });
 
@@ -10324,7 +10324,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('text');
     expect(tokens[0]).toEqual({
       value: 'text',
-      scopes: ['source.shss', 'text'],
+      scopes: ['source.syntax-scopes', 'text'],
     });
   });
 
@@ -10332,7 +10332,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('unused.comment');
     expect(tokens[0]).toEqual({
       value: 'unused.comment',
-      scopes: ['source.shss', 'unused.comment'],
+      scopes: ['source.syntax-scopes', 'unused.comment'],
     });
   });
 
@@ -10340,7 +10340,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('unused');
     expect(tokens[0]).toEqual({
       value: 'unused',
-      scopes: ['source.shss', 'unused'],
+      scopes: ['source.syntax-scopes', 'unused'],
     });
   });
 
@@ -10348,7 +10348,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.annotation');
     expect(tokens[0]).toEqual({
       value: 'variable.annotation',
-      scopes: ['source.shss', 'variable.annotation'],
+      scopes: ['source.syntax-scopes', 'variable.annotation'],
     });
   });
 
@@ -10356,7 +10356,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.function');
     expect(tokens[0]).toEqual({
       value: 'variable.function',
-      scopes: ['source.shss', 'variable.function'],
+      scopes: ['source.syntax-scopes', 'variable.function'],
     });
   });
 
@@ -10364,7 +10364,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.regexp.last-paren-match');
     expect(tokens[0]).toEqual({
       value: 'variable.other.regexp.last-paren-match',
-      scopes: ['source.shss', 'variable.other.regexp.last-paren-match'],
+      scopes: ['source.syntax-scopes', 'variable.other.regexp.last-paren-match'],
     });
   });
 
@@ -10372,7 +10372,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.regexp.post-match');
     expect(tokens[0]).toEqual({
       value: 'variable.other.regexp.post-match',
-      scopes: ['source.shss', 'variable.other.regexp.post-match'],
+      scopes: ['source.syntax-scopes', 'variable.other.regexp.post-match'],
     });
   });
 
@@ -10380,7 +10380,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.regexp.pre-match');
     expect(tokens[0]).toEqual({
       value: 'variable.other.regexp.pre-match',
-      scopes: ['source.shss', 'variable.other.regexp.pre-match'],
+      scopes: ['source.syntax-scopes', 'variable.other.regexp.pre-match'],
     });
   });
 
@@ -10388,7 +10388,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.regexp.match');
     expect(tokens[0]).toEqual({
       value: 'variable.other.regexp.match',
-      scopes: ['source.shss', 'variable.other.regexp.match'],
+      scopes: ['source.syntax-scopes', 'variable.other.regexp.match'],
     });
   });
 
@@ -10396,7 +10396,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.static.mac-classic');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.static.mac-classic',
-      scopes: ['source.shss', 'variable.other.readwrite.static.mac-classic'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.static.mac-classic'],
     });
   });
 
@@ -10404,7 +10404,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.static');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.static',
-      scopes: ['source.shss', 'variable.other.readwrite.static'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.static'],
     });
   });
 
@@ -10412,7 +10412,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.module');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.module',
-      scopes: ['source.shss', 'variable.other.readwrite.module'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.module'],
     });
   });
 
@@ -10420,7 +10420,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.member');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.member',
-      scopes: ['source.shss', 'variable.other.readwrite.member'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.member'],
     });
   });
 
@@ -10428,7 +10428,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.instance');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.instance',
-      scopes: ['source.shss', 'variable.other.readwrite.instance'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.instance'],
     });
   });
 
@@ -10436,7 +10436,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.global.pre-defined');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.global.pre-defined',
-      scopes: ['source.shss', 'variable.other.readwrite.global.pre-defined'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.global.pre-defined'],
     });
   });
 
@@ -10444,7 +10444,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.global.mac-classic');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.global.mac-classic',
-      scopes: ['source.shss', 'variable.other.readwrite.global.mac-classic'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.global.mac-classic'],
     });
   });
 
@@ -10452,7 +10452,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.global');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.global',
-      scopes: ['source.shss', 'variable.other.readwrite.global'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.global'],
     });
   });
 
@@ -10460,7 +10460,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.class');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.class',
-      scopes: ['source.shss', 'variable.other.readwrite.class'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.class'],
     });
   });
 
@@ -10468,7 +10468,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite.list-separator');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite.list-separator',
-      scopes: ['source.shss', 'variable.other.readwrite.list-separator'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite.list-separator'],
     });
   });
 
@@ -10476,7 +10476,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.readwrite');
     expect(tokens[0]).toEqual({
       value: 'variable.other.readwrite',
-      scopes: ['source.shss', 'variable.other.readwrite'],
+      scopes: ['source.syntax-scopes', 'variable.other.readwrite'],
     });
   });
 
@@ -10484,7 +10484,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.subpattern');
     expect(tokens[0]).toEqual({
       value: 'variable.other.subpattern',
-      scopes: ['source.shss', 'variable.other.subpattern'],
+      scopes: ['source.syntax-scopes', 'variable.other.subpattern'],
     });
   });
 
@@ -10492,7 +10492,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.predefined');
     expect(tokens[0]).toEqual({
       value: 'variable.other.predefined',
-      scopes: ['source.shss', 'variable.other.predefined'],
+      scopes: ['source.syntax-scopes', 'variable.other.predefined'],
     });
   });
 
@@ -10500,7 +10500,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.index');
     expect(tokens[0]).toEqual({
       value: 'variable.other.index',
-      scopes: ['source.shss', 'variable.other.index'],
+      scopes: ['source.syntax-scopes', 'variable.other.index'],
     });
   });
 
@@ -10508,7 +10508,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.global.safer');
     expect(tokens[0]).toEqual({
       value: 'variable.other.global.safer',
-      scopes: ['source.shss', 'variable.other.global.safer'],
+      scopes: ['source.syntax-scopes', 'variable.other.global.safer'],
     });
   });
 
@@ -10516,7 +10516,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.global');
     expect(tokens[0]).toEqual({
       value: 'variable.other.global',
-      scopes: ['source.shss', 'variable.other.global'],
+      scopes: ['source.syntax-scopes', 'variable.other.global'],
     });
   });
 
@@ -10524,7 +10524,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.member');
     expect(tokens[0]).toEqual({
       value: 'variable.other.member',
-      scopes: ['source.shss', 'variable.other.member'],
+      scopes: ['source.syntax-scopes', 'variable.other.member'],
     });
   });
 
@@ -10532,7 +10532,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.property');
     expect(tokens[0]).toEqual({
       value: 'variable.other.property',
-      scopes: ['source.shss', 'variable.other.property'],
+      scopes: ['source.syntax-scopes', 'variable.other.property'],
     });
   });
 
@@ -10540,7 +10540,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.positional');
     expect(tokens[0]).toEqual({
       value: 'variable.other.positional',
-      scopes: ['source.shss', 'variable.other.positional'],
+      scopes: ['source.syntax-scopes', 'variable.other.positional'],
     });
   });
 
@@ -10548,7 +10548,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.object.property');
     expect(tokens[0]).toEqual({
       value: 'variable.other.object.property',
-      scopes: ['source.shss', 'variable.other.object.property'],
+      scopes: ['source.syntax-scopes', 'variable.other.object.property'],
     });
   });
 
@@ -10556,7 +10556,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.object');
     expect(tokens[0]).toEqual({
       value: 'variable.other.object',
-      scopes: ['source.shss', 'variable.other.object'],
+      scopes: ['source.syntax-scopes', 'variable.other.object'],
     });
   });
 
@@ -10564,7 +10564,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.member');
     expect(tokens[0]).toEqual({
       value: 'variable.other.member',
-      scopes: ['source.shss', 'variable.other.member'],
+      scopes: ['source.syntax-scopes', 'variable.other.member'],
     });
   });
 
@@ -10572,7 +10572,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.generic-type');
     expect(tokens[0]).toEqual({
       value: 'variable.other.generic-type',
-      scopes: ['source.shss', 'variable.other.generic-type'],
+      scopes: ['source.syntax-scopes', 'variable.other.generic-type'],
     });
   });
 
@@ -10580,7 +10580,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.field');
     expect(tokens[0]).toEqual({
       value: 'variable.other.field',
-      scopes: ['source.shss', 'variable.other.field'],
+      scopes: ['source.syntax-scopes', 'variable.other.field'],
     });
   });
 
@@ -10588,7 +10588,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.definition');
     expect(tokens[0]).toEqual({
       value: 'variable.other.definition',
-      scopes: ['source.shss', 'variable.other.definition'],
+      scopes: ['source.syntax-scopes', 'variable.other.definition'],
     });
   });
 
@@ -10596,7 +10596,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.declaration');
     expect(tokens[0]).toEqual({
       value: 'variable.other.declaration',
-      scopes: ['source.shss', 'variable.other.declaration'],
+      scopes: ['source.syntax-scopes', 'variable.other.declaration'],
     });
   });
 
@@ -10604,7 +10604,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.constant');
     expect(tokens[0]).toEqual({
       value: 'variable.other.constant',
-      scopes: ['source.shss', 'variable.other.constant'],
+      scopes: ['source.syntax-scopes', 'variable.other.constant'],
     });
   });
 
@@ -10612,7 +10612,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.block');
     expect(tokens[0]).toEqual({
       value: 'variable.other.block',
-      scopes: ['source.shss', 'variable.other.block'],
+      scopes: ['source.syntax-scopes', 'variable.other.block'],
     });
   });
 
@@ -10620,7 +10620,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.assignment');
     expect(tokens[0]).toEqual({
       value: 'variable.other.assignment',
-      scopes: ['source.shss', 'variable.other.assignment'],
+      scopes: ['source.syntax-scopes', 'variable.other.assignment'],
     });
   });
 
@@ -10628,7 +10628,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other.anonymous');
     expect(tokens[0]).toEqual({
       value: 'variable.other.anonymous',
-      scopes: ['source.shss', 'variable.other.anonymous'],
+      scopes: ['source.syntax-scopes', 'variable.other.anonymous'],
     });
   });
 
@@ -10636,7 +10636,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.other');
     expect(tokens[0]).toEqual({
       value: 'variable.other',
-      scopes: ['source.shss', 'variable.other'],
+      scopes: ['source.syntax-scopes', 'variable.other'],
     });
   });
 
@@ -10644,7 +10644,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.font-feature');
     expect(tokens[0]).toEqual({
       value: 'variable.font-feature',
-      scopes: ['source.shss', 'variable.font-feature'],
+      scopes: ['source.syntax-scopes', 'variable.font-feature'],
     });
   });
 
@@ -10652,7 +10652,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language.wildcard');
     expect(tokens[0]).toEqual({
       value: 'variable.language.wildcard',
-      scopes: ['source.shss', 'variable.language.wildcard'],
+      scopes: ['source.syntax-scopes', 'variable.language.wildcard'],
     });
   });
 
@@ -10660,7 +10660,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language.omitted.field');
     expect(tokens[0]).toEqual({
       value: 'variable.language.omitted.field',
-      scopes: ['source.shss', 'variable.language.omitted.field'],
+      scopes: ['source.syntax-scopes', 'variable.language.omitted.field'],
     });
   });
 
@@ -10668,7 +10668,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language.omitted');
     expect(tokens[0]).toEqual({
       value: 'variable.language.omitted',
-      scopes: ['source.shss', 'variable.language.omitted'],
+      scopes: ['source.syntax-scopes', 'variable.language.omitted'],
     });
   });
 
@@ -10676,7 +10676,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language.namespace');
     expect(tokens[0]).toEqual({
       value: 'variable.language.namespace',
-      scopes: ['source.shss', 'variable.language.namespace'],
+      scopes: ['source.syntax-scopes', 'variable.language.namespace'],
     });
   });
 
@@ -10684,7 +10684,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language.this');
     expect(tokens[0]).toEqual({
       value: 'variable.language.this',
-      scopes: ['source.shss', 'variable.language.this'],
+      scopes: ['source.syntax-scopes', 'variable.language.this'],
     });
   });
 
@@ -10692,7 +10692,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language.super');
     expect(tokens[0]).toEqual({
       value: 'variable.language.super',
-      scopes: ['source.shss', 'variable.language.super'],
+      scopes: ['source.syntax-scopes', 'variable.language.super'],
     });
   });
 
@@ -10700,7 +10700,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language.self');
     expect(tokens[0]).toEqual({
       value: 'variable.language.self',
-      scopes: ['source.shss', 'variable.language.self'],
+      scopes: ['source.syntax-scopes', 'variable.language.self'],
     });
   });
 
@@ -10708,7 +10708,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.language');
     expect(tokens[0]).toEqual({
       value: 'variable.language',
-      scopes: ['source.shss', 'variable.language'],
+      scopes: ['source.syntax-scopes', 'variable.language'],
     });
   });
 
@@ -10716,7 +10716,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter.function');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter.function',
-      scopes: ['source.shss', 'variable.parameter.function'],
+      scopes: ['source.syntax-scopes', 'variable.parameter.function'],
     });
   });
 
@@ -10724,7 +10724,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter.url');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter.url',
-      scopes: ['source.shss', 'variable.parameter.url'],
+      scopes: ['source.syntax-scopes', 'variable.parameter.url'],
     });
   });
 
@@ -10732,7 +10732,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter.style-name');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter.style-name',
-      scopes: ['source.shss', 'variable.parameter.style-name'],
+      scopes: ['source.syntax-scopes', 'variable.parameter.style-name'],
     });
   });
 
@@ -10740,7 +10740,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter.preprocessor');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter.preprocessor',
-      scopes: ['source.shss', 'variable.parameter.preprocessor'],
+      scopes: ['source.syntax-scopes', 'variable.parameter.preprocessor'],
     });
   });
 
@@ -10748,7 +10748,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter.misc');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter.misc',
-      scopes: ['source.shss', 'variable.parameter.misc'],
+      scopes: ['source.syntax-scopes', 'variable.parameter.misc'],
     });
   });
 
@@ -10756,7 +10756,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter.keyframe-list');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter.keyframe-list',
-      scopes: ['source.shss', 'variable.parameter.keyframe-list'],
+      scopes: ['source.syntax-scopes', 'variable.parameter.keyframe-list'],
     });
   });
 
@@ -10764,7 +10764,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter.document-rule');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter.document-rule',
-      scopes: ['source.shss', 'variable.parameter.document-rule'],
+      scopes: ['source.syntax-scopes', 'variable.parameter.document-rule'],
     });
   });
 
@@ -10772,7 +10772,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.parameter');
     expect(tokens[0]).toEqual({
       value: 'variable.parameter',
-      scopes: ['source.shss', 'variable.parameter'],
+      scopes: ['source.syntax-scopes', 'variable.parameter'],
     });
   });
 
@@ -10780,7 +10780,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable.argument');
     expect(tokens[0]).toEqual({
       value: 'variable.argument',
-      scopes: ['source.shss', 'variable.argument'],
+      scopes: ['source.syntax-scopes', 'variable.argument'],
     });
   });
 
@@ -10788,7 +10788,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('variable');
     expect(tokens[0]).toEqual({
       value: 'variable',
-      scopes: ['source.shss', 'variable'],
+      scopes: ['source.syntax-scopes', 'variable'],
     });
   });
 
@@ -10796,7 +10796,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('wildcard.comment');
     expect(tokens[0]).toEqual({
       value: 'wildcard.comment',
-      scopes: ['source.shss', 'wildcard.comment'],
+      scopes: ['source.syntax-scopes', 'wildcard.comment'],
     });
   });
 
@@ -10804,7 +10804,7 @@ describe('Syntax Highlighting Scopes Showroom grammar', () => {
     const { tokens } = grammar.tokenizeLine('wildcard');
     expect(tokens[0]).toEqual({
       value: 'wildcard',
-      scopes: ['source.shss', 'wildcard'],
+      scopes: ['source.syntax-scopes', 'wildcard'],
     });
   });
 });

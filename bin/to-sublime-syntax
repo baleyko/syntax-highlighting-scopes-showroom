@@ -19,8 +19,8 @@ readInterface.on('close', () =>
 # http://www.sublimetext.com/docs/3/syntax.html
 name: 'Syntax Highlighting Scopes Showroom'
 file_extensions:
-  - shss
-scope: source.shss
+  - SyntaxScopes
+scope: source.syntax-scopes
 contexts:
   main:
 ${contexts.join('\n')}

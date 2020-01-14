@@ -4,12 +4,12 @@
 .vscodeignore
 .gitignore
 .editorconfig
+yarn-error.log
+node_modules/
 messages/
 messages.json
 bin/
 test/
-yarn-error.log
-grammars/shss.sublime-syntax
-node_modules/
 .no-sublime-package
 Main.sublime-menu
+SyntaxScopes.sublime-syntax

@@ -1,9 +1,9 @@
 {
   "name": "Syntax Highlighting Scopes Showroom",
   "fileTypes": [
-    "shss"
+    "SyntaxScopes"
   ],
-  "scopeName": "source.shss",
+  "scopeName": "source.syntax-scopes",
   "patterns": [
     {
       "match": "^array$",

@@ -2,8 +2,8 @@
 const readline = require('readline');
 const output = {
   name: 'Syntax Highlighting Scopes Showroom',
-  fileTypes: ['shss'],
-  scopeName: 'source.shss',
+  fileTypes: ['SyntaxScopes'],
+  scopeName: 'source.syntax-scopes',
   patterns: [],
 };
 const readInterface = readline.createInterface({
