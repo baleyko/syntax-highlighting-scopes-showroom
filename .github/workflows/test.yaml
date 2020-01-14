@@ -20,8 +20,9 @@ jobs:
       SUBLIME_TEXT_ARCH: ${{ matrix.arch }}
       UNITTESTING_TAG: master
     steps:
-      - uses: actions/checkout@v1
-        path: 'Syntax Highlighting Scopes Showroom'
+      - uses: actions/checkout@v2
+        with:
+          path: 'Syntax Highlighting Scopes Showroom'
       - name: Setup
         run: |
           sh -e /etc/init.d/xvfb start
