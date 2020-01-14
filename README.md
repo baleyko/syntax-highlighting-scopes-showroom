@@ -38,7 +38,7 @@ You can find this package in corresponding package managment tool for:
 - `Ctrl+Shift+P` or `Cmd+Shift+P` in Linux/Windows/OS X
 - type `Settings View: Install Packages And Themes`
 - type `syntax-highlighting-scopes-showroom`
-- press `Install` on the `Syntax Highlighting Scopes Showroom` pane
+- press `Install` on the `syntax-highlighting-scopes-showroom` pane
 
 ## Usage
 
