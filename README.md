@@ -53,7 +53,7 @@ You can find this package in corresponding package managment tool for:
 
 ### Atom
 
-- go to  `Packages > Syntax Highlighting Scopes Showroom > Show All Scopes`
+- go to `Packages -> Syntax Highlighting Scopes Showroom -> Show All Scopes`
 
 As a result on all cases your editor will open the SyntaxScopes file which contains
 all known(for authors of this extension) syntax scopes.
