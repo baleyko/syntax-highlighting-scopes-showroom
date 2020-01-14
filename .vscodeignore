@@ -5,11 +5,11 @@
 .gitignore
 .editorconfig
 messages/
+messages.json
 bin/
 test/
-yarn.lock
 yarn-error.log
-messages.json
 grammars/shss.sublime-syntax
 node_modules/
 .no-sublime-package
+Main.sublime-menu

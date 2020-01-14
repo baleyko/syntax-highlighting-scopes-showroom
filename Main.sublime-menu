@@ -1,0 +1,14 @@
+[{
+  "id": "tools",
+  "children": [{
+    "id": "syntax-highlighting-scopes-showroom",
+    "caption": "Syntax Highlighting Scopes Showroom",
+    "children": [{
+      "caption": "Show All Scopes",
+      "command": "open_file",
+      "args": {
+        "file": "${packages}/Syntax Highlighting Scopes Showroom/SyntaxScopes"
+      }
+    }]
+  }]
+}]
