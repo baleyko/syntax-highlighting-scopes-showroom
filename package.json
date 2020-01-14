@@ -2,7 +2,7 @@
   "name": "syntax-highlighting-scopes-showroom",
   "displayName": "Syntax Highlighting Scopes Showroom",
   "description": "Highlights syntax scopes to simplify syntax highlighting extensions development",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "publisher": "baleiko",
   "author": {
     "name": "Valerii Baleiko",
